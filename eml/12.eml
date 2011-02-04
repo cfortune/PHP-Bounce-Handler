@@ -1,0 +1,225 @@
+Return-path: <>
+Envelope-to: ar1@ar1.outmailing.com
+Delivery-date: Mon, 30 Oct 2006 15:49:44 -0300
+Received: from avas-mx19.fibertel.com.ar ([24.232.0.112])
+	by ar2.outmailing.net with esmtp (Exim 4.60)
+	id 1GecCe-0003vV-2y
+	for ar1@ar1.outmailing.com; Mon, 30 Oct 2006 15:49:44 -0300
+Received: from mig1 ([10.10.10.171]:34795 "EHLO smtp.fibertel.com.ar")
+	by avas-mx19.fibertel.com.ar with ESMTP id S984764AbWJ3Sw1;
+	Mon, 30 Oct 2006 15:52:27 -0300
+Received: from process-daemon.mta1.fibertel.com.ar by mail.fibertel.com.ar
+ (Fibertel S.A. - Argentina) id <0J7Y00G01P9QKM00@mta1.fibertel.com.ar> for
+ ar1@ar1.outmailing.com; Mon, 30 Oct 2006 15:52:26 -0300 (ART)
+Received: from mail.fibertel.com.ar  (Fibertel S.A. - Argentina)
+ id <0J7Y00IFCPR70Y00@mta1.fibertel.com.ar>; Mon,
+ 30 Oct 2006 15:52:25 -0300 (ART)
+Date:	Mon, 30 Oct 2006 15:52:25 -0300 (ART)
+From:	Internet Mail Delivery <postmaster@fibertel.com.ar>
+Subject: Delivery Notification: Delivery has failed
+To: ar1@ar1.outmailing.com
+Message-id: <0J7Y00IGNPRD0Y00@mta1.fibertel.com.ar>
+MIME-version: 1.0
+Content-type: multipart/report;
+ boundary="Boundary_(ID_ZiviTNMZZc7E7L5iAvpOJg)"; report-type=delivery-status
+
+--Boundary_(ID_ZiviTNMZZc7E7L5iAvpOJg)
+Content-type: text/plain; charset=us-ascii
+Content-language: en-US
+Content-transfer-encoding: 7BIT
+
+This report relates to a message you sent with the following header fields:
+
+  Message-id: <fe471ad4f1b90eb539ceb99ecb8bfd3f@ar1.outmailing.com>
+  Date: Mon, 30 Oct 2006 15:48:33 -0300
+  From: Green Land Irish Pub <noreply@dattadream.com.ar>
+  To: andressaravia@fibertel.com.ar
+  Subject: {posible spam} Eventos de La semana
+
+Your message cannot be delivered to the following recipients:
+
+  Recipient address: @stov1.fibertel.com.ar:andressaravia@ims_daemon
+  Original address: andressaravia@fibertel.com.ar
+  Reason: LMTP transmission failure has occurred
+  Diagnostic code: smtp;522 5.2.0 Delivery failed: Over quota
+  Remote system: dns;stov1.fibertel.com.ar (sto01. -- Server LMTP [Sun ONE Messaging Server 6.1 HotFix 0.11 [built Jan 28 2005]])
+
+
+
+__________ Información de NOD32, revisión 1.1856 (20061106) __________
+
+Este mensaje ha sido analizado con  NOD32 antivirus system
+http://www.nod32.com
+
+
+--Boundary_(ID_ZiviTNMZZc7E7L5iAvpOJg)
+Content-type: message/delivery-status
+
+Reporting-MTA: dns;mta1.fibertel.com.ar (lmtpcs-daemon)
+
+Original-recipient: rfc822;andressaravia@fibertel.com.ar
+Final-recipient: rfc822;@stov1.fibertel.com.ar:andressaravia@ims_daemon
+Action: failed
+Status: 5.2.0 (LMTP transmission failure has occurred)
+Remote-MTA: dns;stov1.fibertel.com.ar
+ (sto01. -- Server LMTP [Sun ONE Messaging Server 6.1 HotFix 0.11 [built Jan 28
+ 2005]])
+Diagnostic-code: smtp;522 5.2.0 Delivery failed: Over quota
+
+--Boundary_(ID_ZiviTNMZZc7E7L5iAvpOJg)
+Content-type: message/rfc822
+
+Return-path: <ar1@ar1.outmailing.com>
+Received: from lmtpcs-daemon.mta1.fibertel.com.ar by mail.fibertel.com.ar
+ (Fibertel S.A. - Argentina) id <0J7Y00IFCPR70Y00@mta1.fibertel.com.ar>; Mon,
+ 30 Oct 2006 15:52:25 -0300 (ART)
+Received: from avas-mx17.fibertel.com.ar ([24.232.0.239])
+ by mail.fibertel.com.ar  (Fibertel S.A. - Argentina)
+ with ESMTP id <0J7Y00M9JPRB7X37@mta1.fibertel.com.ar> for
+ andressaravia@fibertel.com.ar; Mon, 30 Oct 2006 15:52:23 -0300 (ART)
+Received: from ar2.outmailing.net
+ ([200.68.65.111]:42893 "EHLO	ar2.outmailing.net") by avas-mx17.fibertel.com.ar
+ with ESMTP	id S424745AbWJ3SwP; Mon, 30 Oct 2006 15:52:15 -0300
+Received: from apache by ar2.outmailing.net with local (Exim 4.60)
+	(envelope-from <ar1@ar1.outmailing.com>)
+	id 1GecBV-0003jR-FG	for andressaravia@fibertel.com.ar; Mon,
+ 30 Oct 2006 15:48:33 -0300
+Received: from mailer	by ar1.outmailing.com with HTTP (Mail); Mon,
+ 30 Oct 2006 15:48:33 -0300
+Date: Mon, 30 Oct 2006 15:48:33 -0300
+From: Green Land Irish Pub <noreply@dattadream.com.ar>
+Subject: {posible spam} Eventos de La semana
+To: andressaravia@fibertel.com.ar
+Reply-to: fedecheme@hotmail.com
+Message-id: <fe471ad4f1b90eb539ceb99ecb8bfd3f@ar1.outmailing.com>
+MIME-version: 1.0
+X-Mailer: AC Mailer
+Content-type: text/html; charset=utf-8
+Content-transfer-encoding: 7BIT
+X-Priority: 3
+X-mid: YW5kcmVzc2FyYXZpYUBmaWJlcnRlbC5jb20uYXIgLCBtNzI4
+X-Fib-Al-Info: Al
+X-Fib-Al-MXId: d3d3793a0f8adce13ba10dd6a028b742
+X-Fib-Al: noav
+X-Fib-Al-SA: analyzed
+X-Fib-Al-From: ar1@ar1.outmailing.com
+
+<? mail($para, $tema, $mensaje, "Content-Type: text/htmlnFrom: Hotmail<feddecheme@hotmail.com.ar >
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><HTML 
+xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:st1 = 
+"urn:schemas-microsoft-com:office:smarttags"><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR>
+<META content="Microsoft Word 10" name=Originator><LINK 
+href="cid:filelist.xml@01C43E04.E4F7E8A0" rel=File-List><LINK 
+href="cid:editdata.mso@01C43E04.E4F7E8A0" rel=Edit-Time-Data><!--[if !mso]>
+<STYLE>v:unknown {
+ BEHAVIOR: url(#default#VML)
+}
+o:unknown {
+ BEHAVIOR: url(#default#VML)
+}
+w:unknown {
+ BEHAVIOR: url(#default#VML)
+}
+.shape {
+ BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><o:SmartTagType 
+namespaceuri="urn:schemas-microsoft-com:office:smarttags" 
+name="PersonName"></o:SmartTagType><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:EnvelopeVis/>
+  <w:BrowserLevel>MicrosoftInternetExplorer5</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]>
+<STYLE>
+st1:*{behavior:url(#default#ieooui) }
+</STYLE>
+<![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */ 
+ table.MsoNormalTable
+ {mso-style-name:"Tabla normal";
+ mso-tstyle-rowband-size:0;
+ mso-tstyle-colband-size:0;
+ mso-style-noshow:yes;
+ mso-style-parent:"";
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-para-margin:0cm;
+ mso-para-margin-bottom:.0001pt;
+ mso-pagination:widow-orphan;
+ font-size:10.0pt;
+ font-family:"Times New Roman";}
+</style>
+<![endif]--><LINK href="Metal" rel=Original-File><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1" />
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=ES-AR style="tab-interval: 35.4pt" vLink=purple link=blue 
+bgColor=white>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV style="FONT: 10pt arial"><FONT face="Times New Roman" size=3><SPAN 
+style="FONT-SIZE: 12pt"><FONT color=red><SPAN 
+style="COLOR: red; TEXT-DECORATION: none; text-underline: none"><!--[if !mso]><![endif]--><!--[if
+gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:EnvelopeVis/>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */ 
+ table.MsoNormalTable
+ {mso-style-name:"Tabla normal";
+ mso-tstyle-rowband-size:0;
+ mso-tstyle-colband-size:0;
+ mso-style-noshow:yes;
+ mso-style-parent:"";
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-para-margin:0cm;
+ mso-para-margin-bottom:.0001pt;
+ mso-pagination:widow-orphan;
+ font-size:10.0pt;
+ font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1" />
+ </o:shapelayout></xml><![endif]--><FONT face=Verdana size=3><SPAN 
+style="FONT-SIZE: 8pt"><FONT color=black><SPAN 
+style="COLOR: black; TEXT-DECORATION: none; text-underline: none">Si Ud. no puede visializar las
+imagenes haga click <a
+href="http://ar1.outmailing.com/admin/images/dattadream/eventos30-05.jpg">aqui</a><br /><img
+width="379" height="848" src="http://ar1.outmailing.com/admin/images/dattadream/eventos30-05.jpg"
+alt="" /><br />
+        <img width="450" height="150"
+src="http://ar1.outmailing.com/admin/images/dattadream/pie.gif" alt="" />
+
+
+--Boundary_(ID_ZiviTNMZZc7E7L5iAvpOJg)--

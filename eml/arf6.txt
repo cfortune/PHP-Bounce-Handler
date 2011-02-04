@@ -1,0 +1,261 @@
+Return-Path: staff@hotmail.com
+Received: from internal.ganeshaspeaks.com (LHLO internal.ganeshaspeaks.com)
+ (59.162.116.97) by internal.ganeshaspeaks.com with LMTP; Sat, 20 Feb 2010
+ 11:10:54 +0530 (IST)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by internal.ganeshaspeaks.com (Postfix) with ESMTP id 9FB29122AEBC
+	for <abuse@ganeshaspeaks.com>; Sat, 20 Feb 2010 11:10:54 +0530 (IST)
+X-Virus-Scanned: amavisd-new at internal.ganeshaspeaks.com
+X-Spam-Flag: NO
+X-Spam-Score: 3.567
+X-Spam-Level: ***
+X-Spam-Status: No, score=3.567 tagged_above=-10 required=6.6
+	tests=[AWL=-1.320, BAYES_50=0.001, FH_DATE_PAST_20XX=3.188,
+	HTML_MESSAGE=0.001, RDNS_NONE=0.1, X_MESSAGE_INFO=1.597]
+Received: from internal.ganeshaspeaks.com ([127.0.0.1])
+	by localhost (internal.ganeshaspeaks.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id FKDOnVPEA1w3 for <abuse@ganeshaspeaks.com>;
+	Sat, 20 Feb 2010 11:10:48 +0530 (IST)
+Received: from internal.ganeshaspeaks.com (localhost.localdomain [127.0.0.1])
+	by internal.ganeshaspeaks.com (Postfix) with ESMTP id D3366122992B
+	for <abuse@ganeshaspeaks.com>; Sat, 20 Feb 2010 11:10:47 +0530 (IST)
+Delivered-To: catchall@ganeshaspeaks.com
+Received: from mail.ganeshaspeaks.com [72.55.174.173]
+	by internal.ganeshaspeaks.com with POP3 (fetchmail-6.3.6)
+	for <abuse@ganeshaspeaks.com> (multi-drop); Sat, 20 Feb 2010 11:10:47 +0530 (IST)
+Received: (qmail 18486 invoked by uid 502); 20 Feb 2010 05:25:13 -0000
+Delivered-To: abuse@ganeshaspeaks.com
+Received: (qmail 18473 invoked by uid 502); 20 Feb 2010 05:25:13 -0000
+Received: by simscan 1.4.0 ppid: 18463, pid: 18465, t: 0.1741s
+         scanners: attach: 1.4.0
+Received: from unknown (HELO bay0-omc2-s1.bay0.hotmail.com) (65.54.190.76)
+  by mail.ganeshaspeaks.com with SMTP; 20 Feb 2010 05:25:12 -0000
+Received-SPF: pass (mail.ganeshaspeaks.com: SPF record at spf-a.hotmail.com designates 65.54.190.76 as permitted sender)
+Received: from BAY0-JMR-DB02 ([65.54.190.125]) by bay0-omc2-s1.bay0.hotmail.com with Microsoft SMTPSVC(6.0.3790.3959);
+	 Fri, 19 Feb 2010 21:25:12 -0800
+X-HmXmrOriginalRecipient: masterblastervarun@hotmail.com
+X-Reporter-IP: 222.129.240.155
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtTQ0w9NA==
+X-Message-Status: n:0
+X-SID-PRA: contact@promomail.ganeshaspeaks.com
+X-SID-Result: Pass
+X-AUTH-Result: PASS
+X-Message-Info: 6sSXyD95QpXzBd+BwlL9N8+0QFs0qR/5VJbs1QJJ7xgVpOwv+1x64rOZtx9fnQbvuyJvNWyeL0uiHYrHm5RnPni1gyWqUWE5
+Received: from promomail.ganeshaspeaks.com ([72.55.174.206]) by bay0-mc3-f8.Bay0.hotmail.com with Microsoft SMTPSVC(6.0.3790.3959);
+	 Fri, 19 Feb 2010 19:58:37 -0800
+Received: from massmail.ganeshaspeaks.com (unknown [10.1.209.5])
+	by promomail.ganeshaspeaks.com (Postfix) with ESMTP id 6E09BDE01E2
+	for <masterblastervarun@hotmail.com>; Fri, 19 Feb 2010 22:58:37 -0500 (EST)
+X-DKIM: Sendmail DKIM Filter v2.8.3 promomail.ganeshaspeaks.com 6E09BDE01E2
+DKIM-Signature: v=1; a=rsa-sha1; c=simple/simple;
+	d=promomail.ganeshaspeaks.com; s=selector1; t=1266638317;
+	bh=PVuoIFoBxfyNDmATIAa2b4/F5+o=;
+	h=Date:To:From:Subject:Message-ID:MIME-Version:Content-Type;
+	b=TMHoQj5/KrEShDKamuwhgvvecFd5sjgnQ6ZGURT+zeafm0IrIdN696lcX7vUrAvSf
+	 We9wpinlub9c3S5UK3+4PBsqWlSn+YdF1iPh2LCGlOfRrMPKbBAVSsEhg/aVAtOR1H
+	 Ud0AP8RWF7KBvidpjpzf49b25sVb55LC2uPCR0yg=
+X-DomainKeys: Sendmail DomainKeys Filter v1.0.2 promomail.ganeshaspeaks.com 6E09BDE01E2
+DomainKey-Signature: a=rsa-sha1; s=selector1; d=promomail.ganeshaspeaks.com; c=simple; q=dns;
+	b=qnAAxaUmGN0nu36jfZBz0RLKCoDfzJmAx1LZjvpgIXKmiLZ6Q/mmBt4z0VUJimX/w
+	ylNdc6ynwEPj3Omk94uA6vgYQzL0/+FzgP+G1IPShjn+NU/KafHYuqx9gbIoKd3TPbu
+	KqK4mSczQ9gTe1ED6jS/lvgaGh59bx2jVu0sNAM=
+Recieved: 
+Date: Fri, 19 Feb 2010 22:58:37 -0500
+To: masterblastervarun@hotmail.com
+From: contact@promomail.ganeshaspeaks.com
+Subject: Now, your Finance report at an easier rate
+Message-ID: <7d0005d5ddea9b8c2dd9ec1a35b2d5d4@localhost.localdomain>
+X-Priority: 3
+X-Mailer: PHPMailer [version 1.73]
+X-Mailer: phplist v2.10.10
+X-MessageID: 49
+X-ListMember: masterblastervarun@hotmail.com
+Precedence: bulk
+Errors-To: bounces3@promomail.ganeshaspeaks.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_7d0005d5ddea9b8c2dd9ec1a35b2d5d4"
+X-OriginalArrivalTime: 20 Feb 2010 03:58:37.0940 (UTC) FILETIME=[FB3DC340:01CAB1E0]
+
+
+--b1_7d0005d5ddea9b8c2dd9ec1a35b2d5d4
+Content-Type: text/plain; charset = "UTF-8"
+Content-Transfer-Encoding: 8bit
+
+ 
+
+ <http://www.ganeshaspeaks.com/>
+
+ It will be great if you can stay on, but if you want to UNSUBSCRIBE,
+click here <http://massmail.ganeshaspeaks.com/phplist3/?p=unsubscribe
+>
+
+ You are receiving this mailer since you are a member at
+GaneshaSpeaks.com.
+
+ If you cannot view this mailer properly, click here 		
+<http://www.ganeshaspeaks.com/mailerPage/finance_report_feb_10.html>
+
+ <http://www.ganeshaspeaks.com/orderplacement.jsp?product=93&utm_source=Finance%2BReports&utm_medium=email&utm_campaign=Finance%2BReports>
+
+ <http://www.ganeshaspeaks.com/orderplacement.jsp?product=93&utm_source=Finance%2BReports&utm_medium=email&utm_campaign=Finance%2BReports>
+
+ <http://www.ganeshaspeaks.com/orderplacement.jsp?product=93&utm_source=Finance%2BReports&utm_medium=email&utm_campaign=Finance%2BReports>
+
+ It will be great if you can stay on, but if you want to UNSUBSCRIBE,
+click here <http://massmail.ganeshaspeaks.com/phplist3/?p=unsubscribe
+>
+
+ <http://www.ganeshaspeaks.com/security.jsp>
+ <https://www.scanalert.com/RatingVerify?ref=www.ganeshaspeaks.com>
+ <http://www.ganeshaspeaks.com/privacy_policy.jsp>
+
+ Your personal information is safe and secure on GaneshaSpeaks.com
+
+ Please 	 add contact@promomail.ganeshaspeaks.com
+<mailto:contact@pomomail.ganeshaspeaks.com>
+ to 	 your addressbook for ensuring
+
+ future 	 mail delivery to your inbox
+
+ SiddhiVinayak Astrology Services Pvt. Ltd., Behind Asia House,
+Swastik Cross Roads,
+
+ Navrangpura, Ahmedabad - 380009, Ph. +91-796-522-1416.
+
+
+
+       
+
+
+--
+Powered by PHPlist, www.phplist.com --
+
+
+
+--b1_7d0005d5ddea9b8c2dd9ec1a35b2d5d4
+Content-Type: text/html; charset = "UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<html><head>
+        <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+        <title></title>
+  <style type="text/css">
+  body { font-size : 11px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+  a { font-size: 11px; color: #ff6600; font-style: normal; font-family: verdana, sans-serif; text-decoration: none; }
+  a:visited { color: #666666; }
+  a:hover {  text-decoration: underline; }
+  p { font-weight: normal; font-size: 11px; color: #666666; font-style: normal; font-family: verdana, sans-serif; text-decoration: none; }
+  h1 {font-weight: bold; font-size: 14px; color: #666666; font-style: normal; font-family: verdana, sans-serif; text-decoration: none;}
+  h2 {font-weight: bold; font-size: 13px; color: #666666; font-style: normal; font-family: verdana, sans-serif; text-decoration: none;}
+  h3 {font-weight: bold; font-size: 12px; color: #666666; font-style: normal; font-family: verdana, sans-serif; text-decoration: none; margin:0px; padding:0px;}
+  h4 {font-weight: bold; font-size: 11px; color: #666666; font-style: normal; font-family: verdana, sans-serif; text-decoration: none; margin:0px; padding:0px;}
+  hr {width : 100%; height : 1px; color: #ff9900; size:1px;}
+  .forwardform {margin: 0 0 0 0; padding: 0 0 0 0;}
+  .forwardinput {margin: 0 0 0 0; padding: 0 0 0 0;}
+  .forwardsubmit {margin: 0 0 0 0; padding: 0 0 0 0;}
+  div.emailfooter { font-size : 11px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+  div.emailfooter a { font-size: 11px; color: #ff6600; font-style: normal; font-family: verdana, sans-serif; text-decoration: none; }
+  </style>
+  </head><body><p><style type="text/css">
+
+body { margin-top:0px; margin-bottom:0px; background:#FFFFFF;}
+
+#versign a{ text-decoration:none; color:#036;}
+
+#versign img{ border:none;}
+
+.content{ font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:1.75; text-align:justify;}
+
+.content a{ color:#000; text-decoration:none;}
+
+#versign{ width:600px; height:60px;	border:0ox;	margin:auto; text-align:center;	margin-top:10px; margin-bottom:10px;}
+
+#memberclick {font-family:Verdana, Arial, sans-serif; font-size:12px; background-color:#0D3789; color:#FFF; text-align:center;	text-decoration:none;}
+
+#memberclick a{text-decoration:none; color:#FFF; font-weight:bold;}
+
+.per {background-color:#A80000; font-family:Verdana, Arial, sans-serif; font-size:12px; color:#FFF; text-align:center;
+
+	  text-decoration:none; font-weight:bold; }
+
+#address{ font-family:Verdana, Arial, sans-serif; font-size:12px; color:#999; text-align:center; margin:auto; margin-top:10px; margin-bottom:10px;font-weight:bold;}
+
+img { border:none;}
+
+a { text-decoration:none;}
+
+.unsub {font-family:Verdana, Arial, sans-serif; font-size:12px; background-color:#ffc867; color:#666; text-align:center;	text-decoration:none;}
+
+.unsub a{text-decoration:none; color:#666; font-weight:bold;}
+
+</style> <!-- Save for Web Slices (final_solar_mailer.psd) --></p>
+<table border="0" align="center" width="612" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td bgcolor="#ffffff" align="center"><a href="http://www.ganeshaspeaks.com/" target="_blank"><img border="0" src="http://www.ganeshaspeaks.com/images/tabimages/gslogo.gif" alt="gslogo" /></a></td>
+        </tr>
+        <tr>
+            <td class="unsub"><strong><a href="http://massmail.ganeshaspeaks.com/phplist3/?p=unsubscribe " target="_blank">It will be great if you can stay on, but if you want to UNSUBSCRIBE, click here</a></strong></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td id="memberclick"><a href="http://www.ganeshaspeaks.com/mailerPage/finance_report_feb_10.html" target="_new">You are receiving this mailer since you are a member at GaneshaSpeaks.com.<br />
+            If you cannot view this mailer properly, click here  		</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://www.ganeshaspeaks.com/orderplacement.jsp?product=93&amp;utm_source=Finance%2BReports&amp;utm_medium=email&amp;utm_campaign=Finance%2BReports" target="_blank"><img src="http://www.ganeshaspeaks.com/mailerPage/finance_report_feb_010_01.jpg" alt="img" /></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://www.ganeshaspeaks.com/orderplacement.jsp?product=93&amp;utm_source=Finance%2BReports&amp;utm_medium=email&amp;utm_campaign=Finance%2BReports" target="_blank"><img src="http://www.ganeshaspeaks.com/mailerPage/finance_report_feb_010_02.jpg" alt="img" /></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://www.ganeshaspeaks.com/orderplacement.jsp?product=93&amp;utm_source=Finance%2BReports&amp;utm_medium=email&amp;utm_campaign=Finance%2BReports" target="_blank"><img src="http://www.ganeshaspeaks.com/mailerPage/finance_report_feb_010_03.jpg" alt="img" /></a></td>
+        </tr>
+        <tr>
+            <td><img border="0" src="http://www.ganeshaspeaks.com/mailerPage/talk_bejanji_img.jpg" alt="img" /></td>
+        </tr>
+        <tr>
+            <td><img border="0" src="http://www.ganeshaspeaks.com/mailerPage/follow_on_final_link.jpg" alt="img" usemap="#Map" /></td>
+        </tr>
+        <tr>
+            <td class="unsub"><strong><a href="http://massmail.ganeshaspeaks.com/phplist3/?p=unsubscribe ">It will be great if you can stay on, but if you want to UNSUBSCRIBE, click here</a></strong></td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+            <div id="versign"><a href="http://www.ganeshaspeaks.com/security.jsp" target="_new">                  <img border="0" src="http://www.ganeshaspeaks.com/images/verisign_secure.jpg" alt="Verisign image" />              </a><a href="https://www.scanalert.com/RatingVerify?ref=www.ganeshaspeaks.com" target="_new"><img border="0" src="http://images.scanalert.com/meter/www.ganeshaspeaks.com/13.gif" alt="MacAfee image" /></a><a href="http://www.ganeshaspeaks.com/privacy_policy.jsp" target="_new">              <img border="0" src="http://www.ganeshaspeaks.com/images/privacygarunted.jpg" alt="Privacy image" />              </a></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="per">Your personal information is safe and secure on GaneshaSpeaks.com<br />
+            Please      	  add <a href="mailto:contact@pomomail.ganeshaspeaks.com" style="color: rgb(255, 255, 255); font-weight: bold;">contact@promomail.ganeshaspeaks.com</a> to      	  your addressbook for ensuring<br />
+            future     	    mail delivery to your inbox</td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+            <div id="address">SiddhiVinayak Astrology Services Pvt. Ltd., Behind Asia House, Swastik Cross Roads,<br />
+            Navrangpura, Ahmedabad - 380009, Ph. +91-796-522-1416.</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- End Save for Web Slices -->
+<p><map name="Map" id="Map">
+<area shape="rect" coords="215,38,306,66" href="http://www.facebook.com/home.php?#/profile.php?ref=profile&amp;id=100000506138219" target="_blank" />
+<area shape="rect" coords="309,39,396,67" href="http://twitter.com/GSAstrology " alt="twitter" target="_blank" />  </map></p><br /><br /><div class="emailfooter">       <img src="http://massmail.ganeshaspeaks.com/phplist3/ut.php?u=4cbdcb290880fee477983b5a4748ae56&m=49" width="1" height="1" border="0"></div><br />
+    <style type="text/css"><!--
+.poweredphplist {font-family: arial, verdana, sans-serif;font-size : 10px; font-variant: small-caps; font-weight : normal; padding: 2px; padding-left:20px;}
+a:link.poweredphplist,
+a:active.poweredphplist,
+a:visited.poweredphplist  {font-family: Arial, verdana, sans-serif; font-size : 10px; font-variant: small-caps; font-weight : normal; color : #666666; text-align : center; text-decoration : none; padding: 2px;}
+a:hover.poweredphplist {color : #7D7B7B;}
+//--></style>
+    <span class="poweredphplist">powered by <a href="http://www.phplist.com" class="poweredphplist" target="_blank">phplist</a> v 2.10.10, &copy; <a href="http://tincan.co.uk/powered" target="_blank" class="poweredphplist">tincan ltd</a></span></body></html>
+
+
+
+--b1_7d0005d5ddea9b8c2dd9ec1a35b2d5d4--
+
+
+

@@ -1,0 +1,75 @@
+Received: (qmail 13873 invoked from network); 30 Jun 2010 17:37:37 -0000
+Received: from unknown (HELO mailprod.blahblah.com) (10.1.0.252)
+  by mailprod.blahblah.com with SMTP; 30 Jun 2010 17:37:37 -0000
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: AikHABIeK0xBNr5hkWdsb2JhbACBXYFAj30CjDYVAQECCQsKBxEDH6gnh0k7h0uJBoQzcgSDbIZW
+X-IronPort-AV: E=Sophos;i="4.53,514,1272870000";
+   d="scan'208";a="30815619"
+Received: from bay0-omc2-s22.bay0.hotmail.com ([65.54.190.97])
+  by mailprod.blahblah.com with ESMTP; 30 Jun 2010 10:38:04 -0700
+Received: from BAY0-JMR-DB02 ([65.54.190.125]) by bay0-omc2-s22.bay0.hotmail.com with Microsoft SMTPSVC(6.0.3790.4675);
+         Wed, 30 Jun 2010 10:38:06 -0700
+Date: Wed, 30 Jun 10 10:38:06 -0700
+From: staff@hotmail.com
+Subject: complaint about message from 74.200.17.xxx
+To: fbl-abuse@blahblah.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="F484BCB3-CE4F-4E2D-9A8E-B18786277C43"
+Return-Path: staff@hotmail.com
+Message-ID: <BAY0-OMC2-S22jHNuQu001a0ed8@bay0-omc2-s22.bay0.hotmail.com>
+X-OriginalArrivalTime: 30 Jun 2010 17:38:06.0174 (UTC) FILETIME=[FF7E5FE0:01CB187A]
+
+--F484BCB3-CE4F-4E2D-9A8E-B18786277C43
+Content-Type: message/rfc822
+Content-Disposition: inline
+
+X-HmXmrOriginalRecipient: spamreportinguser@hotmail.com
+X-Reporter-IP: 98.85.167.31
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtTQ0w9MA==
+X-Message-Status: n:0
+X-SID-PRA: Blah Blah <support@blahblah.com>
+X-AUTH-Result: NONE
+X-Message-Info: JGTYoYF78jGaD9OjFspetK21jb5YJjHBXJxnZUVNN0j7B/bMz45x/Gbn0EO5qRr9wooEUVeb5a3oux+Jz45coW6tHfR0bcKS
+Received: from blahblah.com ([12.12.12.12]) by bay0-mc2-f46.Bay0.hotmail.com with Microsoft SMTPSVC(6.0.3790.4675);
+         Wed, 30 Jun 2010 08:51:03 -0700
+Received: (qmail 11630 invoked from network); 30 Jun 2010 15:50:34 -0000
+Received: from unknown (HELO mailprod.blahblah.com) (10.1.0.252)
+  by mailprod.blahblah.com with SMTP; 30 Jun 2010 15:50:34 -0000
+Received: from mailprod.blahblah.com (unverified [127.0.0.1])
+        by mailprod.blahblah.com (SurgeMail 3.9e) with ESMTP id 99677464-1773919
+        for <spamreportinguser@hotmail.com>; Wed, 30 Jun 2010 08:51:03 -0700
+Return-Path: <support@blahblah.com>
+X-Sender: support@blahblah.com
+From: "BuildingMaterialsTalk" <support@blahblah.com>
+To: "spamreportinguser@hotmail.com" <spamreportinguser@hotmail.com>
+Date: Wed, 30 Jun 2010 08:35:33 -0700
+Subject: Some Subject Line
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+        boundary="_=aspNetEmail=_d1ff02f81150479fa81f301d782b3645"
+X-Mailer: aspNetEmail ver 2.5.0.0
+X-RCPT-TO: <spamreportinguser@hotmail.com>
+X-Web-Domain: www.blahblah.com
+MIME-Version: 1.0
+Message-ID: <WEB7-Qf2039815c40c40a0b68b37831d7c711c@web7-q>
+X-Originating-IP:
+X-OriginalArrivalTime: 30 Jun 2010 15:51:03.0564 (UTC) FILETIME=[0B51DCC0:01CB186C]
+
+--_=aspNetEmail=_d1ff02f81150479fa81f301d782b3645
+Content-Type: text/plain;
+        charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+ xx Original Text content here xx
+
+--_=aspNetEmail=_d1ff02f81150479fa81f301d782b3645
+Content-Type: text/html;
+        charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<P>xx Original HTML content here xx</P>
+
+--_=aspNetEmail=_d1ff02f81150479fa81f301d782b3645--
+
+--F484BCB3-CE4F-4E2D-9A8E-B18786277C43
+

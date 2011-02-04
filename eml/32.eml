@@ -1,0 +1,74 @@
+Return-path: <>
+Envelope-to: ar1@ar1.outmailing.com
+Delivery-date: Mon, 30 Oct 2006 15:38:36 -0300
+Received: from barracuda.intermedia.net.ar ([200.69.29.90])
+	by ar2.outmailing.net with esmtp (Exim 4.60)
+	id 1Gec1s-0003VF-5Z
+	for ar1@ar1.outmailing.com; Mon, 30 Oct 2006 15:38:36 -0300
+MIME-Version: 1.0
+From: MAILER-DAEMON <>
+Message-Id: <b40c7d554eaf8d35bdf73e333c270b15@ar1.outmailing.com>
+Subject: **Message you sent blocked by our bulk email filter**
+Content-Type: multipart/report; report-type=delivery-status;
+    charset=utf-8;
+    boundary="----------=_1162233687-1530-687"
+To: ar1@ar1.outmailing.com
+Date: Mon, 30 Oct 2006 15:41:27 -0300 (ART)
+
+------------=_1162233687-1530-687
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: base64
+
+WW91ciBtZXNzYWdlIHRvOiBzdGVsbGFtaXJhbmRhQGludGVybGluay5jb20u
+YXIKd2FzIGJsb2NrZWQgYnkgb3VyIFNwYW0gRmlyZXdhbGwuIFRoZSBlbWFp
+bCB5b3Ugc2VudCB3aXRoIHRoZSBmb2xsb3dpbmcgc3ViamVjdCBoYXMgTk9U
+IEJFRU4gREVMSVZFUkVEOgoKU3ViamVjdDogTEFTVCBWQUNBTkNJRVMhISEK
+Cg==
+
+------------=_1162233687-1530-687
+Content-Type: message/delivery-status
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Description: Delivery error report
+
+Reporting-MTA: dns; barracuda.intermedia.net.ar
+Received-From-MTA: smtp; barracuda.intermedia.net.ar ([127.0.0.1])
+Arrival-Date: Mon, 30 Oct 2006 15:41:20 -0300 (ART)
+
+Final-Recipient: rfc822; stellamiranda@interlink.com.ar
+Action: failed
+Status: 5.7.1
+Diagnostic-Code: smtp; 550 5.7.1 Message content rejected, UBE, id=01530-01-625
+Last-Attempt-Date: Mon, 30 Oct 2006 15:41:27 -0300 (ART)
+
+------------=_1162233687-1530-687
+Content-Type: text/rfc822-headers
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Description: Undelivered-message headers
+
+Received: from ar2.outmailing.net (ar2.outmailing.net [200.68.65.111])
+	by barracuda.intermedia.net.ar (Spam Firewall) with ESMTP id 29093D01B
+	for <stellamiranda@interlink.com.ar>; Mon, 30 Oct 2006 15:41:19 -0300 (ART)
+Received: from apache by ar2.outmailing.net with local (Exim 4.60)
+	(envelope-from <ar1@ar1.outmailing.com>)
+	id 1Gec1d-0003Uf-GE
+	for stellamiranda@interlink.com.ar; Mon, 30 Oct 2006 15:38:21 -0300
+To: stellamiranda@interlink.com.ar
+Subject: LAST VACANCIES!!!
+Received: from mailer 
+	by ar1.outmailing.com with HTTP (Mail);
+	Mon, 30 Oct 2006 15:38:21 -0300
+Date: Mon, 30 Oct 2006 15:38:21 -0300
+From: English & Fun <info@welcometoenglishandfun.com>
+Reply-To: info@welcometoenglishandfun.com
+Message-ID: <b40c7d554eaf8d35bdf73e333c270b15@ar1.outmailing.com>
+X-Priority: 3
+X-Mailer: AC Mailer
+X-mid: c3RlbGxhbWlyYW5kYUBpbnRlcmxpbmsuY29tLmFyICwgbTcyNw==
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_b40c7d554eaf8d35bdf73e333c270b15"
+
+------------=_1162233687-1530-687--

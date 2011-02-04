@@ -1,0 +1,102 @@
+
+                                                                                                                                                                                                                                                               
+Delivered-To: account@gmail.com
+Received: by 10.86.62.16 with SMTP id k16cs115611fga;
+        Sun, 5 Apr 2009 11:41:40 -0700 (PDT)
+Received: by 10.210.53.1 with SMTP id b1mr2656107eba.85.1238956900481;
+        Sun, 05 Apr 2009 11:41:40 -0700 (PDT)
+Return-Path: <>
+Received: from norway3.telecomputing.no (norway3.telecomputing.no [213.203.17.7])
+        by mx.google.com with ESMTP id 25si4240805ewy.47.2009.04.05.11.41.40;
+        Sun, 05 Apr 2009 11:41:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of norway3.telecomputing.no designates 213.203.17.7 as permitted sender) client-ip=213.203.17.7;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of norway3.telecomputing.no designates 213.203.17.7 as permitted sender) smtp.mail=
+Received: from EUROOSLCE8VS1.Euro.Tecosroot.com ([10.2.6.233]) by norway3.telecomputing.no with InterScan Message Security Suite; Sun, 05 Apr 2009 20:41:39 +0200
+From: postmaster@Tecosroot.com
+To: account@gmail.com
+Date: Sun, 5 Apr 2009 20:41:39 +0200
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="9B095B5ADSN=_01C9B328E395D54200012C39EUROOSLCE8VS1.Eu"
+X-DSNContext: 335a7efd - 4523 - 00000001 - 80040546
+Message-ID: <gyBwcC6OF00002523@EUROOSLCE8VS1.Euro.Tecosroot.com>
+Subject: Delivery Status Notification (Failure)
+
+This is a MIME-formatted message.  
+Portions of this message may be unreadable without a MIME-capable mail program.
+
+--9B095B5ADSN=_01C9B328E395D54200012C39EUROOSLCE8VS1.Eu
+Content-Type: text/plain; charset=unicode-1-1-utf-7
+
+This is an automatically generated Delivery Status Notification.
+
+Delivery to the following recipients failed.
+
+       phk@nordiskeiendom.no
+
+
+
+
+--9B095B5ADSN=_01C9B328E395D54200012C39EUROOSLCE8VS1.Eu
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;EUROOSLCE8VS1.Euro.Tecosroot.com
+Received-From-MTA: dns;smtp05.telecomputing.no
+Arrival-Date: Sun, 5 Apr 2009 20:41:39 +0200
+
+Final-Recipient: rfc822;phk@nordiskeiendom.no
+Action: failed
+Status: 5.1.1
+
+--9B095B5ADSN=_01C9B328E395D54200012C39EUROOSLCE8VS1.Eu
+Content-Type: message/rfc822
+
+Received: from smtp05.telecomputing.no ([213.203.17.25]) by EUROOSLCE8VS1.Euro.Tecosroot.com with Microsoft SMTPSVC(6.0.3790.3959);
+	 Sun, 5 Apr 2009 20:41:39 +0200
+Received: by fg-out-1718.google.com with SMTP id l27so142929fgb.4
+        for <phk@nordiskeiendom.no>; Sun, 05 Apr 2009 11:41:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:date:message-id:subject
+         :from:to:content-type;
+        bh=fwvEVZNvLI5PwrH5605R317id8iekL4BGFg/RescybM=;
+        b=uzyQjb0YSTa+m/Q1/3mNUNUDyL7ahQmfVCokA0Sg7MDdKSvcU8zXsElVfkUswD21Rr
+         cHfbvWYch9nJSfRHrUcPn8AtRKaMOXIkt7G5fHi/ktD3fauHMsZDLqvAE9RIxUXfgpup
+         d32FN0pQkvcy8sRoOmEeW3bOSZYFPjbEA1l+8=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        b=NQilgggKIklfiHUAPfl6Hgij5a95XqPxE7bJP9nNv2jI/IOx2Gv2Rlf45cy4tqDL9U
+         rxXrzzdvqV+UlglWCt9bgrJkp9uBDqrV64i2vCzFVRcCtivfi2wdkh4Z7f/AigWP551x
+         IUIhWJ1bHwOZGtz+g67RXOzm7FjJX0mdQBq9o=
+MIME-Version: 1.0
+Received: by 10.86.65.9 with SMTP id n9mr2492157fga.31.1238956898166; Sun, 05 
+	Apr 2009 11:41:38 -0700 (PDT)
+Date: Sun, 5 Apr 2009 20:41:38 +0200
+Message-ID: <63267c0f0904051141o6de11a88t7bf60c46de6964fd@mail.gmail.com>
+Subject: Test
+From: "Gmail Account" <account@gmail.com>
+To: phk@nordiskeiendom.no
+Content-Type: multipart/alternative; boundary=000e0cd25152ceaaa90466d32133
+Return-Path: account@gmail.com
+X-OriginalArrivalTime: 05 Apr 2009 18:41:39.0470 (UTC) FILETIME=[2817EAE0:01C9B61E]
+
+--000e0cd25152ceaaa90466d32133
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+This is a test
+Regards,
+Gmail Account
+
+--000e0cd25152ceaaa90466d32133
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+This is a test
+<div><br></div><div>Regards,</div><div>Gmail Account</div>
+
+--000e0cd25152ceaaa90466d32133--
+
+
+--9B095B5ADSN=_01C9B328E395D54200012C39EUROOSLCE8VS1.Eu--

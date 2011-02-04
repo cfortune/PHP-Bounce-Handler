@@ -1,0 +1,392 @@
+--------------
+2010-03-01 07:09:00
+matches: Array
+matches0: u=fc57b3707d19c808dd64b3986fd60968
+matches1: fc57b3707d19c808dd64b3986fd60968
+suid: fc57b3707d19c808dd64b3986fd60968
+wb: 
+xh: 
+subscriber exists: 1
+email: rrcatto@ananzi.co.za
+unsubscribed? 1
+body:
+This is a multi-part MIME message
+
+--_===367450483====mail01.ananzi.co.za===_
+Content-Type: text/html; charset="ISO-8859-1"
+Content-Transfer-Encoding: 8bit
+
+
+
+
+--- the forwarded message follows ---
+
+--_===367450483====mail01.ananzi.co.za===_
+Content-Type: message/rfc822
+
+Return-Path: <ctneditor@ctnlist.co.za>
+Received: from server.redplanethosting.co.za ([72.44.90.66] verified)
+  by mail01.ananzi.co.za (CommuniGate Pro SMTP 5.0.9)
+  with ESMTPS id 365830386 for rrcatto@ananzi.co.za; Fri, 19 Feb 2010 14:14:02 +0200
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws; s=default; d=ctnlist.co.za;
+	h=Received:To:From:Reply-To:Subject:Date:X-LibVersion:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID;
+	b=KZ+4RGX25GjoDN3eLVdO4Pbhmvq038zAjAnoNIZri+dSfrlit58pjaTOSv+eBm8kJ3wsNb2FTUjr4/vvW3zfMMNL4tu6QP6vcdMnr3oZV0JqjyydQ27YbrHsjRQwJPR3;
+Received: from ns1.redplanethosting.co.za ([72.44.90.66])
+	by server.redplanethosting.co.za with esmtpa (Exim 4.69)
+	(envelope-from <ctneditor@ctnlist.co.za>)
+	id 1Ni6V2-0007NS-20
+	for rrcatto@ananzi.co.za; Thu, 18 Feb 2010 15:33:00 +0200
+To: Richard Catto <rrcatto@ananzi.co.za>
+From: Cape Town news <ctneditor@ctnlist.co.za>
+Reply-To: Cape Town news <ctneditor@ctnlist.co.za>
+Subject: Reach for a Dream Charity Golf Day - March 12 2010
+Date: Thu, 18 Feb 2010 15:33:00 +0200
+X-LibVersion: 3.3.2
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift-16974649274b7d418c0f44f5.90970824_=_"
+Content-Transfer-Encoding: 7bit
+Message-ID: <20100218133300.13935.872214324.swift@ctnlist.co.za>
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.redplanethosting.co.za
+X-AntiAbuse: Original Domain - ananzi.co.za
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - ctnlist.co.za
+
+                            ***************************
+                            * This is Cape Town news! *
+                            ***************************
+
+                WARNING: THE TEXT ONLY VERSION IS NOT THE REAL DEAL!
+                ===================================================
+Hi Richard
+
+The last text only version of the Cape Town news newsletter was sent out on July 17 2005. After that date, Cape Town news switched to using an html format, which is what you should be viewing right now.
+
+The reason you are not seeing the correct version of Cape Town news, is because your email program isn't capable of or is not configured to display html emails.
+
+I would love you to experience Cape Town news in all it's html glory, so I recommend that you switch to using Mozilla Thunderbird or gmail to manage your mail.
+
+However, if that is not possible for any reason and you'd still like to view the latest Cape Town news newsletter, you can click this link and view it online on a specially built web archive of Cape Town news newsletters:
+http://ctnlist.co.za/archive.php?a=57
+
+Here is a very stripped down version of what appears in the HTML version of this email:
+
+~ ~ ~ * ~ ~ ~ ~ ~ ~ * ~ ~ ~ ~ ~ ~ * ~ ~ ~ ~ ~ ~ * ~ ~ ~ ~ ~ ~ * ~ ~ ~
+Reach for a Dream Charity Golf Day
+
+March 12 2010
+
+You are invited to attend Reach For A Dream's Golf Day on the 12th of March 2010 at the River Club.
+
+FORMAT:
+
+American Scramble (9 holes)
+
+ENTRY FEE:
+
+R200 per person / R1000 per team of 5 players. Includes gift bag on arrival, game of golf and lunch. We encourage both men and women to sign up.
+
+REGISTRATION:
+
+10h00 to 10h30
+
+TEE-OFF:
+
+"Shotgun start" at 11h00 sharp!!!
+
+LUNCH:
+
+Served from 13h00
+
+AUCTION:
+
+From 15h00.
+
+A "silent auction" option is available for those who are not able to attend. Auction items will be on display on the day or click here to preview the list now.
+
+PLUS:
+
+There will be a "Beat The Pro", "Hole-in-one" and putting competition.
+
+Corporates have the option of branding a hole at R300 each.
+
+For bookings / donation of prize for auction or the gift bags please contact the office on 021 555 3013 or email Genevieve.
+
+VENUE:
+
+The River Club
+Liesbeek Parkway, Observatory
+Cape Town, Western Cape 7705
+Tel: 021 448 6117
+~ ~ ~ * ~ ~ ~ ~ ~ ~ * ~ ~ ~ ~ ~ ~ * ~ ~ ~ ~ ~ ~ * ~ ~ ~ ~ ~ ~ * ~ ~ ~
+
+If you would like to subscribe to receive these mailings, click this link:
+http://ctnlist.co.za/subscribe.php
+
+If you would like to unsubscribe from these mailings, click this link:
+http://ctnlist.co.za/unsubscribe.php?u=fc57b3707d19c808dd64b3986fd60968
+
+If you would like to change your email address, click this link:
+http://ctnlist.co.za/subscribe.php?u=fc57b3707d19c808dd64b3986fd60968
+
+If you would like to share this with friends, click this link:
+http://ctnlist.co.za/forward.php?u=fc57b3707d19c808dd64b3986fd60968&m=61
+
+If you would like to advertise with in Cape Town news, please contact me.
+
+This newsletter is distributed via http://ctnlist.co.za/, a custom mailing list program written in PHP and MySQL by Richard Catto. Contact me if you would like to use it for your own mailing list.
+
+Cheers,
+Richard Catto
+ctn editor
+Cape Town news
+http://capetownnews.co.za/
+073 258 8545
+http://twitter.com/rrcatto
+http://www.facebook.com/rrcatto
+--_=_swift-16974649274b7d418c0f44f5.90970824_=_
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+
+<div style="margin: 0px; padding: 10px 0px; background-color: rgb(218, 239, 246); width: 1024px;">
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 10px auto; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p style="text-align: center;">
+			<span style="font-size: 36px;"><span style="color: rgb(70, 130, 180);"><strong><span style="font-family: arial,helvetica,sans-serif;">Cape Town news</span></strong></span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 24px;"><span style="color: rgb(255, 160, 122);"><strong><span style="font-family: arial,helvetica,sans-serif;">Keeping you in the loop!</span></strong></span></span></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<strong><span style="color: rgb(70, 130, 180);"><span style="font-size: 14px;"><span style="font-family: arial,helvetica,sans-serif;"><a href="http://ctnlist.co.za/unsubscribe.php?u=fc57b3707d19c808dd64b3986fd60968">UNSUBSCRIBE</a> | <a href="http://ctnlist.co.za/subscribe.php">SUBSCRIBE</a> | <a href="http://ctnlist.co.za/forward.php?u=fc57b3707d19c808dd64b3986fd60968&m=61">FORWARD</a> | <a href="http://ctnlist.co.za/subscribe.php?u=fc57b3707d19c808dd64b3986fd60968">UPDATE YOUR PROFILE</a> | <a href="http://ctnlist.co.za/archive.php?a=57">ARCHIVE</a> | <a href="http://bit.ly/anPhJ3">ADVERTISE</a></span></span></span></strong></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<a href="http://bit.ly/aNtA31"><img border="0" src="http://ctnlist.co.za/images/smiq-banner.jpg" /></a></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<a href="http://bit.ly/a2xeml"><img border="0" src="http://ctnlist.co.za/images/ds-logo.jpg" /></a></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<a href="http://bit.ly/bsS5Gw"><img border="0" src="http://www.loot.co.za/static/images/banners/468x60banner.gif" /></a></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px 5px; background-color: rgb(255, 255, 255); width: 790px;">
+		<p>
+			<p style="text-align: center;">
+	<a href="http://www.reachforadream.org.za/"><img alt="" border="0" src="http://ctnlist.co.za/images/rfad.jpg" style="width: 550px; height: 411px;" /></a></p>
+<p style="text-align: center;">
+	<span style="color: steelblue;"><strong><span style="font-size: 36px;"><span style="font-family: arial,helvetica,sans-serif;">Reach for a Dream Charity Golf Day<br />
+	</span></span></strong></span></p>
+<p style="text-align: center;">
+	<span style="color: steelblue;"><strong><span style="font-size: 36px;"><span style="font-family: arial,helvetica,sans-serif;">March 12 2010<br />
+	</span></span></strong></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">You are invited to attend Reach For A Dream&#39;s Golf Day on the 12th of March 2010 at the River Club.</span></span></p>
+<p>
+	<span style="color: steelblue;"><strong><span style="font-size: 22px;"><span style="font-family: arial,helvetica,sans-serif;">FORMAT:</span></span></strong></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">American Scramble (9 holes)</span></span></p>
+<p>
+	<span style="color: steelblue;"><strong><span style="font-size: 22px;"><span style="font-family: arial,helvetica,sans-serif;">ENTRY FEE:</span></span></strong></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">R200 per person / R1000 per team of 5 players. Includes gift bag on arrival, game of golf and lunch. We encourage both men and women to sign up.</span></span></p>
+<p>
+	<span style="color: steelblue;"><span style="font-size: 22px;"><span style="font-family: arial,helvetica,sans-serif;"><strong>REGISTRATION:</strong></span></span></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">10h00 to 10h30</span></span></p>
+<p>
+	<span style="color: steelblue;"><strong><span style="font-size: 22px;"><span style="font-family: arial,helvetica,sans-serif;">TEE-OFF:</span></span></strong></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">&quot;Shotgun start&quot; at 11h00 sharp!!!</span></span></p>
+<p>
+	<span style="color: steelblue;"><span style="font-size: 22px;"><span style="font-family: arial,helvetica,sans-serif;"><strong>LUNCH:</strong></span></span></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Served from 13h00</span></span></p>
+<p>
+	<span style="color: steelblue;"><strong><span style="font-size: 22px;"><span style="font-family: arial,helvetica,sans-serif;">AUCTION:</span></span></strong></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">From 15h00.<br />
+	</span></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">A &quot;silent auction&quot; option is available for those who are not able to attend. Auction items will be on display on the day or click here to preview the list now.</span></span></p>
+<p>
+	<span style="color: steelblue;"><strong><span style="font-size: 22px;"><span style="font-family: arial,helvetica,sans-serif;">PLUS:</span></span></strong></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">There will be a &quot;Beat The Pro&quot;, &quot;Hole-in-one&quot; and putting competition.</span></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Corporates have the option of branding a hole at R300 each.</span></span></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">For bookings / donation of prize for auction or the gift bags please contact the office on 021 555 3013 or email <a href="mailto:genevieve@rfad.org.za?subject=referred%20from%20Cape%20Town%20news">Genevieve</a>.</span></span></p>
+<p>
+	<span style="color: steelblue;"><strong><span style="font-size: 22px;"><span style="font-family: arial,helvetica,sans-serif;">VENUE:</span></span></strong></span></p>
+<p>
+	<a href="http://riverclub.co.za/"><img alt="" border="0" src="http://ctnlist.co.za/images/rfad-rc.png" style="width: 231px; height: 108px;" /></a></p>
+<p>
+	<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">The River Club<br />
+	Liesbeek Parkway, Observatory<br />
+	Cape Town, Western Cape 7705<br />
+	Tel: 021 448 6117<br />
+	</span></span></p>
+</p>
+	</div>
+			</font></p>
+		<p style="text-align: center;">
+			<font face="Verdana" size="2">I use twitter to inform my followers of newsworthy trends with links to relevant articles. I&#39;ve linked it to my Facebook account so that twitter updates are reflected on Facebook - ask me how to do this, if you want to know how.<br />
+			</font></p>
+		<p style="text-align: center;">
+			<font face="Verdana" size="2">Coming soon to gmail is <a href="http://bit.ly/d3Twnd">Google Buzz</a> which is a brand new Social Media feature that is Google&#39;s answer to Twitter.</font></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;">BEST ONLINE SHOPS IN CAPE TOWN</span></span></strong></span></p>
+		<p style="text-align: center;">
+			<font face="Verdana" size="2"><em>Get Books, DVDs, Music, Games, Electronics online for less couriered direct to your front door!<br />
+			</em></font></p>
+		<p style="text-align: center;">
+			<font face="Verdana" size="2">Two local online shops (both based in Cape Town) that I can fully recommend that you use are <a href="http://bit.ly/bsS5Gw">Loot</a> and <a href="http://bit.ly/da43bH">Take2</a>. Both of them offer an efficient next day courier service and exceptional customer support that listens to your demands.</font></p>
+		<p style="text-align: center;">
+			<font face="Verdana" size="2"><em>Save yourself time and the frustration of crowded malls by buying online!</em></font></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;">RECOMMENDED LOOT</span></span></strong></span></p>
+		<p style="text-align: center;">
+			<a href="http://bit.ly/dnv7wa"><img alt="" border="0" src="http://ftp.loot.co.za/images/x200/1602605335847179215$126AEEC3" /></a>&nbsp;<a href="http://bit.ly/9rNBax"><img alt="" border="0" src="http://ftp.loot.co.za/images/x200/581322671616179215$72405EB6" /></a>&nbsp;<a href="http://bit.ly/9SGIkp"><img alt="" border="0" src="http://ftp.loot.co.za/images/x200/7100161473765179215$E9435614" /></a>&nbsp;<a href="http://bit.ly/dtR2qy"><img alt="" border="0" src="http://ftp.loot.co.za/images/x200/633241470833179215$E76F0A44" /></a>&nbsp;<a href="http://bit.ly/91xB11"><img alt="" border="0" src="http://ftp.loot.co.za/images/x200/169181548609179215$62BB6F07" /></a></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p style="text-align: center;">
+			<span style="color: rgb(70, 130, 180);"><strong><span style="font-size: 22px;"><span style="font-family: arial,helvetica,sans-serif;">CHOCOLATE WORKSHOPS</span></span></strong></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Learn how to make chocolate from home. In two 2 hour classes, you will make slabs and filled chocolates, decorate a &quot;special events&quot; cake, work with transfers and make truffles.</span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Cost is R600 all inclusive (just bring a container to take home the items you will be making). Workshops are held on Tuesday, Wednesday and Saturday from 14h30 till 16h30 in Claremont (off Keurboom Road).</span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Dates: February 23, 24, 27; March 2, 3, 6</span></span></p>
+		<p style="text-align: center;">
+			<em><span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Phone Sheilagh on 084 303 6633 for an appointment</span></span></em></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p style="text-align: center;">
+			<span style="color: rgb(70, 130, 180);"><strong><span style="font-size: 22px;"><span style="font-family: arial,helvetica,sans-serif;">OLD MUTUAL SUMMER SUNSET CONCERTS AT KIRSTENBOSCH</span></span></strong></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">February 21 - Just Jinjer / February 28 - Prime Circle</span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">March 7 - Goldfish / March 14 - The Dirty Skirts / March 21 - Cape Philharmonic Orchestra / March 28 - Watershed</span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">April 4 - Old Mutual Encounter - Tidal Waves and friend: Tumi Molekane</span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Time (for all shows): 17h30 - 19h30 / Gates open at 15h30. Ticket sales: 021- 761 2866 / 799 8782</span></span></p>
+		<p style="text-align: center;">
+			<em><span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">This information courtesy of Linet of Hippo Communications 021 557-0246</span></span></em></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;">ASCENSION CAN BE A REALITY THIS LIFETIME</span></span></strong></span></p>
+		<p align="center">
+			<strong><em><span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">A powerful one-day workshop designed to initiate a major and positive change your life!</span></span><br />
+			</em></strong></p>
+		<p align="center">
+		<p align="center">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Workshop on Sunday 18 April 2010 09h00 - 16h00 in Muizenberg R400 (Lunch &amp; manual included).<br />
+			Contact Anthea on 083 227 0269 or office number - Coral 021 709 0393 / info@sacredsustainability.co.za</span></span></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;">DUESOUTH XTERRA - FEBRUARY 20 2010</span></span></strong></span></p>
+		<p align="center">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Top South African multi-sport athlete Dan Hugo will return to Grabouw on Saturday, 20 February 2010 with his eye on his second championship title in the DUESOUTH XTERRA finals presented by REHIDRAT&reg;. The 2008 national champion will hit the spectacular Grabouw course in supreme form fresh off his convincing victory at XTERRA Buffelspoort Dam in January.</span></span></p>
+		<p align="center">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Taking place at the Grabouw Country Club, Western Cape. Registration on Wednesday, 17 February and Thursday, 18 February 2010 at DUESOUTH Store (Canal Walk) from 09h00 till 21h00</span></span></p>
+		<p align="center">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">For more information, race rules or to enter please contact <a href="http://bit.ly/a2xeml">Stillwater Sport &amp; Entertainment</a> on (021) 883 &ndash; 2413 or <a href="mailto:info@stillwatersports.com">e-mail</a>.</span></span></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;"><a href="http://bit.ly/cCxPly">BAYMARKETING</a></span></span></strong></span></p>
+		<p style="text-align: center;">
+			<span style="color: rgb(255, 165, 0);"><strong><span style="font-size: 14px;"><em><span style="font-family: verdana,geneva,sans-serif;">South African &amp; German Strategic Marketing, Public Relations and Sales Specialists, Cape Town<br />
+			</span></em></span></strong></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Grow through fresh ideas! We specialize in strategic business development through targeted marketing and individual sales concepts. We coordinate branding, media planning, creative design, promotional appearances, events and publicity into an intelligent marketing mix.<br />
+			</span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Contact Ines Stoll on 021 7905977 or info@baymarketing.co.za</span></span></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;">ACCURATE READINGS AND PSYCHIC COUNSELLING</span></span></strong></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Medical, emotional and financial: as well as picking up the issues psychically, I also use the following to confirm what has come through and the answers you are looking for :- Aspects of Self, Greek Mythology, Oracle Cards, Runes, Numerology, Astrology, Palmistry. I also do Holistic Healing, Deep Tissue Massage, Alignment and Lymph Drainage when a physical shift is required.</span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Contact Annette on 082 375 5693. </span></span><span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Milnerton.</span></span><span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;"> <a href="mailto:annetteheals2001@yahoo.co.uk">Email</a> and phone readings also available.<br />
+			</span></span></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;">QUALIFIED BOOKKEEPER</span></span></strong></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">I am a qualified Bookkeeper, with 28 years experience and do books to Trial Balance or Balance Sheet, including Debtors, Creditors, Stock, Petty Cash, Cash Books and Reconciliations and ALL Monthly and Annual Statutory Returns. I use Pastel, IQ and Quickbooks etc. either at your premises, or my offices, on your own Computer or my laptop. I also sell, train and support various Accounting packages.</span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Contact Annette on 082 375 5693</span></span></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;">ACCOUNTING SERVICE</span></span></strong></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Retired Accountant available to assist small and medium sized businesses with bookkeeping and preparation of Final Accounts for audit and taxation purposes. Preparation of budgets, business plan for starting business and yearly or annual projections.<br />
+			</span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Contact Frank 073 075 6961<br />
+			</span></span></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;"><a href="http://bit.ly/dlSgRA">HOME911 - USE YOUR CELLPHONE TO PROTECT YOURSELF</a></span></span></strong></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: small;"><span style="font-family: Verdana;">Turn your cellphone into a personal panic button with the Home911 service. At the touch of a speeddial number, Home911 connects you to up to 10 family and friends to alert them to the fact that you need emergency assistance.</span></span></p>
+		<p style="text-align: center;">
+			<span style="font-size: small;"><span style="font-family: Verdana;">To find out more, please contact Joseph Strydom on 082 887 7286 or go directly to the&nbsp;</span></span><a href="http://bit.ly/dlSgRA"><span style="font-size: small;"><span style="font-family: Verdana;">web site</span></span></a><span style="font-size: small;"><span style="font-family: Verdana;">&nbsp;to sign up.</span></span></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;">HOUSE SITTING SERVICE - BERGVLIET / CONSTANTIA AREA</span></span></strong></span></p>
+		<p style="text-align: center;">
+			<font face="Verdana" size="3"><font face="Verdana" size="2">Reliable mature married couple available to house sit, look after pets, plants and domestic staff while you are away. Reasonable daily rate. References available.</font></font></p>
+		<p style="text-align: center;">
+			<font face="Verdana" size="3"><font face="Verdana" size="2">Contact Liz on 021 715 6820</font></font></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 0px; background-color: rgb(255, 255, 255); width: 800px;">
+		<p align="center">
+			<span style="font-size: 22px;"><strong><span style="color: rgb(70, 130, 180);"><span style="font-family: arial,helvetica,sans-serif;">CARROT CAKES FOR ALL OCCASIONS</span></span></strong></span></p>
+		<p style="text-align: center;">
+			<font face="Verdana" size="2">Nutritious and delicious moist carrot cakes, with or without icing.</font></p>
+		<p style="text-align: center;">
+			<font face="Verdana" size="2">Call 021 715 6820 to order</font></p>
+	</div>
+	<div style="border: 2px dashed rgb(70, 130, 180); margin: 0px auto 10px; padding: 5px; background-color: rgb(255, 255, 255); width: 790px;">
+		<p>
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Hi Richard</span></span></p>
+		<p>
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">This notice is published by Cape Town news. Contact me for advertisement rates.</span></span><br />
+			<br />
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">Cheers,<br />
+			Richard Catto<br />
+			ctn editor<br />
+			073 258 8545<br />
+			</span></span></p>
+		<p>
+			<span style="font-size: 12px;"><span style="font-family: verdana,geneva,sans-serif;">This email is archived online here: <a href="http://ctnlist.co.za/archive.php?a=57">ARCHIVE</a><br />
+			</span></span></p>
+		<p>
+			<a href="http://bit.ly/bImIUv" target="_TOP" title="Richard Catto's Facebook profile"><img alt="Richard Catto's Facebook profile" border="0" src="http://badge.facebook.com/badge/523700433.1103.1716707034.png" /></a><img src="http://ctnlist.co.za/ut.php?u=fc57b3707d19c808dd64b3986fd60968&m=61"width="0"height="0"></p>
+	</div>
+</div>
+
+--_=_swift-16974649274b7d418c0f44f5.90970824_=_--
+
+
+--_===367450483====mail01.ananzi.co.za===_--
+
+

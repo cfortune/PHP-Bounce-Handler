@@ -1,0 +1,852 @@
+Return-Path: cfl.mntgyllumvzxi-abuse=ganeshaspeaks.com@returns.bulk.yahoo.com
+Received: from internal.ganeshaspeaks.com (LHLO internal.ganeshaspeaks.com)
+ (59.162.116.97) by internal.ganeshaspeaks.com with LMTP; Sat, 20 Feb 2010
+ 09:05:46 +0530 (IST)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by internal.ganeshaspeaks.com (Postfix) with ESMTP id F21DC122AEBF
+	for <abuse@ganeshaspeaks.com>; Sat, 20 Feb 2010 09:05:45 +0530 (IST)
+X-Virus-Scanned: amavisd-new at internal.ganeshaspeaks.com
+X-Spam-Flag: NO
+X-Spam-Score: 5.561
+X-Spam-Level: *****
+X-Spam-Status: No, score=5.561 tagged_above=-10 required=6.6
+	tests=[AWL=-0.829, BAYES_50=0.001, FH_DATE_PAST_20XX=3.188,
+	FORGED_YAHOO_RCVD=2.297, HTML_MESSAGE=0.001,
+	MSGID_FROM_MTA_HEADER=0.803, RDNS_NONE=0.1]
+Received: from internal.ganeshaspeaks.com ([127.0.0.1])
+	by localhost (internal.ganeshaspeaks.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id u6BpQY1RliGL for <abuse@ganeshaspeaks.com>;
+	Sat, 20 Feb 2010 09:05:41 +0530 (IST)
+Received: from internal.ganeshaspeaks.com (localhost.localdomain [127.0.0.1])
+	by internal.ganeshaspeaks.com (Postfix) with ESMTP id 26E61122985E
+	for <abuse@ganeshaspeaks.com>; Sat, 20 Feb 2010 09:05:41 +0530 (IST)
+Delivered-To: catchall@ganeshaspeaks.com
+Received: from mail.ganeshaspeaks.com [72.55.174.173]
+	by internal.ganeshaspeaks.com with POP3 (fetchmail-6.3.6)
+	for <abuse@ganeshaspeaks.com> (multi-drop); Sat, 20 Feb 2010 09:05:41 +0530 (IST)
+Received: (qmail 12175 invoked by uid 502); 20 Feb 2010 03:27:27 -0000
+Message-ID: <20100220032727.12173.qmail@mail.ganeshaspeaks.com>
+Delivered-To: abuse@ganeshaspeaks.com
+Received: (qmail 12169 invoked by uid 502); 20 Feb 2010 03:27:27 -0000
+Received: by simscan 1.4.0 ppid: 12165, pid: 12166, t: 0.0900s
+         scanners: attach: 1.4.0
+Received: from unknown (HELO n1.bullet.mail.ac4.yahoo.com) (76.13.13.24)
+  by mail.ganeshaspeaks.com with SMTP; 20 Feb 2010 03:27:27 -0000
+Received-SPF: none (mail.ganeshaspeaks.com: domain at returns.bulk.yahoo.com does not designate permitted sender hosts)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=arf.mail.yahoo.com; s=arf; t=1266636447; bh=GkPPEu4uG2x1vHgR98Hs/xrFNTc7pTPz9rPDf8o6qUQ=; h=Received:Received:Received:MIME-Version:Content-Transfer-Encoding:Content-Type:X-Mailer:Date:From:To:Subject:X-Yahoo-Newman-Property; b=OtPTrnIoO/wElQDaRg8Ot8xzbb4U6j5Jl/tuK5i4eoUzvZdTo7rpqxxxcrRHSQ76SBOcIhJhV+b6Gg4RQHVYTe+KEdF9vdEui6/rIc2MPYeK6ibzUAzpIV4urX55VN9rFrGvmrnLN+yEE1X9ySEgCI43sZ2YHZQuYByx+r23Klo=
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws; s=arf; d=arf.mail.yahoo.com;
+	b=OaOVpaTwAl4bdI4KBmRoKJbEM7wZToYrSQRURAQPmiKk181qihkFRJasVlaBYKJQtt3agwPthTyQxpwQVUGuH0ZEgM3u49MExJ1/WUVnzORpCnSwOXt8s48zd7GEIT7hsT4eO5ctMNFBCiXtFaiNgyhZb6qF/+csins46dTrwO8=;
+Received: from [76.13.13.26] by n1.bullet.mail.ac4.yahoo.com with NNFMP; 20 Feb 2010 03:27:27 -0000
+Received: from [98.136.130.225] by t3.bullet.mail.ac4.yahoo.com with NNFMP; 20 Feb 2010 03:27:27 -0000
+Received: from [127.0.0.1] by vps101.asd.mail.ac4.yahoo.com with NNFMP; 20 Feb 2010 03:27:27 -0000
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: multipart/report; boundary="_----------=_12666364475330257"; report-type="feedback-report"
+X-Mailer: MIME::Lite 3.021 (F2.6; T1.27; A2.04; B3.05; Q3.03)
+Date: Fri, 19 Feb 2010 19:27:27 -0800
+From: Yahoo! Mail AntiSpam Feedback <feedback@arf.mail.yahoo.com>
+To: abuse@ganeshaspeaks.com
+Subject: FW:Free Guna Match Report
+X-Yahoo-Newman-Property: cfl
+
+This is a multi-part message in MIME format.
+
+--_----------=_12666364475330257
+MIME-Version: 1.0
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="US-ASCII"
+X-Mailer: MIME::Lite 3.021 (F2.6; T1.27; A2.04; B3.05; Q3.03)
+Date: Fri, 19 Feb 2010 19:27:27 -0800
+
+This is an email abuse report for an email message received from mail.ganeshaspeaks.com  on Thu, 18 Feb 2010 03:21:50 PST
+
+--_----------=_12666364475330257
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: message/feedback-report
+
+Feedback-Type: abuse
+User-Agent: Yahoo!-Mail-Feedback/1.0
+Version: 0.1
+Original-Mail-From: <predictions@mail.ganeshaspeaks.com>
+Original-Rcpt-To: giribhantana@yahoo.com
+Received-Date: Thu, 18 Feb 2010 03:21:50 PST
+Reported-Domain: mail.ganeshaspeaks.com
+Authentication-Results: 
+
+--_----------=_12666364475330257
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: message/rfc822
+
+From GaneshaSpeaks.com Thu Feb 18 11:22:53 2010
+X-Apparently-To: giribhantana@yahoo.com via 69.147.97.75; Thu, 18 Feb 2010 03:21:50 -0800
+Return-Path: <predictions@mail.ganeshaspeaks.com>
+X-YMailISG: hhLMlEsWLDuyS_k.ydlxiJobNXG5CISzB7a7FhMz.JPFNBYCG23b_5Xfwfh6P1.BhvOmhZ46FC0kAafRPUbdStXq4RCtCiU3EpGNpZJ7boXgvviAceXsOfGhycRkMt05d5SqsdfNogSL6Ec7FrpheHSsrM79bi_SdaJ2wlbCeIBvefv1tla1eSS1tV7jc1W0T0IRYpbXXI116_Oa0CTjfknGds6LhpThH9d.kjhGKkjRfLsylJ5lcxC60Rs4V67pJAoJVUpIMt65QNz.Gg202jkVMkVA8spmY.zvXZDAwHj.woJWwtU.glH_3dOcerdE8ChI8.Px.hloS2gr_rY0NF2Toh.UN4cYY9VQgfQBM0kb9pl_m7HfA2xQknpGnCiF88NO2pTZNgaBkXaGvuIRI9H1t7753mBuXUA.tLBavXWd8vQa
+X-Originating-IP: [72.55.174.173]
+Authentication-Results: mta127.mail.ac4.yahoo.com  from=mail.ganeshaspeaks.com; domainkeys=fail (bad sig); from=mail.ganeshaspeaks.com; dkim=pass (ok)
+Received: from 127.0.0.1  (EHLO mail.ganeshaspeaks.com) (72.55.174.173)
+  by mta127.mail.ac4.yahoo.com with SMTP; Thu, 18 Feb 2010 03:21:50 -0800
+DKIM-Signature: v=1; a=rsa-sha1; c=simple; d=mail.ganeshaspeaks.com; h=
+	message-id:date:from:to:subject:mime-version:content-type
+	:content-transfer-encoding; s=dkim1; bh=MT53XI5tJ4Vzo7CbCgWrp73F
+	xXU=; b=zCyVj7Ml+giOWKTVKbsIWn6eZWhM1i4316FxnuhQ2eBQlfTSM2zeCQcu
+	n++iyJNq
+Received: (qmail 13614 invoked by uid 502); 18 Feb 2010 11:21:49 -0000
+Comment: DomainKeys? See http://antispam.yahoo.com/domainkeys
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;
+  s=private; d=mail.ganeshaspeaks.com;
+  b=Dv/gFM8iLR/GMfgaSj2jgvAl+wuhcIR2T7G1hHP8a7EeJRCT0PxJpcybwNv2FJbJ;
+Received: by simscan 1.4.0 ppid: 13608, pid: 13611, t: 0.0069s
+         scanners: attach: 1.4.0
+Received: from unknown (HELO www.ganeshaspeaks.com) (predictions@mail.ganeshaspeaks.com@72.55.174.202)
+  by mail.ganeshaspeaks.com with ESMTPA; 18 Feb 2010 11:21:49 -0000
+Message-ID: <1433209315.1266492173961.JavaMail.root@www.ganeshaspeaks.com>
+Date: Thu, 18 Feb 2010 16:52:53 +0530 (IST)
+From: "GaneshaSpeaks.com" <predictions@mail.ganeshaspeaks.com>
+To: giribhantana@yahoo.com
+Subject: Free Guna Match Report
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Length: 34398
+
+
+<html>
+<head>
+<meta http-equiv=3D'Content-Type' content=3D'application/download'>
+<title>~Name~ Guna Match Making Report</title>
+<style type=3D'text/css'>
+body {
+=09margin-left: 0px;
+=09margin-top: 0px;
+=09margin-right: 0px;
+=09margin-bottom: 0px;
+}
+img{
+=09display:block;
+}
+table {
+=09border-collapse: collapse;
+}
+tr {
+=09margin-left: 0px;
+=09margin-top: 0px;
+=09margin-right: 0px;
+=09margin-bottom: 0px;
+=09padding: 0;
+}
+td {
+=09margin-left: 0px;
+=09margin-top: 0px;
+=09margin-right: 0px;
+=09margin-bottom: 0px;
+=09padding: 0;
+}
+..contentMailer {
+=09font-family: Verdana, sans-serif, Arial, Helvetica;
+=09font-size: 13px;
+=09line-height: 1.75;
+=09font-weight: normal;
+=09word-spacing: 0.25px;
+=09color: #000000;
+=09text-decoration: none;
+}
+..contentboldMailer {
+=09font-family: Verdana, sans-serif, Arial, Helvetica;
+=09font-size: 13px;
+=09line-height: 1.75;
+=09font-weight: bold;
+=09word-spacing: 0.25px;
+=09color: #000000;
+=09text-decoration: none;
+}
+..whitebold {
+=09font-family: Verdana, sans-serif, Arial, Helvetica;
+=09font-size: 13px;
+=09line-height: 1.75;
+=09font-weight: bold;
+=09word-spacing: 0.25px;
+=09color: #FFFFFF;
+=09text-decoration: none;
+}
+..linkCaption {
+=09font-family: Verdana, sans-serif, Arial, Helvetica;
+=09font-size: 13px;
+=09line-height: 1.75;
+=09font-weight: bold;
+=09word-spacing: 0.25px;
+=09color: #000000;
+=09text-decoration: none;
+}
+</style>
+</head>
+<body bgcolor=3D"#FDEAF6">
+<table width=3D"612" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" bgcolor=3D"#FFFFFF">
+=09<tr><td valign=3D"top" align=3D"center"><a href=3D"http://www.ganeshaspe=
+aks.com"><img src=3D"http://www.ganeshaspeaks.com/images/logogs.jpg" border=
+=3D"0"></a></td></tr>
+=09<tr><td align=3D"center"><img src =3D"http://www.ganeshaspeaks.com/image=
+s/freebieImages/GunaMatch/Guna-match-top.jpg" alt=3D"Guna Match Report"></t=
+d></tr>
+=09<tr><td align=3D"center"><img src =3D"http://www.ganeshaspeaks.com/image=
+s/freebieImages/GunaMatch/Personal-Detail.jpg" alt=3D"Personal Details"></t=
+d></tr>
+=09<tr><td><table width=3D"600" align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+=09=09=09=09<tr><td align=3D"center" class=3D"contentboldMailer" colspan=3D=
+"4">&nbsp;</td></tr>
+=09=09=09=09<tr><td class=3D"contentboldMailer" width=3D"20%">Name</td>
+=09=09=09=09=09<td class=3D"contentMailer" width=3D"30%">giri raj</td>
+=09=09=09=09=09<td class=3D"contentboldMailer" width=3D"20%">Gender</td>
+=09=09=09=09=09<td class=3D"contentMailer" width=3D"30%">Male</td></tr>
+=09=09=09=09<tr><td class=3D"contentboldMailer">Birth Date</td>
+=09=09=09=09=09<td class=3D"contentMailer">21 Feb, 1974</td>
+=09=09=09=09=09<td class=3D"contentboldMailer">Birth Time</td>
+=09=09=09=09=09<td class=3D"contentMailer">11:15<br/>DST Not Applicable</td=
+></tr>
+=09=09=09=09<tr><td class=3D"contentboldMailer">Birth Place</td>
+=09=09=09=09=09<td class=3D"contentMailer">ROYAL CHITWAN PARK</td>
+=09=09=09=09=09<td class=3D"contentboldMailer">Tithi</td>
+=09=09=09=09=09<td class=3D"contentMailer">Amavasya</td></tr>
+=09=09=09=09<tr><td class=3D"contentboldMailer">Karan</td>
+=09=09=09=09=09<td class=3D"contentMailer">Naag</td>
+=09=09=09=09=09<td class=3D"contentboldMailer">Yog</td>
+=09=09=09=09=09<td class=3D"contentMailer">Paridh</td></tr>
+=09=09=09</table></td></tr>=09=09=09
+=09<tr><td><table width=3D"600" align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+=09=09=09=09<tr><td align=3D"center" class=3D"contentboldMailer" colspan=3D=
+"4">&nbsp;</td></tr>
+=09=09=09=09<tr><td class=3D"contentboldMailer" width=3D"20%">Name</td>
+=09=09=09=09=09<td class=3D"contentMailer" width=3D"30%">ritu</td>
+=09=09=09=09=09<td class=3D"contentboldMailer" width=3D"20%">Gender</td>
+=09=09=09=09=09<td class=3D"contentMailer" width=3D"30%">Female</td></tr>
+=09=09=09=09<tr><td class=3D"contentboldMailer">Birth Date</td>
+=09=09=09=09=09<td class=3D"contentMailer">24 Jan, 1978</td>
+=09=09=09=09=09<td class=3D"contentboldMailer">Birth Time</td>
+=09=09=09=09=09<td class=3D"contentMailer">19:10<br/>DST Not Applicable</td=
+></tr>
+=09=09=09=09<tr><td class=3D"contentboldMailer">Birth Place</td>
+=09=09=09=09=09<td class=3D"contentMailer">PARSA SECOND-ORDER ADMINISTRATIV=
+E DIVISION</td>
+=09=09=09=09=09<td class=3D"contentboldMailer">Tithi</td>
+=09=09=09=09=09<td class=3D"contentMailer">Krishna Paksha Pratipada</td></t=
+r>
+=09=09=09=09<tr><td class=3D"contentboldMailer">Karan</td>
+=09=09=09=09=09<td class=3D"contentMailer">Kaulav</td>
+=09=09=09=09=09<td class=3D"contentboldMailer">Yog</td>
+=09=09=09=09=09<td class=3D"contentMailer">Priti</td></tr>
+=09=09=09</table></td></tr>
+=09=09=09
+=09<tr>
+=09=09<td>&nbsp;</td>
+=09</tr>
+=09<tr>
+=09=09<td>
+=09=09=09<table style=3D"border: 1px solid #cc1883;" align=3D"center" bgcol=
+or=3D"#ffffff" cellpadding=3D"0" cellspacing=3D"0" width=3D"580">=09
+=09=09=09<tr bgcolor=3D"#cc1883">
+=09=09=09=09=09<td width=3D"20">=09=09=09=09=09</td>
+=09=09=09=09=09<td class=3D"whitebold">&bull; Kundli Matching</td>
+=09=09=09=09=09<td width=3D"20">=09=09=09=09=09</td>
+=09=09=09  </tr>=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09<td width=3D"20">
+=09=09=09=09=09</td>
+=09=09=09=09=09<td class=3D"content">
+=09=09=09=09=09=09<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+=09=09=09=09=09=09<tr height=3D"4">
+=09=09=09=09=09=09=09=09<td colspan=3D"5"></td>
+=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09<tr class=3D"contentMailer">
+=09=09=09=09=09=09=09=09<td class=3D"content" align=3D"center"><a href=3D"h=
+ttp://www.ganeshaspeaks.com/orderplacement.jsp?product=3D14" target=3D"_bla=
+nk"><img src=3D"http://www.ganeshaspeaks.com/images/innerPageImages/inner_l=
+ove_kundli_match.jpg" width=3D"125" height=3D"125" border=3D"0"></a></td>
+=09=09=09=09=09=09=09=09<td width=3D"5">&nbsp;</td>
+=09=09=09=09=09=09=09=09<td class=3D"content" align=3D"justify">
+Delivery:On email with 72 hrs<br>
+Let the ancient system of kundli(birth chart) matching calculate the  gunas=
+(rating points) for you and your partner so as to allow you to  arrive at a=
+ conclusion of the "yes" and "no" question. Shani(saturn)  dosha and mangal=
+ dosha(problem) are also indicated.</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr align=3D"center">
+=09=09=09=09=09=09=09=09<td align=3D"center"><a href=3D"http://www.ganeshas=
+peaks.com/samples/love/kundli_matching.html" target=3D"_blank" class=3D"con=
+tentboldMailer">View Sample</a></td>=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09<td>&nbsp;</td>=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09<td align=3D"center"><a href=3D"http://www.ganeshas=
+peaks.com/orderplacement.jsp?product=3D14" target=3D"_blank"><img src=3D"ht=
+tp://www.ganeshaspeaks.com/images/innerPageImages/button_index_ordernow.jpg=
+" width=3D"125" height=3D"25" border=3D"0"></a></td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr height=3D"6">
+=09=09=09=09=09=09=09=09<td colspan=3D"5"></td>
+=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09</table>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td width=3D"20">
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</td>=09=09
+=09</tr>
+=09<tr>
+=09=09<td>&nbsp;</td>
+=09</tr>=09
+=09
+=09<tr><td align=3D"center"><img src =3D"http://www.ganeshaspeaks.com/image=
+s/freebieImages/GunaMatch/Male-Details.jpg" alt=3D"Male Details"></td></tr>
+=09<tr><td><table width=3D"600" align=3D"center" border=3D"0" style=3D"bord=
+er-collapse:collapse;border: 0px solid black;">
+=09=09=09=09<tr><td align=3D"center" class=3D"contentboldMailer">Niryan Lag=
+na Kundli</td></tr>
+=09=09=09=09<tr><td align=3D"center" valign=3D"top"><img name=3D"maleLagnaK=
+undli" src=3D"http://www.ganeshaspeaks.com/images/GunaMatchMakingImage/q340=
+2474/740121111500272358402005450_NreanLagnaKundli.jpg" alt=3D"Niryan Lagna =
+Kundli of giri raj"></td></tr>
+=09=09=09=09<tr><td align=3D"center" class=3D"contentboldMailer">Planetary =
+Details</td></tr>
+=09=09=09=09<tr><td><table width=3D"600" border=3D"1" align=3D"center" cell=
+spacing=3D"5" cellpadding=3D"5">
+=09=09=09=09=09=09=09<tr><td class=3D"contentboldMailer" align=3D"center" w=
+idth=3D"25%">Planet</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentboldMailer" align=3D"center" wi=
+dth=3D"25%">Rashi</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentboldMailer" align=3D"center" wi=
+dth=3D"25%">Degree</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentboldMailer" align=3D"center" wi=
+dth=3D"25%">Nakshtra</td></tr>
+=09=09=09=09=09=09=09<tr><td width=3D"20%" class=3D"contentMailer" align=3D=
+"center" >Lagna</td>
+=09=09=09=09=09=09=09=09<td width=3D"20%" class=3D"contentMailer" align=3D"=
+center" >Taurus</td>
+=09=09=09=09=09=09=09=09<td width=3D"20%" class=3D"contentMailer" align=3D"=
+center" >07:21:25</td>
+=09=09=09=09=09=09=09=09<td width=3D"40%" class=3D"contentMailer" align=3D"=
+center" >Krutika-31</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Sury=
+a</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Aquar=
+ius</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >08:43=
+:00</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Satbh=
+isha-1</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Chan=
+dra</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Capri=
+corn</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >27:32=
+:04</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Dhani=
+stha-2</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Mang=
+al</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Tauru=
+s</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >03:06=
+:48</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Kruti=
+ka-2</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Budh=
+</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Aquar=
+ius</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >15:55=
+:20</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Satbh=
+isha-3</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Guru=
+</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Aquar=
+ius</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >02:53=
+:28</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Dhani=
+stha-3</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Shuk=
+ra</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Capri=
+corn</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >03:31=
+:22</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Uttar=
+ashadha-3</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Shan=
+i</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Gemin=
+i</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >04:20=
+:01</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Mrugs=
+hirsh-4</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Rahu=
+</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Sagit=
+tarius</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >01:42=
+:34</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Mool-=
+1</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Ketu=
+</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Gemin=
+i</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >01:42=
+:34</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Mrugs=
+hirsh-3</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Hars=
+hal</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Libra=
+</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >04:06=
+:01</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Chitr=
+a-4</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Nept=
+une</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Scorp=
+io</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >16:01=
+:28</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Anura=
+dha-4</td></tr>
+=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center" >Plut=
+o</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Virgo=
+</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >12:50=
+:01</td>
+=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center" >Hast-=
+1</td></tr>
+=09=09=09=09=09=09</table></td></tr>
+=09=09=09</table></td></tr>
+=09<tr><td align=3D"center"><img src=3D"http://www.ganeshaspeaks.com/images=
+/freebieImages/GunaMatch/Bottom-Design.jpg" border=3D"0" height=3D"29" widt=
+h=3D"600"></td></tr>
+=09<tr><td align=3D"center" valign=3D"middle"><table width=3D"612" align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09<tr><td width=3D"204" align=3D"center" valign=3D"top"><a hre=
+f=3D"http://www.ganeshaspeaks.com/freehoroscopes/astroprofile.jsp" target=
+=3D"_new" class=3D"linkCaption" alt=3D"free astro profile"><img src=3D"http=
+://www.ganeshaspeaks.com/images/answer_mail_ad/freebies/productimage/astrop=
+rofile.gif" alt=3D"" border=3D"0"><br>Free Astro Profile</a></td>
+=09=09=09=09=09    =09<td width=3D"204" align=3D"center" valign=3D"top"><a =
+href=3D"http://www.ganeshaspeaks.com/freehoroscopes/birthhoroscope.jsp" tar=
+get=3D"_new" class=3D"linkCaption" alt=3D"free birth horoscope"><img src=3D=
+"http://www.ganeshaspeaks.com/images/answer_mail_ad/freebies/productimage/b=
+irthhoroscope.gif" alt=3D"" border=3D"0"><br>Free Birth Horoscope</a></td>
+=09=09=09=09=09=09<td width=3D"204" align=3D"center" valign=3D"top"><a href=
+=3D"http://www.ganeshaspeaks.com/freehoroscopes/lovehoroscope.jsp" target=
+=3D"_new" class=3D"linkCaption" alt=3D"free love horoscope"><img src=3D"htt=
+p://www.ganeshaspeaks.com/images/answer_mail_ad/freebies/productimage/loveh=
+oroscope.gif" alt=3D"" border=3D"0"><br>Free Love Horoscope</a></td>
+=09=09=09=09</table></td></tr>
+=09<tr><td align=3D"center"><img src =3D"http://www.ganeshaspeaks.com/image=
+s/freebieImages/GunaMatch/Female-Details.jpg" alt=3D"Female Details"></td><=
+/tr>
+=09<tr><td align=3D"center" class=3D"contentboldMailer">Niryan Lagna Kundli=
+</td></tr>
+=09<tr><td align=3D"center" valign=3D"top"><img name=3D"femaleLagnaKundli" =
+src=3D"http://www.ganeshaspeaks.com/images/GunaMatchMakingImage/q3402474/78=
+0024191000272208405005450_NreanLagnaKundli.jpg" alt=3D"Niryan Lagna Kundli =
+of ritu"></td></tr>
+=09<tr><td align=3D"center" class=3D"contentboldMailer">Planetary Details</=
+td></tr>
+=09<tr><td align=3D"center" valign=3D"top"><table width=3D"550" border=3D"1=
+" align=3D"center" cellspacing=3D"5" cellpadding=3D"5">
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentboldMailer" width=3D"25%" a=
+lign=3D"center">Planet</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentboldMailer" width=3D"25%" al=
+ign=3D"center">Rashi</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentboldMailer" width=3D"25%" al=
+ign=3D"center">Degree</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentboldMailer" width=3D"25%" al=
+ign=3D"center">Nakshtra</td></tr>
+=09=09=09=09=09=09=09=09<tr><td width=3D"25%" class=3D"contentMailer" align=
+=3D"center">Lagna</td>
+=09=09=09=09=09=09=09=09=09<td width=3D"25%" class=3D"contentMailer" align=
+=3D"center">Leo</td>
+=09=09=09=09=09=09=09=09=09<td width=3D"25%" class=3D"contentMailer" align=
+=3D"center">00:47:57</td>
+=09=09=09=09=09=09=09=09=09<td width=3D"25%" class=3D"contentMailer" align=
+=3D"center">Magha-01</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Su=
+rya</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Cap=
+ricorn</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">10:=
+39:06</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Shr=
+avan-1</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Ch=
+andra</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Can=
+cer</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">13:=
+12:58</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Pus=
+hya-3</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Ma=
+ngal</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Can=
+cer</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">07:=
+03:07</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Pus=
+hya-2</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Bu=
+dh</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Sag=
+ittarius</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">20:=
+07:22</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Pur=
+vashadha-3</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Gu=
+ru</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Gem=
+ini</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">03:=
+41:12</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Mru=
+gshirsh-4</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Sh=
+ukra</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Cap=
+ricorn</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">11:=
+12:28</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Shr=
+avan-1</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Sh=
+ani</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Leo=
+</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">05:=
+19:44</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Mag=
+ha-2</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Ra=
+hu</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Vir=
+go</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">15:=
+45:18</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Has=
+t-2</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Ke=
+tu</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Pis=
+ces</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">15:=
+45:18</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Utt=
+arabhadrapad-4</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Ha=
+rshal</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Lib=
+ra</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">22:=
+32:32</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Vis=
+hakha-1</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Ne=
+ptune</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Sco=
+rpio</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">23:=
+57:06</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Jye=
+stha-3</td></tr>
+=09=09=09=09=09=09=09=09<tr><td class=3D"contentMailer" align=3D"center">Pl=
+uto</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Vir=
+go</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">23:=
+07:58</td>
+=09=09=09=09=09=09=09=09=09<td class=3D"contentMailer" align=3D"center">Has=
+t-4</td></tr>
+=09=09=09=09=09=09=09</table></td></tr>
+=09<tr><td align=3D"center"><img src=3D"http://www.ganeshaspeaks.com/images=
+/freebieImages/GunaMatch/Bottom-Design.jpg" border=3D"0" height=3D"29" widt=
+h=3D"612"></td></tr>
+=09<tr>
+=09=09<td align=3D"center" valign=3D"middle">
+=09=09=09=09<table width=3D"612" align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+=09=09=09=09=09<tr><td width=3D"204" align=3D"center" valign=3D"middle"><a =
+href=3D"http://www.ganeshaspeaks.com/freehoroscopes/dailyhoroscope.jsp" tar=
+get=3D"_new" class=3D"linkCaption" alt=3D"free daily horoscope"><img src=3D=
+"http://www.ganeshaspeaks.com/images/answer_mail_ad/freebies/productimage/d=
+ailyhoroscope.gif" alt=3D"" border=3D"0"><br>Free Daily Horoscope</a></td>
+=09=09=09=09=09=09<td width=3D"204" align=3D"center" valign=3D"top"><a href=
+=3D"http://www.ganeshaspeaks.com/freehoroscopes/sadesati.jsp" target=3D"_ne=
+w" class=3D"linkCaption" alt=3D"free sade sati report"><img src=3D"http://w=
+ww.ganeshaspeaks.com/images/answer_mail_ad/freebies/productimage/sadesati.g=
+if" alt=3D"" border=3D"0"><br>Free Sade Sati Report</a></td>
+=09=09=09=09=09=09<td width=3D"204" align=3D"center" valign=3D"top"><a href=
+=3D"http://www.ganeshaspeaks.com/freehoroscopes/shanidosha.jsp" target=3D"_=
+new" class=3D"linkCaption" alt=3D"free shani dosha report"><img src=3D"http=
+://www.ganeshaspeaks.com/images/answer_mail_ad/freebies/productimage/shanid=
+osha.gif" alt=3D"" border=3D"0"><br>Free Shani Dosha Report</a></td>
+=09=09=09=09</table>
+=09=09</td>
+=09</tr>
+=09<tr>
+=09=09<td align=3D"center" width=3D"612">
+=09=09=09<img src =3D"http://www.ganeshaspeaks.com/images/freebieImages/Gun=
+aMatch/Match-Details.jpg" alt=3D"Match Details">
+=09=09=09</td>
+=09=09</tr>
+=09<tr>
+=09=09<td align=3D"center">
+=09=09=09<table border=3D"1" cellspacing=3D"0" cellpadding=3D"0"  width=3D"=
+600" align=3D"center">
+=09=09=09=09<tr><td class=3D"contentboldMailer" width=3D"50" ></td>
+=09=09=09=09=09<td class=3D"contentboldMailer" width=3D"200" align=3D"cente=
+r">giri raj's Details</td>
+=09=09=09=09=09<td class=3D"contentboldMailer" width=3D"200" align=3D"cente=
+r">ritu's Details</td>
+=09=09=09=09=09<td class=3D"contentboldMailer" width=3D"100" align=3D"cente=
+r">Max. Guna</td>
+=09=09=09=09=09<td class=3D"contentboldMailer" width=3D"50" align=3D"center=
+">Act. Guna</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"contentboldMailer">Varna</td>
+=09=09=09=09=09<td class=3D"contentMailer">Vaishya</td>
+=09=09=09=09=09<td class=3D"contentMailer">Brahmin</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">1</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">0.00</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"contentboldMailer" >Vashya</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Kit</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Jalchar</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">2</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">1.00</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"contentboldMailer" >Tara</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Shubh</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Ashubh</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">3</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">1.50</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"contentboldMailer" >Yoni</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Simha</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Ashubh</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">4</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">1.00</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"contentboldMailer" >Grah Maitri</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Shani</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Chandra</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">5</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">0.50</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"contentboldMailer" >Gana</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Rakshas</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Dev</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">6</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">1.00</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"contentboldMailer" >Bhrukut</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Dhanistha</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Pushya</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">7</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">6.00</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"contentboldMailer" >Nadi</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Madhya</td>
+=09=09=09=09=09<td class=3D"contentMailer" >Madhya</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">8</td>
+=09=09=09=09=09<td class=3D"contentMailer" align=3D"right">0.00</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"contentMailer" >&nbsp;</td>
+=09=09=09=09=09<td class=3D"contentMailer" >&nbsp;</td>
+=09=09=09=09=09<td class=3D"contentboldMailer">Total :</td>
+=09=09=09=09=09<td class=3D"contentboldMailer" align=3D"right">36</td>
+=09=09=09=09=09<td class=3D"contentboldMailer" align=3D"right">11.00</td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td colspan=3D"5" align=3D"center" class=3D"contentboldMaile=
+r">
+=09=09=09=09=09=09There is mangal dosha in both, giri raj and ritu which ge=
+ts neutralized, but guna matching is below the recommended level, hence the=
+ match is not recommended.
+=09=09=09=09=09</td>
+=09=09=09=09</tr>=09=09=09
+=09=09=09=09</table>=09
+=09=09</td>
+=09</tr>=09=09=09=09=09=09=09=09
+=09<tr>
+=09=09<td align=3Dcenter>
+=09=09=09<table border=3D0 width=3D612>
+=09=09=09<tr>
+=09=09=09=09<td>
+=09=09=09=09=09<p class=3D"contentboldMailer" align=3D"justify"><a href=3D"=
+http://www.ganeshaspeaks.com/orderplacement.jsp?product=3D14" class=3D"link=
+Caption"><font color=3D"RED" style=3D"font: bold">PLEASE NOTE THAT THE ABOV=
+E MENTIONED GUNA MATCHING IS A MATHEMATICAL OUTCOME OF THE ALGORITHMS PRESC=
+RIBED IN ANCIENT ASTROLOGY TEXTS COMPILED BY THE SAGES. THE FINAL VERDICT S=
+HOULD BE TAKEN ONLY IN CONSULTATION WITH AN ASTROLOGER AND IT MAY BE DIFFER=
+ENT FROM THE ABOVE MENTIONED RESULTS. EXPERT ADVICE REGARDING KUNDLI MATCHI=
+NG CAN BE OBTAINED FROM BEJAN DARUWALLA'S GANESHASPEAKS TEAM BY CLICKING HE=
+RE</font></a></p>
+=09=09=09=09</td>=09
+=09=09=09</tr>
+=09=09=09</table>
+=09=09</td>
+=09</tr>=09=09=09=09=09=09=09
+=09<tr><td align=3D"center"><img src=3D"http://www.ganeshaspeaks.com/images=
+/freebieImages/GunaMatch/Bottom-Design.jpg" border=3D"0" height=3D"29" widt=
+h=3D"600"></td></tr>
+=09<tr><td align=3D"center" valign=3D"middle"><table width=3D"612" align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09<tr><td width=3D"153" align=3D"center" valign=3D"top"><a hre=
+f=3D"http://www.ganeshaspeaks.com/freehoroscopes/sunsigncompatibility.jsp" =
+target=3D"_new" class=3D"linkCaption" alt=3D"free sun sign compatibility"><=
+img src=3D"http://www.ganeshaspeaks.com/images/answer_mail_ad/freebies/prod=
+uctimage/sunsigncompatability.gif" alt=3D"" border=3D"0"><br>Free Sun Sign =
+Compatibility</a></td>
+=09=09=09=09=09=09<td width=3D"153" align=3D"center" valign=3D"top"><a href=
+=3D"http://www.ganeshaspeaks.com/freehoroscopes/moonsign.jsp" target=3D"_ne=
+w" class=3D"linkCaption" alt=3D"free moon sign report"><img src=3D"http://w=
+ww.ganeshaspeaks.com/images/answer_mail_ad/freebies/productimage/moonsign.g=
+if" alt=3D"" border=3D"0"><br>Free Moon Sign Report</a></td>
+=09=09=09=09=09=09<td width=3D"153" align=3D"center" valign=3D"top"><a href=
+=3D"http://www.ganeshaspeaks.com/freehoroscopes/mangaldosha.jsp" target=3D"=
+_new" class=3D"linkCaption" alt=3D"free mangal dosha report"><img src=3D"ht=
+tp://www.ganeshaspeaks.com/images/answer_mail_ad/freebies/productimage/mang=
+aldosha.gif" alt=3D"" border=3D"0"><br>Free Mangal Dosha Report</a></td>
+=09=09=09=09=09=09<td width=3D"153" align=3D"center" valign=3D"top"><a href=
+=3D"http://www.ganeshaspeaks.com/freehoroscopes/birthstar.jsp" target=3D"_n=
+ew" class=3D"linkCaption" alt=3D"free birth star report"><img src=3D"http:/=
+/www.ganeshaspeaks.com/images/answer_mail_ad/freebies/productimage/birthsta=
+r.gif" alt=3D"" border=3D"0"><br>Free Birth Star Report</a></td>
+=09=09=09=09</table></td></tr>
+=09=09=09=09
+=09<tr>
+=09=09<td>&nbsp;</td>
+=09</tr>
+=09<tr>
+=09=09<td>
+=09=09=09<table style=3D"border: 1px solid #cc1883;" align=3D"center" bgcol=
+or=3D"#ffffff" cellpadding=3D"0" cellspacing=3D"0" width=3D"580">=09
+=09=09=09<tr bgcolor=3D"#cc1883">
+=09=09=09=09=09<td width=3D"20">=09=09=09=09=09</td>
+=09=09=09=09=09<td class=3D"whitebold">&bull; Kundli Matching</td>
+=09=09=09=09=09<td width=3D"20">=09=09=09=09=09</td>
+=09=09=09  </tr>=09=09=09
+=09=09=09=09<tr>
+=09=09=09=09<td width=3D"20">
+=09=09=09=09=09</td>
+=09=09=09=09=09<td class=3D"content">
+=09=09=09=09=09=09<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+=09=09=09=09=09=09<tr height=3D"4">
+=09=09=09=09=09=09=09=09<td colspan=3D"5"></td>
+=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09<tr class=3D"contentMailer">
+=09=09=09=09=09=09=09=09<td class=3D"content" align=3D"center"><a href=3D"h=
+ttp://www.ganeshaspeaks.com/orderplacement.jsp?product=3D14" target=3D"_bla=
+nk"><img src=3D"http://www.ganeshaspeaks.com/images/innerPageImages/inner_l=
+ove_kundli_match.jpg" width=3D"125" height=3D"125" border=3D"0"></a></td>
+=09=09=09=09=09=09=09=09<td width=3D"5">&nbsp;</td>
+=09=09=09=09=09=09=09=09<td class=3D"content" align=3D"justify">
+Delivery:On email with 72 hrs<br>
+Let the ancient system of kundli(birth chart) matching calculate the  gunas=
+(rating points) for you and your partner so as to allow you to  arrive at a=
+ conclusion of the "yes" and "no" question. Shani(saturn)  dosha and mangal=
+ dosha(problem) are also indicated.</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr align=3D"center">
+=09=09=09=09=09=09=09=09<td align=3D"center"><a href=3D"http://www.ganeshas=
+peaks.com/samples/love/kundli_matching.html" target=3D"_blank" class=3D"con=
+tentboldMailer">View Sample</a></td>=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09<td>&nbsp;</td>=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09<td align=3D"center"><a href=3D"http://www.ganeshas=
+peaks.com/orderplacement.jsp?product=3D14" target=3D"_blank"><img src=3D"ht=
+tp://www.ganeshaspeaks.com/images/innerPageImages/button_index_ordernow.jpg=
+" width=3D"125" height=3D"25" border=3D"0"></a></td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr height=3D"6">
+=09=09=09=09=09=09=09=09<td colspan=3D"5"></td>
+=09=09=09=09=09=09=09</tr>=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09</table>
+=09=09=09=09=09</td>
+=09=09=09=09=09<td width=3D"20">
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</td>=09=09
+=09</tr>
+=09<tr>
+=09=09<td>&nbsp;</td>
+=09</tr>
+=09<tr><td align=3D"center"><img src =3D"http://www.ganeshaspeaks.com/image=
+s/freebieImages/GunaMatch/Disclaimer.jpg" alt=3D"Disclaimer"></td></tr>
+=09<tr>
+=09=09<td align=3D"center">
+=09=09=09<table width=3D612 border=3D0>
+=09=09=09=09<tr>
+=09=09=09=09=09<td>=09=09=09
+=09=09=09=09=09=09<p class=3D"contentMailer" align=3D"justify">Bejan Daruwa=
+lla and his GaneshaSpeaks Team want to make it absolutely clear that no dis=
+cipline is absolutely perfect. Hence, any prediction that you receive from =
+us is not to be considered as a substitute for advice, program, or treatmen=
+t that you would normally receive from a licensed professional such as a la=
+wyer, doctor, psychiatrist, or financial advisor. GaneshaSpeaks provide no =
+guarantees, implied warranties, or assurances of any kind, and will not be =
+responsible for any interpretation made or use by the recipient of the info=
+rmation and data mentioned above. By the Grace of Ganesha we can only try t=
+o give our best and hope that our efforts will improve the life of our cust=
+omers.</p>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09</td>
+=09</tr>
+=09<tr><td align=3D"center"><img src=3D"http://www.ganeshaspeaks.com/images=
+/freebieImages/GunaMatch/Bottom-Design.jpg" border=3D"0" height=3D"29" widt=
+h=3D"600"></td></tr>
+</table>
+</body>
+</html>
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=00=
+=00=00
+--_----------=_12666364475330257--
+

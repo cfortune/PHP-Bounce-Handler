@@ -1,0 +1,119 @@
+
+                                                                                                                                                                                                                                                               
+Delivered-To: account@gmail.com
+Received: by 10.86.62.16 with SMTP id k16cs115964fga;
+        Sun, 5 Apr 2009 11:51:13 -0700 (PDT)
+Received: by 10.210.56.7 with SMTP id e7mr433402eba.98.1238957473780;
+        Sun, 05 Apr 2009 11:51:13 -0700 (PDT)
+Return-Path: <>
+Received: from landfill.emea.compuware.com (mx5.emea.compuware.com [195.137.231.34])
+        by mx.google.com with ESMTP id 6si4075678ewy.6.2009.04.05.11.51.13;
+        Sun, 05 Apr 2009 11:51:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of landfill.emea.compuware.com designates 195.137.231.34 as permitted sender) client-ip=195.137.231.34;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of landfill.emea.compuware.com designates 195.137.231.34 as permitted sender) smtp.mail=
+Received: from emea-ams-ex009.emea.cpwr.corp (unknown [172.16.17.63])
+	by landfill.emea.compuware.com (Postfix) with ESMTP id 55CE1310B7
+	for <account@gmail.com>; Sun,  5 Apr 2009 18:51:13 +0000 (GMT)
+From: postmaster@compuware.com
+To: account@gmail.com
+Date: Sun, 5 Apr 2009 20:51:13 +0200
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="9B095B5ADSN=_01C987E3050D8C560001953Eemea?ams?ex009.e"
+X-DSNContext: 335a7efd - 4523 - 00000001 - 80040546
+Message-ID: <O1P4boZXl0001206b@emea-ams-ex009.emea.cpwr.corp>
+Subject: Delivery Status Notification (Failure)
+
+This is a MIME-formatted message.  
+Portions of this message may be unreadable without a MIME-capable mail program.
+
+--9B095B5ADSN=_01C987E3050D8C560001953Eemea?ams?ex009.e
+Content-Type: text/plain; charset=unicode-1-1-utf-7
+
+This is an automatically generated Delivery Status Notification.
+
+Delivery to the following recipients failed.
+
+       Petter.Gulbrandsen@no.compuware.com
+
+
+
+
+--9B095B5ADSN=_01C987E3050D8C560001953Eemea?ams?ex009.e
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;emea-ams-ex009.emea.cpwr.corp
+Received-From-MTA: dns;mx4.emea.compuware.com
+Arrival-Date: Sun, 5 Apr 2009 20:51:12 +0200
+
+Final-Recipient: rfc822;Petter.Gulbrandsen@no.compuware.com
+Action: failed
+Status: 5.1.1
+
+--9B095B5ADSN=_01C987E3050D8C560001953Eemea?ams?ex009.e
+Content-Type: message/rfc822
+
+Received: from mx4.emea.compuware.com ([172.16.16.87]) by emea-ams-ex009.emea.cpwr.corp with Microsoft SMTPSVC(6.0.3790.3959);
+	 Sun, 5 Apr 2009 20:51:12 +0200
+Received: from mx4.emea.compuware.com (localhost.emea.cpwr.corp [127.0.0.1])
+	by int-paperbin.emea.cpwr.corp (Postfix) with ESMTP id 8B1119003A
+	for <Petter.Gulbrandsen@no.compuware.com>; Sun,  5 Apr 2009 18:51:09 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.1.7-cpwr (2006-10-05) on 
+	paperbin.emea.cpwr.corp
+X-Spam-Level: *
+X-Spam-Status: No, score=1.1 required=5.0 tests=HTML_MESSAGE,
+	HTML_SHORT_LENGTH autolearn=disabled version=3.1.7-cpwr
+X-Spam-Report: 
+	*  0.6 HTML_SHORT_LENGTH BODY: HTML is extremely short
+	*  0.5 HTML_MESSAGE BODY: HTML included in message
+Received-SPF: pass (mx4.emea.compuware.com: domain of gmail.com designates 72.14.220.154 as permitted sender) client-ip=72.14.220.154; envelope-from=account@gmail.com; helo=fg-out-1718.google.com;
+Received: from fg-out-1718.google.com (fg-out-1718.google.com [72.14.220.154])
+	by mx4.emea.compuware.com (Postfix) with ESMTP id 82AC98FEF3
+	for <Petter.Gulbrandsen@no.compuware.com>; Sun,  5 Apr 2009 18:51:09 +0000 (UTC)
+Received: by fg-out-1718.google.com with SMTP id 19so785062fgg.15
+        for <Petter.Gulbrandsen@no.compuware.com>; Sun, 05 Apr 2009 11:51:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:date:message-id:subject
+         :from:to:content-type;
+        bh=1TNYLtKu1czWz2NnFQ2aqDbB0AcmbTgrpfGO+DF1CqU=;
+        b=EgK9ou/H4NpJxm681hywYK1/VP0XICSs08P3LF545RDtXohnPQrS47wvCuL6cl5GxK
+         mjRxyEti8G3C7xFpqFg1wUH8jmLilWHnhLKQ4yuULvQvRQhG6ps21Nn2s40/FTm2ZFCq
+         3xCzo7TGDoAvnSlEhRhFzI4JoZv91XW2G7yCE=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        b=UjXRgDRLENKAIkKCCv4PQXVRG22gE7VFVNwKW5sxEyElQ4AE3CdrzU6Eht2snM1+f4
+         NPsUL/D0o47tDAWzLBjsxRNui2rbPI1XMzJZfb4OaHQ8ORKtXnI5QZ9xdGbkxQUoJQJw
+         5Fw32AsyoIKHIH6yBUwFXHhuK06fWnis29/e0=
+MIME-Version: 1.0
+Received: by 10.86.31.18 with SMTP id e18mr2435668fge.72.1238956978868; Sun, 
+	05 Apr 2009 11:42:58 -0700 (PDT)
+Date: Sun, 5 Apr 2009 20:42:58 +0200
+Message-ID: <63267c0f0904051142s4a841b18qb1c702a94a3257be@mail.gmail.com>
+Subject: This will bounce
+From: "Gmail Account" <account@gmail.com>
+To: Petter.Gulbrandsen@no.compuware.com, inger.lise.hole@adecco.no
+Content-Type: multipart/alternative; boundary=000e0cd247509e11b20466d326c9
+Return-Path: account@gmail.com
+X-OriginalArrivalTime: 05 Apr 2009 18:51:12.0892 (UTC) FILETIME=[7DE12BC0:01C9B61F]
+
+--000e0cd247509e11b20466d326c9
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Regards,
+Gmail Account
+
+--000e0cd247509e11b20466d326c9
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Regards,
+<div><br></div><div>Gmail Account</div>
+
+--000e0cd247509e11b20466d326c9--
+
+
+
+--9B095B5ADSN=_01C987E3050D8C560001953Eemea?ams?ex009.e--

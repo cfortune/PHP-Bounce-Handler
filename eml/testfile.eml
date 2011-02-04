@@ -1,0 +1,105 @@
+Return-Path: <thomas.seifert@mysnip.de>
+Delivered-To: bouncemail@mysnip.de
+Received: from localhost (mail1.mysnip.de [127.0.0.1])
+	by mail1.mysnip.de (Postfix) with ESMTP id EEF3514015E56
+	for <bouncemail@mysnip.de>; Wed, 27 Jun 2007 23:31:24 +0200 (CEST)
+X-Virus-Scanned: amavisd-new at mysnip.de
+Received: from mail1.mysnip.de ([127.0.0.1])
+	by localhost (mail1.mysnip.de [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id EeO14FZ3CSlD for <bouncemail@mysnip.de>;
+	Wed, 27 Jun 2007 23:31:24 +0200 (CEST)
+Received: from [192.168.1.18] (A6258.a.strato-dslnet.de [89.62.98.88])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mail1.mysnip.de (Postfix) with ESMTP id 10CB814015E58
+	for <bouncemail@mysnip.de>; Wed, 27 Jun 2007 23:31:23 +0200 (CEST)
+Resent-From: Thomas Seifert <thomas.seifert@mysnip.de>
+Resent-To: bouncemail@mysnip.de
+Resent-Date: Wed, 27 Jun 2007 23:31:21 +0200
+Resent-Message-Id: <4682D729.6020006@mysnip.de>
+Resent-User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.8.1.4) Gecko/20070604 Thunderbird/2.0.0.4
+Received: from localhost (mail1.mysnip.de [127.0.0.1])
+	by mail1.mysnip.de (Postfix) with ESMTP id DD17D14015E57
+	for <wwwmail@mysnip.de>; Wed, 27 Jun 2007 22:10:52 +0200 (CEST)
+X-Virus-Scanned: amavisd-new at mysnip.de
+Received: from mail1.mysnip.de ([127.0.0.1])
+	by localhost (mail1.mysnip.de [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id Mqc0v55gZp8K for <wwwmail@mysnip.de>;
+	Wed, 27 Jun 2007 22:10:52 +0200 (CEST)
+Received: from web1.mysnip.de (web1.mysnip.de [87.237.123.24])
+	by mail1.mysnip.de (Postfix) with ESMTP id 43FC014015E56
+	for <wwwmail@mysnip.de>; Wed, 27 Jun 2007 22:10:52 +0200 (CEST)
+Received: by web1.mysnip.de (Postfix)
+	id 183982C0475D0; Wed, 27 Jun 2007 22:10:52 +0200 (CEST)
+Date: Wed, 27 Jun 2007 22:10:52 +0200 (CEST)
+From: MAILER-DAEMON@web1.mysnip.de (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: wwwmail@mysnip.de
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="91F2C2C03486B.1182975052/web1.mysnip.de"
+Message-Id: <20070627201052.183982C0475D0@web1.mysnip.de>
+
+This is a MIME-encapsulated message.
+
+--91F2C2C03486B.1182975052/web1.mysnip.de
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host web1.mysnip.de.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<leopold_skryd@mail.ru>: host mxs.mail.ru[194.67.23.20] said: 550 Access from
+    ip address 87.237.123.24 blocked. Visit
+    http://win.mail.ru/cgi-bin/support_bl?ip=87.237.123.24 (in reply to RCPT TO
+    command)
+
+--91F2C2C03486B.1182975052/web1.mysnip.de
+Content-Description: Delivery report
+
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; web1.mysnip.de
+X-Postfix-Queue-ID: 91F2C2C03486B
+X-Postfix-Sender: rfc822; wwwmail@mysnip.de
+Arrival-Date: Wed, 27 Jun 2007 22:10:49 +0200 (CEST)
+
+Final-Recipient: rfc822; leopold_skryd@mail.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mxs.mail.ru
+Diagnostic-Code: smtp; 550 Access from ip address 87.237.123.24 blocked. Visit
+    http://win.mail.ru/cgi-bin/support_bl?ip=87.237.123.24
+
+--91F2C2C03486B.1182975052/web1.mysnip.de
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Received: by web1.mysnip.de (Postfix, from userid 1000)
+	id 91F2C2C03486B; Wed, 27 Jun 2007 22:10:49 +0200 (CEST)
+To: rusculture <leopold_skryd@mail.ru>
+Subject: Registration Confirmation
+From: webmaster@myphorum.de
+Message-Id: <20070627201049.91F2C2C03486B@web1.mysnip.de>
+Date: Wed, 27 Jun 2007 22:10:49 +0200 (CEST)
+
+Herzlichen Dank, das Sie sich registriert haben. Nachstehend werden Sie ihren 
+Benutzernamen und ihr tempor&auml;res Passwort finden.  Gehen Sie bitte zu
+http://dolecek.myphorum.de/XBR/login.php und melden Sie sich an.:
+
+  Benutzername: rusculture
+  Passwort:  ecaec5
+
+&Auml;ndern Sie bitte beim Anmelden das Passwort.
+
+--91F2C2C03486B.1182975052/web1.mysnip.de--

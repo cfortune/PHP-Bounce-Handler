@@ -1,0 +1,40 @@
+Return-path: <>
+Envelope-to: ar1@ar1.outmailing.com
+Delivery-date: Mon, 30 Oct 2006 15:43:12 -0300
+Received: from kilderkin.sout.netline.net.uk ([213.40.66.40])
+	by ar2.outmailing.net with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.60)
+	id 1Gec6J-0003di-Lk
+	for ar1@ar1.outmailing.com; Mon, 30 Oct 2006 15:43:12 -0300
+Received: from jug.sin.netline.net.uk ([213.40.66.35])
+	by kilderkin.sout.netline.net.uk with esmtp (Exim 4.63 (FreeBSD))
+	id 1Gec8w-0004Ab-Tz
+	for ar1@ar1.outmailing.com; Mon, 30 Oct 2006 18:45:55 +0000
+Received: from mail by jug.sin.netline.net.uk with local (Exim 4.62)
+	id 1Gec8w-0004OC-TL
+	for ar1@ar1.outmailing.com; Mon, 30 Oct 2006 18:45:54 +0000
+X-Failed-Recipients: sonia-chandra@supanet.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@supanet.net.uk>
+To: ar1@ar1.outmailing.com
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1Gec8w-0004OC-TL@jug.sin.netline.net.uk>
+Date: Mon, 30 Oct 2006 18:45:54 +0000
+X-Supanet-AV-out: Mail Scanned as virus free, although you should still use a local virus scanner.
+X-Supanet: This was sent via a www.supanet.com mail server
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  sonia-chandra@supanet.com
+    mailbox is full: retry timeout exceeded
+
+
+__________ Información de NOD32, revisión 1.1856 (20061106) __________
+
+Este mensaje ha sido analizado con  NOD32 antivirus system
+http://www.nod32.com
+
+

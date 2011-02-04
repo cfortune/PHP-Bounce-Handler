@@ -1,0 +1,169 @@
+Return-path: <>
+Envelope-to: ar1@ar1.outmailing.com
+Delivery-date: Mon, 30 Oct 2006 15:49:42 -0300
+Received: from mail by ar2.outmailing.net with local (Exim 4.60)
+	id 1GecCc-0003v8-DV
+	for ar1@ar1.outmailing.com; Mon, 30 Oct 2006 15:49:42 -0300
+X-Failed-Recipients: anitadechar@hotamail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@ar2.outmailing.net>
+To: ar1@ar1.outmailing.com
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1GecCc-0003v8-DV@ar2.outmailing.net>
+Date: Mon, 30 Oct 2006 15:49:42 -0300
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  anitadechar@hotamail.com
+    Unrouteable address
+
+------ This is a copy of the message, including all the headers. ------
+
+Return-path: <ar1@ar1.outmailing.com>
+Received: from apache by ar2.outmailing.net with local (Exim 4.60)
+	(envelope-from <ar1@ar1.outmailing.com>)
+	id 1GecCb-0003uy-Dr
+	for anitadechar@hotamail.com; Mon, 30 Oct 2006 15:49:41 -0300
+To: anitadechar@hotamail.com
+Subject: Eventos de La semana
+Received: from mailer 
+	by ar1.outmailing.com with HTTP (Mail);
+	Mon, 30 Oct 2006 15:49:41 -0300
+Date: Mon, 30 Oct 2006 15:49:41 -0300
+From: Green Land Irish Pub <noreply@dattadream.com.ar>
+Reply-to: fedecheme@hotmail.com
+Message-ID: <2207490767fb7d0cded8ef919eae80ea@ar1.outmailing.com>
+X-Priority: 3
+X-Mailer: AC Mailer
+X-mid: YW5pdGFkZWNoYXJAaG90YW1haWwuY29tICwgbTcyOA==
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/html; charset="utf-8"
+
+<? mail($para, $tema, $mensaje, "Content-Type: text/htmlnFrom: Hotmail<feddecheme@hotmail.com.ar >
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><HTML 
+xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:st1 = 
+"urn:schemas-microsoft-com:office:smarttags"><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR>
+<META content="Microsoft Word 10" name=Originator><LINK 
+href="cid:filelist.xml@01C43E04.E4F7E8A0" rel=File-List><LINK 
+href="cid:editdata.mso@01C43E04.E4F7E8A0" rel=Edit-Time-Data><!--[if !mso]>
+<STYLE>v:unknown {
+ BEHAVIOR: url(#default#VML)
+}
+o:unknown {
+ BEHAVIOR: url(#default#VML)
+}
+w:unknown {
+ BEHAVIOR: url(#default#VML)
+}
+.shape {
+ BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><o:SmartTagType 
+namespaceuri="urn:schemas-microsoft-com:office:smarttags" 
+name="PersonName"></o:SmartTagType><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:EnvelopeVis/>
+  <w:BrowserLevel>MicrosoftInternetExplorer5</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]>
+<STYLE>
+st1:*{behavior:url(#default#ieooui) }
+</STYLE>
+<![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */ 
+ table.MsoNormalTable
+ {mso-style-name:"Tabla normal";
+ mso-tstyle-rowband-size:0;
+ mso-tstyle-colband-size:0;
+ mso-style-noshow:yes;
+ mso-style-parent:"";
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-para-margin:0cm;
+ mso-para-margin-bottom:.0001pt;
+ mso-pagination:widow-orphan;
+ font-size:10.0pt;
+ font-family:"Times New Roman";}
+</style>
+<![endif]--><LINK href="Metal" rel=Original-File><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1" />
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=ES-AR style="tab-interval: 35.4pt" vLink=purple link=blue 
+bgColor=white>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV style="FONT: 10pt arial"><FONT face="Times New Roman" size=3><SPAN 
+style="FONT-SIZE: 12pt"><FONT color=red><SPAN 
+style="COLOR: red; TEXT-DECORATION: none; text-underline: none"><!--[if !mso]><![endif]--><!--[if
+gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:EnvelopeVis/>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */ 
+ table.MsoNormalTable
+ {mso-style-name:"Tabla normal";
+ mso-tstyle-rowband-size:0;
+ mso-tstyle-colband-size:0;
+ mso-style-noshow:yes;
+ mso-style-parent:"";
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-para-margin:0cm;
+ mso-para-margin-bottom:.0001pt;
+ mso-pagination:widow-orphan;
+ font-size:10.0pt;
+ font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1" />
+ </o:shapelayout></xml><![endif]--><FONT face=Verdana size=3><SPAN 
+style="FONT-SIZE: 8pt"><FONT color=black><SPAN 
+style="COLOR: black; TEXT-DECORATION: none; text-underline: none">Si Ud. no puede visializar las
+imagenes haga click <a
+href="http://ar1.outmailing.com/admin/images/dattadream/eventos30-05.jpg">aqui</a><br /><img
+width="379" height="848" src="http://ar1.outmailing.com/admin/images/dattadream/eventos30-05.jpg"
+alt="" /><br />
+        <img width="450" height="150"
+src="http://ar1.outmailing.com/admin/images/dattadream/pie.gif" alt="" />
+
+
+__________ Información de NOD32, revisión 1.1856 (20061106) __________
+
+Este mensaje ha sido analizado con  NOD32 antivirus system
+http://www.nod32.com
+
+

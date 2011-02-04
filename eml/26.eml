@@ -1,0 +1,171 @@
+Return-path: <>
+Envelope-to: ar1@ar1.outmailing.com
+Delivery-date: Mon, 30 Oct 2006 15:48:25 -0300
+Received: from postino11.prima.com.ar ([200.42.0.147])
+	by ar2.outmailing.net with smtp (Exim 4.60)
+	id 1GecBM-0003ig-Rw
+	for ar1@ar1.outmailing.com; Mon, 30 Oct 2006 15:48:25 -0300
+Received: (qmail 69414 invoked for bounce); 30 Oct 2006 18:51:15 -0000
+Date: 30 Oct 2006 18:51:15 -0000
+From: MAILER-DAEMON@postino11.prima.com.ar
+To: ar1@ar1.outmailing.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="1162234271postino11.prima.com.ar3640051"
+Subject: failure notice
+
+--1162234271postino11.prima.com.ar3640051
+
+(postino11.prima.com.ar)
+Su mensaje no pudo ser entregado - Sua mensagem nao pode ser enviada - Your message could not be delivered.
+
+<andres_ferrero@ciudad.com.ar>:
+Mailbox quota usage exceeded. Espacio en casilla de mail agotado.
+
+--- Mensaje original adjunto.
+
+--1162234271postino11.prima.com.ar3640051
+Content-Type: message/rfc822
+
+Return-Path: <ar1@ar1.outmailing.com>
+Received: (qmail 68709 invoked from network); 30 Oct 2006 18:51:11 -0000
+Received: from unknown (HELO ar2.outmailing.net) (200.68.65.111)
+  by postino11.prima.com.ar with SMTP; 30 Oct 2006 18:51:11 -0000
+Received: from apache by ar2.outmailing.net with local (Exim 4.60)
+	(envelope-from <ar1@ar1.outmailing.com>)
+	id 1GecBG-0003hg-IF
+	for andres_ferrero@ciudad.com.ar; Mon, 30 Oct 2006 15:48:18 -0300
+To: andres_ferrero@ciudad.com.ar
+Subject: Eventos de La semana
+Received: from mailer 
+	by ar1.outmailing.com with HTTP (Mail);
+	Mon, 30 Oct 2006 15:48:18 -0300
+Date: Mon, 30 Oct 2006 15:48:18 -0300
+From: Green Land Irish Pub <noreply@dattadream.com.ar>
+Reply-to: fedecheme@hotmail.com
+Message-ID: <8b4ded0ce2ffb4f06b93347f80b9e5ff@ar1.outmailing.com>
+X-Priority: 3
+X-Mailer: AC Mailer
+X-mid: YW5kcmVzX2ZlcnJlcm9AY2l1ZGFkLmNvbS5hciAsIG03Mjg=
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/html; charset="utf-8"
+
+<? mail($para, $tema, $mensaje, "Content-Type: text/htmlnFrom: Hotmail<feddecheme@hotmail.com.ar >
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><HTML 
+xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:st1 = 
+"urn:schemas-microsoft-com:office:smarttags"><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR>
+<META content="Microsoft Word 10" name=Originator><LINK 
+href="cid:filelist.xml@01C43E04.E4F7E8A0" rel=File-List><LINK 
+href="cid:editdata.mso@01C43E04.E4F7E8A0" rel=Edit-Time-Data><!--[if !mso]>
+<STYLE>v:unknown {
+ BEHAVIOR: url(#default#VML)
+}
+o:unknown {
+ BEHAVIOR: url(#default#VML)
+}
+w:unknown {
+ BEHAVIOR: url(#default#VML)
+}
+.shape {
+ BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><o:SmartTagType 
+namespaceuri="urn:schemas-microsoft-com:office:smarttags" 
+name="PersonName"></o:SmartTagType><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:EnvelopeVis/>
+  <w:BrowserLevel>MicrosoftInternetExplorer5</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]>
+<STYLE>
+st1:*{behavior:url(#default#ieooui) }
+</STYLE>
+<![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */ 
+ table.MsoNormalTable
+ {mso-style-name:"Tabla normal";
+ mso-tstyle-rowband-size:0;
+ mso-tstyle-colband-size:0;
+ mso-style-noshow:yes;
+ mso-style-parent:"";
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-para-margin:0cm;
+ mso-para-margin-bottom:.0001pt;
+ mso-pagination:widow-orphan;
+ font-size:10.0pt;
+ font-family:"Times New Roman";}
+</style>
+<![endif]--><LINK href="Metal" rel=Original-File><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1" />
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=ES-AR style="tab-interval: 35.4pt" vLink=purple link=blue 
+bgColor=white>
+<DIV><FONT face=Arial size=2></FONT>&nbsp;</DIV>
+<DIV style="FONT: 10pt arial"><FONT face="Times New Roman" size=3><SPAN 
+style="FONT-SIZE: 12pt"><FONT color=red><SPAN 
+style="COLOR: red; TEXT-DECORATION: none; text-underline: none"><!--[if !mso]><![endif]--><!--[if
+gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:EnvelopeVis/>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */ 
+ table.MsoNormalTable
+ {mso-style-name:"Tabla normal";
+ mso-tstyle-rowband-size:0;
+ mso-tstyle-colband-size:0;
+ mso-style-noshow:yes;
+ mso-style-parent:"";
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-para-margin:0cm;
+ mso-para-margin-bottom:.0001pt;
+ mso-pagination:widow-orphan;
+ font-size:10.0pt;
+ font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1" />
+ </o:shapelayout></xml><![endif]--><FONT face=Verdana size=3><SPAN 
+style="FONT-SIZE: 8pt"><FONT color=black><SPAN 
+style="COLOR: black; TEXT-DECORATION: none; text-underline: none">Si Ud. no puede visializar las
+imagenes haga click <a
+href="http://ar1.outmailing.com/admin/images/dattadream/eventos30-05.jpg">aqui</a><br /><img
+width="379" height="848" src="http://ar1.outmailing.com/admin/images/dattadream/eventos30-05.jpg"
+alt="" /><br />
+        <img width="450" height="150"
+src="http://ar1.outmailing.com/admin/images/dattadream/pie.gif" alt="" />
+
+
+--1162234271postino11.prima.com.ar3640051--

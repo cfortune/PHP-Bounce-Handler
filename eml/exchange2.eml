@@ -1,0 +1,123 @@
+
+                                                                                                                                                                                                                                                               
+Delivered-To: account@gmail.com
+Received: by 10.86.62.16 with SMTP id k16cs115683fga;
+        Sun, 5 Apr 2009 11:43:30 -0700 (PDT)
+Received: by 10.210.76.19 with SMTP id y19mr775100eba.19.1238957010346;
+        Sun, 05 Apr 2009 11:43:30 -0700 (PDT)
+Return-Path: <>
+Received: from smtp113.aits.fr (smtpout.aits.fr [90.80.15.200])
+        by mx.google.com with ESMTP id 8si4438097ewy.109.2009.04.05.11.43.30;
+        Sun, 05 Apr 2009 11:43:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of smtp113.aits.fr designates 90.80.15.200 as permitted sender) client-ip=90.80.15.200;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of smtp113.aits.fr designates 90.80.15.200 as permitted sender) smtp.mail=
+Received: from localhost (unknown [127.0.0.1])
+	by smtp113.aits.fr (Postfix) with ESMTP id 12F5F1EF7FF
+	for <account@gmail.com>; Sun,  5 Apr 2009 20:36:02 +0200 (CEST)
+X-Virus-Scanned: amavisd-new at lce.adecco.net
+Received: from smtp113.aits.fr ([127.0.0.1])
+	by localhost (lx001113.lce.adecco.net [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id R1IXZBoxzxuO for <account@gmail.com>;
+	Sun,  5 Apr 2009 20:36:01 +0200 (CEST)
+Received: from meintfr02052.wwit.adecco.net (meintfr02052.wwit.adecco.net [10.100.94.52])
+	by smtp113.aits.fr (Postfix) with ESMTP id E46461EF7F9
+	for <account@gmail.com>; Sun,  5 Apr 2009 20:36:01 +0200 (CEST)
+From: postmaster@adecco.net
+To: account@gmail.com
+Date: Sun, 5 Apr 2009 20:43:17 +0200
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="9B095B5ADSN=_01C9B12EFB9017CA00003667meintfr02052.wwi"
+X-DSNContext: 335a7efd - 4523 - 00000001 - 80040546
+Message-ID: <ednHM3SOl00001860@meintfr02052.wwit.adecco.net>
+Subject: Delivery Status Notification (Failure)
+
+This is a MIME-formatted message.  
+Portions of this message may be unreadable without a MIME-capable mail program.
+
+--9B095B5ADSN=_01C9B12EFB9017CA00003667meintfr02052.wwi
+Content-Type: text/plain; charset=unicode-1-1-utf-7
+
+This is an automatically generated Delivery Status Notification.
+
+Delivery to the following recipients failed.
+
+       inger.lise.hole@adecco.no
+
+
+
+
+--9B095B5ADSN=_01C9B12EFB9017CA00003667meintfr02052.wwi
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;meintfr02052.wwit.adecco.net
+Received-From-MTA: dns;smtp091.aits.fr
+Arrival-Date: Sun, 5 Apr 2009 20:43:17 +0200
+
+Original-Recipient: rfc822;inger.lise.hole@adecco.no
+Final-Recipient: rfc822;inger.lise.hole@adecco.no
+Action: failed
+Status: 5.1.1
+
+--9B095B5ADSN=_01C9B12EFB9017CA00003667meintfr02052.wwi
+Content-Type: message/rfc822
+
+Received: from smtp091.aits.fr ([10.100.109.111]) by meintfr02052.wwit.adecco.net with Microsoft SMTPSVC(6.0.3790.3959);
+	 Sun, 5 Apr 2009 20:43:17 +0200
+Received: from localhost (unknown [127.0.0.1])
+	by smtp091.aits.fr (Postfix) with ESMTP id 7C0BF9F30B3
+	for <inger.lise.hole@adecco.no>; Sun,  5 Apr 2009 20:42:33 +0200 (CEST)
+X-Virus-Scanned: amavisd-new at lce.adecco.net
+Received: from smtp091.aits.fr ([127.0.0.1])
+	by localhost (lx001091.lce.adecco.net [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id esLE2xMUjKhO for <inger.lise.hole@adecco.no>;
+	Sun,  5 Apr 2009 20:42:31 +0200 (CEST)
+Received: from fg-out-1718.google.com (fg-out-1718.google.com [72.14.220.154])
+	by smtp091.aits.fr (Postfix) with ESMTP id AA6F19F30B4
+	for <inger.lise.hole@adecco.no>; Sun,  5 Apr 2009 20:42:03 +0200 (CEST)
+Received: by fg-out-1718.google.com with SMTP id e12so702940fga.17
+        for <inger.lise.hole@adecco.no>; Sun, 05 Apr 2009 11:42:58 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:date:message-id:subject
+         :from:to:content-type;
+        bh=1TNYLtKu1czWz2NnFQ2aqDbB0AcmbTgrpfGO+DF1CqU=;
+        b=EgK9ou/H4NpJxm681hywYK1/VP0XICSs08P3LF545RDtXohnPQrS47wvCuL6cl5GxK
+         mjRxyEti8G3C7xFpqFg1wUH8jmLilWHnhLKQ4yuULvQvRQhG6ps21Nn2s40/FTm2ZFCq
+         3xCzo7TGDoAvnSlEhRhFzI4JoZv91XW2G7yCE=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        b=UjXRgDRLENKAIkKCCv4PQXVRG22gE7VFVNwKW5sxEyElQ4AE3CdrzU6Eht2snM1+f4
+         NPsUL/D0o47tDAWzLBjsxRNui2rbPI1XMzJZfb4OaHQ8ORKtXnI5QZ9xdGbkxQUoJQJw
+         5Fw32AsyoIKHIH6yBUwFXHhuK06fWnis29/e0=
+MIME-Version: 1.0
+Received: by 10.86.31.18 with SMTP id e18mr2435668fge.72.1238956978868; Sun, 
+	05 Apr 2009 11:42:58 -0700 (PDT)
+Date: Sun, 5 Apr 2009 20:42:58 +0200
+Message-ID: <63267c0f0904051142s4a841b18qb1c702a94a3257be@mail.gmail.com>
+Subject: This will bounce
+From: "Gmail Account" <account@gmail.com>
+To: Petter.Gulbrandsen@no.compuware.com, inger.lise.hole@adecco.no
+Content-Type: multipart/alternative; boundary=000e0cd247509e11b20466d326c9
+Return-Path: account@gmail.com
+X-OriginalArrivalTime: 05 Apr 2009 18:43:17.0833 (UTC) FILETIME=[62B8EB90:01C9B61E]
+
+--000e0cd247509e11b20466d326c9
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Regards,
+Gmail Account
+
+--000e0cd247509e11b20466d326c9
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Regards,
+<div><br></div><div>Gmail Account</div>
+
+--000e0cd247509e11b20466d326c9--
+
+
+--9B095B5ADSN=_01C9B12EFB9017CA00003667meintfr02052.wwi--

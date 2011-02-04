@@ -1,0 +1,928 @@
+Return-path: <>
+Envelope-to: ar1@ar1.outmailing.com
+Delivery-date: Mon, 30 Oct 2006 15:32:28 -0300
+Received: from siena4.uol.com.br ([200.221.0.6] helo=mx-uolar.uol.com.br)
+	by ar2.outmailing.net with esmtp (Exim 4.60)
+	id 1Gebvv-00032B-DB
+	for ar1@ar1.outmailing.com; Mon, 30 Oct 2006 15:32:28 -0300
+Received: by siena4.uol.com.br (Postfix)
+	id 6E0C57DBA; Mon, 30 Oct 2006 15:27:10 -0300 (BRT)
+Date: Mon, 30 Oct 2006 15:27:10 -0300 (BRT)
+From: MAILER-DAEMON@mx-uolar.uol.com.br (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: ar1@ar1.outmailing.com
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="52914717E.1162232830/siena4.uol.com.br"
+Message-Id: <20061030182710.6E0C57DBA@siena4.uol.com.br>
+
+--52914717E.1162232830/siena4.uol.com.br
+Content-Description: Notification
+Content-Type: text/plain
+
+This is the Postfix program at host siena4.uol.com.br.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to <postmaster>
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+			The Postfix program
+
+<ritauhrig@uolsinectis.com.ar>: host saturno51.mail.sys.intranet[172.26.20.8]
+    said: 550 RCPT TO:<ritauhrig@uolsinectis.com.ar> User unknown (in reply to
+    RCPT TO command)
+
+
+__________ Información de NOD32, revisión 1.1856 (20061106) __________
+
+Este mensaje ha sido analizado con  NOD32 antivirus system
+http://www.nod32.com
+
+
+--52914717E.1162232830/siena4.uol.com.br
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; siena4.uol.com.br
+X-Postfix-Queue-ID: 52914717E
+X-Postfix-Sender: rfc822; ar1@ar1.outmailing.com
+Arrival-Date: Mon, 30 Oct 2006 15:27:05 -0300 (BRT)
+
+Final-Recipient: rfc822; ritauhrig@uolsinectis.com.ar
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: X-Postfix; host saturno51.mail.sys.intranet[172.26.20.8] said:
+    550 RCPT TO:<ritauhrig@uolsinectis.com.ar> User unknown (in reply to RCPT
+    TO command)
+
+--52914717E.1162232830/siena4.uol.com.br
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Received: from localhost (localhost [127.0.0.1])
+	by siena4.uol.com.br (Postfix) with ESMTP id 52914717E
+	for <ritauhrig@uolsinectis.com.ar>; Mon, 30 Oct 2006 15:27:05 -0300 (BRT)
+Received: from ar2.outmailing.net (ar2.outmailing.net [200.68.65.111])
+	by siena4.uol.com.br (Postfix) with ESMTP id 5789B7F3B
+	for <ritauhrig@uolsinectis.com.ar>; Mon, 30 Oct 2006 15:27:00 -0300 (BRT)
+Received: from apache by ar2.outmailing.net with local (Exim 4.60)
+	(envelope-from <ar1@ar1.outmailing.com>)
+	id 1Gebqf-0002is-B1
+	for ritauhrig@uolsinectis.com.ar; Mon, 30 Oct 2006 15:27:01 -0300
+To: ritauhrig@uolsinectis.com.ar
+Subject: LAST VACANCIES!!!
+Received: from mailer 
+	by ar1.outmailing.com with HTTP (Mail);
+	Mon, 30 Oct 2006 15:27:01 -0300
+Date: Mon, 30 Oct 2006 15:27:01 -0300
+From: English & Fun <info@welcometoenglishandfun.com>
+Reply-to: info@welcometoenglishandfun.com
+Message-ID: <99c45c43efb03685ca8ea0aa756e4e3d@ar1.outmailing.com>
+X-Priority: 3
+X-Mailer: AC Mailer
+X-mid: cml0YXVocmlnQHVvbHNpbmVjdGlzLmNvbS5hciAsIG03Mjc=
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_99c45c43efb03685ca8ea0aa756e4e3d"
+X-SIG5: 33a9e49bc9d78605193ea5915d8e3f04
+
+
+--b1_99c45c43efb03685ca8ea0aa756e4e3d
+Content-Type: text/plain; charset = "utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+http://www.welcometoenglishandfun.com/mailing/2006-10-27.htm
+
+
+--b1_99c45c43efb03685ca8ea0aa756e4e3d
+Content-Type: text/html; charset = "utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<head>
+<meta http-equiv=3D"Content-Language" content=3D"es-ar">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows=
+-1252">
+<title>Newsletter English And Fun</title>
+<style>
+<!--
+span.style521
+	{font-family:Arial;
+	}
+span.style541
+	{color:#003366}
+span.style551
+	{font-family:Arial;
+	color:red}
+span.estilo141
+	{color:red}
+span.bodybold1
+	{font-family:Verdana;
+	font-weight:bold}
+div.Section1
+	{page:Section1;}
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+span.textoserviciosmas1
+	{font-family:Arial;
+	color:black;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none}
+span.textosbold1
+	{font-family:Verdana;
+	color:black;
+	font-weight:bold}
+span.textos1
+	{font-family:Verdana;
+	color:black}
+-->
+</style>
+<base target=3D"_blank">
+</head>
+
+
+
+<body topmargin=3D"0" leftmargin=3D"0" rightmargin=3D"0" bottommargin=3D"=
+0" marginwidth=3D"0" marginheight=3D"0"
+bgcolor=3D"#FFFBF9">
+
+<div align=3D"center">
+
+<table border=3D"1" width=3D"972" id=3D"table8" cellpadding=3D"0" bgcolor=
+=3D"#D8F1CF" bordercolor=3D"#FF0000"
+style=3D"border-collapse:collapse" bordercolorlight=3D"#8FBF47" bordercol=
+ordark=3D"#8FBF47">
+	<tr>
+		<td width=3D"631" valign=3D"top">
+				<table border=3D"0" width=3D"828" cellspacing=3D"0" cellpadding=3D"0"=
+ id=3D"table9" bgcolor=3D"#D8F1CF">
+					<tr>
+						<td height=3D"624">
+						&nbsp;</td>
+						<td width=3D"824" align=3D"justify" bgcolor=3D"#FFFFFF" height=3D"6=
+24">
+						<div class=3D"Section1">
+							<p class=3D"MsoNormal" align=3D"center">
+							<font face=3D"Tahoma" size=3D"2">
+							<img border=3D"0" src=3D"http://www.welcometoenglishandfun.com/mai=
+ling/2006-10-27.jpg"
+width=3D"801" height=3D"612"></font></p></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+						<td width=3D"824" align=3D"justify">
+						<div class=3D"Section1">
+							<p style=3D"TEXT-ALIGN: center" align=3D"center">
+							<font face=3D"Tahoma" size=3D"2"><br>
+							</font>
+							<b><font face=3D"Tahoma" color=3D"red" size=3D"2">
+							<span style=3D"font-weight: bold; color: red; font-family: Tahoma"=
+>
+							&#191;Qu&#233; son los &quot;Foros&quot;?</span></font></b></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"color: black; font-family: Tahoma">Los=20
+							foros son espacios en Internet para la libre=20
+							discusi&#243;n de ideas, hacer comentarios, plantear=20
+							opiniones</span></font></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"color: black; font-family: Tahoma">&nbsp;y=20
+							discusiones sobre los temas focales del foro.</span></font></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"color: black; font-family: Tahoma">El=20
+							primer <b><span style=3D"FONT-WEIGHT: bold">Foro=20
+							Internacional de ELT</span></b> es un espacio de=20
+							Encuentro e Intercambio que</span></font></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center"><b>
+							<font face=3D"Tahoma" color=3D"green">
+							<span style=3D"font-weight: bold; color: green; font-family: Tahom=
+a">
+							<font size=3D"2">English & Fun</font></span></font></b><font size=3D=
+"2"><font face=3D"Tahoma"
+color=3D"black"><span style=3D"COLOR: black; FONT-FAMILY: Tahoma">=20
+							pone a disposici&#243;n de los Participantes con una=20
+							modalidad propia, que lo </span></font>
+							<font face=3D"Tahoma">
+							<span style=3D"FONT-FAMILY: Tahoma">d</span></font></font><font fa=
+ce=3D"Tahoma"
+color=3D"black"><span style=3D"COLOR: black; FONT-FAMILY: Tahoma"><font s=
+ize=3D"2">istingue=20
+							de otros Foros.</font></span></font></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<font face=3D"Tahoma" size=3D"2">&nbsp;</font><font face=3D"Tahoma=
+" color=3D"black" size=3D"2"><span
+style=3D"color: black; font-family: Tahoma">La=20
+							modalidad virtual que aqu&#237; presentamos se=20
+							caracteriza por no requerir de la simultaneidad=20
+							espacio-temporal entre los participantes para que=20
+							los intercambios tengan lugar. As&#237;, esta propuesta=20
+							resulta accesible para aquellos colegas que residen=20
+							en zonas alejadas o no disponen de un horario=20
+							regular para reunirse con otros profesionales del=20
+							&#225;rea. Aqu&#237; podr&#225;n conocer otras realidades,=20
+							interactuar y enriquecer su conocimiento a partir de=20
+							la experiencia compartida con otros colegas.</span></font></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"color: black; font-family: Tahoma">
+							Finalmente, no es necesario contar con una=20
+							computadora personal, ya que los participantes=20
+							podr&#225;n acceder a la modalidad&nbsp; desde locutorios,=20
+							cyber-caf&#233;s, Instituci&#243;n a la que pertenecen, etc, o=20
+							simplemente desde su hogar, participando los d&#237;as en=20
+							que se encuentre abierto el Foro, en cualquier=20
+							momento del d&#237;a, cuando lo disponga sin tener la=20
+							obligaci&#243;n de cumplir con un horario preestablecido</span><sp=
+an style=3D"COLOR: black;
+FONT-FAMILY: Tahoma">.</span></font></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<b><font face=3D"Tahoma" color=3D"red" size=3D"2">
+							<span style=3D"font-weight: bold; color: red; font-family: Tahoma"=
+>
+							&#191;C&#243;mo participo de los Foros de English & Fun?</span></f=
+ont></b></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"color: black; font-family: Tahoma">&nbsp;<u>Hay=20
+							que seguir los siguientes pasos</u>:</span></font></p>
+							<p><font face=3D"Tahoma" color=3D"black">
+							<span style=3D"color: black; font-family: Tahoma">
+							<font size=3D"2">&nbsp;1. Registrarse (enviamos los=20
+							datos necesarios por e-mail. Solicitarlos a</font></span></font><f=
+ont size=3D"2"><font
+face=3D"Tahoma"><span style=3D"FONT-FAMILY: Tahoma">:=20
+							&nbsp;</span></font><font face=3D"Tahoma" color=3D"blue"><span sty=
+le=3D"COLOR: blue; FONT-FAMILY:
+Tahoma"><a title=3D"mailto:info@welcometoenglishandfun.com" style=3D"colo=
+r: blue; text-decoration:
+underline"
+href=3D"mailto:info@welcometoenglishandfun.com">info@welcometoenglishandf=
+un.com</a></span></font><font
+face=3D"Tahoma"><span style=3D"FONT-FAMILY: Tahoma">
+							</span></font></font>
+							<font face=3D"Tahoma" color=3D"black">
+							<span style=3D"COLOR: black; FONT-FAMILY: Tahoma">
+							<font size=3D"2">) </font></span></font>
+							<font face=3D"Arial" size=3D"2">
+							<span style=3D"font-family: Tahoma"><b>
+							<span style=3D"FONT-WEIGHT: bold">El valor del Foro es=20
+							de $ 35 para Argentina, y de U$S 15 para los dem&#225;s=20
+							pa&#237;ses.</span></b></span></font></p>
+							<p style=3D"MARGIN-BOTTOM: 12pt">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"color: black; font-family: Tahoma">&nbsp;2.=20
+							Ingresar al sitio (secci&#243;n FORUM) y anotar la clave=20
+							de participaci&#243;n. (El Foro se abrir&#225; el d&#237;a viernes=
+=20
+							3 de noviembre y permanecer&#225; abierto hasta el lunes=20
+							6 de noviembre inclusive.) </span></font></p>
+							<p><font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"color: black; font-family: Tahoma">&nbsp;3.=20
+							Completar el asunto y el mensaje que desea enviarse.</span></font>=
+</p>
+							<p><font face=3D"Tahoma" color=3D"#222222">
+							<span style=3D"font-family: Tahoma"><font size=3D"2">&nbsp;</font>=
+</span></font><font
+face=3D"Tahoma" color=3D"black"><span style=3D"COLOR: black; FONT-FAMILY:=
+ Tahoma"><font size=3D"2">4.=20
+							Las respuestas que dar&#225; el moderador y el resto de=20
+							los participantes no aparecer&#225;n en el mismo momento=20
+							de escribir el mensaje original. No es una sala de=20
+							&#8220;chat online&#8221;. El Foro es un panel de mensajes que=20
+							se ir&#225;n respondiendo a lo largo de los 4 d&#237;as. Les=20
+							recomendamos ingresar al menos dos veces en el d&#237;a=20
+							para ir viendo los nuevos mensajes y seguir=20
+							participando con sus ideas e inquietudes. (Esto es=20
+							una sugerencia, no algo obligatorio).</font></span></font></p>
+							<p><font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"COLOR: black; FONT-FAMILY: Tahoma">&nbsp;5.=20
+							La riqueza de un Foro es el compromiso de los=20
+							participantes en enviar sus inquietudes, realizar=20
+							consultas sobre el tema, contestar mensajes de otros=20
+							participantes, compartir experiencias, sugerir ideas=20
+							y/o material bibliogr&#225;fico sobre el tema.</span></font></p>
+							<p><font size=3D"2" face=3D"Tahoma" color=3D"#222222">&nbsp;</font=
+><font size=3D"2"><font
+face=3D"Tahoma" color=3D"black"><span style=3D"COLOR: black; FONT-FAMILY:=
+ Tahoma">6.=20
+							El Foro de </span></font><b>
+							<font face=3D"Tahoma" color=3D"green">
+							<span style=3D"FONT-WEIGHT: bold; COLOR: green; FONT-FAMILY: Tahom=
+a">
+							English & Fun</span></font></b></font><font face=3D"Tahoma" color=3D=
+"black"><span style=3D"COLOR:
+black; FONT-FAMILY: Tahoma"><font size=3D"2">=20
+							tiene como caracter&#237;stica exclusiva el env&#237;o previo=20
+							de un material te&#243;rico preparado especialmente para=20
+							esta ocasi&#243;n por un destacado especialista en el=20
+							tema. Esto lo diferencia del resto de los Foros.=20
+							Tambi&#233;n el env&#237;o posterior de un Certificado de=20
+							Participaci&#243;n le da un car&#225;cter diferencial.</font></spa=
+n></font></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center"><b>
+							<font face=3D"Tahoma" color=3D"red" size=3D"2">
+							<span style=3D"font-weight: bold; color: red; font-family: Tahoma"=
+>
+							&#191;Existe un reglamento que exprese qu&#233; tipos de=20
+							mensajes son aceptados en los foros?</span></font></b></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center">
+							<font face=3D"Tahoma" color=3D"#222222" size=3D"2">&nbsp;</font><f=
+ont face=3D"Tahoma"
+color=3D"black"><span style=3D"color: black; font-family: Tahoma"><font s=
+ize=3D"2">&nbsp;S&#237;,
+esperamos que los participantes=20
+							de nuestros foros se traten con mutuo respeto, y=20
+							expresen sus opiniones relacionadas al tema=20
+							propuesto. No se admite vocabulario inadecuado ni=20
+							ataques personales a otros participantes.</font></span></font><fon=
+t size=3D"2"><b><font
+face=3D"Tahoma" color=3D"green"><span style=3D"FONT-WEIGHT: bold; COLOR: =
+green; FONT-FAMILY: Tahoma">=20
+							English & Fun </span></font></b></font>
+							<font face=3D"Tahoma" color=3D"black">
+							<span style=3D"COLOR: black; FONT-FAMILY: Tahoma">
+							<font size=3D"2">no se responsabiliza por el contenido=20
+							de los mensajes, y se reserva el derecho de=20
+							supervisar los Foros. Los moderadores se reservan el=20
+							derecho de no publicar (o remover luego de ser=20
+							publicados) aquellos contenidos propuestos por los=20
+							usuarios que no respondan estrictamente a los=20
+							objetivos del foro y a los par&#225;metros establecidos=20
+							por el mismo.</font></span></font></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center">
+							<font face=3D"Tahoma" color=3D"red" size=3D"2">
+							<span style=3D"color: red; font-family: Tahoma">&nbsp;<b><u><span =
+style=3D"FONT-WEIGHT:
+bold">Funcionalidad=20
+							del servicio</span></u></b></span></font></p>
+							<p class=3D"textoserviciosmas" style=3D"TEXT-ALIGN: center" align=3D=
+"center">
+							<span class=3D"textoserviciosmas1">
+							<font face=3D"Tahoma" color=3D"black">
+							<span style=3D"font-family: Tahoma"><font size=3D"2">El=20
+							servicio de foros permite a los participantes=20
+							diferentes instancias </font></span></font></span>
+							<font face=3D"Tahoma">
+							<span style=3D"FONT-FAMILY: Tahoma"><font size=3D"2">
+							<br>
+							</font><span class=3D"textoserviciosmas1">
+							<font size=3D"2" face=3D"Tahoma" color=3D"black">de=20
+							participaci&#243;n respecto al tema que se trata en los=20
+							mismos:</font></span></span></font></p>
+							<p class=3D"textoserviciosmas" style=3D"TEXT-ALIGN: center" align=3D=
+"center">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">1) Dejar un nuevo=20
+							mensaje (inquietudes, comentarios, sugerencias,=20
+							preguntas, reflexiones, etc)</span></font></p>
+							<p class=3D"textoserviciosmas" style=3D"TEXT-ALIGN: center" align=3D=
+"center">
+							<span class=3D"textoserviciosmas1">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">2) Contestar=20
+							mensajes de otros participantes y/o del moderador.</span></font></=
+span></p>
+							<p class=3D"textoserviciosmas" style=3D"TEXT-ALIGN: center" align=3D=
+"center">
+							<span class=3D"textoserviciosmas1">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">3) Ver los=20
+							mensajes y sus respuestas.</span></font></span></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center">
+							<span class=3D"textoserviciosmas1">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">4) Realizar=20
+							consultas al Disertante o Moderador.</span></font></span></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center">
+							<font size=3D"2" face=3D"Tahoma" color=3D"#222222">&nbsp;</font><s=
+pan
+class=3D"textoserviciosmas1"><font face=3D"Tahoma" color=3D"red" size=3D"=
+2"><span style=3D"color: red;
+font-family: Tahoma">&nbsp;</span></font><b><u><font face=3D"Tahoma" colo=
+r=3D"red"><span
+style=3D"FONT-WEIGHT: bold; COLOR: red; FONT-FAMILY: Tahoma"><font size=3D=
+"2">Preguntas=20
+							frecuentes</font></span></font></u></b></span></p>
+							<p class=3D"textoservicios" style=3D"MARGIN-BOTTOM: 12pt; TEXT-ALI=
+GN: center" align=3D"center">
+							<span class=3D"textoserviciosmas1"><b>
+							<font face=3D"Tahoma" color=3D"blue">
+							<span style=3D"font-weight: bold; color: blue; font-family: Tahoma=
+">
+							<font size=3D"2">1 - &#191;</font></span></font><font size=3D"2"><=
+u><font face=3D"Tahoma"
+color=3D"blue"><span style=3D"font-weight: bold; color: blue; font-family=
+: Tahoma">C&#243;mo=20
+							se contesta a un mensaje en el Foro</span></font></u></font><font =
+face=3D"Tahoma"
+color=3D"blue"><span style=3D"font-weight: bold; color: blue; font-family=
+: Tahoma"><font
+size=3D"2">?</font></span></font></b></span></p>
+							<p class=3D"textoservicios" style=3D"TEXT-ALIGN: center" align=3D"=
+center">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">Cada participante=20
+							del Foro puede iniciar un mensaje o discusi&#243;n. (Add=20
+							a new Topic)</span></font></p>
+							<p class=3D"textoservicios" style=3D"TEXT-ALIGN: center" align=3D"=
+center">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">Se abrir&#225; una=20
+							nueva ventana. All&#237; deber&#225;n poner sus datos (nombre,=20
+							e-mail, el tema del mensaje y el mensaje que deseen=20
+							postear). Vale aclarar que si no desean poner su=20
+							e-mail el mensaje se puede subir igual.</span></font></p>
+							<p class=3D"textoservicios" style=3D"TEXT-ALIGN: center" align=3D"=
+center">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">Cuando un=20
+							participante lee un mensaje expuesto, tendr&#225; la=20
+							posibilidad de contestarlo o dar su opini&#243;n sobre lo=20
+							escrito <b><span style=3D"FONT-WEIGHT: bold">(Answer=20
+							this question),</span></b> o volver al Foro <b>
+							<span style=3D"FONT-WEIGHT: bold">(Back to Forum).</span></b></spa=
+n></font></p>
+							<p class=3D"textoservicios" style=3D"TEXT-ALIGN: center" align=3D"=
+center">
+							<span class=3D"textoserviciosmas1"><b>
+							<font face=3D"Tahoma" color=3D"blue">
+							<span style=3D"font-weight: bold; color: blue; font-family: Tahoma=
+">
+							<font size=3D"2">2 - &#191;</font></span></font><font size=3D"2"><=
+u><font face=3D"Tahoma"
+color=3D"blue"><span style=3D"font-weight: bold; color: blue; font-family=
+: Tahoma">Cualquier=20
+							persona puede dejar un mensaje en un foro</span></font></u></font>=
+<font face=3D"Tahoma"
+color=3D"blue"><span style=3D"font-weight: bold; color: blue; font-family=
+: Tahoma"><font size=3D"2">?
+							</font></span></font></b></span></p>
+							<p class=3D"textoservicios" style=3D"TEXT-ALIGN: center" align=3D"=
+center">
+							<span class=3D"textoserviciosmas1">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">Solamente los=20
+							usuarios que se hayan registrado previamente y que=20
+							deseen participar pueden hacerlo. &nbsp;</span></font></span></p>
+							<p class=3D"textoservicios" style=3D"TEXT-ALIGN: center" align=3D"=
+center">
+							<span class=3D"textoserviciosmas1">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">Las vacantes son=20
+							Limitadas.</span></font></span></p>
+							<p class=3D"textoserviciosmas" style=3D"TEXT-ALIGN: center" align=3D=
+"center">
+							<span class=3D"textoserviciosmas1"><b>
+							<font face=3D"Tahoma" color=3D"blue">
+							<span style=3D"font-weight: bold; color: blue; font-family: Tahoma=
+">
+							<font size=3D"2">3 - </font></span></font>
+							<font size=3D"2"><u><font face=3D"Tahoma" color=3D"blue">
+							<span style=3D"FONT-WEIGHT: bold; COLOR: blue; FONT-FAMILY: Tahoma=
+">
+							&#191;Qui&#233;n modera los foros</span></font></u></font><font fa=
+ce=3D"Tahoma"
+color=3D"blue"><span style=3D"FONT-WEIGHT: bold; COLOR: blue; FONT-FAMILY=
+: Tahoma"><font
+size=3D"2">?</font></span></font></b></span></p>
+							<p class=3D"textoserviciosmas" style=3D"TEXT-ALIGN: center" align=3D=
+"center">
+							<span class=3D"textoserviciosmas1">
+							<font face=3D"Tahoma" color=3D"black">
+							<span style=3D"font-family: Tahoma"><font size=3D"2">
+							Todos los foros son supervisados por el equipo de
+							</font></span></font><font size=3D"2"><b>
+							<font face=3D"Tahoma" color=3D"green">
+							<span style=3D"FONT-WEIGHT: bold; COLOR: green; FONT-FAMILY: Tahom=
+a">
+							English & Fun</span></font><font face=3D"Tahoma" color=3D"black"><=
+span style=3D"FONT-WEIGHT: bold;
+FONT-FAMILY: Tahoma">,</span></font></b></font><font face=3D"Tahoma" colo=
+r=3D"black"><span
+style=3D"FONT-FAMILY: Tahoma"><font size=3D"2">=20
+							y&nbsp; moderados por un especialista en el tema que se=20
+							trate. En este caso, el I Foro ser&#225; moderado por la=20
+							profesora <b><span style=3D"FONT-WEIGHT: bold">
+							Patricia G&#243;mez</span></b>.(*)</font></span></font></span></p>
+							<p class=3D"textoserviciosmas" style=3D"TEXT-ALIGN: center" align=3D=
+"center">
+							<span class=3D"textoserviciosmas1"><b>
+							<font face=3D"Tahoma" color=3D"green">
+							<span style=3D"font-weight: bold; color: green; font-family: Tahom=
+a">
+							<font size=3D"2">English & Fun</font></span></font></b><font face=3D=
+"Tahoma" color=3D"black"><span
+style=3D"FONT-FAMILY: Tahoma"><font size=3D"2">=20
+							se reserva el derecho de no publicar (o remover=20
+							luego de ser publicados) aquellos contenidos=20
+							propuestos por los usuarios que no respondan=20
+							estrictamente a los objetivos del foro..</font></span></font></spa=
+n></p>
+							<p class=3D"textoservicios" style=3D"MARGIN-BOTTOM: 12pt; TEXT-ALI=
+GN: center" align=3D"center">
+							<b><font face=3D"Tahoma" color=3D"blue" size=3D"2">
+							<span style=3D"font-weight: bold; color: blue; font-family: Tahoma=
+">
+							4<span class=3D"textoserviciosmas1"><span style=3D"COLOR: blue; FO=
+NT-FAMILY: Tahoma">=20
+							- &#191;</span><u><span style=3D"COLOR: blue; FONT-FAMILY: Tahoma"=
+>Se=20
+							puede adjuntar un archivo al mensaje</span></u><span style=3D"COLO=
+R: blue; FONT-FAMILY:
+Tahoma">?</span></span></span></font></b></p>
+							<p class=3D"textoservicios" style=3D"TEXT-ALIGN: center" align=3D"=
+center">
+							<span class=3D"textoserviciosmas1">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">No, no est&#225;=20
+							permitido adjuntar archivos a los mensajes.</span></font></span></=
+p>
+							<p class=3D"textoservicios" style=3D"MARGIN-BOTTOM: 12pt; TEXT-ALI=
+GN: center" align=3D"center">
+							<span class=3D"textoserviciosmas1"><b>
+							<font face=3D"Tahoma" color=3D"blue">
+							<span style=3D"font-weight: bold; color: blue; font-family: Tahoma=
+">
+							<font size=3D"2">5- &#191;</font></span></font><font size=3D"2"><u=
+><font face=3D"Tahoma"
+color=3D"blue"><span style=3D"font-weight: bold; color: blue; font-family=
+: Tahoma">Se=20
+							puede poner color, subrayar o darle otro formato a=20
+							los mensajes</span></font></u></font><font face=3D"Tahoma" color=3D=
+"blue"><span
+style=3D"font-weight: bold; color: blue; font-family: Tahoma"><font size=3D=
+"2">?
+							</font></span></font></b></span></p>
+							<p class=3D"textoservicios" style=3D"TEXT-ALIGN: center" align=3D"=
+center">
+							<span class=3D"textoserviciosmas1">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">No, no es posible=20
+							en este tipo de Foro.</span></font></span></p>
+							<p class=3D"textoservicios" style=3D"TEXT-ALIGN: center" align=3D"=
+center">
+							<span class=3D"textoserviciosmas1">
+							<font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-family: Tahoma">
+							&nbsp;------------------------------------------------------------=
+--------------------------------</span></font></span></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<b><u><font face=3D"Tahoma" color=3D"red" size=3D"2">
+							<span lang=3D"EN-US" style=3D"font-weight: bold; color: red; font-=
+family: Tahoma">
+							I&nbsp; INTERNATIONAL ELT FORUM</span></font></u></b></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<font face=3D"Tahoma" color=3D"blue" size=3D"2">
+							<span lang=3D"EN-US" style=3D"color: blue; font-family: Tahoma">
+							&nbsp;<b><u><span style=3D"FONT-WEIGHT: bold">&#8220;SHARING=20
+							IDEAS AND KNOWLEDGE&#8221;</span></u></b></span></font></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<b><i><u><font face=3D"Tahoma" size=3D"2">
+							<span lang=3D"EN-US" style=3D"font-weight: bold; font-style: itali=
+c; font-family: Tahoma">
+							GAMES: A POWERFUL TOOL TO BRING &nbsp;THE ENGLISH=20
+							LANGUAGE TO LIFE.</span></font></u></i></b></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<b><font face=3D"Tahoma" size=3D"2">
+							<span lang=3D"EN-US" style=3D"font-weight: bold; font-family: Taho=
+ma">
+							&nbsp;<u><br>
+							<font color=3D"red"><span style=3D"COLOR: red">November,=20
+							2006</span></font></u></span></font></b></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<b><font face=3D"Tahoma" size=3D"2">
+							<span lang=3D"EN-US" style=3D"font-weight: bold; font-family: Taho=
+ma">
+							&nbsp;<br>
+							<font color=3D"red"><span style=3D"COLOR: red">Friday, 3<sup>rd</s=
+up>=20
+							- Saturday, 4<sup>th</sup> - Sunday, 5<sup>th</sup>=20
+							- Monday, 6<sup>th</sup></span></font></span></font></b></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<b><font face=3D"Tahoma" size=3D"2">
+							<span lang=3D"EN-US" style=3D"font-weight: bold; font-family: Taho=
+ma">
+							&nbsp;</span></font><font face=3D"Tahoma" color=3D"black" size=3D"=
+2"><span lang=3D"EN-GB"
+style=3D"FONT-WEIGHT: bold; COLOR: black; FONT-FAMILY: Tahoma"><br>
+							The forum will take place at</span></font></b></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<b><font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span lang=3D"EN-US" style=3D"font-weight: bold; color: black; fon=
+t-family: Tahoma">
+							<a
+title=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dh=
+ttp://www.welcometoenglishandfun.com/"
+style=3D"color: blue; text-decoration: underline"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.welcometoenglishandfun.com/">
+							<span
+title=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dh=
+ttp://www.welcometoenglishandfun.com"
+lang=3D"ES">
+							www.welcometoenglishandfun.com</span></a></span></font></b></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<b><font face=3D"Tahoma" color=3D"black" size=3D"2">
+							<span style=3D"font-weight: bold; color: black; font-family: Tahom=
+a">
+							&nbsp;<br>
+							</span></font><u><font face=3D"Tahoma">
+							<span style=3D"FONT-WEIGHT: bold; FONT-FAMILY: Tahoma">
+							<font size=3D"2">MODERATOR</font></span></font></u><font face=3D"T=
+ahoma"><span
+style=3D"FONT-WEIGHT: bold; FONT-FAMILY: Tahoma"><font size=3D"2">:</font=
+></span></font></b></p>
+							<p class=3D"MsoNormal" style=3D"text-align: center" align=3D"cente=
+r">
+							<b><font face=3D"Tahoma" color=3D"red" size=3D"2">
+							<span style=3D"font-weight: bold; color: red; font-family: Tahoma"=
+>
+							&nbsp;PATRICIA G&#211;MEZ&nbsp;</span></font></b></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center"><b><u>
+							<font face=3D"Tahoma" color=3D"#222222" size=3D"2">
+							<span lang=3D"EN-US" style=3D"font-weight: bold">FURTHER=20
+							INFORMATION:</span></font></u></b></p>
+							<p style=3D"TEXT-ALIGN: center" align=3D"center"><b><u>
+							<font face=3D"Tahoma" color=3D"#222222" size=3D"2">
+							<span style=3D"text-decoration: none; font-weight: bold" lang=3D"E=
+N-US">
+							&nbsp;</span><span lang=3D"EN-US" style=3D"font-weight: bold"><a
+title=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dh=
+ttp://www.welcometoenglishandfun.com/popup_elt_forum.htm"
+style=3D"color: blue; text-decoration: underline"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.welcometoenglishandfun.com/popup_elt_forum.htm">http://www.welco=
+metoenglishandfun.com/popup_elt_forum.htm</a></span></font></u></b></div>
+						<p align=3D"center">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+						&nbsp;</td>
+						<td width=3D"824" align=3D"justify">
+						&nbsp;</td>
+					</tr>
+					</table>
+				</td>
+		<td width=3D"141" valign=3D"top">
+		<div align=3D"center">
+			<div align=3D"center">
+&nbsp;</div>
+			<div align=3D"center">
+	<font face=3D"Tahoma" size=3D"2">
+	<a
+onclick=3D"MM_openBrWindow('images/pop_up_banner_yes.htm','','resizable=3D=
+yes,width=3D350,height=3D250')"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.cibadist.net/">
+	<img src=3D"http://www.welcometoenglishandfun.com/images/banner_cibadist=
+.gif" border=3D"1" height=3D"75"
+width=3D"130" style=3D"border: 1px solid #000000"></a></font></div>
+			<div align=3D"center">
+&nbsp;</div>
+			<div align=3D"center">
+	<font face=3D"Tahoma" size=3D"2">
+	<a
+onclick=3D"MM_openBrWindow('images/pop_up_banner_yes.htm','','resizable=3D=
+yes,width=3D350,height=3D250')"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.lalgroup.com">
+	<img src=3D"http://www.welcometoenglishandfun.com/images/banner_lal.gif"=
+ border=3D"1" height=3D"45"
+width=3D"118" style=3D"border: 1px solid #000000"></a></font></div>
+			<div align=3D"center">
+&nbsp;</div>
+			<div align=3D"center">
+	<font face=3D"Tahoma" size=3D"2">
+	<a
+onclick=3D"MM_openBrWindow('images/pop_up_banner_yes.htm','','resizable=3D=
+yes,width=3D350,height=3D250')"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.welcometoenglishandfun.com/images/pop_up_banner_yes.htm">
+	<img src=3D"http://www.welcometoenglishandfun.com/images/banner_yes.gif"=
+ border=3D"1" height=3D"85"
+width=3D"119" style=3D"border: 1px solid #000000"></a></font></div>
+			<div align=3D"center">
+&nbsp;</div>
+			<div align=3D"center">
+<div align=3D"center">
+			<font face=3D"Tahoma" size=3D"2">
+			<a target=3D"new"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.sbs.com.ar/">
+			<img src=3D"http://www.welcometoenglishandfun.com/images/banner_sbs.gi=
+f" border=3D"1" height=3D"75"
+width=3D"130" style=3D"border: 1px solid #000000"></a></font></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+				<font face=3D"Tahoma" size=3D"2">
+				<a target=3D"new"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.abs-international.com.ar">
+				<img src=3D"http://www.welcometoenglishandfun.com/images/banner_abs.g=
+if" border=3D"0" height=3D"85"
+width=3D"119" style=3D"border: 1px solid #000000"></a></font></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+				<font face=3D"Tahoma" size=3D"2">
+				<a target=3D"new"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.e-tales.com.ar">
+				<img src=3D"http://www.welcometoenglishandfun.com/images/banner_ad-em=
+o.gif" border=3D"0" height=3D"85"
+width=3D"119" style=3D"border: 1px solid #000000"></a></font></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+			<font face=3D"Tahoma" size=3D"2">
+			<a
+onclick=3D"MM_openBrWindow('images/pop_up_banner_yes.htm','','resizable=3D=
+yes,width=3D350,height=3D250')"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.londontests.com.ar/">
+	<img src=3D"http://www.welcometoenglishandfun.com/images/banner_london_t=
+ests.gif" border=3D"1"
+height=3D"75" width=3D"130" style=3D"border: 1px solid #000000"></a></fon=
+t></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+<font face=3D"Tahoma" size=3D"2">
+<a href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3D=
+http://www.ontheroadonline.com">
+	<img border=3D"0" src=3D"http://www.welcometoenglishandfun.com/images/ba=
+nner_ontheroad.gif"
+style=3D"border: 1px solid #000000" width=3D"119" height=3D"85"></a></fon=
+t></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+			<font face=3D"Tahoma" size=3D"2">
+			<a target=3D"new"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.fiskschooldivision.com.ar">
+			<img src=3D"http://www.welcometoenglishandfun.com/images/banner_fisk.g=
+if" border=3D"1" height=3D"85"
+width=3D"119" style=3D"border: 1px solid #000000"></a></font></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+			<font face=3D"Tahoma" size=3D"2">
+			<a target=3D"new"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.eltevents.com.ar">
+			<img src=3D"http://www.welcometoenglishandfun.com/images/banner_elteve=
+nts.gif" border=3D"1"
+height=3D"75" width=3D"130" style=3D"border: 1px solid #000000"></a></fon=
+t></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+			<font face=3D"Tahoma" size=3D"2">
+			<a target=3D"new"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.supportlearning.com.ar/">
+			<img src=3D"http://www.welcometoenglishandfun.com/mailing/banners/bann=
+er_support.gif" border=3D"1"
+height=3D"75" width=3D"130" style=3D"border: 1px solid #000000"></a></fon=
+t></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+				<font face=3D"Tahoma" size=3D"2">
+				<a target=3D"new"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.cambridgeesol.org/">
+				<img src=3D"http://www.welcometoenglishandfun.com/images/banner_tkt.j=
+pg" border=3D"0" height=3D"85"
+width=3D"119" style=3D"border: 1px solid #000000"></a></font></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+<font face=3D"Tahoma" size=3D"2">
+<a href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3D=
+http://www.richmond.com.ar/">
+	<img border=3D"0" src=3D"http://www.welcometoenglishandfun.com/images/ri=
+chmond.gif" style=3D"border: 1px
+solid #000000" width=3D"119" height=3D"85"></a></font></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+				<font face=3D"Tahoma" size=3D"2">
+				<a
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.welcometoenglishandfun.com/">
+				<img border=3D"0" src=3D"http://www.welcometoenglishandfun.com/mailin=
+g/EandF.gif" style=3D"border: 1px
+solid #000000" width=3D"119" height=3D"88"></a></font></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+			<font face=3D"Tahoma" size=3D"2">
+			<a target=3D"new"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.thebsasplayers.com/">
+			<img src=3D"http://www.welcometoenglishandfun.com/images/bannerbsaspla=
+yers.gif" border=3D"1"
+height=3D"75" width=3D"130" style=3D"border: 1px solid #000000"></a></fon=
+t></div>
+<div align=3D"center">
+			&nbsp;</div>
+<div align=3D"center">
+			<font face=3D"Tahoma" size=3D"2">
+			<a target=3D"new"
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.angliaexams.com">
+			<img src=3D"http://www.welcometoenglishandfun.com/mailing/banners/bann=
+er_anglia.gif" border=3D"1"
+height=3D"75" width=3D"130" style=3D"border: 1px solid #000000"></a></fon=
+t></div>
+			</div>
+			<div align=3D"center">
+			&nbsp;</div>
+			</div>
+		<div align=3D"center">
+<div align=3D"center">
+	&nbsp;</div>
+<div align=3D"center">
+	<strong><font face=3D"Tahoma" size=3D"2">Advertise here... </font></stro=
+ng>
+</div>
+<div align=3D"center">
+&nbsp;</div>
+<div align=3D"center">
+	<font face=3D"Tahoma" size=3D"2">
+	<a href=3D"mailto:info@welcometoenglishandfun.com">Contact Us</a><br>
+&nbsp;</font></div>
+		</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=3D"2">
+		<p align=3D"center">
+		<font size=3D"2" face=3D"Tahoma"><br>
+		If you NO LONGER want to receive English & Fun Newsletter, please remov=
+e=20
+		your e-mail from our list in the following simple method:<br>
+		<br>
+		Send an email to <a
+href=3D"mailto:info@welcometoenglishandfun.com">info@welcometoenglishandf=
+un.com</a> <br>
+		<br>
+		Please include the email address/es you are trying to unsubscribe in th=
+e=20
+		text of the message (and the word: UNSUBSCRIBE)<br>
+		<br>
+		Thank you for your co-operation !!!<br>
+		<br>
+		<b>English & Fun<br>
+		</b><font color=3D"#000080">
+		<a
+href=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwNjMw&l=3Dht=
+tp://www.welcometoenglishandfun.com">
+		www.welcometoenglishandfun.com</a></font><br>
+		<br>
+		The website everybody is talking about !!!<br>
+		<br>
+		</font><font size=3D"2"><b><font face=3D"Tahoma">copyright &#169;2006=20
+		ENGLISH & FUN</font></b></font><font size=3D"2" face=3D"Tahoma"><br>
+&nbsp;</font></td>
+	</tr>
+</table>
+
+</div>
+
+<br /><img src=3D"http://ar1.outmailing.com/lt/t_go.php?i=3D727&e=3DNDAwN=
+jMw&l=3Dopen" width=3D"1" height=3D"1"
+border=3D"0"></body>
+
+
+
+--b1_99c45c43efb03685ca8ea0aa756e4e3d--
+
+
+--52914717E.1162232830/siena4.uol.com.br--
