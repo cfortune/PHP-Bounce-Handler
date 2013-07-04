@@ -1,0 +1,95 @@
+Received: (qmail 5171 invoked from network); 30 Dec 2010 18:15:44 -0000
+Received: from unknown (HELO ourmailserver.com) (10.1.0.252)
+  by ourmailserver.com with SMTP; 30 Dec 2010 18:15:44 -0000
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: AgMFAMJaHE1Dw4dVkWdsb2JhbACCIgmBRZIwjUNvAQEBAQkLCgcRAyGmeIgllBd0BIRliTw
+X-IronPort-AV: E=Sophos;i="4.60,250,1291622400"; 
+   d="scan'208,223";a="29936099"
+Received: from n7-vm3.bullet.mail.sp2.yahoo.com ([67.195.135.85])
+  by ourmailserver.com with SMTP; 30 Dec 2010 10:15:42 -0800
+Received: from [67.195.134.239] by n7.bullet.mail.sp2.yahoo.com with NNFMP; 30 Dec 2010 18:15:41 -0000
+Received: from [67.195.134.246] by t4.bullet.mail.sp2.yahoo.com with NNFMP; 30 Dec 2010 18:15:41 -0000
+Received: from [127.0.0.1] by vps108.asd.mail.sp2.yahoo.com with NNFMP; 30 Dec 2010 18:15:41 -0000
+X-Yahoo-Newman-Id: cfl-test
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: multipart/report; boundary="_----------=_12937329419079035"; report-type="feedback-report"
+X-Mailer: MIME::Lite 3.021 (F2.6; T1.27; A2.04; B3.05; Q3.03)
+Date: Thu, 30 Dec 2010 10:15:41 -0800
+From: Yahoo! Mail AntiSpam Feedback <feedback@arf.mail.yahoo.com>
+To: fbl-abuse@ourdomain.com
+Subject: Some Subject Line
+X-Yahoo-Newman-Property: cfl
+
+This is a multi-part message in MIME format.
+
+--_----------=_12937329419079035
+MIME-Version: 1.0
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="US-ASCII"
+X-Mailer: MIME::Lite 3.021 (F2.6; T1.27; A2.04; B3.05; Q3.03)
+Date: Thu, 30 Dec 2010 10:15:41 -0800
+
+This is an email abuse report for an email message received from ourdomain.com  on Tue, 28 Dec 2010 11:57:56 PST
+
+--_----------=_12937329419079035
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: message/feedback-report
+
+Feedback-Type: abuse
+User-Agent: Yahoo!-Mail-Feedback/1.0
+Version: 0.1
+Original-Mail-From: <support@ourdomain.com>
+Original-Rcpt-To: someuser@yahoo.com
+Received-Date: Tue, 28 Dec 2010 11:57:56 PST
+Reported-Domain: ourdomain.com
+Authentication-Results: 
+
+--_----------=_12937329419079035
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: message/rfc822
+
+From Tim's Advisors Tue Dec 28 18:43:07 2010
+X-Apparently-To: someuser@yahoo.com via 98.138.90.126; Tue, 28 Dec 2010 11:57:56 -0800
+Return-Path: <support@ourdomain.com>
+Received-SPF: pass (mta1253.mail.ac4.yahoo.com: domain of support@ourdomain.com designates 24.64.1.1 as permitted sender)
+X-Originating-IP: [24.64.1.1]
+Authentication-Results: mta1253.mail.ac4.yahoo.com  from=ourdomain.com; domainkeys=neutral (no sig);  from=ourdomain.com; dkim=pass (ok)
+Received: from 127.0.0.1  (HELO ourdomain.com) (24.64.1.1)
+  by mta1253.mail.ac4.yahoo.com with SMTP; Tue, 28 Dec 2010 11:57:56 -0800
+Received: (qmail 17907 invoked from network); 28 Dec 2010 18:43:07 -0000
+Received: from web8.local (10.1.0.252)
+  by ourmailserver.com with SMTP; 28 Dec 2010 18:43:07 -0000
+From: "Support" <support@ourdomain.com> 
+To: "someuser@yahoo.com" <someuser@yahoo.com>
+Date: Tue, 28 Dec 2010 10:43:07 -0800
+Subject: Subject Line
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="_=aspNetEmail=_5da1132d859a4ec986c1d3fb5e251b71"
+X-Mailer: aspNetEmail ver 2.5.0.0
+X-RCPT-TO: <someuser@yahoo.com>
+MIME-Version: 1.0
+Message-ID: <WEB8daf12e7d45340df91f4dc4d66fb19f7@web8>
+X-OriginalArrivalTime: 28 Dec 2010 18:43:07.0449 (UTC) FILETIME=[119A7290:01CBA6BF]
+
+
+--_=aspNetEmail=_5da1132d859a4ec986c1d3fb5e251b71
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Season's Greetings
+
+--_=aspNetEmail=_5da1132d859a4ec986c1d3fb5e251b71
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p>Season's Greetings</p>
+
+--_=aspNetEmail=_5da1132d859a4ec986c1d3fb5e251b71--
+--_----------=_12937329419079035--

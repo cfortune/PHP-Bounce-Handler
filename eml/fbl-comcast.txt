@@ -1,0 +1,109 @@
+Received: (qmail 8693 invoked from network); 30 Dec 2010 19:48:57 -0000
+Received: from unknown (HELO ourmailserver.com) (10.1.0.252)
+  by ourmailserver.com with SMTP; 30 Dec 2010 19:48:57 -0000
+Received: from mrb-d1.returnpath.net ([67.217.228.241])
+  by ourmailserver.com with ESMTP; 30 Dec 2010 11:48:57 -0800
+Received: from parc.lan.senderscore.net (parc.lan.senderscore.net [10.8.2.234])
+	by mrb-d1.returnpath.net (Postfix) with ESMTP id 974834BB6
+	for <fbl-abuse@ourdomain.com>; Thu, 30 Dec 2010 12:48:55 -0700 (MST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=senderscore.net;
+	s=081107; t=1293738535; i=@senderscore.net;
+	bh=aCYEA97qjTQ0lBA7/pXd+ECJS11dqg8AtoxNZ+uzVoo=;
+	h=Content-Transfer-Encoding:Content-Type:MIME-Version:Date:Subject:
+	 To:From:Message-Id;
+	b=Vbp+IdF0Bfu1weX/KImVtEafytWmiaoMqRlB8Nq8yUtXaVc9yeOhnNvplFqza1pRH
+	 TTMiD4OynLDJuELPReKBTL2jFiFe9AJ43Vligx7shCZxrN2gHFSXDt7tz5OSjJkNkn
+	 fSZYwTyqEQuQ4oYyzCEJ/XqVmyp/PDIvAn5SYgUY=
+Received: by parc.lan.senderscore.net (Postfix, from userid 106603)
+	id 8D3C8BDD; Thu, 30 Dec 2010 12:48:55 -0700 (MST)
+Content-Transfer-Encoding: binary
+Content-Type: multipart/report; boundary="_----------=_12937385352787524276"; report-type="feedback-report"
+MIME-Version: 1.0
+X-Mailer: MIME::Lite 3.01 (F2.73; T1.28; A2.04; B3.01; Q3.01)
+Date: Thu, 30 Dec 2010 19:48:55 UT
+Subject: comcast Abuse Report
+To: fbl-abuse@ourdomain.com
+From: feedbackloop@comcastfbl.senderscore.net
+Message-Id: <20101230194855.8D3C8BDD@parc.lan.senderscore.net>
+
+This is a multi-part message in MIME format.
+
+--_----------=_12937385352787524276
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain
+
+This is a comcast email abuse report for an email message received from IP 24.64.1.1 on Fri, 24 Dec 2010 02:07:37 +0000
+
+
+--_----------=_12937385352787524276
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: message/feedback-report
+
+User-Agent: comcast Feedback Loop (V0.01)
+Reported-Domain: ourdomain.com
+Arrival-Date: Fri, 24 Dec 2010 02:07:37 +0000
+Feedback-Type: abuse
+Version: 1
+Source-IP: 24.64.1.1
+Original-Message-ID: WEB984880f6664cc4cfcb65239d134bfd9c7@web9
+Original-Rcpt-To: undisclosed comcast recipient <redacted@comcast.net>
+Original-Mail-From: support@ourdomain.com
+
+--_----------=_12937385352787524276
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+Content-Type: message/rfc822
+
+Return-Path: support@ourdomain.com
+Received: from imta35.westchester.pa.mail.comcast.net (LHLO
+ imta35.westchester.pa.mail.comcast.net) (76.96.59.250) by
+ sz0163.ev.mail.comcast.net with LMTP; Fri, 24 Dec 2010 02:07:36 +0000 (UTC)
+Received: from ourdomain.com ([24.64.1.1])
+	by imta35.westchester.pa.mail.comcast.net with comcast
+	id mq7c1f0133X5gaJ0bq7cgB; Fri, 24 Dec 2010 02:07:37 +0000
+X-CAA-SPAM: 00000
+X-Authority-Analysis: v=1.1 cv=Hu/qbIQ1+L5hR7DX/T9LMmwmuWMV5E4oohQQkw1cegU=
+ c=1 sm=1 a=A6HzZo_Vo9UA:10 a=qp+a6utUeyOj6/V0h5h35g==:17 a=rfX_wvhiAAAA:8
+ a=JGDdjlENAAAA:8 a=C_IRinGWAAAA:8 a=c4sALXHMncbZh0z_Z3MA:9
+ a=oeps-6xKFydRxetrEUEA:7 a=FJC7OhlS-D9t4bW4ieM6pSLLOHsA:4 a=QEXdDO2ut3YA:10
+ a=JHGorsmrRLgA:10 a=80goQLXkAAAA:8 a=wU0ir2YEuFX_l4SXHPwA:9
+ a=uMGQt756ojJo4PSIdqAA:7 a=K3Zcbs3NcS9gW89sNk0gbvkOF50A:4 a=si9q_4b84H0A:10
+ a=qp+a6utUeyOj6/V0h5h35g==:117
+Received: (qmail 5029 invoked from network); 24 Dec 2010 02:07:35 -0000
+Received: from web9.local (10.1.0.252)
+  by ourmailserver.com with SMTP; 24 Dec 2010 02:07:35 -0000
+Received: from mail pickup service by web9.dom.local with Microsoft SMTPSVC;
+	 Thu, 23 Dec 2010 18:07:34 -0800
+From: "Our domain" <support@ourdomain.com> 
+To: undisclosed comcast recipient <redacted@comcast.net>
+Date: Thu, 23 Dec 2010 18:07:34 -0800
+Subject: Season's Greetings
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="_=aspNetEmail=_1a5374b5dd87484ba82fad9323495320"
+X-Mailer: aspNetEmail ver 2.5.0.0
+X-RCPT-TO: <redacted@comcast.net>
+MIME-Version: 1.0
+Message-ID: <WEB984880f6664cc4cfcb65239d134bfd9c7@web9>
+X-OriginalArrivalTime: 24 Dec 2010 02:07:34.0968 (UTC) FILETIME=[549E2B80:01CBA30F]
+
+
+--_=aspNetEmail=_1a5374b5dd87484ba82fad9323495320
+Content-Type: text/plain;
+	charset="utf-8"
+
+Season...s Greetings
+
+
+--_=aspNetEmail=_1a5374b5dd87484ba82fad9323495320
+Content-Type: text/html;
+	charset="utf-8"
+
+<p>Season's Greetings</p>
+
+--_=aspNetEmail=_1a5374b5dd87484ba82fad9323495320--
+
+--_----------=_12937385352787524276--
+

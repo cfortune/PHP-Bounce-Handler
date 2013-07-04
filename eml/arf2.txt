@@ -4,7 +4,7 @@ Subject: FW: Earn money
 To: <abuse@example.net>
 MIME-Version: 1.0
 Content-Type: multipart/report; report-type=feedback-report;
-boundary="part1_13d.2e68ed54_boundary"
+ boundary="part1_13d.2e68ed54_boundary"
 
 --part1_13d.2e68ed54_boundary
 Content-Type: text/plain; charset="US-ASCII"
@@ -26,10 +26,8 @@ Removal-Recipient: user@example.com
 Content-Type: text/rfc822-header
 
 From: <somespammer@example.net>
-Received: from mailserver.example.net
-(mailserver.example.net [192.0.2.1])
-by example.com with ESMTP id M63d4137594e46;
-Thu, 08 Mar 2005 14:00:00 -0400
+Received: from mailserver.example.net (mailserver.example.net [192.0.2.1]) 
+ by example.com with ESMTP id M63d4137594e46; Thu, 08 Mar 2005 14:00:00 -0400
 To: <Undisclosed Recipients>
 Subject: Earn money
 MIME-Version: 1.0

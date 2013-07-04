@@ -1,0 +1,66 @@
+Received: (qmail 16743 invoked from network); 30 Dec 2010 18:37:33 -0000
+Received: from unknown (HELO ourmailserver.com) (10.1.0.252)
+  by ourmailserver.com with SMTP; 30 Dec 2010 18:37:33 -0000
+Received: from bay0-omc2-s15.bay0.hotmail.com ([65.54.190.90])
+  by ourmailserver.com with ESMTP; 30 Dec 2010 10:37:17 -0800
+Received: from BAY0-JMR-DB02 ([65.54.190.125]) by bay0-omc2-s15.bay0.hotmail.com with Microsoft SMTPSVC(6.0.3790.4675);
+	 Thu, 30 Dec 2010 10:37:16 -0800
+Date: Thu, 30 Dec 10 10:37:16 -0800
+From: staff@hotmail.com
+Subject: complaint about message from 24.64.1.1
+To: fbl-abuse@ourdomain.com 
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="A80427F4-B4F2-4D64-BECA-12CAD20DE5F5"
+Return-Path: staff@hotmail.com
+Message-ID: <BAY0-OMC2-S15EXxt5B0006c5b9@bay0-omc2-s15.bay0.hotmail.com>
+X-OriginalArrivalTime: 30 Dec 2010 18:37:16.0535 (UTC) FILETIME=[9544B870:01CBA850]
+
+--A80427F4-B4F2-4D64-BECA-12CAD20DE5F5
+Content-Type: message/rfc822
+Content-Disposition: inline
+
+X-HmXmrOriginalRecipient: somerecipient@hotmail.com
+X-Reporter-IP: 96.23.88.208
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTE7YT0xO0Q9MTtTQ0w9MA==
+X-Message-Status: n
+X-SID-PRA: Our Domain <support@ourdomain.com>
+X-AUTH-Result: NONE
+X-Message-Info: /Afko6AgMSzYW0lYpZQpJ1fX1hpBS7ZsGpYQz72u0pGUrNVnYB55cCmtxJMioyRUp4kBLVmh5ORjL/cKELk+Un2AYg/2pHDlTSy4Jebte06vpiO+vUgPLA==
+Received: from ourdomain.com ([24.64.1.1]) by snt0-mc2-f47.Snt0.hotmail.com with Microsoft SMTPSVC(6.0.3790.4675);
+	 Thu, 30 Dec 2010 06:50:29 -0800
+Received: (qmail 7488 invoked from network); 30 Dec 2010 14:50:29 -0000
+Received: from web.local (10.1.0.252)
+  by ourmailserver.com with SMTP; 30 Dec 2010 14:50:29 -0000
+Received: from mail pickup service by WEB.local with Microsoft SMTPSVC;
+	 Thu, 30 Dec 2010 06:50:29 -0800
+From: "Our Domain" <support@ourdomain.com> 
+To: "someuser@hotmail.com" <someuser@hotmail.com>
+Date: Thu, 30 Dec 2010 06:50:29 -0800
+Subject: Some Subject Line
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="_=aspNetEmail=_7d2331908aec4efe9b55fe9f27355434"
+X-Mailer: aspNetEmail ver 2.5.0.0
+X-RCPT-TO: <someuser@hotmail.com>
+MIME-Version: 1.0
+Message-ID: <WEBfb154d7a03bb483591c696782382d12e@WEB>
+X-OriginalArrivalTime: 30 Dec 2010 14:50:29.0339 (UTC) FILETIME=[E6BF62B0:01CBA830]
+Return-Path: support@ourdomain.com
+
+--_=aspNetEmail=_7d2331908aec4efe9b55fe9f27355434
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Season's Greetings
+
+--_=aspNetEmail=_7d2331908aec4efe9b55fe9f27355434
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p>Season's Greetings</p>
+
+--_=aspNetEmail=_7d2331908aec4efe9b55fe9f27355434--
+
+--A80427F4-B4F2-4D64-BECA-12CAD20DE5F5--

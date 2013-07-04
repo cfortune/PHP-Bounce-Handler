@@ -12,7 +12,7 @@ $status_code_subclasses['0.0']['title'] =  "Other undefined Status";
 $status_code_subclasses['0.0']['descr'] =  "Other undefined status is the only undefined error code. It should be used for all errors for which only the class of the error is known.";
 
 $status_code_subclasses['1.0']['title'] =  "Other address status";
-$status_code_subclasses['0.0']['descr'] =  "Something about the address specified in the message caused this DSN.";
+$status_code_subclasses['1.0']['descr'] =  "Something about the address specified in the message caused this DSN.";
 
 $status_code_subclasses['1.1']['title'] =  "Bad destination mailbox address";
 $status_code_subclasses['1.1']['descr'] =  "The mailbox specified in the address does not exist.  For Internet mail names, this means the address portion to the left of the @ sign is invalid.  This code is only useful for permanent failures.";

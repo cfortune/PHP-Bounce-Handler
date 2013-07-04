@@ -1,15 +1,50 @@
-<h1>bounce_driver.class.php -- Version 6</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<body>
+
+<?php
+
+require_once("bounce_driver.class.php");
+$bouncehandler = new Bouncehandler();
+
+if($_GET['testall']){
+    $files = get_sorted_file_list('eml');
+    if (is_array($files)) {
+       echo "<P>File Tests:</P>\n";
+       foreach($files as $file) {
+            echo "<a href=\"".$_SERVER['PHP_SELF']."?eml=".urlencode($file)."\">$file</a> ";
+            $bounce = file_get_contents("eml/".$file);
+            $multiArray = $bouncehandler->get_the_facts($bounce);
+            if(   !empty($multiArray[0]['action'])
+               && !empty($multiArray[0]['status'])
+               && !empty($multiArray[0]['recipient']) ){
+                print " - Passed<br>\n";
+            }
+            else{
+                print "<font color=red> - WRONG</font><br>\n";
+                print "<pre>\n";
+                print_r($multiArray[0]);
+                print "</pre>\n";
+            }
+       }
+    }
+}
+?>
+
+<h1>bounce_driver.class.php -- Version 7.0</h1>
+
 <P>
     Chris Fortune ~ <a href="http://cfortune.kics.bc.ca">http://cfortune.kics.bc.ca</a>
 </P>
 <P>
-Feb 24, 2001
+Feb 3, 2011
 </P>
 <P>
 Hey! Class is no longer static, it is rewritten in dynamic <code>$this-></code> notation.  It's much easier to customize now.  If you are upgrading from a previous version, you will need to rewrite your method invocation code.
 <P>
 <HR>
-<a href="php.bouncehandler.v6.zip" onclick="alert('not ready just yet'); return false;">Download source code</a>
+    <!--  onclick="alert('not ready just yet'); return false;" -->
+<a href="php.bouncehandler.v7.0.zip">Download source code</a>
 <HR>
 
 <P>
@@ -23,8 +58,6 @@ You can configure custom regular expressions to find any web beacons you may hav
 <P>
 If the bounce is not well formed, it tries to extract some useful information anyway.  Currently Postfix and Exim are supported, partially.  You can edit the function <code>get_the_facts()</code> if you want to add a parser for your own busted MTA.  Please forward any useful & reuseable code to the keeper of this class.  <a href="http://cfortune.kics.bc.ca/">Chris Fortune</a></P>
 <?
-require_once("bounce_driver.class.php");
-$bouncehandler = new Bouncehandler();
 
 // a perl regular expression to find a web beacon in the email body
 $bouncehandler->web_beacon_preg_1 = "/u=([0-9a-fA-F]{32})/";
@@ -61,17 +94,16 @@ if($_GET['eml']){
     list($head, $body) = preg_split("/\r\n\r\n/", $bounce, 2);
 }
 else{
-    print "select a bounce email to view the parse";
-    if ($handle = opendir('eml')) {
-       echo "<P>Files:</P>\n";
+    print "<OL><LI><a href=\"".$_SERVER['PHP_SELF']."?testall=true\">Test All Sample Bounce E-mails</a>\n\n";
+    print "<LI>Or, select a bounce email to view the parsed results:</OL>\n";
 
-       /* This is the correct way to loop over the directory. */
-       while (false !== ($file = readdir($handle))) {
-           if($file=='.' || $file=='..') continue;
+    $files = get_sorted_file_list('eml');
+    if (is_array($files)) {
+        reset($files);
+        echo "<P>Files:</P>\n";
+        foreach($files as $file) {
            echo "<a href=\"".$_SERVER['PHP_SELF']."?eml=".urlencode($file)."\">$file</a><br>\n";
-       }
-
-       closedir($handle);
+        }
     }
     exit;
 }
@@ -144,15 +176,22 @@ echo "<TEXTAREA COLS=100 ROWS=".(count($head_hash)*2.7).">";
 print_r($head_hash);
 echo "</TEXTAREA>";
 
-if ($bouncehandler->is_RFC1892_multipart_report($head_hash) === TRUE){
+if($bouncehandler->is_hotmail_fbl) echo "RRRRRR".$bouncehandler->recipient ;
+exit;
+
+if ($bouncehandler->is_RFC1892_multipart_report($head_hash)){
     print "<h2><font color=red>Looks like an RFC1892 multipart report</font></H2>";
 }
-else if($bouncehandler->looks_like_an_FBL === TRUE){
+else if($bouncehandler->looks_like_an_FBL){
     print "<h2><font color=red>It's a Feedback Loop, ";
-    if($bouncehandler->is_hotmail_fbl)
+    if($bouncehandler->is_hotmail_fbl){
         print " in Hotmail Doofus Format (HDF?)</font></H2>";
-    else
-        print " in Abuse Feedback Reporting Format (ARF)</font></H2>";
+    }else{
+        print " in Abuse Feedback Reporting format (ARF)</font></H2>";
+        echo "<TEXTAREA COLS=100 ROWS=12>";
+        print_r($bouncehandler->fbl_hash);
+        echo "</TEXTAREA>";
+    }
 }
 else {
     print "<h2><font color=red>Not an RFC1892 multipart report</font></H2>";
@@ -221,4 +260,18 @@ echo "</TEXTAREA>";
                 $diag_code_msg = $bouncehandler->fetch_status_messages($diag_code['code']);
                 $diag_code_remote_msg = $diag_code['text'];
 */
+
+function get_sorted_file_list($d){
+    $fs = array();
+    if ($h = opendir($d)) {
+        while (false !== ($f = readdir($h))) {
+            if($f=='.' || $f=='..') continue;
+            $fs[] = $f;
+        }
+        closedir($h);
+        sort($fs, SORT_STRING);//
+    }
+    return $fs;
+}
+
 ?>

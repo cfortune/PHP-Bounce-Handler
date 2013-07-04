@@ -1,0 +1,42 @@
+bounce_driver.class.php
+-----------------------
+fbl handling;
+  ensure as much of fbl_hash as possible is populated
+  create all entries in fbl_hash for hotmail
+  cleanup entries for consistancy
+
+get_status_code_from_text;
+  now table driven, table external in bounce_responses.php
+  make rfc1893 matcher require non alpha before and after code
+
+standard_parser:
+  fix handling of continuation lines to not add blanks at end and not add
+    start of mimebreak
+
+
+bounce_responses.php
+--------------------
+New file that contains mappings of text responses to RFC1892 codes
+Massively expanded/tweaked/fixed from previous if/then/else in main code
+
+
+rfc1893.error.codes.php
+-----------------------
+fix typo for 1.0 description
+
+
+testdriver1.php
+---------------
+add file sort before listing possible bounce files
+add fbl_hash display section for fbls
+
+
+email samples
+-------------
+eml/arf1.txt, eml/arf2.txt, eml/arf3.txt
+ - fix wrapping in email. These samples were not valid emails as the leading blanks on header continuations had been stripped.
+eml/hotmailbounce.txt
+ - remove identifying info
+eml/fbl-yahoo.txt, eml/fbl-aol.txt, eml/fbl-hotmail.txt, eml/fbl-comcast.txt
+ - add new proper real-life fbl samples from these ISPs
+

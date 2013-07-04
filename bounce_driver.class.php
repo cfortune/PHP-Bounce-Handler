@@ -1,7 +1,7 @@
 <?php
 //error_reporting(E_ALL);
 
-/* BOUNCE HANDLER Class, Version 6.2
+/* BOUNCE HANDLER Class, Version 7.0
  * Description: "chops up the bounce into associative arrays"
  *     ~ http://www.phpclasses.org/browse/file/11665.html
  */
@@ -38,6 +38,7 @@ class BounceHandler{
     public $head_hash = array();
     public $fbl_hash = array();
     public $body_hash = array(); // not necessary
+    public $bouncelist = array(); // from bounce_responses.txt
 
     public $looks_like_a_bounce = false;
     public $looks_like_an_FBL = false;
@@ -75,6 +76,8 @@ class BounceHandler{
         $this->output[0]['action']  = "";
         $this->output[0]['status']  = "";
         $this->output[0]['recipient'] = "";
+        include_once('bounce_responses.php');
+        $this->bouncelist = $bouncelist;
     }
     
 
@@ -112,23 +115,94 @@ class BounceHandler{
             $this->output[0]['action'] = 'failed';
             $this->output[0]['status'] = "5.7.1";
             $this->subject = trim(str_ireplace("Fw:", "", $this->head_hash['Subject']));
-
             if($this->is_hotmail_fbl === true){
-                $this->output[0]['recipient'] = $this->head_hash['X-hmxmroriginalrecipient'];
-                if (! $this->output[0]['recipient']) {
-                     $this->output[0]['recipient'] = $this->first_body_hash['X-hmxmroriginalrecipient'];
+                // fill in the fbl_hash with sensible values
+                $this->fbl_hash['Content-disposition'] = 'inline';
+                $this->fbl_hash['Content-type'] = 'message/feedback-report';
+                $this->fbl_hash['Feedback-type'] = 'abuse';
+                $this->fbl_hash['User-agent'] = 'Hotmail FBL';
+                if (isset($this->first_body_hash['Date'])) {
+                    $this->fbl_hash['Received-date'] = $this->first_body_hash['Date'];
+                }
+                if (!empty($this->recipient)){
+                    $this->fbl_hash['Original-rcpt-to'] = $this->recipient;
+                }
+                if(isset($this->first_body_hash['X-sid-pra'])){
+                    $this->fbl_hash['Original-mail-from'] = $this->first_body_hash['X-sid-pra'];
                 }
             }
             else{
-                $fbl = $this->standard_parser($mime_sections['machine_parsable_body_part']);
-                $this->output[0]['recipient'] = $this->find_fbl_recipients($fbl);
-                $this->fbl_hash = $fbl;
+                $this->fbl_hash = $this->standard_parser($mime_sections['machine_parsable_body_part']);
+                $returnedhash = $this->standard_parser($mime_sections['returned_message_body_part']);
+                if (empty($this->fbl_hash['Original-mail-from']) && !empty($returnedhash['From'])) {
+                    $this->fbl_hash['Original-mail-from'] = $returnedhash['From'];
+                }
+                if (empty($this->fbl_hash['Original-rcpt-to']) && !empty($this->fbl_hash['Removal-recipient']) ) {
+                    $this->fbl_hash['Original-rcpt-to'] = $this->fbl_hash['Removal-recipient'];
+                }
+                elseif (!empty($returnedhash['To'])) {
+                    $this->fbl_hash['Original-rcpt-to'] = $returnedhash['To'];
+                }
             }
+            // warning, some servers will remove the name of the original intended recipient from the FBL report,
+            // replacing it with redacted@rcpt-hostname.com, making it utterly useless, of course (unless you used a web-beacon).
+            // here we try our best to give you the actual intended recipient, if possible.
+            if (preg_match('/Undisclosed|redacted/i', $this->fbl_hash['Original-rcpt-to']) && isset($this->fbl_hash['Removal-recipient']) ) {
+                $this->fbl_hash['Original-rcpt-to'] = $this->fbl_hash['Removal-recipient'];
+            }
+            if (empty($this->fbl_hash['Received-date']) && !empty($this->fbl_hash['Arrival-date']) ) {
+                $this->fbl_hash['Received-date'] = $this->fbl_hash['Arrival-date'];
+            }
+            $this->fbl_hash['Original-mail-from'] = $this->strip_angle_brackets($this->fbl_hash['Original-mail-from']);
+            $this->fbl_hash['Original-rcpt-to']   = $this->strip_angle_brackets($this->fbl_hash['Original-rcpt-to']);
+            $this->output[0]['recipient'] = $this->fbl_hash['Original-rcpt-to'];
         }
+        //if($this->looks_like_an_FBL){
+        //    $this->output[0]['action'] = 'failed';
+        //    $this->output[0]['status'] = "5.7.1";
+        //    $this->subject = trim(str_ireplace("Fw:", "", $this->head_hash['Subject']));
+        //    if($this->is_hotmail_fbl === true){
+        //        // fill in the fbl_hash with sensable values
+        //        $this->fbl_hash['Content-disposition'] = 'inline';
+        //        $this->fbl_hash['Content-type'] = 'message/feedback-report';
+        //        $this->fbl_hash['Feedback-type'] = 'abuse';
+        //        $this->fbl_hash['User-agent'] = 'Hotmail FBL';
+        //        $this->fbl_hash['Received-date'] = $this->first_body_hash['Date'];
+        //        $this->fbl_hash['Original-rcpt-to'] = $this->first_body_hash['X-hmxmroriginalrecipient'];
+        //        if(empty($this->fbl_hash['Original-rcpt-to'])){
+        //            $this->fbl_hash['Original-rcpt-to'] = $this->head_hash['X-hmxmroriginalrecipient'];
+        //        }
+        //        $this->fbl_hash['Original-mail-from'] = $this->first_body_hash['X-sid-pra'];
+        //    }
+        //    else{
+        //        $this->fbl_hash = $this->standard_parser($mime_sections['machine_parsable_body_part']);
+        //        $returnedhash = $this->standard_parser($mime_sections['returned_message_body_part']);
+        //        if (!isset($this->fbl_hash['Original-mail-from']) && isset($returnedhash['From'])) {
+        //            $this->fbl_hash['Original-mail-from'] = $returnedhash['From'];
+        //        }
+        //        if (empty($this->fbl_hash['Original-rcpt-to']) && !empty($this->fbl_hash['Removal-recipient']) ) {
+        //            $this->fbl_hash['Original-rcpt-to'] = $this->fbl_hash['Removal-recipient'];
+        //        }
+        //        elseif (isset($returnedhash['To'])) {
+        //            $this->fbl_hash['Original-rcpt-to'] = $returnedhash['To'];
+        //        }
+        //    }
+        //    if (preg_match('/Undisclosed|redacted/', $this->fbl_hash['Original-rcpt-to']) && isset($this->fbl_hash['Removal-recipient']) ) {
+        //        $this->fbl_hash['Original-rcpt-to'] = $this->fbl_hash['Removal-recipient'];
+        //    }
+        //    if (preg_match('/<(.*)>/',$this->fbl_hash['Original-mail-from'],$match)) {
+        //        $this->fbl_hash['Original-mail-from'] = $match[1];
+        //    }
+        //    if (preg_match('/<(.*)>/',$this->fbl_hash['Original-rcpt-to'],$match)) {
+        //        $this->fbl_hash['Original-rcpt-to'] = $match[1];
+        //    }
+        //    $this->output[0]['recipient'] = $this->fbl_hash['Original-rcpt-to'];
+        //    
+        //}
         else if (preg_match("/auto.{0,20}reply|vacation|(out|away|on holiday).*office/i", $this->head_hash['Subject'])){
             // looks like a vacation autoreply, ignoring
             $this->output[0]['action'] = 'autoreply';
-        }
+        } 
         else if ($this->is_RFC1892_multipart_report() === TRUE){
             $rpt_hash = $this->parse_machine_parsable_body_part($mime_sections['machine_parsable_body_part']);
             for($i=0; $i<count($rpt_hash['per_recipient']); $i++){
@@ -173,6 +247,15 @@ class BounceHandler{
         }
         // else if()..... add a parser for your busted-ass MTA here
         
+        // remove empty array indices
+        $tmp = array();
+        foreach($this->output as $arr){
+            if(empty($arr['recipient']) && empty($arr['status']) && empty($arr['action']) ){
+                continue;
+            }
+            $tmp[] = $arr;
+        }
+        $this->output = $tmp;
 
         // accessors
         /*if it is an FBL, you could use the class variables to access the
@@ -201,6 +284,22 @@ class BounceHandler{
 
 
     function init_bouncehandler($blob, $format='string'){
+        $this->head_hash = array();
+        $this->fbl_hash = array();
+        $this->body_hash = array(); 
+        $this->looks_like_a_bounce = false;
+        $this->looks_like_an_FBL = false;
+        $this->is_hotmail_fbl = false;
+        $this->type = "";
+        $this->feedback_type = "";
+        $this->action = "";
+        $this->status = "";
+        $this->subject = "";
+        $this->recipient = "";
+        $this->output = array();
+
+        // TODO: accept several formats (XML, string, array)
+        // currently accepts only string
         //if($format=='xml_array'){
         //    $strEmail = "";
         //    $out = "";
@@ -261,65 +360,14 @@ class BounceHandler{
                 return '';
             }
             /******** pattern matching ********/
-            if(    stristr($line, 'no such address')!==FALSE
-               ||  stristr($line, 'Recipient address rejected')!==FALSE
-               ||  stristr($line, 'User unknown in virtual alias table')!==FALSE){
-                return  '5.1.1';
-            }
-            else if(stristr($line, 'unrouteable mail domain')!==FALSE
-                 || stristr($line, 'Esta casilla ha expirado por falta de uso')!==FALSE){
-                return  '5.1.2';
-            }
-            else if(stristr($line, 'mailbox is full')!==FALSE
-                ||  stristr($line, 'Mailbox quota usage exceeded')!==FALSE
-                ||  stristr($line, 'User mailbox exceeds allowed size')!==FALSE){
-                return  '4.2.2';
-            }
-            else if(stristr($line, 'not yet been delivered')!==FALSE){
-                return  '4.2.0';
-            }
-            else if(stristr($line, 'mailbox unavailable')!==FALSE){
-                return  '5.2.0';
-            }
-            else if(stristr($line, 'Unrouteable address')!==FALSE){
-                return  '5.4.4';
-            }
-            else if(stristr($line, 'retry timeout exceeded')!==FALSE){
-                return  '4.4.7';
-            }
-            else if(stristr($line, 'The account or domain may not exist, they may be blacklisted, or missing the proper dns entries.')!==FALSE){ // Kanon added
-                return  '5.2.0'; // I guess.... seems like 5.1.1, 5.1.2, or 5.4.4 would fit too, but 5.2.0 seemed most generic
-            }
-            else if(stristr($line, '554 TRANSACTION FAILED')!==FALSE){ // Kanon added
-                return  '5.5.4'; // I think this should be 5.7.1. "SMTP error from remote mail server after end of data: ... (HVU:B1) http://postmaster.info.aol.com/errors/554hvub1.html" -- AOL rejects messages that have links to certain sites in them.
-            }
-            else if(stristr($line, 'Status: 4.4.1')!==FALSE
-                 || stristr($line, 'delivery temporarily suspended')!==FALSE){ // Kanon added
-                return  '4.4.1';
-            }
-            else if(stristr($line, '550 OU-002')!==FALSE
-                 || stristr($line, 'Mail rejected by Windows Live Hotmail for policy reasons')!==FALSE){ // Kanon added
-                return  '5.5.0'; // Again, why isn't this 5.7.1 instead?
-            }
-            else if(stristr($line, 'PERM_FAILURE: DNS Error: Domain name not found')!==FALSE){ // Kanon added
-                return  '5.1.2'; // Not sure if this is right code. Just copied from above.
-            }
-            else if(stristr($line, 'Delivery attempts will continue to be made for')!==FALSE){ // Kanon added. From Symantec_AntiVirus_for_SMTP_Gateways@uqam.ca
-                return  '4.2.0'; // I'm not sure why Symantec delayed this message, but x.2.x means something to do with the mailbox, which seemed appropriate. x.5.x (protocol) or x.7.x (security) also seem possibly appropriate. It seems a lot of times it's x.5.x when it seems to me it should be x.7.x, so maybe x.5.x is standard when mail is rejected due to spam-like characteristics instead of x.7.x like I think it should be.
-            }
-            else if(stristr($line, '554 delivery error:')!==FALSE){
-                return  '5.5.4'; // rogers.com
-            }
-            else if(strstr ($line, '550-5.1.1')!==FALSE
-                 || stristr($line, 'This Gmail user does not exist.')!==FALSE){ // Kanon added
-                return  '5.1.1'; // Or should it be 5.5.0?
-            }
-            else{
-                // end strstr tests
+            foreach ($this->bouncelist as $bouncetext => $bouncecode) {
+              if (preg_match("/$bouncetext/i", $line, $matches)) {
+                return (isset($matches[1])) ? $matches[1] : $bouncecode;
+              }
             }
 
             // rfc1893 return code
-            if(preg_match('/([245]\.[01234567]\.[012345678])/', $line, $matches)){
+            if(preg_match('/\W([245]\.[01234567]\.[012345678])\W/', $line, $matches)){
                 if(stripos($line, 'Message-ID')!==FALSE){
                     break;
                 }
@@ -395,7 +443,7 @@ class BounceHandler{
         // simple parse (Entity: value\n)
         if(!is_array($content)) $content = explode("\r\n", $content);
         foreach($content as $line){
-            if(preg_match('/([^\s.]*):\s(.*)/', $line, $array)){
+            if(preg_match('/^([^\s.]*):\s*(.*)\s*/', $line, $array)){
                 $entity = ucfirst(strtolower($array[1]));
                 if(empty($hash[$entity])){
                     $hash[$entity] = trim($array[2]);
@@ -409,10 +457,8 @@ class BounceHandler{
                     }
                 }
             }
-            else{
-                if ($entity){
-                    $hash[$entity] .= " $line";
-                }
+            elseif (preg_match('/^\s+(.+)\s*/', $line) && $entity) {
+                $hash[$entity] .= ' '. $line;
             }
         }
         return $hash;
@@ -602,8 +648,14 @@ class BounceHandler{
     function is_an_ARF(){
         if(preg_match('/feedback-report/',$this->head_hash['Content-type']['report-type'])) return true;
         if(preg_match('/scomp/',$this->head_hash['X-loop'])) return true;
-        if(isset($this->head_hash['X-hmxmroriginalrecipient']) || isset($this->first_body_hash['X-hmxmroriginalrecipient']) )  {
-            $this->is_hotmail_fbl = true;
+        if(isset($this->head_hash['X-hmxmroriginalrecipient']))  {
+            $this->is_hotmail_fbl = TRUE;
+            $this->recipient = $this->head_hash['X-hmxmroriginalrecipient'];
+            return true;
+        }
+        if(isset($this->first_body_hash['X-hmxmroriginalrecipient']) )  {
+            $this->is_hotmail_fbl = TRUE;
+            $this->recipient = $this->first_body_hash['X-hmxmroriginalrecipient'];
             return true;
         }
         return false;
