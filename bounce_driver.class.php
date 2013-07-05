@@ -1,8 +1,10 @@
 <?php
 //error_reporting(E_ALL);
 
-/* BOUNCE HANDLER Class, Version 7.0
+/* BOUNCE HANDLER Class, Version 7.3
  * Description: "chops up the bounce into associative arrays"
+ *     ~ http://www.anti-spam-man.com/php_bouncehandler/v7.3/
+ *     ~ https://github.com/cfortune/PHP-Bounce-Handler/
  *     ~ http://www.phpclasses.org/browse/file/11665.html
  */
 
@@ -21,7 +23,7 @@
 
 /*
  The BSD License
- Copyright (c) 2006-2010, Chris Fortune http://cfortune.kics.bc.ca
+ Copyright (c) 2006-forever, Chris Fortune http://cfortune.kics.bc.ca
  All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -39,9 +41,11 @@ class BounceHandler{
     public $fbl_hash = array();
     public $body_hash = array(); // not necessary
     public $bouncelist = array(); // from bounce_responses.txt
+    public $autorespondlist = array(); // from bounce_responses.txt
 
     public $looks_like_a_bounce = false;
     public $looks_like_an_FBL = false;
+    public $looks_like_an_autoresponse = false;
     public $is_hotmail_fbl = false;
     
     // these are for feedback reports, so you can extract uids from the emails
@@ -78,6 +82,7 @@ class BounceHandler{
         $this->output[0]['recipient'] = "";
         include_once('bounce_responses.php');
         $this->bouncelist = $bouncelist;
+        $this->autorespondlist = $autorespondlist;
     }
     
 
@@ -95,19 +100,26 @@ class BounceHandler{
         $this->head_hash = $this->parse_head($head);
 
         // parse the email into data structures
-        $boundary = $this->head_hash['Content-type']['boundary'];
+        $boundary = @$this->head_hash['Content-type']['boundary'];
         $mime_sections = $this->parse_body_into_mime_sections($body, $boundary);
-        $this->body_hash = split("\r\n", $body);
-        $this->first_body_hash = $this->parse_head($mime_sections['first_body_part']);
+        $this->body_hash = preg_split("/\r\n/", $body);
+        $this->first_body_hash = $this->parse_head(@$mime_sections['first_body_part']);
 
         $this->looks_like_a_bounce = $this->is_a_bounce();
         $this->looks_like_an_FBL = $this->is_an_ARF();
+        $this->looks_like_an_autoresponse = $this->is_an_autoresponse();
         
-        //if(!$this->looks_like_a_bounce && !$this->looks_like_an_FBL)
-        //    return "unknown"; // not good if email is badly formatted, which is TOO OFTEN!
+
+        /* If you are trying to save processing power, and don't care much
+         * about accuracy then uncomment this statement in order to skip the
+         * heroic text parsing below. 
+         */
+        //if(!$this->looks_like_a_bounce && !$this->looks_like_an_FBL && !$this->looks_like_an_autoresponse){
+        //    return "unknown";
+        //}
 
 
-        /*** now we try all our weird text parsing methods ****************************************/
+        /*** now we try all our weird text parsing methods (E-mail is weird!) ******************************/
 
         // is it a Feedback Loop, in Abuse Feedback Reporting Format (ARF)?
         // http://en.wikipedia.org/wiki/Abuse_Reporting_Format#Abuse_Feedback_Reporting_Format_.28ARF.29
@@ -148,81 +160,58 @@ class BounceHandler{
             // replacing it with redacted@rcpt-hostname.com, making it utterly useless, of course (unless you used a web-beacon).
             // here we try our best to give you the actual intended recipient, if possible.
             if (preg_match('/Undisclosed|redacted/i', $this->fbl_hash['Original-rcpt-to']) && isset($this->fbl_hash['Removal-recipient']) ) {
-                $this->fbl_hash['Original-rcpt-to'] = $this->fbl_hash['Removal-recipient'];
+                $this->fbl_hash['Original-rcpt-to'] = @$this->fbl_hash['Removal-recipient'];
             }
-            if (empty($this->fbl_hash['Received-date']) && !empty($this->fbl_hash['Arrival-date']) ) {
-                $this->fbl_hash['Received-date'] = $this->fbl_hash['Arrival-date'];
+            if (empty($this->fbl_hash['Received-date']) && !empty($this->fbl_hash[@'Arrival-date']) ) {
+                $this->fbl_hash['Received-date'] = @$this->fbl_hash['Arrival-date'];
             }
-            $this->fbl_hash['Original-mail-from'] = $this->strip_angle_brackets($this->fbl_hash['Original-mail-from']);
-            $this->fbl_hash['Original-rcpt-to']   = $this->strip_angle_brackets($this->fbl_hash['Original-rcpt-to']);
+            $this->fbl_hash['Original-mail-from'] = $this->strip_angle_brackets(@$this->fbl_hash['Original-mail-from']);
+            $this->fbl_hash['Original-rcpt-to']   = $this->strip_angle_brackets(@$this->fbl_hash['Original-rcpt-to']);
             $this->output[0]['recipient'] = $this->fbl_hash['Original-rcpt-to'];
         }
-        //if($this->looks_like_an_FBL){
-        //    $this->output[0]['action'] = 'failed';
-        //    $this->output[0]['status'] = "5.7.1";
-        //    $this->subject = trim(str_ireplace("Fw:", "", $this->head_hash['Subject']));
-        //    if($this->is_hotmail_fbl === true){
-        //        // fill in the fbl_hash with sensable values
-        //        $this->fbl_hash['Content-disposition'] = 'inline';
-        //        $this->fbl_hash['Content-type'] = 'message/feedback-report';
-        //        $this->fbl_hash['Feedback-type'] = 'abuse';
-        //        $this->fbl_hash['User-agent'] = 'Hotmail FBL';
-        //        $this->fbl_hash['Received-date'] = $this->first_body_hash['Date'];
-        //        $this->fbl_hash['Original-rcpt-to'] = $this->first_body_hash['X-hmxmroriginalrecipient'];
-        //        if(empty($this->fbl_hash['Original-rcpt-to'])){
-        //            $this->fbl_hash['Original-rcpt-to'] = $this->head_hash['X-hmxmroriginalrecipient'];
-        //        }
-        //        $this->fbl_hash['Original-mail-from'] = $this->first_body_hash['X-sid-pra'];
-        //    }
-        //    else{
-        //        $this->fbl_hash = $this->standard_parser($mime_sections['machine_parsable_body_part']);
-        //        $returnedhash = $this->standard_parser($mime_sections['returned_message_body_part']);
-        //        if (!isset($this->fbl_hash['Original-mail-from']) && isset($returnedhash['From'])) {
-        //            $this->fbl_hash['Original-mail-from'] = $returnedhash['From'];
-        //        }
-        //        if (empty($this->fbl_hash['Original-rcpt-to']) && !empty($this->fbl_hash['Removal-recipient']) ) {
-        //            $this->fbl_hash['Original-rcpt-to'] = $this->fbl_hash['Removal-recipient'];
-        //        }
-        //        elseif (isset($returnedhash['To'])) {
-        //            $this->fbl_hash['Original-rcpt-to'] = $returnedhash['To'];
-        //        }
-        //    }
-        //    if (preg_match('/Undisclosed|redacted/', $this->fbl_hash['Original-rcpt-to']) && isset($this->fbl_hash['Removal-recipient']) ) {
-        //        $this->fbl_hash['Original-rcpt-to'] = $this->fbl_hash['Removal-recipient'];
-        //    }
-        //    if (preg_match('/<(.*)>/',$this->fbl_hash['Original-mail-from'],$match)) {
-        //        $this->fbl_hash['Original-mail-from'] = $match[1];
-        //    }
-        //    if (preg_match('/<(.*)>/',$this->fbl_hash['Original-rcpt-to'],$match)) {
-        //        $this->fbl_hash['Original-rcpt-to'] = $match[1];
-        //    }
-        //    $this->output[0]['recipient'] = $this->fbl_hash['Original-rcpt-to'];
-        //    
-        //}
+
         else if (preg_match("/auto.{0,20}reply|vacation|(out|away|on holiday).*office/i", $this->head_hash['Subject'])){
             // looks like a vacation autoreply, ignoring
             $this->output[0]['action'] = 'autoreply';
         } 
+
+        // is this an autoresponse ?
+        else if ($this->looks_like_an_autoresponse) {
+            $this->output[0]['action'] = 'transient';
+            $this->output[0]['status'] = '4.3.2';
+            // grab the first recipient and break
+            $this->output[0]['recipient'] = isset($this->head_hash['Return-path']) ? $this->strip_angle_brackets($this->head_hash['Return-path']) : '';
+            if(empty($this->output[0]['recipient'])){
+                $arrFailed = $this->find_email_addresses($body);
+                for($j=0; $j<count($arrFailed); $j++){
+                    $this->output[$j]['recipient'] = trim($arrFailed[$j]);
+                    break; 
+                }
+            }
+        }
+
         else if ($this->is_RFC1892_multipart_report() === TRUE){
             $rpt_hash = $this->parse_machine_parsable_body_part($mime_sections['machine_parsable_body_part']);
             for($i=0; $i<count($rpt_hash['per_recipient']); $i++){
                 $this->output[$i]['recipient'] = $this->find_recipient($rpt_hash['per_recipient'][$i]);
-                $mycode = $this->format_status_code($rpt_hash['per_recipient'][$i]['Status']);
-                $this->output[$i]['status'] = $mycode['code'];
-                $this->output[$i]['action'] = $rpt_hash['per_recipient'][$i]['Action'];
+                $mycode = @$this->format_status_code($rpt_hash['per_recipient'][$i]['Status']);
+                $this->output[$i]['status'] = @$mycode['code'];
+                $this->output[$i]['action'] = @$rpt_hash['per_recipient'][$i]['Action'];
             }
         }
+
         else if(isset($this->head_hash['X-failed-recipients'])) {
             //  Busted Exim MTA
             //  Up to 50 email addresses can be listed on each header.
             //  There can be multiple X-Failed-Recipients: headers. - (not supported)
-            $arrFailed = split(',', $this->head_hash['X-failed-recipients']);
+            $arrFailed = preg_split("/\,/", $this->head_hash['X-failed-recipients']);
             for($j=0; $j<count($arrFailed); $j++){
                 $this->output[$j]['recipient'] = trim($arrFailed[$j]);
                 $this->output[$j]['status'] = $this->get_status_code_from_text($this->output[$j]['recipient'],0);
                 $this->output[$j]['action'] = $this->get_action_from_status_code($this->output[$j]['status']);
             }
         }
+
         else if(!empty($boundary) && $this->looks_like_a_bounce){
             // oh god it could be anything, but at least it has mime parts, so let's try anyway
             $arrFailed = $this->find_email_addresses($mime_sections['first_body_part']);
@@ -232,6 +221,7 @@ class BounceHandler{
                 $this->output[$j]['action'] = $this->get_action_from_status_code($this->output[$j]['status']);
             }
         }
+
         else if($this->looks_like_a_bounce){
             // last ditch attempt
             // could possibly produce erroneous output, or be very resource consuming,
@@ -266,7 +256,7 @@ class BounceHandler{
         $this->status = $this->output[0]['status'];
         $this->subject = ($this->subject) ? $this->subject : $this->head_hash['Subject'];
         $this->recipient = $this->output[0]['recipient'];
-        $this->feedback_type = ($this->fbl_hash['Feedback-type']) ? $this->fbl_hash['Feedback-type'] : "";
+        $this->feedback_type = @($this->fbl_hash['Feedback-type']) ? $this->fbl_hash['Feedback-type'] : "";
 
         // sniff out any web beacons
         if($this->web_beacon_preg_1)
@@ -400,18 +390,15 @@ class BounceHandler{
     }
 
     function is_RFC1892_multipart_report(){
-        return $this->head_hash['Content-type']['type']=='multipart/report'
-           &&  $this->head_hash['Content-type']['report-type']=='delivery-status'
-           && $this->head_hash['Content-type'][boundary]!=='';
+        return @$this->head_hash['Content-type']['type']=='multipart/report'
+           &&  @$this->head_hash['Content-type']['report-type']=='delivery-status'
+           &&  @$this->head_hash['Content-type'][boundary]!=='';
     }
 
     function parse_head($headers){
         if(!is_array($headers)) $headers = explode("\r\n", $headers);
         $hash = $this->standard_parser($headers);
-        // get a little more complex
-        $arrRec = explode('|', $hash['Received']);
-        $hash['Received']= $arrRec;
-        if($hash['Content-type']){//preg_match('/Multipart\/Report/i', $hash['Content-type'])){
+        if(!empty($hash['Content-type'])){//preg_match('/Multipart\/Report/i', $hash['Content-type'])){
             $multipart_report = explode (';', $hash['Content-type']);
             $hash['Content-type']='';
             $hash['Content-type']['type'] = strtolower($multipart_report[0]);
@@ -431,9 +418,9 @@ class BounceHandler{
         if(!$boundary) return array();
         if(is_array($body)) $body = implode("\r\n", $body);
         $body = explode($boundary, $body);
-        $mime_sections['first_body_part'] = $body[1];
-        $mime_sections['machine_parsable_body_part'] = $body[2];
-        $mime_sections['returned_message_body_part'] = $body[3];
+        $mime_sections['first_body_part']            = @$body[1];
+        $mime_sections['machine_parsable_body_part'] = @$body[2];
+        $mime_sections['returned_message_body_part'] = @$body[3];
         return $mime_sections;
     }
 
@@ -441,6 +428,7 @@ class BounceHandler{
     function standard_parser($content){ // associative array orstr
         // receives email head as array of lines
         // simple parse (Entity: value\n)
+        $hash = array('Received'=>'');
         if(!is_array($content)) $content = explode("\r\n", $content);
         foreach($content as $line){
             if(preg_match('/^([^\s.]*):\s*(.*)\s*/', $line, $array)){
@@ -457,10 +445,14 @@ class BounceHandler{
                     }
                 }
             }
-            elseif (preg_match('/^\s+(.+)\s*/', $line) && $entity) {
+            elseif (preg_match('/^\s+(.+)\s*/', $line) && !empty($entity)) {
                 $hash[$entity] .= ' '. $line;
             }
         }
+        // special formatting
+        $hash['Received']= @explode('|', $hash['Received']);
+        $hash['Subject'] = iconv_mime_decode($hash['Subject'], 0, "ISO-8859-1");
+
         return $hash;
     }
 
@@ -469,33 +461,33 @@ class BounceHandler{
         $hash = $this->parse_dsn_fields($str);
         $hash['mime_header'] = $this->standard_parser($hash['mime_header']);
         $hash['per_message'] = $this->standard_parser($hash['per_message']);
-        if($hash['per_message']['X-postfix-sender']){
+        if(!empty($hash['per_message']['X-postfix-sender'])){
             $arr = explode (';', $hash['per_message']['X-postfix-sender']);
             $hash['per_message']['X-postfix-sender']='';
-            $hash['per_message']['X-postfix-sender']['type'] = trim($arr[0]);
-            $hash['per_message']['X-postfix-sender']['addr'] = trim($arr[1]);
+            $hash['per_message']['X-postfix-sender']['type'] = @trim($arr[0]);
+            $hash['per_message']['X-postfix-sender']['addr'] = @trim($arr[1]);
         }
-        if($hash['per_message']['Reporting-mta']){
+        if(!empty($hash['per_message']['Reporting-mta'])){
             $arr = explode (';', $hash['per_message']['Reporting-mta']);
             $hash['per_message']['Reporting-mta']='';
-            $hash['per_message']['Reporting-mta']['type'] = trim($arr[0]);
-            $hash['per_message']['Reporting-mta']['addr'] = trim($arr[1]);
+            $hash['per_message']['Reporting-mta']['type'] = @trim($arr[0]);
+            $hash['per_message']['Reporting-mta']['addr'] = @trim($arr[1]);
         }
         //Per-Recipient DSN fields
         for($i=0; $i<count($hash['per_recipient']); $i++){
             $temp = $this->standard_parser(explode("\r\n", $hash['per_recipient'][$i]));
-            $arr = explode (';', $temp['Final-recipient']);
+            $arr = @explode (';', $temp['Final-recipient']);
             $temp['Final-recipient'] = $this->format_final_recipient_array($arr);
             //$temp['Final-recipient']['type'] = trim($arr[0]);
             //$temp['Final-recipient']['addr'] = trim($arr[1]);
-            $arr = explode (';', $temp['Original-recipient']);
+            $arr = @explode (';', $temp['Original-recipient']);
             $temp['Original-recipient']='';
-            $temp['Original-recipient']['type'] = trim($arr[0]);
-            $temp['Original-recipient']['addr'] = trim($arr[1]);
-            $arr = explode (';', $temp['Diagnostic-code']);
+            $temp['Original-recipient']['type'] = @trim($arr[0]);
+            $temp['Original-recipient']['addr'] = @trim($arr[1]);
+            $arr = @explode (';', $temp['Diagnostic-code']);
             $temp['Diagnostic-code']='';
-            $temp['Diagnostic-code']['type'] = trim($arr[0]);
-            $temp['Diagnostic-code']['text'] = trim($arr[1]);
+            $temp['Diagnostic-code']['type'] = @trim($arr[0]);
+            $temp['Diagnostic-code']['text'] = @trim($arr[1]);
             // now this is wierd: plenty of times you see the status code is a permanent failure,
             // but the diagnostic code is a temporary failure.  So we will assert the most general
             // temporary failure in this case.
@@ -531,6 +523,7 @@ class BounceHandler{
     }
 
     function find_recipient($per_rcpt){
+        $recipient = '';
         if($per_rcpt['Original-recipient']['addr'] !== ''){
             $recipient = $per_rcpt['Original-recipient']['addr'];
         }
@@ -627,9 +620,7 @@ class BounceHandler{
 
     function is_a_bounce(){
         if(preg_match("/(mail delivery failed|failure notice|warning: message|delivery status notif|delivery failure|delivery problem|spam eater|returned mail|undeliverable|returned mail|delivery errors|mail status report|mail system error|failure delivery|delivery notification|delivery has failed|undelivered mail|returned email|returning message to sender|returned to sender|message delayed|mdaemon notification|mailserver notification|mail delivery system|nondeliverable mail|mail transaction failed)|auto.{0,20}reply|vacation|(out|away|on holiday).*office/i", $this->head_hash['Subject'])) return true;
-
-         if(preg_match('/auto_reply/',$this->head_hash['Precedence'])) return true;
-
+        if(@preg_match('/auto_reply/',$this->head_hash['Precedence'])) return true;
         if(preg_match("/^(postmaster|mailer-daemon)\@?/i", $this->head_hash['From'])) return true;
         return false;
     }
@@ -646,8 +637,8 @@ class BounceHandler{
 
     // these functions are for feedback loops
     function is_an_ARF(){
-        if(preg_match('/feedback-report/',$this->head_hash['Content-type']['report-type'])) return true;
-        if(preg_match('/scomp/',$this->head_hash['X-loop'])) return true;
+        if(@preg_match('/feedback-report/',$this->head_hash['Content-type']['report-type'])) return true;
+        if(@preg_match('/scomp/',$this->head_hash['X-loop'])) return true;
         if(isset($this->head_hash['X-hmxmroriginalrecipient']))  {
             $this->is_hotmail_fbl = TRUE;
             $this->recipient = $this->head_hash['X-hmxmroriginalrecipient'];
@@ -660,6 +651,24 @@ class BounceHandler{
         }
         return false;
     }
+    
+    // look for common auto-responders
+    function is_an_autoresponse() {
+        if (preg_match('/^=\?utf-8\?B\?(.*?)\?=/', $this->head_hash['Subject'], $matches))
+            $subj = base64_decode($matches[1]);
+        else
+            $subj = $this->head_hash['Subject'];
+        foreach ($this->autorespondlist as $a) {
+            if (preg_match("/$a/i", $subj)) {
+//echo "$a , $subj"; exit;
+                $this->autoresponse = $this->head_hash['Subject'];
+                return TRUE;
+            }
+        }
+        return FALSE;
+    }
+    
+    
     
     // use a perl regular expression to find the web beacon
     public function find_web_beacon($body, $preg){
@@ -710,12 +719,12 @@ class BounceHandler{
         $output = array('addr'=>'',
                         'type'=>'');
         if(strpos($arr[0], '@')!==FALSE){
-            $output['addr'] = $this->strip_angle_brackets($arr[0]);
-            $output['type'] = (!empty($arr[1])) ? trim($arr[1]) : 'unknown';
+            $output['addr'] = @$this->strip_angle_brackets($arr[0]);
+            $output['type'] = (!empty($arr[1])) ? @trim($arr[1]) : 'unknown';
         }
         else{
-            $output['type'] = trim($arr[0]);
-            $output['addr'] = $this->strip_angle_brackets($arr[1]);
+            $output['type'] = @trim($arr[0]);
+            $output['addr'] = @$this->strip_angle_brackets($arr[1]);
         }
         return $output;
     }

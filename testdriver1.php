@@ -3,11 +3,11 @@
 <body>
 
 <?php
-
+//error_reporting(E_ALL);
 require_once("bounce_driver.class.php");
 $bouncehandler = new Bouncehandler();
 
-if($_GET['testall']){
+if(!empty($_GET['testall'])){
     $files = get_sorted_file_list('eml');
     if (is_array($files)) {
        echo "<P>File Tests:</P>\n";
@@ -31,11 +31,26 @@ if($_GET['testall']){
 }
 ?>
 
-<h1>bounce_driver.class.php -- Version 7.0</h1>
+<h1>bounce_driver.class.php -- Version 7.3</h1>
 
 <P>
     Chris Fortune ~ <a href="http://cfortune.kics.bc.ca">http://cfortune.kics.bc.ca</a>
 </P>
+
+<P>
+July 4, 2013
+</P>
+<P>
+Replaced deprecated split() function.
+Added auto-responder identification filter.  
+Suppressed php Notice errors.
+<P>
+<HR>
+    <!--  onclick="alert('not ready just yet'); return false;" -->
+<a href="php.bouncehandler.v7.3.zip">Download source code</a>
+<HR>
+
+
 <P>
 Feb 3, 2011
 </P>
