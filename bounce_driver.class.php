@@ -1,5 +1,5 @@
 <?php
-//error_reporting(E_ALL);
+error_reporting(0);// turn off PHP Notices
 
 /* BOUNCE HANDLER Class, Version 7.3
  * Description: "chops up the bounce into associative arrays"
