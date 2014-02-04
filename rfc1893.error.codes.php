@@ -1,4 +1,4 @@
-<?
+<?php
 $status_code_classes['2']['title'] =  "Success";
 $status_code_classes['2']['descr'] =  "Success specifies that the DSN is reporting a positive delivery action.  Detail sub-codes may provide notification of transformations required for delivery.";
 
@@ -16,7 +16,7 @@ $status_code_subclasses['1.0']['descr'] =  "Something about the address specifie
 
 $status_code_subclasses['1.1']['title'] =  "Bad destination mailbox address";
 $status_code_subclasses['1.1']['descr'] =  "The mailbox specified in the address does not exist.  For Internet mail names, this means the address portion to the left of the @ sign is invalid.  This code is only useful for permanent failures.";
-   
+
 $status_code_subclasses['1.2']['title'] =  "Bad destination system address";
 $status_code_subclasses['1.2']['descr'] =  "The destination system specified in the address does not exist or is incapable of accepting mail.  For Internet mail names, this means the address portion to the right of the @ is invalid for mail.  This codes is only useful for permanent failures.";
 

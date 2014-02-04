@@ -1,8 +1,8 @@
-<?
+<?php
 #
 # Mapping of bounce responses to RFC1893 codes
 #
-# 
+#
 $bouncelist = array(
     '[45]\d\d[- ]#?([45]\.\d\.\d)'                              => 'x',         # use the code from the regex
     'Diagnostic[- ][Cc]ode: smtp; ?\d\d\ ([45]\.\d\.\d)'        => 'x',         # use the code from the regex
@@ -117,7 +117,7 @@ $bouncelist = array(
     'was not found in LDAP server'                              => '5.1.1',     #
     'We are sorry but the address is invalid'                   => '5.1.1',     #
     'Unable to find alias user'                                 => '5.1.1',     #
-    
+
     "domain isn't in my list of allowed rcpthosts"              => '5.1.2',     #
     'Esta casilla ha expirado por falta de uso'                 => '5.1.2',     #BH ES:expired
     'host ?name is unknown'                                     => '5.1.2',     #
@@ -166,11 +166,11 @@ $bouncelist = array(
     'Podane konto jest zablokowane administracyjnie lub nieaktywne'=> '5.2.1',  #.PL locked or inactive
     "Questo indirizzo e' bloccato per inutilizzo"               => '5.2.1',     #.IT blocked/expired
     'Recipient mailbox was disabled'                            => '5.2.1',     #
-    'Domain name not found'                                     => '5.2.1',     
+    'Domain name not found'                                     => '5.2.1',
 
     'couldn\'t find any host named'                             => '5.4.4',     #
     'couldn\'t find any host by that name'                      => '5.4.4',     #
-    'PERM_FAILURE: DNS Error'                                   => '5.4.4',     #SB: Routing failure 
+    'PERM_FAILURE: DNS Error'                                   => '5.4.4',     #SB: Routing failure
     'Temporary lookup failure'                                  => '5.4.4',     #
     'unrouteable address'                                       => '5.4.4',     #
     "can't connect to"                                          => '5.4.4',     #
@@ -178,12 +178,12 @@ $bouncelist = array(
     'Too many hops'                                             => '5.4.6',     #
 
     'Requested action aborted'                                  => '5.5.0',     #
-    
+
     'rejecting password protected file attachment'              => '5.6.2',     #RFC "Conversion required and prohibited"
-    
-    '550 OU-00'                                                 => '5.7.1',     #SB hotmail returns a OU-001 if you're on their blocklist    
+
+    '550 OU-00'                                                 => '5.7.1',     #SB hotmail returns a OU-001 if you're on their blocklist
     '550 SC-00'                                                 => '5.7.1',     #SB hotmail returns a SC-00x if you're on their blocklist
-    '550 DY-00'                                                 => '5.7.1',     #SB hotmail returns a DY-00x if you're a dynamic IP 
+    '550 DY-00'                                                 => '5.7.1',     #SB hotmail returns a DY-00x if you're a dynamic IP
     '554 denied'                                                => '5.7.1',     #
     'You have been blocked by the recipient'                    => '5.7.1',     #
     'requires that you verify'                                  => '5.7.1',     #
