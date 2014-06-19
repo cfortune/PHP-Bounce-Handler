@@ -48,10 +48,10 @@ $status_code_subclasses['2.2']['title'] = "Mailbox full";
 $status_code_subclasses['2.2']['descr'] =  "The mailbox is full because the user has exceeded a per-mailbox administrative quota or physical capacity.  The general semantics implies that the recipient can delete messages to make more space available.  This code should be used as a persistent transient failure.";
 
 $status_code_subclasses['2.3']['title'] = "Message length exceeds administrative limit";
-$status_code_subclasses['2.2']['descr'] =  "A per-mailbox administrative message length limit has been exceeded.  This status code should be used when the per-mailbox message length limit is less than the general system limit.  This code should be used as a permanent failure.";
+$status_code_subclasses['2.3']['descr'] =  "A per-mailbox administrative message length limit has been exceeded.  This status code should be used when the per-mailbox message length limit is less than the general system limit.  This code should be used as a permanent failure.";
 
 $status_code_subclasses['2.4']['title'] = "Mailing list expansion problem";
-$status_code_subclasses['2.3']['descr'] =  "The mailbox is a mailing list address and the mailing list was unable to be expanded.  This code may represent a permanent failure or a persistent transient failure. ";
+$status_code_subclasses['2.4']['descr'] =  "The mailbox is a mailing list address and the mailing list was unable to be expanded.  This code may represent a permanent failure or a persistent transient failure. ";
 
 $status_code_subclasses['3.0']['title'] = "Other or undefined mail system status";
 $status_code_subclasses['3.0']['descr'] =  "The destination system exists and normally accepts mail, but something about the system has caused the generation of this DSN.";
@@ -154,5 +154,3 @@ $status_code_subclasses['7.6']['descr'] =  "A transport system otherwise authori
 
 $status_code_subclasses['7.7']['title'] = "Message integrity failure";
 $status_code_subclasses['7.7']['descr'] =  "A transport system otherwise authorized to validate a message was unable to do so because the message was corrupted or altered.  This may be useful as a permanent, transient persistent, or successful delivery code.";
-
-?>
