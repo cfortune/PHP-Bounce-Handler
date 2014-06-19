@@ -1,15 +1,16 @@
 <?php
 #
-# Mapping of bounce responses to RFC1893 codes
+# Mapping of bounce responses to RFC3463 codes
 #
 #
 $bouncelist = array(
-    '[45]\d\d[- ]#?([45]\.\d\.\d)'                              => 'x',         # use the code from the regex
-    'Diagnostic[- ][Cc]ode: smtp; ?\d\d\ ([45]\.\d\.\d)'        => 'x',         # use the code from the regex
-    'Status: ([45]\.\d\.\d)'                                    => 'x',         # use the code from the regex
+    '[45]\d\d[- ]#?([45]\.\d\.\d{1,2})'                              => 'x',         # use the code from the regex
+    'Diagnostic[- ][Cc]ode: smtp; ?\d\d\ ([45]\.\d\.\d{1,2})'        => 'x',         # use the code from the regex
+    'Status: ([45]\.\d\.\d{1,2})'                                    => 'x',         # use the code from the regex
 
     'not yet been delivered'                                    => '4.2.0',     #
     'Message will be retried for'                               => '4.2.0',     #
+    'Connection frequency limited\. http:\/\/service\.mail\.qq\.com'   => '4.2.0',
 
     'Benutzer hat zuviele Mails auf dem Server'                 => '4.2.2',     #.DE "mailbox full"
     'exceeded storage allocation'                               => '4.2.2',     #
@@ -206,7 +207,7 @@ $bouncelist = array(
     'not allowed access from your location'                     => '5.7.1',     #
     'permanently deferred'                                      => '5.7.1',     #
     'Rejected by policy'                                        => '5.7.1',     #
-    'rejected by Windows Live Hotmail for policy reasons'       => '5.7.1',     #SB Yes, should be 5.7.1; Kanon added Again, why isnt this 5.7.1 instead?
+    'rejected by Windows Live Hotmail for policy reasons'       => '5.7.1',     #
     'Rejected for policy reasons'                               => '5.7.1',     #
     'Rejecting banned content'                                  => '5.7.1',     #
     'Sorry, looks like spam'                                    => '5.7.1',     #
@@ -220,8 +221,8 @@ $bouncelist = array(
 
 $autorespondlist = array(
     '^\[?auto.{0,20}reply\]?',
-    '^auto-?response',
-    '^auto response',
+    '^auto[ -]?response',
+    '^Yahoo! auto response',
     '^Thank you for your email\.',
     '^Vacation.{0,20}(reply|respon)',
     '^out.?of (the )?office',

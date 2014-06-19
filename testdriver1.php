@@ -31,12 +31,24 @@ if(!empty($_GET['testall'])){
 }
 ?>
 
-<h1>bounce_driver.class.php -- Version 7.3</h1>
+<h1>bounce_driver.class.php -- Version 7.4</h1>
 
 <P>
     Chris Fortune ~ <a href="http://cfortune.kics.bc.ca">http://cfortune.kics.bc.ca</a>
 </P>
-
+<P>June 19, 2014</P>
+<UL>
+<LI>make auto-responder identification table driven</LI>
+<LI>make bounce_statuscodes.php (prev rfc1893_status_codes.php) generated from IANA list
+ php Make_statuscodes.php >bounce_statuscodes.php</LI>
+<LI>allow for rfc status codes with 2 digits in the 3rd paramater</LI>
+<LI>more supression for php notifications on undefined data</LI>
+<LI>better detection and field definition for FBL handling</LI>
+<LI>remove spaces in joined header lines</LI>
+<LI>remove invalid/redundant implode operations</LI>
+<LI>add two new sample emails 61,62</LI>
+<LI>add command line test tool (cmdline_test.php)</LI>
+   
 <P>
 July 4, 2013
 </P>

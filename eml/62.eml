@@ -1,0 +1,107 @@
+Received: (qmail 11526 invoked from network); 18 Jun 2014 12:00:02 -0000
+Received: from unknown (HELO panelmx.example.com) (10.1.111.3)
+  by inboundmx02.local with SMTP; 18 Jun 2014 12:00:02 -0000
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: AvYCAOJ9oVNQQWAtnGdsb2JhbACDIAIFgRKDRoMRpyoBliCBDBYPAQEBAQEGDQkJFCiELXIDHSECERBRiEYJnV2PI5lKhUMXgUGMYwEBAkkhgmESJIEakBWKLYFEhSCQOTsvAYECCBc
+X-IronPort-AV: E=Sophos;i="5.01,499,1400025600";
+   d="scan'208,217";a="3121158"
+Received: from smtp.domain.com (unknown [192.168.4.31])
+        by fallback.mailcluster.introweb.intern (Postfix #82) with ESMTP id 61A332B7F2B
+        for <support@example.com>; Wed, 18 Jun 2014 13:59:59 +0200 (CEST)
+Received: from smtp.domain.com (unknown [192.168.4.13])
+        by smtp.domain.com (Postfix) with ESMTP id E405D153445
+        for <support@example.com>; Wed, 18 Jun 2014 14:03:03 +0200 (CEST)
+Received: by backend.domain.com (Postfix)
+        id 9F433AC838; Wed, 18 Jun 2014 13:56:56 +0200 (CEST)
+Date: Wed, 18 Jun 2014 13:56:56 +0200 (CEST)
+From: MAILER-DAEMON@domain.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: support@example.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+        boundary="32632AC835.1403092616/backend.domain.com"
+Message-Id: <20140618115656.9F433AC838@backend.domain.com>
+
+This is a MIME-encapsulated message.
+
+--32632AC835.1403092616/backend.domain.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host backend.domain.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to <postmaster>
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<user@domain.com>: permission denied. Command output:
+    91022: [06/18/2014 13:56:56] innocent message from 100.100.101.101 maildrop:
+    maildir over quota.
+
+--32632AC835.1403092616/backend.domain.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; backend.domain.com
+X-Postfix-Queue-ID: 32632AC835
+X-Postfix-Sender: rfc822; support@example.com
+Arrival-Date: Wed, 18 Jun 2014 13:56:56 +0200 (CEST)
+
+Final-Recipient: rfc822; user@mailcluster.local
+Original-Recipient: rfc822;user@domain.com
+Action: failed
+Status: 5.7.0
+Diagnostic-Code: x-unix; 91022: [06/18/2014 13:56:56] innocent message from
+    100.100.101.101 maildrop: maildir over quota.
+
+--32632AC835.1403092616/backend.domain.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Received: from smtp.domain.com (unknown [192.168.4.32])
+        by backend.domain.com (Postfix) with ESMTP id 32632AC835
+        for <grand719@mailcluster.introweb.intern>; Wed, 18 Jun 2014 13:56:56 +0200 (CEST)
+Received: from example.com (example.com [100.100.101.101])
+        by smtp.domain.com (Postfix) with SMTP id 1200D153440
+        for <user@domain.com>; Wed, 18 Jun 2014 13:57:21 +0200 (CEST)
+Received: (qmail 14341 invoked from network); 18 Jun 2014 11:59:53 -0000
+Received: from spweb55.lndn.local (10.196.111.15)
+  by spmail2 with SMTP; 18 Jun 2014 11:59:53 -0000
+Received: from mail pickup service by SPWEB55.lndn.local with Microsoft SMTPSVC;
+         Wed, 18 Jun 2014 04:59:47 -0700
+From: "Support" <support@example.com>
+To: "user@domain.com" <user@domain.com>
+Date: Wed, 18 Jun 2014 04:59:47 -0700
+Subject: Original Subject
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+        boundary="_=aspNetEmail=_b39787cf5db6423281a96d2be75adc79"
+X-Mailer: aspNetEmail ver 2.5.0.0
+X-RCPT-TO: <user@domain.com>
+Message-ID: <SPWEB5575415136aab44df4b6570e95cb2bf2e4@SPWEB55>
+X-OriginalArrivalTime: 18 Jun 2014 11:59:47.0323 (UTC) FILETIME=[CCFF44B0:01CF8AEC]
+
+--_=aspNetEmail=_b39787cf5db6423281a96d2be75adc79
+Content-Type: text/plain;
+        charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Original Message
+
+--_=aspNetEmail=_b39787cf5db6423281a96d2be75adc79
+Content-Type: text/html;
+        charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p>Original Message</p>
+
+--_=aspNetEmail=_b39787cf5db6423281a96d2be75adc79--
+
+--32632AC835.1403092616/backend.domain.com--

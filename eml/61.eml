@@ -1,0 +1,92 @@
+Received: (qmail 6136 invoked from network); 18 Jun 2014 17:42:53 -0000
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: AqQCAEfOoVM/lpkEnGdsb2JhbACDIIEZg0aqCjABjkUcAYZrU4EiDwEBAQEBCAsJCRQohAMBAhYGCxs1NgwhAg0EECYrGweIDAMRDZ8BgjMBi3h3mDkDfYVaiUKDEAuBNhACAQpAgkIPMhIkgRqBLYM2BYstgy6FDYFygUSLPViJXiEvAQ
+X-IronPort-AV: E=Sophos;i="5.01,501,1400025600";
+   d="scan'208,217";a="3130576"
+Received: by 3rdparty.com (Postfix)
+        id 611822A0BE1; Wed, 18 Jun 2014 13:42:52 -0400 (EDT)
+Date: Wed, 18 Jun 2014 13:42:52 -0400 (EDT)
+From: MAILER-DAEMON@3rdparty.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: support@example.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+        boundary="EF62D2A0BD1.1403113372/3rdparty.com"
+Message-Id: <20140618174252.611822A0BE1@3rdparty.com>
+
+This is a MIME-encapsulated message.
+
+--EF62D2A0BD1.1403113372/3rdparty.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host 3rdparty.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<user@yahoo.com>: host mta5.am0.yahoodns.net[66.196.118.34] said: 554
+    5.7.9 Message not accepted for policy reasons.  See
+    http://postmaster.yahoo.com/errors/postmaster-28.html (in reply to end of
+    DATA command)
+
+--EF62D2A0BD1.1403113372/3rdparty.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; 3rdparty.com
+X-Postfix-Queue-ID: EF62D2A0BD1
+X-Postfix-Sender: rfc822; support@example.com
+Arrival-Date: Wed, 18 Jun 2014 13:42:51 -0400 (EDT)
+
+Final-Recipient: rfc822; user@yahoo.com
+Original-Recipient: rfc822;user@yahoo.com
+Action: failed
+Status: 5.7.9
+Remote-MTA: dns; mta5.am0.yahoodns.net
+Diagnostic-Code: smtp; 554 5.7.9 Message not accepted for policy reasons.  See
+    http://postmaster.yahoo.com/errors/postmaster-28.html
+
+--EF62D2A0BD1.1403113372/3rdparty.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <support@example.com>
+Received: from PRODSVCHOST2-B (unknown [10.10.2.4])
+        by 3rdparty.com (Postfix) with ESMTP id EF62D2A0BD1
+        for <user@yahoo.com>; Wed, 18 Jun 2014 13:42:51 -0400 (EDT)
+Reply-To: support@example.com
+From: "Support" <support@example.com>
+To: "user@yahoo.com" <user@yahoo.com>
+Message-ID: <jgXzS9Lj1hxod5MVXBdHyIsQIlCoV7fuLc/tjZqRRk4=@3rdparty.com>
+Date: Wed, 18 Jun 2014 13:42:51 -0400
+Subject: subjectline removoved
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+        boundary="----752682C07B5C4B6E9EDB2BCCCE0D889F"
+
+------752682C07B5C4B6E9EDB2BCCCE0D889F
+Content-type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+This was an email
+
+------752682C07B5C4B6E9EDB2BCCCE0D889F
+Content-type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+This was an email
+
+------752682C07B5C4B6E9EDB2BCCCE0D889F--
+
+
+--EF62D2A0BD1.1403113372/3rdparty.com--
