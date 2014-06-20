@@ -80,7 +80,7 @@ class BounceHandler{
         $this->output[0]['action']  = "";
         $this->output[0]['status']  = "";
         $this->output[0]['recipient'] = "";
-        include_once('bounce_responses.php');
+        require('bounce_responses.php');
         $this->bouncelist = $bouncelist;
         $this->autorespondlist = $autorespondlist;
     }
@@ -365,13 +365,13 @@ class BounceHandler{
             /******** exit conditions ********/
             // if it's the end of the human readable part in this stupid bounce
             if(stristr($line, '------ This is a copy of the message')!==FALSE){
-                return '';
+                break;
             }
             //if we see an email address other than our current recipient's,
             if(count($this->find_email_addresses($line))>=1
-               && stristr($line, $recipient)===FALSE
-               && strstr($line, 'FROM:<')===FALSE){ // Kanon added this line because Hotmail puts the e-mail address too soon and there actually is error message stuff after it.
-                return '';
+               && stristr($line, $recipient) === FALSE
+               && strstr($line, 'FROM:<') === FALSE) { // Kanon added this line because Hotmail puts the e-mail address too soon and there actually is error message stuff after it.
+                break;
             }
             
             //******** pattern matching ********/
@@ -408,7 +408,7 @@ class BounceHandler{
             }
 
         }
-        return '';
+        return '5.5.0';  #other or unknown status
     }
 
     function is_RFC1892_multipart_report(){

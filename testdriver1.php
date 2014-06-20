@@ -59,7 +59,7 @@ Suppressed php Notice errors.
 <P>
 <HR>
     <!--  onclick="alert('not ready just yet'); return false;" -->
-<a href="php.bouncehandler.v7.3.zip">Download source code</a>
+<a href="php.bouncehandler.v7.4.zip">Download source code</a>
 <HR>
 
 
@@ -71,7 +71,7 @@ Hey! Class is no longer static, it is rewritten in dynamic <code>$this-></code> 
 <P>
 <HR>
     <!--  onclick="alert('not ready just yet'); return false;" -->
-<a href="php.bouncehandler.v7.0.zip">Download source code</a>
+<a href="php.bouncehandler.v7.4.zip">Download source code</a>
 <HR>
 
 <P>
