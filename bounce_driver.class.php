@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);// turn off PHP Notices
+//error_reporting(0);// turn off PHP Notices
 
 /* BOUNCE HANDLER Class, Version 7.4
  * Description: "chops up the bounce into associative arrays"
@@ -488,7 +488,7 @@ class BounceHandler{
         foreach($content as $line){
             if(preg_match('/^([^\s.]*):\s*(.*)\s*/', $line, $array)){
                 $entity = ucfirst(strtolower($array[1]));
-                if (isset($array[2]) && strpos($array[2], '=?') === 0) // decode MIME Header encoding (subject lines etc)
+                if (isset($array[2]) && strpos($array[2], '=?') !== FALSE) // decode MIME Header encoding (subject lines etc)
                     $array[2] = iconv_mime_decode($array[2], ICONV_MIME_DECODE_CONTINUE_ON_ERROR, "UTF-8");
                 if(empty($hash[$entity])){
                     $hash[$entity] = trim($array[2]);
@@ -504,14 +504,14 @@ class BounceHandler{
             }
             elseif (isset($line) && isset($entity) && preg_match('/^\s+(.+)\s*/', $line) && $entity) {
                 $line = trim($line);
-                if (strpos($array[2], '=?') === 0)
+                if (strpos($array[2], '=?') !== FALSE)
                     $line = iconv_mime_decode($array[2], ICONV_MIME_DECODE_CONTINUE_ON_ERROR, "UTF-8");
                 $hash[$entity] .= ' '. $line;
             }
         }
         // special formatting
         $hash['Received']= @explode('|', $hash['Received']);
-        $hash['Subject'] = isset($hash['Subject']) ? mb_decode_mimeheader($hash['Subject']) : '';
+        $hash['Subject'] = isset($hash['Subject']) ? : '';
         return $hash;
     }
 
@@ -735,15 +735,9 @@ class BounceHandler{
             }
         }
   
-        if (!isset($this->head_hash['Subject']) )
-            $subj = '';
-        elseif (strpos($this->head_hash['Subject'], '=?') === 0) #start with =?
-            $subj = mb_decode_mimeheader($hash['Subject']);
-        else
-            $subj = $this->head_hash['Subject'];
+        $subj = isset($this->head_hash['Subject']) ? $this->head_hash['Subject'] : '';
         foreach ($this->autorespondlist as $a) {
             if (preg_match("/$a/i", $subj)) {
-//echo "$a , $subj"; exit;
                 $this->autoresponse = $this->head_hash['Subject'];
                 return TRUE;
             }
