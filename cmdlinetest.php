@@ -62,6 +62,9 @@ if (defined('STDIN')) {
         fclose($handle);
         checkmail($email);
     }
+    foreach ($total as $t => $v) {
+        printf("%-15s  %6d\n", $t, $v);
+    }
 }
 
 ?>

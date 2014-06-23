@@ -1,5 +1,5 @@
 <?php
-//error_reporting(0);// turn off PHP Notices
+error_reporting(0);// turn off PHP Notices
 
 /* BOUNCE HANDLER Class, Version 7.4
  * Description: "chops up the bounce into associative arrays"
@@ -40,8 +40,9 @@ class BounceHandler{
     public $head_hash = array();
     public $fbl_hash = array();
     public $body_hash = array(); // not necessary
-    public $bouncelist = array(); // from bounce_responses.txt
-    public $autorespondlist = array(); // from bounce_responses.txt
+    private $bouncelist = array(); // from bounce_responses
+    private $autorespondlist = array(); // from bounce_responses
+    private $bouncesubj = array(); // from bounce_responses
 
     public $looks_like_a_bounce = false;
     public $looks_like_an_FBL = false;
@@ -83,6 +84,7 @@ class BounceHandler{
         require('bounce_responses.php');
         $this->bouncelist = $bouncelist;
         $this->autorespondlist = $autorespondlist;
+        $this->bouncesubj = $bouncesubj;
     }
     
 
@@ -96,7 +98,10 @@ class BounceHandler{
     public function get_the_facts($eml){
         // fluff up the email
         $bounce = $this->init_bouncehandler($eml);
-        list($head, $body) = preg_split("/\r\n\r\n/", $bounce, 2);
+        if (strpos($bounce, "\r\n\r\n") !== FALSE) 
+            list($head, $body) = preg_split("/\r\n\r\n/", $bounce, 2);
+        else
+            list($head, $body) = array($bounce, '');
         $this->head_hash = $this->parse_head($head);
 
         // parse the email into data structures
@@ -185,7 +190,7 @@ class BounceHandler{
         // is this an autoresponse ?
         elseif ($this->looks_like_an_autoresponse) {
             $this->output[0]['action'] = 'autoresponse';     #??? 'transient'  'autoreply' ??
-            $this->output[0]['status'] = $this->autoreponse; #??? 4.3.2
+            $this->output[0]['autoresponse'] = $this->autoresponse; #??? 4.3.2
             // grab the first recipient and break
             $this->output[0]['recipient'] = isset($this->head_hash['Return-path']) ? $this->strip_angle_brackets($this->head_hash['Return-path']) : '';
             if(empty($this->output[0]['recipient'])){
@@ -263,7 +268,6 @@ class BounceHandler{
             $tmp[] = $arr;
         }
         $this->output = $tmp;
-
         // accessors
         /*if it is an FBL, you could use the class variables to access the
         data (Unlike Multipart-reports, FBL's report only one bounce)
@@ -324,8 +328,8 @@ class BounceHandler{
         //}
         //else if($format=='string'){
 
-            $strEmail = str_replace("\r\n", "\n", $blob);    // line returns 1
-            $strEmail = str_replace("\n", "\r\n", $strEmail);// line returns 2
+        $strEmail = str_replace("\r\n", "\n", $blob);    // line returns 1
+        $strEmail = str_replace("\n", "\r\n", $strEmail);// line returns 2
 #            $strEmail = str_replace("=\r\n", "", $strEmail); // remove MIME line breaks (would never exist as #1 above would have dealt with)
 #            $strEmail = str_replace("=3D", "=", $strEmail);  // equals sign - dealt with in the MIME decode section now
 #            $strEmail = str_replace("=09", "  ", $strEmail); // tabs
@@ -484,6 +488,8 @@ class BounceHandler{
         foreach($content as $line){
             if(preg_match('/^([^\s.]*):\s*(.*)\s*/', $line, $array)){
                 $entity = ucfirst(strtolower($array[1]));
+                if (isset($array[2]) && strpos($array[2], '=?') === 0) // decode MIME Header encoding (subject lines etc)
+                    $array[2] = iconv_mime_decode($array[2], ICONV_MIME_DECODE_CONTINUE_ON_ERROR, "UTF-8");
                 if(empty($hash[$entity])){
                     $hash[$entity] = trim($array[2]);
                 }
@@ -497,12 +503,15 @@ class BounceHandler{
                 }
             }
             elseif (isset($line) && isset($entity) && preg_match('/^\s+(.+)\s*/', $line) && $entity) {
-                $hash[$entity] .= ' '. trim($line);
+                $line = trim($line);
+                if (strpos($array[2], '=?') === 0)
+                    $line = iconv_mime_decode($array[2], ICONV_MIME_DECODE_CONTINUE_ON_ERROR, "UTF-8");
+                $hash[$entity] .= ' '. $line;
             }
         }
         // special formatting
         $hash['Received']= @explode('|', $hash['Received']);
-        $hash['Subject'] = isset($hash['Subject']) ? iconv_mime_decode($hash['Subject'], 0, "ISO-8859-1") : '';
+        $hash['Subject'] = isset($hash['Subject']) ? mb_decode_mimeheader($hash['Subject']) : '';
         return $hash;
     }
 
@@ -672,12 +681,9 @@ class BounceHandler{
     }
 
     function is_a_bounce(){
-        if (isset($this->head_hash['Subject']) && 
-                preg_match("/(mail delivery failed|failure notice|warning: message|delivery status notif|delivery failure|delivery problem|".
-                   "spam eater|returned mail|undeliverable|returned mail|delivery errors|mail status report|mail system error|failure delivery|".
-                   "delivery notification|delivery has failed|undelivered mail|returned email|returning message to sender|returned to sender|".
-                   "message delayed|mdaemon notification|mailserver notification|mail delivery system|nondeliverable mail|mail transaction failed)/i", $this->head_hash['Subject'])) 
-            return true;
+        foreach ($this->bouncesubj as $s)
+            if (preg_match("/^$s/i", $this->head_hash['Subject']))
+                return true;
         #if(@preg_match('/auto_reply/',$this->head_hash['Precedence'])) return true;  # autoresponse, not bounce
         if (isset($this->head_hash['From']) && 
                preg_match("/^(postmaster|mailer-daemon)\@?/i", $this->head_hash['From'])) 
@@ -729,9 +735,10 @@ class BounceHandler{
             }
         }
   
-    
-        if (preg_match('/^=\?utf-8\?B\?(.*?)\?=/', $this->head_hash['Subject'], $matches))
-            $subj = base64_decode($matches[1]);
+        if (!isset($this->head_hash['Subject']) )
+            $subj = '';
+        elseif (strpos($this->head_hash['Subject'], '=?') === 0) #start with =?
+            $subj = mb_decode_mimeheader($hash['Subject']);
         else
             $subj = $this->head_hash['Subject'];
         foreach ($this->autorespondlist as $a) {
