@@ -1,15 +1,18 @@
 <?php
 #
-# Mapping of bounce responses to RFC1893 codes
+# Mapping of bounce responses to RFC3463 codes
 #
 #
+
+# text in messages from which to figure out what kind of bounce
 $bouncelist = array(
-    '[45]\d\d[- ]#?([45]\.\d\.\d)'                              => 'x',         # use the code from the regex
-    'Diagnostic[- ][Cc]ode: smtp; ?\d\d\ ([45]\.\d\.\d)'        => 'x',         # use the code from the regex
-    'Status: ([45]\.\d\.\d)'                                    => 'x',         # use the code from the regex
+    '[45]\d\d[- ]#?([45]\.\d\.\d{1,2})'                              => 'x',         # use the code from the regex
+    'Diagnostic[- ][Cc]ode: smtp; ?\d\d\ ([45]\.\d\.\d{1,2})'        => 'x',         # use the code from the regex
+    'Status: ([45]\.\d\.\d{1,2})'                                    => 'x',         # use the code from the regex
 
     'not yet been delivered'                                    => '4.2.0',     #
     'Message will be retried for'                               => '4.2.0',     #
+    'Connection frequency limited\. http:\/\/service\.mail\.qq\.com'   => '4.2.0',
 
     'Benutzer hat zuviele Mails auf dem Server'                 => '4.2.2',     #.DE "mailbox full"
     'exceeded storage allocation'                               => '4.2.2',     #
@@ -206,7 +209,7 @@ $bouncelist = array(
     'not allowed access from your location'                     => '5.7.1',     #
     'permanently deferred'                                      => '5.7.1',     #
     'Rejected by policy'                                        => '5.7.1',     #
-    'rejected by Windows Live Hotmail for policy reasons'       => '5.7.1',     #SB Yes, should be 5.7.1; Kanon added Again, why isnt this 5.7.1 instead?
+    'rejected by Windows Live Hotmail for policy reasons'       => '5.7.1',     #
     'Rejected for policy reasons'                               => '5.7.1',     #
     'Rejecting banned content'                                  => '5.7.1',     #
     'Sorry, looks like spam'                                    => '5.7.1',     #
@@ -218,15 +221,49 @@ $bouncelist = array(
     'Your message was declared Spam'                            => '5.7.1'      #
 );
 
+# triggers for autoresponders
 $autorespondlist = array(
     '^\[?auto.{0,20}reply\]?',
-    '^auto-?response',
-    '^auto response',
+    '^auto[ -]?response',
+    '^Yahoo! auto response',
     '^Thank you for your email\.',
     '^Vacation.{0,20}(reply|respon)',
     '^out.?of (the )?office',
     '^(I am|I\'m).{0,20}\s(away|on vacation|on leave|out of office|out of the office)',
     "\350\207\252\345\212\250\345\233\236\345\244\215"   #sino.com,  163.com  UTF8 encoded
+);
+
+# trigger subject lines for bounces
+$bouncesubj = array(
+    'deletver reports about your e?mail',
+    'delivery errors',
+    'delivery failure',
+    'delivery has failed',
+    'delivery notification',
+    'delivery problem',
+    'delivery reports about your email',
+    'delivery status notif',
+    'failure delivery',
+    'failure notice',
+    'mail delivery fail',			#catches failure and failed
+    'mail delivery system',
+    'mailserver notification',
+    'mail status report',
+    'mail system error',
+    'mail transaction failed',
+    'mdaemon notification',
+    'message delayed',
+    'nondeliverable mail',
+    'Non[_ ]remis[_ ]',			#fr
+    'No[_ ]se[_ ]puede[_ ]entregar',	#es
+    'Onbestelbaar',				#nl
+    'returned e?mail',
+    'returned to sender',
+    'returning message to sender',
+    'spam eater',
+    'undeliverable',
+    'undelivered mail',
+    'warning: message',
 );
 
 #
