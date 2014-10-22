@@ -5,7 +5,7 @@
 #
 
 # text in messages from which to figure out what kind of bounce
-$bouncelist = array(
+$this->bouncelist = array(
     '[45]\d\d[- ]#?([45]\.\d\.\d{1,2})'                              => 'x',         # use the code from the regex
     'Diagnostic[- ][Cc]ode: smtp; ?\d\d\ ([45]\.\d\.\d{1,2})'        => 'x',         # use the code from the regex
     'Status: ([45]\.\d\.\d{1,2})'                                    => 'x',         # use the code from the regex
@@ -222,19 +222,22 @@ $bouncelist = array(
 );
 
 # triggers for autoresponders
-$autorespondlist = array(
-    '^\[?auto.{0,20}reply\]?',
-    '^auto[ -]?response',
-    '^Yahoo! auto response',
-    '^Thank you for your email\.',
-    '^Vacation.{0,20}(reply|respon)',
+$this->autorespondlist = array(
+    'auto:',
+    '^away from.{0,15}office',
+    '^.?auto.{0,5}(reply|response)',
+    '^auto(mated)?[ -]?(reply|response)',
     '^out.?of (the )?office',
-    '^(I am|I\'m).{0,20}\s(away|on vacation|on leave|out of office|out of the office)',
+    '^(I am|I\'m|I will).{0,15}\s(away|on vacation|on leave|out of office|out of the office)',
+    '^Thank you for your e-?mail',
+    '^This is an automated',
+    '^Vacation.{0,10}(alert|reply|response)',
+    '^Yahoo! auto response',
     "\350\207\252\345\212\250\345\233\236\345\244\215"   #sino.com,  163.com  UTF8 encoded
 );
 
 # trigger subject lines for bounces
-$bouncesubj = array(
+$this->bouncesubj = array(
     'deletver reports about your e?mail',
     'delivery errors',
     'delivery failure',

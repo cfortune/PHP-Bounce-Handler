@@ -31,48 +31,12 @@ if(!empty($_GET['testall'])){
 }
 ?>
 
-<h1>bounce_driver.class.php -- Version 7.4</h1>
+<h1>bounce_driver.class.php -- Version 7.41</h1>
 
 <P>
-    Chris Fortune ~ <a href="http://cfortune.kics.bc.ca">http://cfortune.kics.bc.ca</a>
+    Chris Fortune ~ <a href="http://cfortune.kics.bc.ca">http://cfortune.kics.bc.ca</a><br>
+    Bounce Handler on <a href="https://github.com/cfortune/PHP-Bounce-Handler">GitHub</a>
 </P>
-<P>June 19, 2014</P>
-<UL>
-<LI>make auto-responder identification table driven</LI>
-<LI>make bounce_statuscodes.php (prev rfc1893_status_codes.php) generated from IANA list
- php Make_statuscodes.php >bounce_statuscodes.php</LI>
-<LI>allow for rfc status codes with 2 digits in the 3rd paramater</LI>
-<LI>more supression for php notifications on undefined data</LI>
-<LI>better detection and field definition for FBL handling</LI>
-<LI>remove spaces in joined header lines</LI>
-<LI>remove invalid/redundant implode operations</LI>
-<LI>add two new sample emails 61,62</LI>
-<LI>add command line test tool (cmdline_test.php)</LI>
-   
-<P>
-July 4, 2013
-</P>
-<P>
-Replaced deprecated split() function.
-Added auto-responder identification filter.  
-Suppressed php Notice errors.
-<P>
-<HR>
-    <!--  onclick="alert('not ready just yet'); return false;" -->
-<a href="php.bouncehandler.v7.4.zip">Download source code</a>
-<HR>
-
-
-<P>
-Feb 3, 2011
-</P>
-<P>
-Hey! Class is no longer static, it is rewritten in dynamic <code>$this-></code> notation.  It's much easier to customize now.  If you are upgrading from a previous version, you will need to rewrite your method invocation code.
-<P>
-<HR>
-    <!--  onclick="alert('not ready just yet'); return false;" -->
-<a href="php.bouncehandler.v7.4.zip">Download source code</a>
-<HR>
 
 <P>
 This bounce handler Attempts to parse Multipart reports for hard bounces, according to <a href='http://www.faqs.org/rfcs/rfc1892.html'>RFC1892</a> (RFC 1892 - The Multipart/Report Content Type for the Reporting of Mail System Administrative Messages) and <a href='http://www.faqs.org/rfcs/rfc1894.html'>RFC1894</a> (RFC 1894 - An Extensible Message Format for Delivery Status Notifications).  We can reuse this for any well-formed bounces. </P>

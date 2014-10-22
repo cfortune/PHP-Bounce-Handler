@@ -1,7 +1,7 @@
 <?php
 //error_reporting(0);// turn off PHP Notices
 
-/* BOUNCE HANDLER Class, Version 7.4
+/* BOUNCE HANDLER Class, Version 7.41
  * Description: "chops up the bounce into associative arrays"
  *     ~ http://www.anti-spam-man.com/php_bouncehandler/v7.3/
  *     ~ https://github.com/cfortune/PHP-Bounce-Handler/
@@ -81,10 +81,7 @@ class BounceHandler{
         $this->output[0]['action']  = "";
         $this->output[0]['status']  = "";
         $this->output[0]['recipient'] = "";
-        require('bounce_responses.php');
-        $this->bouncelist = $bouncelist;
-        $this->autorespondlist = $autorespondlist;
-        $this->bouncesubj = $bouncesubj;
+        require('bounce_responses.php');   # populates bouncelist, autorespondlist, bouncesubj
     }
     
 
@@ -109,25 +106,15 @@ class BounceHandler{
         $mime_sections = $this->parse_body_into_mime_sections($body, $boundary);
         $this->body_hash = split("\r\n", $body);
         $this->first_body_hash = isset($mime_sections['first_body_part']) ? $this->parse_head($mime_sections['first_body_part']) : array();
-
-        $this->looks_like_a_bounce = $this->is_a_bounce();
-        $this->looks_like_an_FBL = $this->is_an_ARF();
-        $this->looks_like_an_autoresponse = !$this->looks_like_a_bounce && !$this->looks_like_an_FBL && $this->is_an_autoresponse();
+        $this->looks_like_a_bounce = $this->is_RFC1892_multipart_report() || $this->is_a_bounce();
+        $this->looks_like_an_autoresponse = $this->is_an_autoresponse();
         
-        /* If you are trying to save processing power, and don't care much
-         * about accuracy then uncomment this statement in order to skip the
-         * heroic text parsing below. 
-         */
-        //if(!$this->looks_like_a_bounce && !$this->looks_like_an_FBL && !$this->looks_like_an_autoresponse){
-        //    return "unknown";
-        //}
-
 
         /*** now we try all our weird text parsing methods (E-mail is weird!) ******************************/
-
         // is it a Feedback Loop, in Abuse Feedback Reporting Format (ARF)?
         // http://en.wikipedia.org/wiki/Abuse_Reporting_Format#Abuse_Feedback_Reporting_Format_.28ARF.29
-        if($this->looks_like_an_FBL){
+        if($this->is_an_ARF()) {
+            $this->looks_like_an_FBL = TRUE;
             $this->output[0]['action'] = 'failed';
             $this->output[0]['status'] = "5.7.1";
             $this->subject = trim(str_ireplace("Fw:", "", $this->head_hash['Subject']));
@@ -180,17 +167,11 @@ class BounceHandler{
             $this->fbl_hash['Original-mail-from'] = $this->strip_angle_brackets(@$this->fbl_hash['Original-mail-from']);
             $this->fbl_hash['Original-rcpt-to']   = $this->strip_angle_brackets(@$this->fbl_hash['Original-rcpt-to']);
             $this->output[0]['recipient'] = $this->fbl_hash['Original-rcpt-to'];
-        }
+        } // is FBL
 
-#???        else if (preg_match("/auto.{0,20}reply|vacation|(out|away|on holiday).*office/i", $this->head_hash['Subject'])){
-#            // looks like a vacation autoreply, ignoring
-#            $this->output[0]['action'] = 'autoreply';
-#        } 
-
-        // is this an autoresponse ?
         elseif ($this->looks_like_an_autoresponse) {
-            $this->output[0]['action'] = 'autoresponse';     #??? 'transient'  'autoreply' ??
-            $this->output[0]['autoresponse'] = $this->autoresponse; #??? 4.3.2
+            $this->output[0]['action'] = 'autoresponse';
+            $this->output[0]['autoresponse'] = $this->autoresponse;
             // grab the first recipient and break
             $this->output[0]['recipient'] = isset($this->head_hash['Return-path']) ? $this->strip_angle_brackets($this->head_hash['Return-path']) : '';
             if(empty($this->output[0]['recipient'])){
@@ -201,8 +182,7 @@ class BounceHandler{
                 }
             }
         }
-
-        else if ($this->is_RFC1892_multipart_report() === TRUE){
+        elseif ($this->is_RFC1892_multipart_report() === TRUE){
             $rpt_hash = $this->parse_machine_parsable_body_part($mime_sections['machine_parsable_body_part']);
             if (isset($rpt_hash['per_recipient'])) {
                 for($i=0; $i<count($rpt_hash['per_recipient']); $i++){
@@ -221,8 +201,7 @@ class BounceHandler{
                 }
             }          
         }
-
-        else if(isset($this->head_hash['X-failed-recipients'])) {
+        elseif (isset($this->head_hash['X-failed-recipients'])) {
             //  Busted Exim MTA
             //  Up to 50 email addresses can be listed on each header.
             //  There can be multiple X-Failed-Recipients: headers. - (not supported)
@@ -231,33 +210,38 @@ class BounceHandler{
                 $this->output[$j]['recipient'] = trim($arrFailed[$j]);
                 $this->output[$j]['status'] = $this->get_status_code_from_text($this->output[$j]['recipient'],0);
                 $this->output[$j]['action'] = $this->get_action_from_status_code($this->output[$j]['status']);
+                $this->looks_like_a_bounce = TRUE;
+            }
+        }
+        else {
+            if (!empty($boundary)) {
+                // oh god it could be anything, but at least it has mime parts, so let's try anyway
+                $arrFailed = $this->find_email_addresses($mime_sections['first_body_part']);
+                for($j=0; $j<count($arrFailed); $j++){
+                    $this->output[$j]['recipient'] = trim($arrFailed[$j]);
+                    $this->output[$j]['status'] = $this->get_status_code_from_text($this->output[$j]['recipient'],0);
+                    $this->output[$j]['action'] = $this->get_action_from_status_code($this->output[$j]['status']);
+                    $this->looks_like_a_bounce = TRUE;
+                }
+            }
+            else {
+                // last ditch attempt
+                // could possibly produce erroneous output, or be very resource consuming,
+                // so be careful.  You should comment out this section if you are very concerned
+                // about 100% accuracy or if you want very fast performance.
+                // Leave it turned on if you know that all messages to be analyzed are bounces.
+                $arrFailed = $this->find_email_addresses($body);
+                for ($j=0; $j<count($arrFailed); $j++) {
+                    $this->output[$j]['recipient'] = trim($arrFailed[$j]);
+                    $this->output[$j]['status'] = $this->get_status_code_from_text($this->output[$j]['recipient'],0);
+                    $this->output[$j]['action'] = $this->get_action_from_status_code($this->output[$j]['status']);
+                    $this->looks_like_a_bounce = TRUE;
+                }
             }
         }
 
-        else if(!empty($boundary) && $this->looks_like_a_bounce){
-            // oh god it could be anything, but at least it has mime parts, so let's try anyway
-            $arrFailed = $this->find_email_addresses($mime_sections['first_body_part']);
-            for($j=0; $j<count($arrFailed); $j++){
-                $this->output[$j]['recipient'] = trim($arrFailed[$j]);
-                $this->output[$j]['status'] = $this->get_status_code_from_text($this->output[$j]['recipient'],0);
-                $this->output[$j]['action'] = $this->get_action_from_status_code($this->output[$j]['status']);
-            }
-        }
-
-        else if($this->looks_like_a_bounce){
-            // last ditch attempt
-            // could possibly produce erroneous output, or be very resource consuming,
-            // so be careful.  You should comment out this section if you are very concerned
-            // about 100% accuracy or if you want very fast performance.
-            // Leave it turned on if you know that all messages to be analyzed are bounces.
-            $arrFailed = $this->find_email_addresses($body);
-            for($j=0; $j<count($arrFailed); $j++){
-                $this->output[$j]['recipient'] = trim($arrFailed[$j]);
-                $this->output[$j]['status'] = $this->get_status_code_from_text($this->output[$j]['recipient'],0);
-                $this->output[$j]['action'] = $this->get_action_from_status_code($this->output[$j]['status']);
-            }
-        }
         // else if()..... add a parser for your busted-ass MTA here
+
         
         // remove empty array indices
         $tmp = array();
@@ -278,7 +262,6 @@ class BounceHandler{
         $this->subject = ($this->subject) ? $this->subject : $this->head_hash['Subject'];
         $this->recipient = isset($this->output[0]['recipient']) ? $this->output[0]['recipient'] : '';
         $this->feedback_type = (isset($this->fbl_hash['Feedback-type'])) ? $this->fbl_hash['Feedback-type'] : "";
-
         // sniff out any web beacons
         if($this->web_beacon_preg_1)
             $this->web_beacon_1 = $this->find_web_beacon($body, $this->web_beacon_preg_1);
@@ -288,7 +271,6 @@ class BounceHandler{
             $this->x_header_beacon_1 = $this->find_x_header  ($this->x_header_search_1);
         if($this->x_header_search_2)
             $this->x_header_beacon_2 = $this->find_x_header  ($this->x_header_search_2);
-
         return $this->output;
     }
     
@@ -330,18 +312,6 @@ class BounceHandler{
 
         $strEmail = str_replace("\r\n", "\n", $blob);    // line returns 1
         $strEmail = str_replace("\n", "\r\n", $strEmail);// line returns 2
-#            $strEmail = str_replace("=\r\n", "", $strEmail); // remove MIME line breaks (would never exist as #1 above would have dealt with)
-#            $strEmail = str_replace("=3D", "=", $strEmail);  // equals sign - dealt with in the MIME decode section now
-#            $strEmail = str_replace("=09", "  ", $strEmail); // tabs
-
-        //}
-        //else if($format=='array'){
-        //    $strEmail = "";
-        //    for($i=0; $i<$blob; $i++){
-        //        $strEmail .= rtrim($blob[$i]) . "\r\n";
-        //    }
-        //}
-
         return $strEmail;
     }
 
@@ -502,16 +472,16 @@ class BounceHandler{
                     }
                 }
             }
-            elseif (isset($line) && isset($entity) && preg_match('/^\s+(.+)\s*/', $line) && $entity) {
+            elseif (isset($line) && isset($entity) && preg_match('/^\s+(.+)\s*/', $line, $array) && $entity) {
                 $line = trim($line);
-                if (strpos($array[2], '=?') !== FALSE)
-                    $line = iconv_mime_decode($array[2], ICONV_MIME_DECODE_CONTINUE_ON_ERROR, "UTF-8");
+                if (strpos($array[1], '=?') !== FALSE)
+                    $line = iconv_mime_decode($array[1], ICONV_MIME_DECODE_CONTINUE_ON_ERROR, "UTF-8");
                 $hash[$entity] .= ' '. $line;
             }
         }
         // special formatting
         $hash['Received']= @explode('|', $hash['Received']);
-        $hash['Subject'] = isset($hash['Subject']) ? : '';
+        $hash['Subject'] = isset($hash['Subject']) ? $hash['Subject'] : '';
         return $hash;
     }
 
@@ -595,12 +565,12 @@ class BounceHandler{
     }
 
     function find_type(){
-        if($this->looks_like_a_bounce)
-            return "bounce";
+        if ($this->looks_like_an_autoresponse)
+            return "autoresponse";
         elseif ($this->looks_like_an_FBL)
             return "fbl";
-        elseif ($this->looks_like_an_autoresponse)
-            return "autoresponse";
+        elseif($this->looks_like_a_bounce)
+            return "bounce";
         else
             return false;
     }
@@ -680,20 +650,20 @@ class BounceHandler{
         }
     }
 
-    function is_a_bounce(){
-        foreach ($this->bouncesubj as $s)
-            if (preg_match("/^$s/i", $this->head_hash['Subject']))
-                return true;
-        #if(@preg_match('/auto_reply/',$this->head_hash['Precedence'])) return true;  # autoresponse, not bounce
-        if (isset($this->head_hash['From']) && 
-               preg_match("/^(postmaster|mailer-daemon)\@?/i", $this->head_hash['From'])) 
+    function is_a_bounce() {
+        if (isset($this->head_hash['From']) && preg_match("/^(postmaster|mailer-daemon)\@?/i", $this->head_hash['From'])) 
             return true;
+        foreach ($this->bouncesubj as $s)
+            if (preg_match("/^$s/i", $this->head_hash['Subject'])) 
+                return true;
+        #if (isset($this->head_hash['Return-path']) && $this->head_hash['Return-path'] === '<>') 
+        #    return true;
         return false;
     }
     
     function find_email_addresses($first_body_part){
         // not finished yet.  This finds only one address.
-        if (preg_match("/\b([A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4})\b/i", $first_body_part, $matches)){
+        if (preg_match("/\b([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4})\b/i", $first_body_part, $matches)){
             return array($matches[1]);
         }
         else
@@ -722,24 +692,22 @@ class BounceHandler{
     
     // look for common auto-responders
     function is_an_autoresponse() {
-        foreach (array ('Auto-submitted', 'X-autorespond') as $a) {
-            if (isset($this->head_hash[$a])) {
-                $this->autoresponse = "$a: ". $this->head_hash[$a];
+        if (isset($this->head_hash['Auto-submitted'])) {
+            if (preg_match('/auto-notified|vacation|away/i', $this->head_hash['Auto-submitted'])) {
+                $this->autoresponse = "Auto-submitted: ". $this->head_hash['Auto-submitted'];
                 return TRUE;
             }
         }
-        foreach (array ('Precedence', 'X-precedence') as $a) {
-            if (isset($this->head_hash[$a]) && preg_match('/^(auto|junk)/i', $this->head_hash[$a])) {
-                $this->autoresponse = "$a: ". $this->head_hash[$a];
-                return TRUE;
-            }
+        if (isset($this->head_hash['Precedence']) && preg_match('/^auto_reply/i', $this->head_hash['Precedence'])) {
+            $this->autoresponse = "Precedence: ". $this->head_hash['Precedence'];
+            return TRUE;
         }
-  
-        $subj = isset($this->head_hash['Subject']) ? $this->head_hash['Subject'] : '';
-        foreach ($this->autorespondlist as $a) {
-            if (preg_match("/$a/i", $subj)) {
-                $this->autoresponse = $this->head_hash['Subject'];
-                return TRUE;
+        if (isset($this->head_hash['Subject'])) {
+            foreach ($this->autorespondlist as $a) {
+                if (preg_match("/$a/i", ($this->head_hash['Subject']))) {
+                    $this->autoresponse = "Subject: ". $this->head_hash['Subject'];
+                    return TRUE;
+                }
             }
         }
         return FALSE;
