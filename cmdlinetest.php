@@ -42,7 +42,7 @@ if (defined('STDIN')) {
                   if ($fn[0] !== '.' && !is_dir($argv[1]. '/'. $fn))
                     $fns[] = $argv[1]. '/'. $fn;
                 closedir($dh);
-                foreach (sort($fns) as $fn)                  
+                foreach (sort($fns) as $fn) {
                   $email = file_get_contents($fn);
                   print "$fn\n";
                   checkmail($email);
