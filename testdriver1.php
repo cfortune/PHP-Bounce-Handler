@@ -31,7 +31,7 @@ if(!empty($_GET['testall'])){
 }
 ?>
 
-<h1>bounce_driver.class.php -- Version 7.41</h1>
+<h1>bounce_driver.class.php -- Version <?php echo $bouncehandler->version; ?></h1>
 
 <P>
     Chris Fortune ~ <a href="http://cfortune.kics.bc.ca">http://cfortune.kics.bc.ca</a><br>

@@ -6,9 +6,16 @@ Upload to a website, and open testdriver1.php in a web browser
 
 RELEASE HISTORY
 ---------------
+v7.4.2 SB  Oct 24, 2014
+ - slightly less agressive bounce detection; only calls last chance if we
+    see specific from/return-path
+ - added a couple more autoreponder subject line checks
+ - allows it to find email addresses new TLDs that are more than 4 chararters
+ - more supression for php notifications on undefined data
+
 v7.4.1 SB  Oct 22, 2014
 - fix autoresponder detection.  A lot of bounces were incorrectly being
-   caught as autoresponders.
+   caught as autoresponders
 - added vacation/autoresponder examples
 - minor fix in command line test tool
 

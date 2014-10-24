@@ -225,7 +225,7 @@ $this->bouncelist = array(
 $this->autorespondlist = array(
     'auto:',
     '^away from.{0,15}office',
-    '^.?auto(mated|matic}.{0,5}(reply|response)',
+    '^.?auto(mated|matic).{0,5}(reply|response)',
     '^out.?of (the )?office',
     '^(I am|I\'m|I will).{0,15}\s(away|on vacation|on leave|out of office|out of the office)',
     '^Thank you for your e-?mail',

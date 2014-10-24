@@ -7,8 +7,8 @@ function checkmail($email) {
     global $total;
     $bh = new Bouncehandler();
     $bounceinfo = $bh->get_the_facts($email);
-    #    var_dump($bounceinfo);
-    #    var_dump($bh);
+    #    var_export($bounceinfo);
+    #    var_export($bh);
     print " TYPE      ". @$bh->type. "\n";
     if ($bh->type == 'bounce') {
         print " ACTION    ". $bounceinfo[0]['action']. "\n";
@@ -37,12 +37,15 @@ if (defined('STDIN')) {
         for ($i = 1; $i < count($argv); $i++) {
             if (is_dir($argv[$i])) {
                 $dh = opendir($argv[$i]);
-                while ($fn = readdir($dh)) {
-                    if (substr($fn,0,1) !==  '.') {
-                        $email = file_get_contents($argv[$i].'/'.$fn);
-                        print $argv[1]."/$fn\n";
-                        checkmail($email);
-                    }
+                $fns = array();
+                while ($fn = readdir($dh))
+                  if ($fn[0] !== '.' && !is_dir($argv[1]. '/'. $fn))
+                    $fns[] = $argv[1]. '/'. $fn;
+                closedir($dh);
+                foreach (sort($fns) as $fn)                  
+                  $email = file_get_contents($fn);
+                  print "$fn\n";
+                  checkmail($email);
                 }
             }
             else {
