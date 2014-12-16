@@ -170,7 +170,7 @@ class BounceHandler
     //
     /**
      * This is the most commonly used public method - quick and dirty email parsing.
-    *
+     *
      * Usage: $multiArray = $this->get_the_facts($strEmail);
      *
      * @param string $eml
@@ -202,7 +202,7 @@ class BounceHandler
         // parse the email into data structures
         $boundary = isset($this->head_hash['Content-type']['boundary']) ? $this->head_hash['Content-type']['boundary'] : '';
         $mime_sections = $this->parse_body_into_mime_sections($body, $boundary);
-        $this->body_hash = split("\r\n", $body);
+        $this->body_hash = preg_split("/\r\n/", $body);
         $this->first_body_hash = isset($mime_sections['first_body_part']) ? $this->parse_head($mime_sections['first_body_part']) : array();
 
         $this->looks_like_a_bounce = $this->is_a_bounce();
@@ -329,7 +329,7 @@ class BounceHandler
             //  Busted Exim MTA
             //  Up to 50 email addresses can be listed on each header.
             //  There can be multiple X-Failed-Recipients: headers. - (not supported)
-            $arrFailed = split(',', $this->head_hash['X-failed-recipients']);
+            $arrFailed = explode(',', $this->head_hash['X-failed-recipients']);
             for ($j = 0; $j < count($arrFailed); $j++) {
                 $this->output[$j]['recipient'] = trim($arrFailed[$j]);
                 $this->output[$j]['status'] = $this->get_status_code_from_text($this->output[$j]['recipient'], 0);
@@ -520,7 +520,7 @@ class BounceHandler
                 }
             } elseif (isset($line) && isset($entity) && preg_match('/^\s+(.+)\s*/', $line) && $entity) {
                 $line = trim($line);
-                if (strpos($array[2], '=?') !== false) {
+                if (isset($array[2]) && strpos($array[2], '=?') !== false) {
                     $line = iconv_mime_decode($array[2], ICONV_MIME_DECODE_CONTINUE_ON_ERROR, "UTF-8");
                 }
                 $hash[$entity] .= ' ' . $line;
@@ -719,13 +719,13 @@ class BounceHandler
     {
         return @$this->head_hash['Content-type']['type'] == 'multipart/report'
         && @$this->head_hash['Content-type']['report-type'] == 'delivery-status'
-        && @$this->head_hash['Content-type'][boundary] !== '';
+        && @$this->head_hash['Content-type']['boundary'] !== '';
     }
 
     /**
-     * @param $str
+     * @param string $str
      *
-     * @return mixed
+     * @return array
      */
     function parse_machine_parsable_body_part($str)
     {
@@ -760,7 +760,7 @@ class BounceHandler
                 $temp['Diagnostic-code'] = array();
                 $temp['Diagnostic-code']['type'] = isset($arr[0]) ? trim($arr[0]) : '';
                 $temp['Diagnostic-code']['text'] = isset($arr[1]) ? trim($arr[1]) : '';
-                // now this is wierd: plenty of times you see the status code is a permanent failure,
+                // now this is weird: plenty of times you see the status code is a permanent failure,
                 // but the diagnostic code is a temporary failure.  So we will assert the most general
                 // temporary failure in this case.
                 $ddc = '';
@@ -781,15 +781,18 @@ class BounceHandler
     }
 
     /**
-     * @param $dsn_fields
+     * Parse delivery service notification fields.
      *
-     * @return mixed
+     * @param array|string $dsn_fields
+     *
+     * @return array
      */
     function parse_dsn_fields($dsn_fields)
     {
         if (!is_array($dsn_fields)) {
             $dsn_fields = explode("\r\n\r\n", $dsn_fields);
         }
+        $hash=array();
         $j = 0;
         reset($dsn_fields);
         for ($i = 0; $i < count($dsn_fields); $i++) {
@@ -817,7 +820,7 @@ class BounceHandler
     /**
      *  Take a line like "4.2.12 This is an error" and return  "4.2.12" and "This is an error"
      *
-     * @param $arr
+     * @param array $arr
      *
      * @return array
      */
