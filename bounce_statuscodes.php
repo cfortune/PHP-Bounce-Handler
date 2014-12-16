@@ -149,6 +149,3 @@ $status_code_subclasses['7.18']['title'] = "Domain owner has changed";  # [RFC-i
 $status_code_subclasses['7.18']['descr'] = "This status code is returned when a message is received with a Require-Recipient-Valid-Since field or RRVS extension and the receiving system wishes to disclose that the owner of the domain name of the recipient has changed since the specified date.";
 $status_code_subclasses['7.19']['title'] = "RRVS test cannot be completed";  # [RFC-ietf-appsawg-rrvs-header-field-10] (Standards Track)
 $status_code_subclasses['7.19']['descr'] = "This status code is returned when a message is received with a Require-Recipient-Valid-Since field or RRVS extension and the receiving system cannot complete the requested evaluation because the required timestamp was not recorded. The message originator needs to decide whether to reissue the message without RRVS protection.";
-
-
-?>

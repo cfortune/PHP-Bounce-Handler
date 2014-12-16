@@ -395,8 +395,10 @@ class BounceHandler
         // is this an autoresponse ?
         elseif ($this->looks_like_an_autoresponse)
         {
+
             $this->output[0]['action'] = 'autoresponse';     #??? 'transient'  'autoreply' ??
             $this->output[0]['autoresponse'] = $this->autoresponse; #??? 4.3.2
+            $this->output[0]['status']='2.0';
             // grab the first recipient and break
             $this->output[0]['recipient'] = isset($this->head_hash['Return-path']) ? $this->strip_angle_brackets($this->head_hash['Return-path']) : '';
             if (empty($this->output[0]['recipient']))
@@ -411,6 +413,7 @@ class BounceHandler
         }
         else if ($this->is_RFC1892_multipart_report() === TRUE)
         {
+
             $rpt_hash = $this->parse_machine_parsable_body_part($mime_sections['machine_parsable_body_part']);
             if (isset($rpt_hash['per_recipient']))
             {
@@ -679,6 +682,7 @@ class BounceHandler
      */
     function parse_body_into_mime_sections($body, $boundary)
     {
+
         if (!$boundary)
         {
             return array();
@@ -688,10 +692,10 @@ class BounceHandler
             $body = implode("\r\n", $body);
         }
         $body = explode($boundary, $body);
+
         $mime_sections['first_body_part'] = isset($body[1]) ? $this->contenttype_decode($body[1]) : ''; #proper MIME decode
         $mime_sections['machine_parsable_body_part'] = isset($body[2]) ? $this->contenttype_decode($body[2]) : '';
         $mime_sections['returned_message_body_part'] = isset($body[3]) ? $this->contenttype_decode($body[3]) : '';
-
         return $mime_sections;
     }
 
@@ -888,13 +892,24 @@ class BounceHandler
     /**
      * Is this an RFC 1892 multiple return email?
      *
+     * @param array $head_hash Associative array of headers. If not set, will use $this->head_hash
      * @return bool
      */
-    function is_RFC1892_multipart_report()
+    public function is_RFC1892_multipart_report($head_hash=array())
     {
-        return @$this->head_hash['Content-type']['type'] == 'multipart/report'
-        && @$this->head_hash['Content-type']['report-type'] == 'delivery-status'
-        && @$this->head_hash['Content-type']['boundary'] !== '';
+        if (empty($head_hash)) {
+            $head_hash=$this->head_hash;
+        }
+        if (isset($head_hash['Content-type']['type']) &&
+        isset($head_hash['Content-type']['report-type']) &&
+        isset($head_hash['Content-type']['boundary']) &&
+            'multipart/report'===$head_hash['Content-type']['type'] &&
+            'delivery-status'===$head_hash['Content-type']['report-type'] &&
+            ''!==$head_hash['Content-type']['boundary']
+        ) {
+            return TRUE;
+        }
+        return FALSE;
     }
 
     /**
@@ -1031,6 +1046,12 @@ class BounceHandler
                 $output['type'] = trim($arr[0]);
                 $output['addr'] = $this->strip_angle_brackets($arr[1]);
             }
+        } elseif (isset($arr[0])) {
+            if (strpos($arr[0], '@') !== FALSE)
+            {
+                $output['addr'] = $this->strip_angle_brackets($arr[0]);
+                $output['type'] = 'unknown';
+            }
         }
 
         return $output;
@@ -1058,9 +1079,11 @@ class BounceHandler
     }
 
     /**
-     * @param $code
+     * Get a brief status/recommend action from the status code.
      *
-     * @return string
+     * @param string $code The status code string supplied.
+     *
+     * @return string Either "success", "transient", "failed" or "" (unknown).
      */
     function get_action_from_status_code($code)
     {
@@ -1069,7 +1092,16 @@ class BounceHandler
             return '';
         }
         $ret = $this->format_status_code($code);
-        switch (isset($ret['code']) ? $ret['code'][0] : '')
+        /**
+         * We weren't able to read the code
+         */
+        if ($ret['code']==='') {
+            return '';
+        }
+        /**
+         * Work out the rough status from the first digit of the code
+         */
+        switch (substr($ret['code'],0,1))
         {
             case(2):
                 return 'success';
@@ -1111,9 +1143,11 @@ class BounceHandler
     }
 
     /**
-     * @param $per_rcpt
+     * Find the recipient from either the original-recipient or final-recipieint settings.
      *
-     * @return string
+     * @param array $per_rcpt Headers
+     *
+     * @return string Email address
      */
     function find_recipient($per_rcpt)
     {

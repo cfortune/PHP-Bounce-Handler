@@ -54,6 +54,3 @@ if ($fh !== false) {
     }
     fclose($fh);
 }
-print "\n\n?>";
-
-?>
