@@ -34,13 +34,13 @@
  *
  * @package    BounceHandler
  * @author     Chris Fortune  http://cfortune.kics.bc.ca
+ * @author     Richard Bairwell - Code cleanups. http://blog.rac.me.uk
  * @author     "Kanon"
  * @author     Jamie McClelland http://mayfirst.org
  * @author     Michael Cooper
  * @author     Thomas Seifert
  * @author     Tim Petrowsky http://neuecouch.de
  * @author     Willy T. Koch http://apeland.no
- * @author     Another Author <another@example.com>
  * @author     ganeshaspeaks.com - FBL development
  * @author     Richard Catto - FBL development
  * @author     Scott Brynen - FBL development  http://visioncritical.com
