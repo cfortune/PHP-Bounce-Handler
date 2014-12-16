@@ -878,10 +878,17 @@ class BounceHandler
      */
     function find_email_addresses($first_body_part)
     {
-        // not finished yet.  This finds only one address.
-        if (preg_match("/\b([A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4})\b/i", $first_body_part, $matches))
+        /**
+         * Regular expression for searching for email addresses
+         * @see https://bitbucket.org/bairwell/emailcheck/src/81c6a1a25d28a8abda1673ae1fbec3ba55b72bce/emailcheck.php?at=master
+         * Doesn't currently do any "likely domain valid" or similar checks
+         */
+        $regExp='/(?:[a-z0-9!#$%&\'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+\/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/iS';
+
+        $matched=preg_match($regExp, $first_body_part, $matches);
+        if (1===$matched)
         {
-            return array($matches[1]);
+            return array($matches[0]);
         }
         else
         {
