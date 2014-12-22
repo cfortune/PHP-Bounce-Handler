@@ -18,7 +18,7 @@ Subject: failure notice
 (postino11.prima.com.ar)
 Su mensaje no pudo ser entregado - Sua mensagem nao pode ser enviada - Your message could not be delivered.
 
-<andres_ferrero@ciudad.com.ar>:
+<andres_ferrero@example.com>:
 Mailbox quota usage exceeded. Espacio en casilla de mail agotado.
 
 --- Mensaje original adjunto.
@@ -33,15 +33,15 @@ Received: from unknown (HELO ar2.outmailing.net) (200.68.65.111)
 Received: from apache by ar2.outmailing.net with local (Exim 4.60)
 	(envelope-from <ar1@ar1.outmailing.com>)
 	id 1GecBG-0003hg-IF
-	for andres_ferrero@ciudad.com.ar; Mon, 30 Oct 2006 15:48:18 -0300
-To: andres_ferrero@ciudad.com.ar
+	for andres_ferrero@example.com; Mon, 30 Oct 2006 15:48:18 -0300
+To: andres_ferrero@example.com
 Subject: Eventos de La semana
 Received: from mailer 
 	by ar1.outmailing.com with HTTP (Mail);
 	Mon, 30 Oct 2006 15:48:18 -0300
 Date: Mon, 30 Oct 2006 15:48:18 -0300
 From: Green Land Irish Pub <noreply@dattadream.com.ar>
-Reply-to: fedecheme@hotmail.com
+Reply-to: fedecheme@example.com
 Message-ID: <8b4ded0ce2ffb4f06b93347f80b9e5ff@ar1.outmailing.com>
 X-Priority: 3
 X-Mailer: AC Mailer
@@ -50,7 +50,7 @@ MIME-Version: 1.0
 Content-Transfer-Encoding: 8bit
 Content-Type: text/html; charset="utf-8"
 
-<? mail($para, $tema, $mensaje, "Content-Type: text/htmlnFrom: Hotmail<feddecheme@hotmail.com.ar >
+<? mail($para, $tema, $mensaje, "Content-Type: text/htmlnFrom: Hotmail<feddecheme@example.com.ar >
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><HTML 
 xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
 "urn:schemas-microsoft-com:vml" xmlns:o = 

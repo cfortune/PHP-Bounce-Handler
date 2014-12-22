@@ -1,4 +1,4 @@
-Return-Path: staff@hotmail.com
+Return-Path: staff@example.com
 Received: from internal.ganeshaspeaks.com (LHLO internal.ganeshaspeaks.com)
  (59.162.116.97) by internal.ganeshaspeaks.com with LMTP; Sat, 20 Feb 2010
  11:10:54 +0530 (IST)
@@ -28,12 +28,12 @@ Delivered-To: abuse@ganeshaspeaks.com
 Received: (qmail 18473 invoked by uid 502); 20 Feb 2010 05:25:13 -0000
 Received: by simscan 1.4.0 ppid: 18463, pid: 18465, t: 0.1741s
          scanners: attach: 1.4.0
-Received: from unknown (HELO bay0-omc2-s1.bay0.hotmail.com) (65.54.190.76)
+Received: from unknown (HELO bay0-omc2-s1.bay0.example.com) (65.54.190.76)
   by mail.ganeshaspeaks.com with SMTP; 20 Feb 2010 05:25:12 -0000
-Received-SPF: pass (mail.ganeshaspeaks.com: SPF record at spf-a.hotmail.com designates 65.54.190.76 as permitted sender)
-Received: from BAY0-JMR-DB02 ([65.54.190.125]) by bay0-omc2-s1.bay0.hotmail.com with Microsoft SMTPSVC(6.0.3790.3959);
+Received-SPF: pass (mail.ganeshaspeaks.com: SPF record at spf-a.example.com designates 65.54.190.76 as permitted sender)
+Received: from BAY0-JMR-DB02 ([65.54.190.125]) by bay0-omc2-s1.bay0.example.com with Microsoft SMTPSVC(6.0.3790.3959);
 	 Fri, 19 Feb 2010 21:25:12 -0800
-X-HmXmrOriginalRecipient: masterblastervarun@hotmail.com
+X-HmXmrOriginalRecipient: masterblastervarun@example.com
 X-Reporter-IP: 222.129.240.155
 X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtTQ0w9NA==
 X-Message-Status: n:0
@@ -41,11 +41,11 @@ X-SID-PRA: contact@promomail.ganeshaspeaks.com
 X-SID-Result: Pass
 X-AUTH-Result: PASS
 X-Message-Info: 6sSXyD95QpXzBd+BwlL9N8+0QFs0qR/5VJbs1QJJ7xgVpOwv+1x64rOZtx9fnQbvuyJvNWyeL0uiHYrHm5RnPni1gyWqUWE5
-Received: from promomail.ganeshaspeaks.com ([72.55.174.206]) by bay0-mc3-f8.Bay0.hotmail.com with Microsoft SMTPSVC(6.0.3790.3959);
+Received: from promomail.ganeshaspeaks.com ([72.55.174.206]) by bay0-mc3-f8.Bay0.example.com with Microsoft SMTPSVC(6.0.3790.3959);
 	 Fri, 19 Feb 2010 19:58:37 -0800
 Received: from massmail.ganeshaspeaks.com (unknown [10.1.209.5])
 	by promomail.ganeshaspeaks.com (Postfix) with ESMTP id 6E09BDE01E2
-	for <masterblastervarun@hotmail.com>; Fri, 19 Feb 2010 22:58:37 -0500 (EST)
+	for <masterblastervarun@example.com>; Fri, 19 Feb 2010 22:58:37 -0500 (EST)
 X-DKIM: Sendmail DKIM Filter v2.8.3 promomail.ganeshaspeaks.com 6E09BDE01E2
 DKIM-Signature: v=1; a=rsa-sha1; c=simple/simple;
 	d=promomail.ganeshaspeaks.com; s=selector1; t=1266638317;
@@ -61,7 +61,7 @@ DomainKey-Signature: a=rsa-sha1; s=selector1; d=promomail.ganeshaspeaks.com; c=s
 	KqK4mSczQ9gTe1ED6jS/lvgaGh59bx2jVu0sNAM=
 Recieved: 
 Date: Fri, 19 Feb 2010 22:58:37 -0500
-To: masterblastervarun@hotmail.com
+To: masterblastervarun@example.com
 From: contact@promomail.ganeshaspeaks.com
 Subject: Now, your Finance report at an easier rate
 Message-ID: <7d0005d5ddea9b8c2dd9ec1a35b2d5d4@localhost.localdomain>
@@ -69,7 +69,7 @@ X-Priority: 3
 X-Mailer: PHPMailer [version 1.73]
 X-Mailer: phplist v2.10.10
 X-MessageID: 49
-X-ListMember: masterblastervarun@hotmail.com
+X-ListMember: masterblastervarun@example.com
 Precedence: bulk
 Errors-To: bounces3@promomail.ganeshaspeaks.com
 MIME-Version: 1.0

@@ -37,9 +37,13 @@ if (!empty($_GET['testall'])) {
                 && !empty($multiArray[0]['status'])
                 && !empty($multiArray[0]['recipient'])
             ) {
-                print " - Passed (with action of: ".$multiArray[0]['action'].")<br>\n";
+                print ' - Data parsed (';
+                print 'Action: '.$multiArray[0]['action'];
+                print ' Status: '.$multiArray[0]['status'];
+                print ' Recipient: '.$multiArray[0]['recipient'];
+                print ')<br>'.PHP_EOL;
             } else {
-                print "<span style='color:red;font-weight:bold;'> - WRONG</span><br>\n";
+                print "<span style='color:red;font-weight:bold;'> - Unable to parse data</span><br>\n";
                 print "<pre>\n";
                 print_r($multiArray);
                 print "</pre>\n";
@@ -157,6 +161,11 @@ echo "<TEXTAREA COLS=100 ROWS=" . (count($head_hash) * 2.7) . ">";
 print_r($head_hash);
 echo "</TEXTAREA>";
 
+echo 'Raw email:';
+echo "<TEXTAREA COLS=100 ROWS=12>";
+echo htmlspecialchars($bounce);
+echo "</TEXTAREA>";
+
 if ($bouncehandler->is_RFC1892_multipart_report($head_hash)) {
     print "<h2 style='color:red;'>Looks like an RFC1892 multipart report</H2>";
 } else if ($bouncehandler->looks_like_an_FBL) {
@@ -224,7 +233,6 @@ echo "<P>Three parts: [first_body_part], [machine_parsable_body_part], and [retu
 echo "<TEXTAREA cols=100 rows=100>";
 print_r($mime_sections);
 echo "</TEXTAREA>";
-
 
 /*
                 $status_code = $bouncehandler->format_status_code($rpt_hash['per_recipient'][$i]['Status']);

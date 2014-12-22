@@ -4,7 +4,7 @@ Delivery-date: Mon, 30 Oct 2006 15:35:17 -0300
 Received: from mail by ar2.outmailing.net with local (Exim 4.60)
 	id 1Gebye-0003FM-7z
 	for ar1@ar1.outmailing.com; Mon, 30 Oct 2006 15:35:16 -0300
-X-Failed-Recipients: silchal@hotmail.com
+X-Failed-Recipients: silchal@example.com
 Auto-Submitted: auto-replied
 From: Mail Delivery System <Mailer-Daemon@ar2.outmailing.net>
 To: ar1@ar1.outmailing.com
@@ -17,9 +17,9 @@ This message was created automatically by mail delivery software.
 A message that you sent could not be delivered to one or more of its
 recipients. This is a permanent error. The following address(es) failed:
 
-  silchal@hotmail.com
-    SMTP error from remote mail server after RCPT TO:<silchal@hotmail.com>:
-    host mx2.hotmail.com [65.54.244.40]: 550 Requested action not taken:
+  silchal@example.com
+    SMTP error from remote mail server after RCPT TO:<silchal@example.com>:
+    host mx2.example.com [65.54.244.40]: 550 Requested action not taken:
     mailbox unavailable
 
 ------ This is a copy of the message, including all the headers. ------
@@ -28,8 +28,8 @@ Return-path: <ar1@ar1.outmailing.com>
 Received: from apache by ar2.outmailing.net with local (Exim 4.60)
 	(envelope-from <ar1@ar1.outmailing.com>)
 	id 1GebyR-0003Eg-Qp
-	for silchal@hotmail.com; Mon, 30 Oct 2006 15:35:06 -0300
-To: silchal@hotmail.com
+	for silchal@example.com; Mon, 30 Oct 2006 15:35:06 -0300
+To: silchal@example.com
 Subject: LAST VACANCIES!!!
 Received: from mailer 
 	by ar1.outmailing.com with HTTP (Mail);
@@ -710,7 +710,7 @@ border="0"></body>
 --b1_c5484fc459e38837c2abcd31624ee8c3--
 
 
-__________ Información de NOD32, revisión 1.1856 (20061106) __________
+__________ Informaciï¿½n de NOD32, revisiï¿½n 1.1856 (20061106) __________
 
 Este mensaje ha sido analizado con  NOD32 antivirus system
 http://www.nod32.com

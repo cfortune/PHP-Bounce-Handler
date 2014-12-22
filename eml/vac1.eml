@@ -1,0 +1,38 @@
+Return-Path: <>
+Delivered-To: support@example-sender.com
+Received: (qmail 25576 invoked from network); 16 Sep 2014 14:24:16 -0000
+Received: from unknown (HELO mx.example-mailserver.com) (10.1.111.3)
+  by inboundmx01.local with SMTP; 16 Sep 2014 14:24:16 -0000
+Received: from gate.forward.smtp.dfw1a.emailsrvr.com ([98.129.184.12])
+  by mx.example-mailserver.com with ESMTP/TLS/DHE-RSA-AES256-SHA; 16 Sep 2014 14:24:16 +0000
+Return-Path: <>
+X-Virus-Scanned: OK
+X-MessageSniffer-Scan-Result: 0
+X-MessageSniffer-Rules: 0-0-0-2193-c
+Received: from [172.20.10.52] ([172.20.10.52:59452] helo=dfw136.emailsrvr.com)
+        by smtp36.gate.dfw1a.rsapps.net (envelope-from <>)
+        (ecelerity 2.2.3.49 r(42060/42061)) with ESMTPS (cipher=AES256-SHA)
+        id 04/9B-29943-E0848145; Tue, 16 Sep 2014 10:24:14 -0400
+Received: by store52a.mail.dfw1a (SMTP Server, from userid 5000)
+        id 48DC43B00EC; Tue, 16 Sep 2014 10:24:14 -0400 (EDT)
+X-Sieve: Pigeonhole Sieve 0.4.2
+Message-ID: <dovecot-sieve-1410877454-242323-0@store52a.mail.dfw1a.rsapps.net>
+Date: Tue, 16 Sep 2014 10:24:14 -0400
+From: <user@example.com>
+To: <support@example-sender.com>
+Subject: Re: Tell us your your opinions
+In-Reply-To: <SPWEB325ce9869338d94a57b3b663037176fc28@SPWEB32>
+References: <SPWEB325ce9869338d94a57b3b663037176fc28@SPWEB32>
+Auto-Submitted: auto-replied (vacation)
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Hello!
+
+Thank you for contacting us in West Oakville!
+We have received your inquiry and will be contacting you within 24 hours. Hopefully today!
+
+Thanks!
+Jane

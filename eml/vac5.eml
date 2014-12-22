@@ -1,0 +1,31 @@
+Return-Path: <scott@user.com>
+Delivered-To: support@example.com
+Received: (qmail 27206 invoked from network); 16 Sep 2014 20:03:10 -0000
+Received: from unknown (HELO mx.example.com) (10.1.111.4)
+  by inboundmx01.local with SMTP; 16 Sep 2014 20:03:10 -0000
+Received: from cp995.x.ca ([64.24.94.5])
+  by mx.example.com with ESMTP/TLS/DHE-RSA-AES256-SHA; 16 Sep 2014 20:03:10 +0000
+Received: from mfiltd by something.ca with local (Exim 4.82)
+	(envelope-from <user@example.com>)
+	id 1XTyxt-0034KP-50
+	for support@example.com; Tue, 16 Sep 2014 14:03:05 -0600
+To: "support" <support@example.com>
+X-Autorespond: Update your Info
+MIME-Version: 1.0
+X-Loop: "support" <support@example.com>
+Precedence: auto_reply
+X-Precedence: auto_reply
+From: "scott@user.com" <scott@user.com>
+Content-type: text/plain; charset=utf-8
+Subject: Out of Office
+Message-Id: <E1XTyxt-0034KP-50@user.ca>
+Date: Tue, 16 Sep 2014 14:03:05 -0600
+
+To our valued customers,
+
+
+I will be on vacation from Monday September 8th, returning Tuesday September 23rd.  Please contact if you require immediate assistance. If not, I will reply upon my return. Thank you!
+
+Scott
+
+

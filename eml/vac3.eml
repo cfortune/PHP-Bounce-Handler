@@ -1,0 +1,62 @@
+Return-Path: <user@ca.ibm.com>
+Delivered-To: support@example-sender.com
+Received: (qmail 32281 invoked from network); 16 Sep 2014 15:20:53 -0000
+Received: from unknown (HELO mx.example-sender.com) (10.1.111.3)
+  by inboundmx01.local with SMTP; 16 Sep 2014 15:20:53 -0000
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: Aq8BAOpUGFQgYbaKm2dsb2JhbABghDfSagGBFBYBARABAQEBAQYLCwkUKoQEAQU6A0w/ElcZiEG7TxiOegEBVhaENQWpMo0WUIEPgTsBAQE
+X-IronPort-AV: E=Sophos;i="5.04,534,1406592000";
+   d="scan'208";a="3707773"
+Received: from e8.ny.us.ibm.com ([32.97.182.138])
+  by mx.example-sender.com with ESMTP/TLS/DHE-RSA-AES256-SHA; 16 Sep 2014 15:20:53 +0000
+Received: from /spool/local
+	by e8.ny.us.ibm.com with IBM ESMTP SMTP Gateway: Authorized Use Only! Violators will be prosecuted
+	for <support@example-sender.com> from <user@ca.ibm.com>;
+	Tue, 16 Sep 2014 11:20:49 -0400
+Received: from d01dlp02.pok.ibm.com (9.56.250.167)
+	by e8.ny.us.ibm.com (192.168.1.108) with IBM ESMTP SMTP Gateway: Authorized Use Only! Violators will be prosecuted;
+	Tue, 16 Sep 2014 11:20:47 -0400
+Received: from b01cxnp23033.gho.pok.ibm.com (b01cxnp23033.gho.pok.ibm.com [9.57.198.28])
+	by d01dlp02.pok.ibm.com (Postfix) with ESMTP id 1CCBE6E804A
+	for <support@example-sender.com>; Tue, 16 Sep 2014 11:20:34 -0400 (EDT)
+Received: from d01av05.pok.ibm.com (d01av05.pok.ibm.com [9.56.224.195])
+	by b01cxnp23033.gho.pok.ibm.com (8.14.9/8.14.9/NCO v10.0) with ESMTP id s8GFKcVT56033388
+	for <support@example-sender.com>; Tue, 16 Sep 2014 15:20:46 GMT
+Received: from d01av05.pok.ibm.com (localhost [127.0.0.1])
+	by d01av05.pok.ibm.com (8.14.4/8.14.4/NCO v10.0 AVout) with ESMTP id s8GFKC45028691
+	for <support@example-sender.com>; Tue, 16 Sep 2014 11:20:12 -0400
+Received: from d01ml394.pok.ibm.com (d01ml394.pok.ibm.com [9.63.8.16])
+	by d01av05.pok.ibm.com (8.14.4/8.14.4/NCO v10.0 AVin) with ESMTP id s8GFKCOb028070
+	for <support@example-sender.com>; Tue, 16 Sep 2014 11:20:12 -0400
+Date: Tue, 16 Sep 2014 11:19:53 -0400
+From: Example User <user@ca.ibm.com>
+To: support@example-sender.com
+Subject: AUTO: The User is out of the office (returning 09/18/2014)
+Auto-Submitted: auto-replied
+In-Reply-To: <SPWEB48a3abf75ab87d47d6885b4f6a72bb8f3a@SPWEB48>
+References: <SPWEB48a3abf75ab87d47d6885b4f6a72bb8f3a@SPWEB48>
+Message-ID: <OFA87B58AA.C20236CA-ON85257D55.00543806@ca.ibm.com>
+X-MIMETrack: Serialize by Router on D01ML394/01/M/IBM(Release 9.0.1FP1|April  03, 2014) at
+ 09/16/2014 11:20:12
+MIME-Version: 1.0
+Content-type: text/plain; charset=US-ASCII
+X-TM-AS-MML: disable
+X-Content-Scanned: Fidelis XPS MAILER
+x-cbid: 14091615-0320-0000-0000-0000007FE4B0
+
+
+
+I am out of the office until 09/18/2014.
+
+I am away on vacation from Sep 10 afternoon    & back on Sep 18 in the
+afternoon  -
+taking my laptop with me & will  respond to mail  periodically
+
+  in case you have an urgent  issue   pls contact the following people
+
+
+
+Note: This is an automated response to your message "Original Subject"
+sent on 09/16/2014 11:17:36.
+
+This is the only notification you will receive while this person is away.
