@@ -22,7 +22,7 @@ function get_sorted_file_list($d)
     return $fs;
 }
 
-require_once("bounce_driver.class.php");
+require_once"bounce_driver.class.php";
 $bouncehandler = new Bouncehandler();
 
 if (!empty($_GET['testall'])) {
@@ -43,7 +43,7 @@ if (!empty($_GET['testall'])) {
                 print "<pre>\n";
                 print_r($multiArray);
                 print "</pre>\n";
-                print htmlspecialchars(print_r($bouncehandler->output,true));
+                print htmlspecialchars(print_r($bouncehandler->output, true));
             }
         }
     }

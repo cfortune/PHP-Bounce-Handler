@@ -1,5 +1,5 @@
 <?php
-require_once('bounce_driver.class.php');
+require_once'bounce_driver.class.php';
 
 $total = array();
 
@@ -8,8 +8,8 @@ function checkmail($email)
     global $total;
     $bh = new Bouncehandler();
     $bounceinfo = $bh->get_the_facts($email);
-    #    var_dump($bounceinfo);
-    #    var_dump($bh);
+    // var_dump($bounceinfo);
+    // var_dump($bh);
     print "TYPE      " . @$bh->type . "\n";
     if ($bh->type == 'bounce') {
         print "ACTION    " . $bounceinfo[0]['action'] . "\n";
