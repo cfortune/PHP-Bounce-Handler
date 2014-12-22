@@ -357,8 +357,8 @@ class BounceHandler
                     if (!empty($returnedhash['X-originating-ip'])) {
                         $this->fbl_hash['Source-ip']
                             = $this->strip_angle_brackets(
-                            $returnedhash['X-originating-ip']
-                        );
+                                $returnedhash['X-originating-ip']
+                            );
                     } else {
                         $this->fbl_hash['Source-ip'] = '';
                     }
@@ -368,9 +368,9 @@ class BounceHandler
             // replacing it with redacted@rcpt-hostname.com, making it utterly useless, of course (unless you used a web-beacon).
             // here we try our best to give you the actual intended recipient, if possible.
             if (preg_match(
-                    '/Undisclosed|redacted/i',
-                    $this->fbl_hash['Original-rcpt-to']
-                )
+                '/Undisclosed|redacted/i',
+                $this->fbl_hash['Original-rcpt-to']
+            )
                 && isset($this->fbl_hash['Removal-recipient'])
             ) {
                 $this->fbl_hash['Original-rcpt-to']
@@ -438,12 +438,12 @@ class BounceHandler
                     $this->output[$j]['recipient'] = trim($arrFailed[$j]);
                     $this->output[$j]['status']
                         = $this->get_status_code_from_text(
-                        $this->output[$j]['recipient'], 0
-                    );
+                            $this->output[$j]['recipient'], 0
+                        );
                     $this->output[$j]['action']
                         = $this->get_action_from_status_code(
-                        $this->output[$j]['status']
-                    );
+                            $this->output[$j]['status']
+                        );
                 }
             }
         } else if (isset($this->head_hash['X-failed-recipients'])) {
@@ -458,8 +458,8 @@ class BounceHandler
                 );
                 $this->output[$j]['action']
                     = $this->get_action_from_status_code(
-                    $this->output[$j]['status']
-                );
+                        $this->output[$j]['status']
+                    );
                 $this->looks_like_a_bounce = true;
             }
         } else {
@@ -472,12 +472,12 @@ class BounceHandler
                     $this->output[$j]['recipient'] = trim($arrFailed[$j]);
                     $this->output[$j]['status']
                         = $this->get_status_code_from_text(
-                        $this->output[$j]['recipient'], 0
-                    );
+                            $this->output[$j]['recipient'], 0
+                        );
                     $this->output[$j]['action']
                         = $this->get_action_from_status_code(
-                        $this->output[$j]['status']
-                    );
+                            $this->output[$j]['status']
+                        );
                 }
             } else {
                 // last ditch attempt
@@ -490,12 +490,12 @@ class BounceHandler
                     $this->output[$j]['recipient'] = trim($arrFailed[$j]);
                     $this->output[$j]['status']
                         = $this->get_status_code_from_text(
-                        $this->output[$j]['recipient'], 0
-                    );
+                            $this->output[$j]['recipient'], 0
+                        );
                     $this->output[$j]['action']
                         = $this->get_action_from_status_code(
-                        $this->output[$j]['status']
-                    );
+                            $this->output[$j]['status']
+                        );
                 }
             }
         }
@@ -761,8 +761,8 @@ class BounceHandler
                     }
                     $decoded .= preg_replace_callback(
                         "/=([0-9A-F][0-9A-F])/", function ($matches) {
-                        return chr(hexdec($matches[0]));
-                    }, $line
+                            return chr(hexdec($matches[0]));
+                        }, $line
                     );
                     break;
                 case 'base64':
@@ -784,7 +784,7 @@ class BounceHandler
      */
     function is_a_bounce()
     {
-        if (true===isset($this->head_hash['From']) && preg_match('/^(postmaster|mailer-daemon)\@?/i',$this->head_hash['From'])) {
+        if (true===isset($this->head_hash['From']) && preg_match('/^(postmaster|mailer-daemon)\@?/i', $this->head_hash['From'])) {
             return true;
         }
         foreach ($this->bouncesubj as $s) {
@@ -842,24 +842,24 @@ class BounceHandler
     function is_an_autoresponse()
     {
         if (true===isset($this->head_hash['Auto-submitted'])) {
-            if (preg_match('/auto-notified|vacation|away/i',$this->head_hash['Auto-submitted'])) {
+            if (preg_match('/auto-notified|vacation|away/i', $this->head_hash['Auto-submitted'])) {
                 $this->autoresponse='Auto-submitted: '.$this->head_hash['Auto-submitted'];
                 return true;
             }
         }
         if (true===isset($this->head_hash['X-autorespond'])) {
-            if (preg_match('/auto-notified|vacation|away/i',$this->head_hash['X-autorespond'])) {
+            if (preg_match('/auto-notified|vacation|away/i', $this->head_hash['X-autorespond'])) {
                 $this->autoresponse='X-autorespond: '.$this->head_hash['X-autorespond'];
                 return true;
             }
         }
-        if (true===isset($this->head_hash['Precedence']) && preg_match('/^auto-reply/i',$this->head_hash['Precedence'])) {
+        if (true===isset($this->head_hash['Precedence']) && preg_match('/^auto-reply/i', $this->head_hash['Precedence'])) {
             $this->autoresponse='Precedence: '.$this->head_hash['Precedence'];
-            return TRUE;
+            return true;
         }
-        if (true===isset($this->head_hash['X-Precedence']) && preg_match('/^auto-reply/i',$this->head_hash['X-Precedence'])) {
+        if (true===isset($this->head_hash['X-Precedence']) && preg_match('/^auto-reply/i', $this->head_hash['X-Precedence'])) {
             $this->autoresponse='X-Precedence: '.$this->head_hash['X-Precedence'];
-            return TRUE;
+            return true;
         }
         if (true==isset($this->head_hash['Subject'])) {
             foreach ($this->autorespondlist as $a) {
@@ -926,7 +926,7 @@ class BounceHandler
     /**
      * Is this an RFC 1892 multiple return email?
      *
-     * @param  array $head_hash Associative array of headers. If not set, will use $this->head_hash
+     * @param array $head_hash Associative array of headers. If not set, will use $this->head_hash
      *
      * @return bool
      */
@@ -1228,8 +1228,7 @@ class BounceHandler
 
             /******** exit conditions ********/
             // if it's the end of the human readable part in this stupid bounce
-            if (stristr($line, '------ This is a copy of the message')
-                !== false
+            if (stristr($line, '------ This is a copy of the message')!== false
             ) {
                 break;
             }
