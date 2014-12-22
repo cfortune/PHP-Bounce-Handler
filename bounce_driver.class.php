@@ -215,9 +215,6 @@ class BounceHandler
      */
     public function __construct($bouncelist=array(),$autorespondlist=array(),$bouncesubj=array())
     {
-        $this->output[0]['action'] = "";
-        $this->output[0]['status'] = "";
-        $this->output[0]['recipient'] = "";
         $this->bouncelist = $bouncelist;
         $this->autorespondlist = $autorespondlist;
         $this->bouncesubj = $bouncesubj;
@@ -233,6 +230,7 @@ class BounceHandler
                 $this->bouncesubj = $bouncesubj;
             }
         }
+        $this->init_bouncehandler();
 
     }
 
@@ -499,12 +497,14 @@ class BounceHandler
 
 
     /**
-     * @param $blob
+     * Setup/reset thge bounce handler.
+     *
+     * @param string $blob Inbound email
      * @param string $format Not currently used
      *
-     * @return mixed
+     * @return string Contents of email
      */
-    function init_bouncehandler($blob, $format = 'string')
+    function init_bouncehandler($blob='', $format = 'string')
     {
         $this->head_hash = array();
         $this->fbl_hash = array();
@@ -522,37 +522,38 @@ class BounceHandler
         $this->output[0]['action'] = '';
         $this->output[0]['status'] = '';
         $this->output[0]['recipient'] = '';
+        $strEmail='';
+        if (''!==$blob) {
+            // TODO: accept several formats (XML, string, array)
+            // currently accepts only string
+            //if($format=='xml_array'){
+            //    $strEmail = "";
+            //    $out = "";
+            //    for($i=0; $i<$blob; $i++){
+            //        $out = preg_replace("/<HEADER>/i", "", $blob[$i]);
+            //        $out = preg_replace("/</HEADER>/i", "", $out);
+            //        $out = preg_replace("/<MESSAGE>/i", "", $out);
+            //        $out = preg_replace("/</MESSAGE>/i", "", $out);
+            //        $out = rtrim($out) . "\r\n";
+            //        $strEmail .= $out;
+            //    }
+            //}
+            //else if($format=='string'){
 
-        // TODO: accept several formats (XML, string, array)
-        // currently accepts only string
-        //if($format=='xml_array'){
-        //    $strEmail = "";
-        //    $out = "";
-        //    for($i=0; $i<$blob; $i++){
-        //        $out = preg_replace("/<HEADER>/i", "", $blob[$i]);
-        //        $out = preg_replace("/</HEADER>/i", "", $out);
-        //        $out = preg_replace("/<MESSAGE>/i", "", $out);
-        //        $out = preg_replace("/</MESSAGE>/i", "", $out);
-        //        $out = rtrim($out) . "\r\n";
-        //        $strEmail .= $out;
-        //    }
-        //}
-        //else if($format=='string'){
+            $strEmail = str_replace("\r\n", "\n", $blob);    // line returns 1
+            $strEmail = str_replace("\n", "\r\n", $strEmail);// line returns 2
+            // $strEmail = str_replace("=\r\n", "", $strEmail); // remove MIME line breaks (would never exist as #1 above would have dealt with)
+            // $strEmail = str_replace("=3D", "=", $strEmail);  // equals sign - dealt with in the MIME decode section now
+            // $strEmail = str_replace("=09", "  ", $strEmail); // tabs
 
-        $strEmail = str_replace("\r\n", "\n", $blob);    // line returns 1
-        $strEmail = str_replace("\n", "\r\n", $strEmail);// line returns 2
-        // $strEmail = str_replace("=\r\n", "", $strEmail); // remove MIME line breaks (would never exist as #1 above would have dealt with)
-        // $strEmail = str_replace("=3D", "=", $strEmail);  // equals sign - dealt with in the MIME decode section now
-        // $strEmail = str_replace("=09", "  ", $strEmail); // tabs
-
-        //}
-        //else if($format=='array'){
-        //    $strEmail = "";
-        //    for($i=0; $i<$blob; $i++){
-        //        $strEmail .= rtrim($blob[$i]) . "\r\n";
-        //    }
-        //}
-
+            //}
+            //else if($format=='array'){
+            //    $strEmail = "";
+            //    for($i=0; $i<$blob; $i++){
+            //        $strEmail .= rtrim($blob[$i]) . "\r\n";
+            //    }
+            //}
+        }
         return $strEmail;
     }
 
