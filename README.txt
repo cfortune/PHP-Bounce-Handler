@@ -12,6 +12,8 @@ v7.4.3 SB  Dec 2014
  - add a softlink for rfc1893.error.codes.php -> bounce_statuscodes.php
  - fix a fatal error with format_status_code returning the wrong datatype
  - remove zip from distro (github will do that automagically)
+ - more autoresponse catchers
+ - handler broken MTAs better
 
 v7.4.2 SB  Oct 24, 2014
  - slightly less agressive bounce detection; only calls last chance if we
