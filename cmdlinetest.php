@@ -1,8 +1,27 @@
 <?php
+/**
+ * Command line test utility
+ *
+ * PHP version 5
+ *
+ * @category Email
+ * @package  BounceHandler
+ * @author   Multiple <cfortune@users.noreply.github.com>
+ * @license  http://opensource.org/licenses/BSD-2-Clause  BSD
+ * @link     https://github.com/cfortune/PHP-Bounce-Handler/
+ */
+
 require_once'bounce_driver.class.php';
 
 $total = array();
 
+/**
+ * Check an email.
+ *
+ * @param string $email Contents of an email to check
+ *
+ * @return void
+ */
 function checkmail($email)
 {
     global $total;

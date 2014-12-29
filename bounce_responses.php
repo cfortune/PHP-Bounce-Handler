@@ -1,8 +1,15 @@
 <?php
-//
-// Mapping of bounce responses to RFC3463 codes
-//
-//
+/**
+ * Map bounce responses to RFC3463 codes
+ *
+ * PHP version 5
+ *
+ * @category Email
+ * @package  BounceHandler
+ * @author   Multiple <cfortune@users.noreply.github.com>
+ * @license  http://opensource.org/licenses/BSD-2-Clause  BSD
+ * @link     https://github.com/cfortune/PHP-Bounce-Handler/
+*/
 
 // text in messages from which to figure out what kind of bounce
 $bouncelist = array(
@@ -158,7 +165,8 @@ $bouncelist = array(
     'Delivery failed' => '5.2.0',
     'mail couldn\'t be delivered' => '5.2.0',
     'The account or domain may not exist' => '5.2.0',
-    // I guess.... seems like 5.1.1, 5.1.2, or 5.4.4 would fit too, but 5.2.0 seemed most generic
+    // I guess.... seems like 5.1.1, 5.1.2, or 5.4.4 would fit too, but 5.2.0
+    // seemed most generic
     'Account disabled' => '5.2.1',
     'account has been disabled' => '5.2.1',
     'Account Inactive' => '5.2.1',
@@ -239,7 +247,8 @@ $autorespondlist = array(
     '^away from.{0,15}office',
     '^.?auto(mated|matic).{0,5}(reply|response)',
     '^out.?of (the )?office',
-    '^(I am|I\'m|I will).{0,15}\s(away|on vacation|on leave|out of office|out of the office)',
+    '^(I am|I\'m|I will).{0,15}\s(away|on vacation|on leave|out of office|'.
+      'out of the office)',
     '^Thank you for your e-?mail',
     '^This is an automated',
     '^Vacation.{0,10}(alert|reply|response)',
