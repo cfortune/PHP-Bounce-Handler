@@ -1,0 +1,72 @@
+From MAILER-DAEMON@example.com Fri Dec 19 18:03:52 2014
+Received: from localhost (localhost)
+	by example.com (8.14.4/8.14.4) id sBJI3qFo015624;
+	Fri, 19 Dec 2014 18:03:52 GMT
+Date: Fri, 19 Dec 2014 18:03:52 GMT
+From: Mail Delivery Subsystem <MAILER-DAEMON@example.com>
+Message-Id: <201412191803.sBJI3qFo015624@example.com>
+To: <bouncebacks+MjAxNDEyMTkxNjAwMDA-ad226adb@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="sBJI3qFo015624.1419012232/example.com"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--sBJI3qFo015624.1419012232/example.com
+
+The original message was received at Fri, 19 Dec 2014 18:03:51 GMT
+from localhost [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<baddomain@baddomainxxxsdkjfhsdhfkdsfhsd.com>
+    (reason: 550 Host unknown)
+
+   ----- Transcript of session follows -----
+550 5.1.2 <baddomain@baddomainxxxsdkjfhsdhfkdsfhsd.com>... Host unknown (Name server: baddomainxxxsdkjfhsdhfkdsfhsd.com: host not found)
+
+--sBJI3qFo015624.1419012232/example.com
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; example.com
+Received-From-MTA: DNS; localhost
+Arrival-Date: Fri, 19 Dec 2014 18:03:51 GMT
+
+Final-Recipient: RFC822; baddomain@baddomainxxxsdkjfhsdhfkdsfhsd.com
+Action: failed
+Status: 5.1.2
+Remote-MTA: DNS; baddomainxxxsdkjfhsdhfkdsfhsd.com
+Diagnostic-Code: SMTP; 550 Host unknown
+Last-Attempt-Date: Fri, 19 Dec 2014 18:03:52 GMT
+
+--sBJI3qFo015624.1419012232/example.com
+Content-Type: message/rfc822
+
+Return-Path: <bouncebacks+MjAxNDEyMTkxNjAwMDA-ad226adb@example.com>
+Received: from example.com (localhost [127.0.0.1])
+	by example.com (8.14.4/8.14.4) with ESMTP id sBJI3pFo015622
+	for <baddomain@baddomainxxxsdkjfhsdhfkdsfhsd.com>; Fri, 19 Dec 2014 18:03:51 GMT
+Received: (from apache@localhost)
+	by example.com (8.14.4/8.14.4/Submit) id sBJI3pAI015621;
+	Fri, 19 Dec 2014 18:03:51 GMT
+To: bad domain <baddomain@baddomainxxxsdkjfhsdhfkdsfhsd.com>
+Subject: Example: New Assignment
+X-PHP-Originating-Script: 1004:ks-queue.php
+From: Example Notifications <notify@example.net>
+X-Mailer: example.net mail system
+X-Original-To: baddomain@baddomainxxxsdkjfhsdhfkdsfhsd.com
+Date: Fri, 19 Dec 2014 18:03:50 +0000
+Message-Id: <20141219180350000000-b03338e34dfedd26fa080d941117982f-549468860710d6.84919603@example.com>
+X-Example-Email-Id: MjAxNDEyMTkxNjAwMDA-ad226adb
+Errors-To: bouncebacks+MjAxNDEyMTkxNjAwMDA-ad226adb@example.com
+
+Dear bad domain
+
+This was a test email.
+
+
+[Exampleemailid-MjAxNDEyMTkxNjAwMDA-ad226adb]
+
+--sBJI3qFo015624.1419012232/example.com--
+

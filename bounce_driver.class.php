@@ -223,7 +223,7 @@ class BounceHandler
         if (empty($bouncelist) || empty($autorespondlist)
             || empty($bouncesubj)
         ) {
-            include_once 'bounce_responses.php';
+            require 'bounce_responses.php';
             if (empty($this->bouncelist)) {
                 $this->bouncelist = $bouncelist;
             }
@@ -1155,13 +1155,14 @@ class BounceHandler
     /**
      * Extract the code and text from a status code string.
      *
-     * @param string $code A status code string in the format 12.34 Reason or 12.34.56 reason
-     *
+     * @param string $code A status code string in the format 12.34.56 Reason or 123456 reason
+     * @param bool $strict Only accept triplets (12.34.56) and not the "breaks RFC" 12.34 format
      * @return array Associative array containing code (two or three decimal separated numbers) and text
      */
-    function format_status_code($code)
+    function format_status_code($code,$strict=FALSE)
     {
         $ret = array('code' => '', 'text' => '');
+        $matches=array();
         if (preg_match(
             '/([245]\.[01234567]\.\d{1,2})\s*(.*)/', $code, $matches
         )) {
@@ -1172,8 +1173,23 @@ class BounceHandler
         )) {
             $ret['code'] = $matches[1] . '.' . $matches[2] . '.' . $matches[3];
             $ret['text'] = $matches[4];
+        } else if (false===$strict && preg_match('/([245]\.[01234567])\s*(.*)/',$code,$matches)) {
+            /**
+             * Handle major.minor code style (which is against RFCs - should
+             * always be major.minor.sub)
+             */
+            $ret['code'] = $matches[1].'.0';
+            $ret['text'] = $matches[2];
+        } else if (false===$strict && preg_match(
+            '/([245])([01234567])\s*(.*)/', $code, $matches
+        )) {
+            /**
+             * Handle major.minor code style (which is against RFCs - should
+             * always be major.minor.sub)
+             */
+            $ret['code'] = $matches[1] . '.' . $matches[2].'.0';
+            $ret['text'] = $matches[3];
         }
-
         return $ret;
     }
 
@@ -1401,13 +1417,31 @@ class BounceHandler
     function fetch_status_messages(
         $code, $status_code_classes = array(), $status_code_subclasses = array()
     ) {
+        $array=$this->fetch_status_message_as_array($code,$status_code_classes,$status_code_subclasses);
+        $str='<p><b>'.$array['title'].'</b> - '.$array['description'].' <b>'.$array['sub_title'].'</b> - '.$array['sub_description'];
+        return $str;
+    }
+
+    /**
+     * Get human readable details of an SMTP status code.
+     *
+     * Loads in bounce_statuscodes if $status_code_classes or $status_code_subclasses is empty.
+     *
+     * @param string $code A status code line or number.
+     * @param array  $status_code_classes    The rough description of the status code.
+     * @param array  $status_code_subclasses The details of each specific subcode.
+     *
+     * @return array Human readable details of the code.
+     */
+    public function fetch_status_message_as_array($code, $status_code_classes = array(), $status_code_subclasses = array()
+    ) {
         $code_classes = $status_code_classes;
         $sub_classes = $status_code_subclasses;
         /**
          * Load from the provided bounce_statuscodes.php file if not set
          */
         if (empty($code_classes) || empty($sub_classes)) {
-            include_once "bounce_statuscodes.php";
+            require "bounce_statuscodes.php";
             if (empty($code_classes)) {
                 $code_classes = $status_code_classes;
             }
@@ -1415,16 +1449,72 @@ class BounceHandler
                 $sub_classes = $status_code_subclasses;
             }
         }
-        $ret = $this->format_status_code($code);
-        $arr = explode('.', $ret['code']);
-        $str = "<P><B>" . $code_classes[$arr[0]]['title'] . "</B> - " .
-            $code_classes[$arr[0]]['descr'] . "  <B>" .
-            $sub_classes[$arr[1] . "." . $arr[2]]['title'] .
-            "</B> - " . $sub_classes[$arr[1] . "." . $arr[2]]['descr'] . "</P>";
-
-        return $str;
+        $return=array(
+            'input_code'=>$code,
+            'formatted_code_code'=>'',
+            'formatted_code_text='>'',
+            'major_code'=>'',
+            'sub_code'=>'',
+            'title'=>'No major code found',
+            'description'=>'',
+            'sub_title'=>'No sub code found',
+            'sub_description'=>''
+        );
+        $formatted_code = $this->format_status_code($code);
+        if (''===$formatted_code['code']) {
+            $return['title']='Could not parse code';
+            $return['sub_title']='Could not parse code';
+        } else {
+            $arr = explode('.', $formatted_code['code']);
+            $return['formatted_code_code'] = $formatted_code['code'];
+            $return['formatted_code_text'] = $formatted_code['text'];
+            if (true === isset($arr[0])) {
+                $return['major_code'] = $arr[0];
+                if (true === isset($code_classes[$arr[0]])) {
+                    if (true === isset($code_classes[$arr[0]]['title'])) {
+                        $return['title'] = $code_classes[$arr[0]]['title'];
+                    } else {
+                        $return['title']
+                            = 'No title available for major code: ' . $arr[0];
+                    }
+                    if (true === isset($code_classes[$arr[0]]['descr'])) {
+                        $return['description']
+                            = $code_classes[$arr[0]]['descr'];
+                    }
+                } else {
+                    $return['title']
+                        = 'Unrecognised major code: ' . $arr[0] . 'xxx';
+                }
+            }
+            $sub_label = '';
+            if (true === isset($arr[1]) && true === isset($arr[2])) {
+                $sub_label = $arr[1] . '.' . $arr[2];
+            } elseif (true === isset($arr[1])) {
+                $sub_label = $arr[1];
+            }
+            if ('' !== $sub_label) {
+                $return['sub_code'] = $sub_label;
+                if (true === isset($sub_classes[$sub_label])) {
+                    if (true === isset($sub_classes[$sub_label]['title'])) {
+                        $return['sub_title']
+                            = $sub_classes[$sub_label]['title'];
+                    } else {
+                        $return['sub_title']
+                            = 'No sub title available for sub code: '
+                            . $sub_label;
+                    }
+                    if (true === isset($sub_classes[$sub_label]['descr'])) {
+                        $return['sub_description']
+                            = $sub_classes[$sub_label]['descr'];
+                    }
+                } else {
+                    $return['sub_title']
+                        = 'Unrecognised sub code: ' . $sub_label;
+                }
+            }
+        }
+        return $return;
     }
-
 }
 
 /**

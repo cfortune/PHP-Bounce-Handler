@@ -28,28 +28,67 @@ $bouncehandler = new Bouncehandler();
 if (!empty($_GET['testall'])) {
     $files = get_sorted_file_list('eml');
     if (is_array($files)) {
-        echo "<P>File Tests:</P>\n";
+        echo '<style>';
+        echo 'span.dropt {border-bottom: thin dotted; }
+span.dropt:hover {text-decoration: none;  z-index: 6; }
+span.dropt span {position: absolute; left: -9999px;
+  margin: 20px 0 0 0px; padding: 3px 3px 3px 3px;
+  border-style:solid; border-color:black; border-width:1px; z-index: 6;}
+span.dropt:hover span {left: 2%;width:40%;}
+span.dropt span {position: absolute; left: -9999px;
+  margin: 4px 0 0 0px; padding: 3px 3px 3px 3px;
+  border-style:solid; border-color:black; border-width:1px;}
+span.dropt:hover span {margin: 20px 0 0 170px; background: #ffffff; z-index:6;} '.PHP_EOL;
+        echo '</style>'.PHP_EOL;
+        echo '<p>File Tests:</p>'.PHP_EOL;
+        echo '<table border="1">'.PHP_EOL;
+        echo '<thead>'.PHP_EOL;
+        echo '<tr><th>File</th><th>Action</th><th colspan="3">Status</th><th>Recipient</th></tr>'.PHP_EOL;
+        echo '</thead>'.PHP_EOL;
+        echo '<tbody>'.PHP_EOL;
         foreach ($files as $file) {
-            echo "<a href=\"" . $_SERVER['PHP_SELF'] . "?eml=" . urlencode($file) . "\">$file</a> ";
+            echo '<tr>';
+            echo '<td><a href="'. $_SERVER['PHP_SELF'] . '?eml=' . urlencode($file) . '">'.$file.'</a></td>';
             $bounce = file_get_contents("eml/" . $file);
             $multiArray = $bouncehandler->get_the_facts($bounce);
             if (!empty($multiArray[0]['action'])
                 && !empty($multiArray[0]['status'])
                 && !empty($multiArray[0]['recipient'])
             ) {
-                print ' - Data parsed (';
-                print 'Action: '.$multiArray[0]['action'];
-                print ' Status: '.$multiArray[0]['status'];
-                print ' Recipient: '.$multiArray[0]['recipient'];
-                print ')<br>'.PHP_EOL;
+                echo '<td>'.$multiArray[0]['action'].'</td>';
+                echo '<td>'.$multiArray[0]['status'].'</td>';
+                /**
+                 * Get the human readable status message description
+                 */
+                $human=$bouncehandler->fetch_status_message_as_array($multiArray[0]['status']);
+                if (''===$human['description']) {
+                    echo '<td>'.htmlspecialchars($human['title']).'</td>';
+                } else {
+                    echo '<td><span class="dropt">'.htmlspecialchars($human['title']).'<span>'.htmlspecialchars($human['description']).'</span></span></td>';
+                }
+                if (''===$human['sub_description']) {
+                    echo '<td>'.htmlspecialchars($human['sub_title']).'</td>';
+
+                } else {
+                    echo '<td><span class="dropt">' . htmlspecialchars(
+                            $human['sub_title']
+                        ) . '<span>' . htmlspecialchars(
+                            $human['sub_description']
+                        ) . '</span></span></td>';
+                }
+                echo '<td>'.htmlspecialchars($multiArray[0]['recipient']).'</td>';
             } else {
-                print "<span style='color:red;font-weight:bold;'> - Unable to parse data</span><br>\n";
-                print "<pre>\n";
-                print_r($multiArray);
-                print "</pre>\n";
-                print htmlspecialchars(print_r($bouncehandler->output, true));
+                echo '<td colspan="5" style="color:red;font-weight:bold;">Unable to parse data<br />>';
+                echo '<pre>'.PHP_EOL;
+                echo htmlspecialchars(print_r($multiArray,true));
+                echo '</pre>'.PHP_EOL;
+                echo htmlspecialchars(print_r($bouncehandler->output, true));
+                echo '</td>';
             }
+            echo '</tr>'.PHP_EOL;
         }
+        echo '</tbody>';
+        echo '</table>';
     }
 }
 

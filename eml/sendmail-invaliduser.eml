@@ -1,0 +1,78 @@
+From MAILER-DAEMON@example.com Fri Dec 19 18:03:57 2014
+Received: from localhost (localhost)
+	by example.com (8.14.4/8.14.4) id sBJI3vuf015631;
+	Fri, 19 Dec 2014 18:03:57 GMT
+Date: Fri, 19 Dec 2014 18:03:57 GMT
+From: Mail Delivery Subsystem <MAILER-DAEMON@example.com>
+Message-Id: <201412191803.sBJI3vuf015631@example.com>
+To: <bouncebacks+MjAxNDEyMTkxNzAwMDA-3b785970@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="sBJI3vuf015631.1419012237/example.com"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--sBJI3vuf015631.1419012237/example.com
+
+The original message was received at Fri, 19 Dec 2014 18:03:56 GMT
+from localhost [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<invaliduser@invaliduser.invalid>
+    (reason: 550-5.1.1 The email account that you tried to reach does not exist. Please try)
+
+   ----- Transcript of session follows -----
+... while talking to aspmx.l.google.com.:
+>>> DATA
+<<< 550-5.1.1 The email account that you tried to reach does not exist. Please try
+<<< 550-5.1.1 double-checking the recipient's email address for typos or
+<<< 550-5.1.1 unnecessary spaces. Learn more at
+<<< 550 5.1.1 http://support.google.com/mail/bin/answer.py?answer=6596 q3si4646974wia.78 - gsmtp
+550 5.1.1 <invaliduser@invaliduser.invalid>... User unknown
+<<< 503 5.5.1 RCPT first. q3si4646974wia.78 - gsmtp
+
+--sBJI3vuf015631.1419012237/example.com
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; example.com
+Received-From-MTA: DNS; localhost
+Arrival-Date: Fri, 19 Dec 2014 18:03:56 GMT
+
+Final-Recipient: RFC822; invaliduser@invaliduser.invalid
+Action: failed
+Status: 5.1.1
+Remote-MTA: DNS; aspmx.l.google.com
+Diagnostic-Code: SMTP; 550-5.1.1 The email account that you tried to reach does not exist. Please try
+Last-Attempt-Date: Fri, 19 Dec 2014 18:03:57 GMT
+
+--sBJI3vuf015631.1419012237/example.com
+Content-Type: message/rfc822
+
+Return-Path: <bouncebacks+MjAxNDEyMTkxNzAwMDA-3b785970@example.com>
+Received: from example.com (localhost [127.0.0.1])
+	by example.com (8.14.4/8.14.4) with ESMTP id sBJI3uuf015629
+	for <invaliduser@invaliduser.invalid>; Fri, 19 Dec 2014 18:03:56 GMT
+Received: (from apache@localhost)
+	by example.com (8.14.4/8.14.4/Submit) id sBJI3uEZ015625;
+	Fri, 19 Dec 2014 18:03:56 GMT
+To: bad user <invaliduser@invaliduser.invalid>
+Subject: Example: New Assignment
+X-PHP-Originating-Script: 1004:ks-queue.php
+From: Example Notifications <notify@example.net>
+X-Mailer: example.net mail system
+X-Original-To: invaliduser@invaliduser.invalid
+Date: Fri, 19 Dec 2014 18:03:50 +0000
+Message-Id: <20141219180350000000-2649b1005bde6bb55c7f981a4371170f-54946886077a96.75977667@example.com>
+X-Example-Email-Id: MjAxNDEyMTkxNzAwMDA-3b785970
+Errors-To: bouncebacks+MjAxNDEyMTkxNzAwMDA-3b785970@example.com
+
+Dear bad user
+
+Email does not exist
+
+[Exampleemailid-MjAxNDEyMTkxNzAwMDA-3b785970]
+
+--sBJI3vuf015631.1419012237/example.com--
+
