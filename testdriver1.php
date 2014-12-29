@@ -71,16 +71,16 @@ span.dropt:hover span {margin: 20px 0 0 170px; background: #ffffff; z-index:6;} 
 
                 } else {
                     echo '<td><span class="dropt">' . htmlspecialchars(
-                            $human['sub_title']
-                        ) . '<span>' . htmlspecialchars(
-                            $human['sub_description']
-                        ) . '</span></span></td>';
+                        $human['sub_title']
+                    ) . '<span>' . htmlspecialchars(
+                        $human['sub_description']
+                    ) . '</span></span></td>';
                 }
                 echo '<td>'.htmlspecialchars($multiArray[0]['recipient']).'</td>';
             } else {
                 echo '<td colspan="5" style="color:red;font-weight:bold;">Unable to parse data<br />>';
                 echo '<pre>'.PHP_EOL;
-                echo htmlspecialchars(print_r($multiArray,true));
+                echo htmlspecialchars(print_r($multiArray, true));
                 echo '</pre>'.PHP_EOL;
                 echo htmlspecialchars(print_r($bouncehandler->output, true));
                 echo '</td>';

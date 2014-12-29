@@ -223,7 +223,7 @@ class BounceHandler
         if (empty($bouncelist) || empty($autorespondlist)
             || empty($bouncesubj)
         ) {
-            require 'bounce_responses.php';
+            include 'bounce_responses.php';
             if (empty($this->bouncelist)) {
                 $this->bouncelist = $bouncelist;
             }
@@ -1155,11 +1155,11 @@ class BounceHandler
     /**
      * Extract the code and text from a status code string.
      *
-     * @param string $code A status code string in the format 12.34.56 Reason or 123456 reason
-     * @param bool $strict Only accept triplets (12.34.56) and not the "breaks RFC" 12.34 format
+     * @param  string $code   A status code string in the format 12.34.56 Reason or 123456 reason
+     * @param  bool   $strict Only accept triplets (12.34.56) and not the "breaks RFC" 12.34 format
      * @return array Associative array containing code (two or three decimal separated numbers) and text
      */
-    function format_status_code($code,$strict=FALSE)
+    function format_status_code($code,$strict=false)
     {
         $ret = array('code' => '', 'text' => '');
         $matches=array();
@@ -1173,7 +1173,7 @@ class BounceHandler
         )) {
             $ret['code'] = $matches[1] . '.' . $matches[2] . '.' . $matches[3];
             $ret['text'] = $matches[4];
-        } else if (false===$strict && preg_match('/([245]\.[01234567])\s*(.*)/',$code,$matches)) {
+        } else if (false===$strict && preg_match('/([245]\.[01234567])\s*(.*)/', $code, $matches)) {
             /**
              * Handle major.minor code style (which is against RFCs - should
              * always be major.minor.sub)
@@ -1417,7 +1417,7 @@ class BounceHandler
     function fetch_status_messages(
         $code, $status_code_classes = array(), $status_code_subclasses = array()
     ) {
-        $array=$this->fetch_status_message_as_array($code,$status_code_classes,$status_code_subclasses);
+        $array=$this->fetch_status_message_as_array($code, $status_code_classes, $status_code_subclasses);
         $str='<p><b>'.$array['title'].'</b> - '.$array['description'].' <b>'.$array['sub_title'].'</b> - '.$array['sub_description'];
         return $str;
     }
@@ -1427,7 +1427,7 @@ class BounceHandler
      *
      * Loads in bounce_statuscodes if $status_code_classes or $status_code_subclasses is empty.
      *
-     * @param string $code A status code line or number.
+     * @param string $code                   A status code line or number.
      * @param array  $status_code_classes    The rough description of the status code.
      * @param array  $status_code_subclasses The details of each specific subcode.
      *
@@ -1441,7 +1441,7 @@ class BounceHandler
          * Load from the provided bounce_statuscodes.php file if not set
          */
         if (empty($code_classes) || empty($sub_classes)) {
-            require "bounce_statuscodes.php";
+            include "bounce_statuscodes.php";
             if (empty($code_classes)) {
                 $code_classes = $status_code_classes;
             }
