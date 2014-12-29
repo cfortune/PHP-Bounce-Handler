@@ -1,10 +1,10 @@
 <?php
 //error_reporting(0);// turn off PHP Notices
 
-/* BOUNCE HANDLER Class
+/* BOUNCE HANDLER Class, Version 7.41
  * Description: "chops up the bounce into associative arrays"
- *     ~ https://github.com/cfortune/PHP-Bounce-Handler/
  *     ~ http://www.anti-spam-man.com/php_bouncehandler/v7.3/
+ *     ~ https://github.com/cfortune/PHP-Bounce-Handler/
  *     ~ http://www.phpclasses.org/browse/file/11665.html
  */
 
@@ -35,8 +35,8 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 class BounceHandler{
+    
     /**** VARS ****************************************************************/
-    public $version = "7.4.2";
     public $head_hash = array();
     public $fbl_hash = array();
     public $body_hash = array(); // not necessary
@@ -106,8 +106,8 @@ class BounceHandler{
         $mime_sections = $this->parse_body_into_mime_sections($body, $boundary);
         $this->body_hash = split("\r\n", $body);
         $this->first_body_hash = isset($mime_sections['first_body_part']) ? $this->parse_head($mime_sections['first_body_part']) : array();
+        $this->looks_like_a_bounce = $this->is_RFC1892_multipart_report() || $this->is_a_bounce();
         $this->looks_like_an_autoresponse = $this->is_an_autoresponse();
-        $this->looks_like_a_bounce = !$this->looks_like_an_autoresponse && ($this->is_RFC1892_multipart_report() || $this->is_a_bounce());
         
 
         /*** now we try all our weird text parsing methods (E-mail is weird!) ******************************/
@@ -213,9 +213,9 @@ class BounceHandler{
                 $this->looks_like_a_bounce = TRUE;
             }
         }
-        elseif ($this->looks_like_a_bounce) {
+        elseif ($this->looks_like_a_bounce) { // if it had signs of being a bounce
             if (!empty($boundary)) {
-                // oh god it could be anything, but at least it has mime parts, so let's try anyway
+            // oh god it could be anything, but at least it has mime parts, so let's try anyway
                 $arrFailed = $this->find_email_addresses($mime_sections['first_body_part']);
                 for($j=0; $j<count($arrFailed); $j++){
                     $this->output[$j]['recipient'] = trim($arrFailed[$j]);
@@ -238,9 +238,8 @@ class BounceHandler{
                     $this->looks_like_a_bounce = TRUE;
                 }
             }
-
         }
-
+        
         // else if()..... add a parser for your busted-ass MTA here
 
         
@@ -643,26 +642,28 @@ class BounceHandler{
     }
 
     function decode_diagnostic_code($dcode){
-        if(preg_match("/(\d\.\d\.\d)\s/", $dcode, $array))
+        if(preg_match("/(\d\.\d\.\d)\s/", $dcode, $array)){
             return $array[1];
-        else if(preg_match("/(\d\d\d)\s/", $dcode, $array))
+        }
+        else if(preg_match("/(\d\d\d)\s/", $dcode, $array)){
             return $array[1];
+        }
     }
 
     function is_a_bounce() {
         if (isset($this->head_hash['From']) && preg_match("/^(postmaster|mailer-daemon)\@?/i", $this->head_hash['From'])) 
             return true;
-        if (isset($this->head_hash['Return-path']) && preg_match('/^(<>|<""@>|<@>)/', $this->head_hash['Return-path']))
-            return true;
         foreach ($this->bouncesubj as $s)
             if (preg_match("/^$s/i", $this->head_hash['Subject'])) 
                 return true;
+        #if (isset($this->head_hash['Return-path']) && $this->head_hash['Return-path'] === '<>') 
+        #    return true;
         return false;
     }
     
     function find_email_addresses($first_body_part){
         // not finished yet.  This finds only one address.
-        if (preg_match("/\b([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,8})\b/i", $first_body_part, $matches)) { // handle new TLDs up to 8 chars
+        if (preg_match("/\b([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4})\b/i", $first_body_part, $matches)){
             return array($matches[1]);
         }
         else
