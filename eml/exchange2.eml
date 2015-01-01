@@ -42,7 +42,7 @@ This is an automatically generated Delivery Status Notification.
 
 Delivery to the following recipients failed.
 
-       inger.lise.hole@adecco.no
+       inger.lise.hole@example.com
 
 
 
@@ -54,8 +54,8 @@ Reporting-MTA: dns;meintfr02052.wwit.adecco.net
 Received-From-MTA: dns;smtp091.aits.fr
 Arrival-Date: Sun, 5 Apr 2009 20:43:17 +0200
 
-Original-Recipient: rfc822;inger.lise.hole@adecco.no
-Final-Recipient: rfc822;inger.lise.hole@adecco.no
+Original-Recipient: rfc822;inger.lise.hole@example.com
+Final-Recipient: rfc822;inger.lise.hole@example.com
 Action: failed
 Status: 5.1.1
 
@@ -66,17 +66,17 @@ Received: from smtp091.aits.fr ([10.100.109.111]) by meintfr02052.wwit.adecco.ne
 	 Sun, 5 Apr 2009 20:43:17 +0200
 Received: from localhost (unknown [127.0.0.1])
 	by smtp091.aits.fr (Postfix) with ESMTP id 7C0BF9F30B3
-	for <inger.lise.hole@adecco.no>; Sun,  5 Apr 2009 20:42:33 +0200 (CEST)
+	for <inger.lise.hole@example.com>; Sun,  5 Apr 2009 20:42:33 +0200 (CEST)
 X-Virus-Scanned: amavisd-new at lce.adecco.net
 Received: from smtp091.aits.fr ([127.0.0.1])
 	by localhost (lx001091.lce.adecco.net [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id esLE2xMUjKhO for <inger.lise.hole@adecco.no>;
+	with ESMTP id esLE2xMUjKhO for <inger.lise.hole@example.com>;
 	Sun,  5 Apr 2009 20:42:31 +0200 (CEST)
 Received: from fg-out-1718.google.com (fg-out-1718.google.com [72.14.220.154])
 	by smtp091.aits.fr (Postfix) with ESMTP id AA6F19F30B4
-	for <inger.lise.hole@adecco.no>; Sun,  5 Apr 2009 20:42:03 +0200 (CEST)
+	for <inger.lise.hole@example.com>; Sun,  5 Apr 2009 20:42:03 +0200 (CEST)
 Received: by fg-out-1718.google.com with SMTP id e12so702940fga.17
-        for <inger.lise.hole@adecco.no>; Sun, 05 Apr 2009 11:42:58 -0700 (PDT)
+        for <inger.lise.hole@example.com>; Sun, 05 Apr 2009 11:42:58 -0700 (PDT)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
         d=gmail.com; s=gamma;
         h=domainkey-signature:mime-version:received:date:message-id:subject
@@ -98,7 +98,7 @@ Date: Sun, 5 Apr 2009 20:42:58 +0200
 Message-ID: <63267c0f0904051142s4a841b18qb1c702a94a3257be@mail.gmail.com>
 Subject: This will bounce
 From: "Gmail Account" <account@gmail.com>
-To: Petter.Gulbrandsen@no.compuware.com, inger.lise.hole@adecco.no
+To: Petter.Gulbrandsen@example.com, inger.lise.hole@example.com
 Content-Type: multipart/alternative; boundary=000e0cd247509e11b20466d326c9
 Return-Path: account@gmail.com
 X-OriginalArrivalTime: 05 Apr 2009 18:43:17.0833 (UTC) FILETIME=[62B8EB90:01C9B61E]

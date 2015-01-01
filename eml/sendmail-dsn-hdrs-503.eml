@@ -1,0 +1,71 @@
+From MAILER-DAEMON@example.com Thu Jan  1 18:21:54 2015
+Received: from localhost (localhost)
+	by example.com (8.14.4/8.14.4) id t01ILsvQ016557;
+	Thu, 1 Jan 2015 18:21:54 GMT
+Date: Thu, 1 Jan 2015 18:21:54 GMT
+From: Mail Delivery Subsystem <MAILER-DAEMON@example.com>
+Message-Id: <201501011821.t01ILsvQ016557@example.com>
+To: <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="t01ILsvQ016557.1420136514/example.com"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--t01ILsvQ016557.1420136514/example.com
+
+The original message was received at Thu, 1 Jan 2015 18:21:48 GMT
+from example.com [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<autorespondtest@example.net>
+    (reason: 550-Verification failed for <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com>)
+
+   ----- Transcript of session follows -----
+... while talking to example.net.:
+>>> DATA
+<<< 550-Verification failed for <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com>
+<<< 550-The mail server could not deliver mail to bouncebacks+mjaxntaxmdewmdawmdawmdq39a66e5b6@example.com.  The account or domain may not exist, they may be blacklisted, or missing the proper dns entries.
+<<< 550 Sender verify failed
+550 5.1.1 <autorespondtest@example.net>... User unknown
+<<< 503-All RCPT commands were rejected with this error:
+<<< 503-Sender verify failed
+<<< 503 Valid RCPT command must precede DATA
+
+--t01ILsvQ016557.1420136514/example.com
+Content-Type: message/delivery-status
+
+Original-Envelope-Id: MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6
+Reporting-MTA: dns; example.com
+Received-From-MTA: DNS; example.com
+Arrival-Date: Thu, 1 Jan 2015 18:21:48 GMT
+
+Final-Recipient: RFC822; autorespondtest@example.net
+Action: failed
+Status: 5.1.1
+Remote-MTA: DNS; example.net
+Diagnostic-Code: SMTP; 550-Verification failed for <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com>
+Last-Attempt-Date: Thu, 1 Jan 2015 18:21:54 GMT
+
+--t01ILsvQ016557.1420136514/example.com
+Content-Type: text/rfc822-headers
+
+Return-Path: <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com>
+Received: from example.com (example.com [127.0.0.1])
+	by example.com (8.14.4/8.14.4) with ESMTP id t01ILkvQ016554
+	for <autorespondtest@example.net>; Thu, 1 Jan 2015 18:21:48 GMT
+Received: (from exampleuser@localhost)
+	by example.com (8.14.4/8.14.4/Submit) id t01ILi0s016553;
+	Thu, 1 Jan 2015 18:21:44 GMT
+Date: Thu, 1 Jan 2015 18:21:44 GMT
+Message-Id: <201501011821.t01ILi0s016553@example.com>
+X-Authentication-Warning: example.com: exampleuser set sender to bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com using -f
+To: autorespondtest@example.net
+Subject: test subject
+X-PHP-Originating-Script: 1004:r.php
+From: Example Notifications <notify@example.net>
+
+--t01ILsvQ016557.1420136514/example.com--
+

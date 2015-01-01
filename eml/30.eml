@@ -18,7 +18,7 @@ Subject: failure notice
 (postino7.prima.com.ar)
 Su mensaje no pudo ser entregado - Sua mensagem nao pode ser enviada - Your message could not be delivered.
 
-<rodatri@ciudad.com.ar>:
+<rodatri@example.com>:
 Mailbox quota usage exceeded. Espacio en casilla de mail agotado.
 
 --- Mensaje original adjunto.
@@ -33,8 +33,8 @@ Received: from unknown (HELO ar2.outmailing.net) (200.68.65.111)
 Received: from apache by ar2.outmailing.net with local (Exim 4.60)
 	(envelope-from <ar1@ar1.outmailing.com>)
 	id 1GebrC-0002ka-OA
-	for rodatri@ciudad.com.ar; Mon, 30 Oct 2006 15:27:35 -0300
-To: rodatri@ciudad.com.ar
+	for rodatri@example.com; Mon, 30 Oct 2006 15:27:35 -0300
+To: rodatri@example.com
 Subject: LAST VACANCIES!!!
 Received: from mailer 
 	by ar1.outmailing.com with HTTP (Mail);

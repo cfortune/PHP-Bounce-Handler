@@ -18,7 +18,7 @@ Subject: failure notice
 (postino9.prima.com.ar)
 Su mensaje no pudo ser entregado - Sua mensagem nao pode ser enviada - Your message could not be delivered.
 
-<qmi@ciudad.com.ar>:
+<qmi@example.com>:
 Esta casilla ha expirado por falta de uso.
 
 --- Mensaje original adjunto.
@@ -33,8 +33,8 @@ Received: from unknown (HELO ar2.outmailing.net) (200.68.65.111)
 Received: from apache by ar2.outmailing.net with local (Exim 4.60)
 	(envelope-from <ar1@ar1.outmailing.com>)
 	id 1Gebpb-0002e2-Rw
-	for qmi@ciudad.com.ar; Mon, 30 Oct 2006 15:25:56 -0300
-To: qmi@ciudad.com.ar
+	for qmi@example.com; Mon, 30 Oct 2006 15:25:56 -0300
+To: qmi@example.com
 Subject: LAST VACANCIES!!!
 Received: from mailer 
 	by ar1.outmailing.com with HTTP (Mail);

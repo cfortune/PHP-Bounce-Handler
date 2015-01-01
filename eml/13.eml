@@ -34,7 +34,7 @@ Received: from mailer
 	Mon, 30 Oct 2006 15:49:41 -0300
 Date: Mon, 30 Oct 2006 15:49:41 -0300
 From: Green Land Irish Pub <noreply@dattadream.com.ar>
-Reply-to: fedecheme@hotmail.com
+Reply-to: fedecheme@example.com
 Message-ID: <2207490767fb7d0cded8ef919eae80ea@ar1.outmailing.com>
 X-Priority: 3
 X-Mailer: AC Mailer
@@ -43,7 +43,7 @@ MIME-Version: 1.0
 Content-Transfer-Encoding: 8bit
 Content-Type: text/html; charset="utf-8"
 
-<? mail($para, $tema, $mensaje, "Content-Type: text/htmlnFrom: Hotmail<feddecheme@hotmail.com.ar >
+<? mail($para, $tema, $mensaje, "Content-Type: text/htmlnFrom: Hotmail<feddecheme@example.com.ar >
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><HTML 
 xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
 "urn:schemas-microsoft-com:vml" xmlns:o = 
@@ -161,7 +161,7 @@ alt="" /><br />
 src="http://ar1.outmailing.com/admin/images/dattadream/pie.gif" alt="" />
 
 
-__________ Información de NOD32, revisión 1.1856 (20061106) __________
+__________ Informaciï¿½n de NOD32, revisiï¿½n 1.1856 (20061106) __________
 
 Este mensaje ha sido analizado con  NOD32 antivirus system
 http://www.nod32.com

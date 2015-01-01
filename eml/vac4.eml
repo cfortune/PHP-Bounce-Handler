@@ -1,0 +1,26 @@
+Return-Path: <>
+Delivered-To: support@example.com
+Received: (qmail 9714 invoked from network); 16 Sep 2014 16:31:50 -0000
+Received: from unknown (HELO mx.example.com) (10.1.111.4)
+  by inboundmx01.lau.local with SMTP; 16 Sep 2014 16:31:50 -0000
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: ApUEAKFkGFTU4w8WlGdsb2JhbABgvDyDLpdjAXoWAQEQAQEBAQkJCwkSDh6ECjQGgRASDkeIW5ZBpVCOaREBbYQ1BZJQkXyPSIIaO4E+gTsBAQE
+X-IronPort-AV: E=Sophos;i="5.04,535,1406592000";
+   d="scan'208";a="3715381"
+Received: from mout-bounce.user.de ([212.227.15.22])
+  by mx.example.com with ESMTP/TLS/DHE-RSA-AES256-SHA; 16 Sep 2014 16:31:50 +0000
+From: Claire <claire@user.de>
+To: support@example.com
+Subject: Out of Office
+Date: Tue, 16 Sep 2014 18:31:47 +0200
+Message-ID: <0MgCpx-1XiRi23hun-00NQy6@server.de>
+In-Reply-To: <SPWEB52896d853813f24820979670b2044fa705@SPWEB52>
+MIME-Version: 1.0
+Auto-Submitted: auto-replied (vacation)
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: base64
+X-UI-Out-Filterresults: unknown:0;
+
+SSBhbSBvdXQgb2YgdGhlIG9mZmljZSBGcmlkYXkgMTJ0aCBTZXB0ZW1iZXIgcmV0dXJuaW5nIG9u
+IE1vbmRheSAxNXRoIFNlcHRlbWJlciB3aGVuIEkgd2lsbCBhbnN3ZXIgeW91ciBlbWFpbC4gCgpL
+aW5kIFJlZ2FyZHMKCkNsYWlyZQ==

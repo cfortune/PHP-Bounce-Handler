@@ -1,0 +1,63 @@
+From MAILER-DAEMON@sender.example.com Thu Jan  1 17:27:28 2015
+Received: from localhost (localhost)
+	by sender.example.com (8.14.4/8.14.4) id t01HRScT016247;
+	Thu, 1 Jan 2015 17:27:28 GMT
+Date: Thu, 1 Jan 2015 17:27:28 GMT
+From: Mail Delivery Subsystem <MAILER-DAEMON@sender.example.com>
+Message-Id: <201501011727.t01HRScT016247@sender.example.com>
+To: <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@sender.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="t01HRScT016247.1420133248/sender.example.com"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--t01HRScT016247.1420133248/sender.example.com
+
+The original message was received at Thu, 1 Jan 2015 17:27:24 GMT
+from sender.example.com [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<richard+test@example.invalid>
+    (reason: 550 Host unknown)
+
+   ----- Transcript of session follows -----
+550 5.1.2 <richard+test@example.invalid>... Host unknown (Name server: example.invalid: host not found)
+
+--t01HRScT016247.1420133248/sender.example.com
+Content-Type: message/delivery-status
+
+Original-Envelope-Id: MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6
+Reporting-MTA: dns; sender.example.com
+Received-From-MTA: DNS; sender.example.com
+Arrival-Date: Thu, 1 Jan 2015 17:27:24 GMT
+
+Final-Recipient: RFC822; richard+test@example.invalid
+Action: failed
+Status: 5.1.2
+Remote-MTA: DNS; example.invalid
+Diagnostic-Code: SMTP; 550 Host unknown
+Last-Attempt-Date: Thu, 1 Jan 2015 17:27:28 GMT
+
+--t01HRScT016247.1420133248/sender.example.com
+Content-Type: text/rfc822-headers
+
+Return-Path: <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@sender.example.com>
+Received: from sender.example.com (sender.example.com [127.0.0.1])
+	by sender.example.com (8.14.4/8.14.4) with ESMTP id t01HRMcT016245
+	for <richard+test@example.invalid>; Thu, 1 Jan 2015 17:27:24 GMT
+Received: (from exampleuser@localhost)
+	by sender.example.com (8.14.4/8.14.4/Submit) id t01HRJNU016244;
+	Thu, 1 Jan 2015 17:27:19 GMT
+Date: Thu, 1 Jan 2015 17:27:19 GMT
+Message-Id: <201501011727.t01HRJNU016244@sender.example.com>
+X-Authentication-Warning: sender.example.com: exampleuser set sender to bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@sender.example.com using -f
+To: richard+test@example.invalid
+Subject: test subject
+X-PHP-Originating-Script: 1004:r.php
+From: Example Notifications <notify@example.net>
+
+--t01HRScT016247.1420133248/sender.example.com--
+

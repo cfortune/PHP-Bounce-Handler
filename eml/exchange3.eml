@@ -34,7 +34,7 @@ This is an automatically generated Delivery Status Notification.
 
 Delivery to the following recipients failed.
 
-       Petter.Gulbrandsen@no.compuware.com
+       Petter.Gulbrandsen@example.com
 
 
 
@@ -46,7 +46,7 @@ Reporting-MTA: dns;emea-ams-ex009.emea.cpwr.corp
 Received-From-MTA: dns;mx4.emea.compuware.com
 Arrival-Date: Sun, 5 Apr 2009 20:51:12 +0200
 
-Final-Recipient: rfc822;Petter.Gulbrandsen@no.compuware.com
+Final-Recipient: rfc822;Petter.Gulbrandsen@example.com
 Action: failed
 Status: 5.1.1
 
@@ -57,7 +57,7 @@ Received: from mx4.emea.compuware.com ([172.16.16.87]) by emea-ams-ex009.emea.cp
 	 Sun, 5 Apr 2009 20:51:12 +0200
 Received: from mx4.emea.compuware.com (localhost.emea.cpwr.corp [127.0.0.1])
 	by int-paperbin.emea.cpwr.corp (Postfix) with ESMTP id 8B1119003A
-	for <Petter.Gulbrandsen@no.compuware.com>; Sun,  5 Apr 2009 18:51:09 +0000 (UTC)
+	for <Petter.Gulbrandsen@example.com>; Sun,  5 Apr 2009 18:51:09 +0000 (UTC)
 X-Spam-Checker-Version: SpamAssassin 3.1.7-cpwr (2006-10-05) on 
 	paperbin.emea.cpwr.corp
 X-Spam-Level: *
@@ -69,9 +69,9 @@ X-Spam-Report:
 Received-SPF: pass (mx4.emea.compuware.com: domain of gmail.com designates 72.14.220.154 as permitted sender) client-ip=72.14.220.154; envelope-from=account@gmail.com; helo=fg-out-1718.google.com;
 Received: from fg-out-1718.google.com (fg-out-1718.google.com [72.14.220.154])
 	by mx4.emea.compuware.com (Postfix) with ESMTP id 82AC98FEF3
-	for <Petter.Gulbrandsen@no.compuware.com>; Sun,  5 Apr 2009 18:51:09 +0000 (UTC)
+	for <Petter.Gulbrandsen@example.com>; Sun,  5 Apr 2009 18:51:09 +0000 (UTC)
 Received: by fg-out-1718.google.com with SMTP id 19so785062fgg.15
-        for <Petter.Gulbrandsen@no.compuware.com>; Sun, 05 Apr 2009 11:51:09 -0700 (PDT)
+        for <Petter.Gulbrandsen@example.com>; Sun, 05 Apr 2009 11:51:09 -0700 (PDT)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
         d=gmail.com; s=gamma;
         h=domainkey-signature:mime-version:received:date:message-id:subject
@@ -93,7 +93,7 @@ Date: Sun, 5 Apr 2009 20:42:58 +0200
 Message-ID: <63267c0f0904051142s4a841b18qb1c702a94a3257be@mail.gmail.com>
 Subject: This will bounce
 From: "Gmail Account" <account@gmail.com>
-To: Petter.Gulbrandsen@no.compuware.com, inger.lise.hole@adecco.no
+To: Petter.Gulbrandsen@example.com, inger.lise.hole@example.com
 Content-Type: multipart/alternative; boundary=000e0cd247509e11b20466d326c9
 Return-Path: account@gmail.com
 X-OriginalArrivalTime: 05 Apr 2009 18:51:12.0892 (UTC) FILETIME=[7DE12BC0:01C9B61F]

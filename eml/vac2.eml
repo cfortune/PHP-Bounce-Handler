@@ -1,0 +1,26 @@
+Return-Path: <>
+Delivered-To: assistance@example-sender.com
+Received: (qmail 28064 invoked from network); 16 Sep 2014 14:52:45 -0000
+Received: from unknown (HELO mx.example.com) (10.1.111.3)
+  by inboundmx01.lau.local with SMTP; 16 Sep 2014 14:52:45 -0000
+Received: from 79.128.17.93.rev.sfr.net (HELO smtp1.services.sfr.fr) ([93.17.128.79])
+  by mx.example.com with ESMTP; 16 Sep 2014 14:52:44 +0000
+Received: from msfrb0603.sfr.fr (msfrb0603 [10.18.35.17])
+	by msfrf0101.sfr.fr (SMTP Server) with ESMTP id 2C9FC1800009E
+	for <assistance@example-sender.com>; Tue, 16 Sep 2014 16:52:42 +0200 (CEST)
+X-SFR-UUID: 20140916145242182.2C9FC1800009E@msfrf0101.sfr.fr
+Received: by msfrb0603.sfr.fr (SMTP Server, from userid 1001)
+	id 2B0391C00401; Tue, 16 Sep 2014 16:52:42 +0200 (CEST)
+Message-ID: <cmu-sieve-15260-1410879162-0@msfrb0603>
+Date: Tue, 16 Sep 2014 16:52:42 +0200
+X-Sieve: CMU Sieve 2.3
+From: <user@example.com>
+To: <assistance@example-sender.com>
+Subject: Auto: Original Subject
+In-Reply-To: <SPWEB52c0444dd064554786ad8d47958a0e9933@SPWEB52>
+Auto-Submitted: auto-replied (vacation)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+A bientôt....

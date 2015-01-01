@@ -1,0 +1,105 @@
+Return-path: <>
+Envelope-to: email@domain.domain
+Delivery-date: Thu, 20 Mar 2014 12:03:05 +0100
+Received: from mail2.bemta5.messagelabs.com ([195.245.231.131])
+    by mailserver.domain.domain with esmtps (TLSv1:AES256-SHA:256)
+    (Exim 4.73 (FreeBSD))
+    id 1WQakY-0006Ke-3E
+    for email@domain.domain; Thu, 20 Mar 2014 12:03:05 +0100
+Received: from [85.158.136.35:12059] by server-10.bemta-5.messagelabs.com id 57/A5-27081-4EACA235; Thu, 20 Mar 2014 11:03:00 +0000
+X-Msg-Ref: server-16.tower-125.messagelabs.com!1395313183!33967189!1
+X-Originating-IP: [195.245.231.134]
+X-StarScan-Received:
+X-StarScan-Version: 6.11.1; banners=-,-,-
+X-VirusChecked: Checked
+Received: (qmail 11713 invoked from network); 20 Mar 2014 10:59:43 -0000
+Received: from mail5.bemta5.messagelabs.com (HELO mail5.bemta5.messagelabs.com) (195.245.231.134)
+  by server-16.tower-125.messagelabs.com with DHE-RSA-AES256-SHA encrypted SMTP; 20 Mar 2014 10:59:43 -0000
+Received: by server-14.bemta-5.messagelabs.com id DD/21-15696-F1ACA235; Thu, 20 Mar 2014 10:59:43 +0000
+From: Mail Delivery System <MAILER-DAEMON@messagelabs.com>
+To: <email@domain.domain>
+Subject: Mail Delivery Failure
+Date: Thu, 20 Mar 2014 10:59:43 +0000
+Content-Type: multipart/report; report-type=delivery-status;
+  boundary="ONHrN715MUZyqWppCw12MuNjL3IsvuuVQXcdmQ=="
+X-Exim-Version: 4.73 (build at 17-Jan-2011 14:55:22)
+X-Date: 2014-03-20 12:03:05
+X-Connected-IP: 195.245.231.131:39383
+X-Spam-Threshold: 5
+X-Spam-Score: -4.1
+X-Spam-Score-Int: -40
+X-Spam-Bar: ----
+X-Spam-Flag: NO
+X-Delivered-To: email@domain.domain
+X-Message-Age: 3
+
+--ONHrN715MUZyqWppCw12MuNjL3IsvuuVQXcdmQ==
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+This is the mail delivery agent at messagelabs.com.
+
+I was unable to deliver your message to the following addresses:
+
+someone@some.where
+
+Reason: 550 5.1.1 <someone@some.where>... User unknown
+
+The message subject was: Diabetes Nieuwsbrief maart 2014
+The message date was: Thu, 20 Mar 2014 11:59:43 +0100
+The message identifier was: 4B/21-15696-F1ACA235
+The message reference was: server-9.tower-125.messagelabs.com!1395313182!24=
+402582!1
+
+Please do not reply to this email as it is sent from an unattended mailbox.
+Please visit www.messagelabs.com/support for more details
+about this error message and instructions to resolve this issue.
+
+
+--ONHrN715MUZyqWppCw12MuNjL3IsvuuVQXcdmQ==
+Content-Type: message/delivery-status
+
+Arrival-Date: Thu, 20 Mar 2014 10:59:43 +0000
+Reporting-MTA: dns; server-14.bemta-5.messagelabs.com
+
+Remote-MTA: dns; 194.151.80.130
+Diagnostic-Code: smtp; 550 5.1.1 <someone@some.where>... User unknown
+Last-Attempt-Date: Thu, 20 Mar 2014 10:59:43 +0000
+Final-Recipient: rfc822; someone@some.where
+Status: 5.1.1
+Action: failed
+
+--ONHrN715MUZyqWppCw12MuNjL3IsvuuVQXcdmQ==
+Content-Type: text/rfc822-headers
+
+Return-Path: <email@domain.domain>
+Received: from [85.158.136.35:41051] by server-14.bemta-5.messagelabs.com id 4B/21-15696-F1ACA235; Thu, 20 Mar 2014 10:59:43 +0000
+X-Env-Sender: email@domain.domain
+X-Msg-Ref: server-9.tower-125.messagelabs.com!1395313182!24402582!1
+X-Originating-IP: [33.33.33.33]
+X-SpamReason: No, hits=0.8 required=7.0 tests=HTML_MESSAGE,
+  MIME_HTML_MOSTLY,MPART_ALT_DIFF
+X-StarScan-Received:
+X-StarScan-Version: 6.11.1; banners=-,-,viecuri.nl
+X-VirusChecked: Checked
+Received: (qmail 4698 invoked from network); 20 Mar 2014 10:59:42 -0000
+Received: from mailserver.domain.domain (HELO mailserver.domain.domain) (33.33.33.33)
+  by server-9.tower-125.messagelabs.com with DHE-RSA-AES256-SHA encrypted SMTP; 20 Mar 2014 10:59:42 -0000
+Received: from localhost ([127.0.0.1] helo=www.domain.domain)
+    by mailserver.domain.domain with esmtpa (Exim 4.73 (FreeBSD))
+    (envelope-from <email@domain.domain>)
+    id 1WQahL-0004m2-FT
+    for someone@some.where; Thu, 20 Mar 2014 11:59:43 +0100
+MIME-Version: 1.0
+Message-ID: <U16581N1107.1395313183@www.domain.domain>
+From: "Domain domain" <mail@domain.domain>
+Subject: Something 2014
+Content-Type: multipart/alternative;
+    boundary="=_216b93cd925b7803b4c52bca98a3ee3c"
+To: someone@some.where
+Date: Thu, 20 Mar 2014 11:59:43 +0100
+X-Date: 2014-03-20 11:59:43
+X-Connected-IP: 127.0.0.1:50595
+
+
+--ONHrN715MUZyqWppCw12MuNjL3IsvuuVQXcdmQ==--

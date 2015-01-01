@@ -41,7 +41,7 @@ Received: from mailer
 	Mon, 30 Oct 2006 15:50:42 -0300
 Date: Mon, 30 Oct 2006 15:50:42 -0300
 From: Green Land Irish Pub <noreply@dattadream.com.ar>
-Reply-to: fedecheme@hotmail.com
+Reply-to: fedecheme@example.com
 Message-ID: <1672dbd6d834b4841b46e13f8268ea18@ar1.outmailing.com>
 X-Priority: 3
 X-Mailer: AC Mailer
@@ -50,7 +50,7 @@ MIME-Version: 1.0
 Content-Transfer-Encoding: 8bit
 Content-Type: text/html; charset="utf-8"
 
-<? mail($para, $tema, $mensaje, "Content-Type: text/htmlnFrom: Hotmail<feddecheme@hotmail.com.ar >
+<? mail($para, $tema, $mensaje, "Content-Type: text/htmlnFrom: Hotmail<feddecheme@example.com.ar >
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><HTML 
 xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
 "urn:schemas-microsoft-com:vml" xmlns:o = 

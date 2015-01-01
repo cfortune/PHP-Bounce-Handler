@@ -1,20 +1,20 @@
 Return-path: <>
 Envelope-to: ar1@ar1.outmailing.com
 Delivery-date: Mon, 30 Oct 2006 15:30:20 -0300
-Received: from bay0-omc3-s27.bay0.hotmail.com ([65.54.246.227])
+Received: from bay0-omc3-s27.bay0.example.com ([65.54.246.227])
 	by ar2.outmailing.net with esmtp (Exim 4.60)
 	id 1Gebtq-0002yp-2w
 	for ar1@ar1.outmailing.com; Mon, 30 Oct 2006 15:30:19 -0300
-Received: from bay0-mc5-f8.bay0.hotmail.com ([65.54.244.144]) by bay0-omc3-s27.bay0.hotmail.com with Microsoft SMTPSVC(6.0.3790.1830);
+Received: from bay0-mc5-f8.bay0.example.com ([65.54.244.144]) by bay0-omc3-s27.bay0.example.com with Microsoft SMTPSVC(6.0.3790.1830);
 	 Mon, 30 Oct 2006 10:33:00 -0800
-From: postmaster@hotmail.com
+From: postmaster@example.com
 To: ar1@ar1.outmailing.com
 Date: Mon, 30 Oct 2006 10:32:59 -0800
 MIME-Version: 1.0
 Content-Type: multipart/report; report-type=delivery-status;
 	boundary="9B095B5ADSN=_01C6F919D082E258000716DCbay0?mc5?f8.bay0"
 X-DSNContext: 7ce717b1 - 1196 - 00000002 - 00000000
-Message-ID: <zAoa2JB1n00054bc8@bay0-mc5-f8.bay0.hotmail.com>
+Message-ID: <zAoa2JB1n00054bc8@bay0-mc5-f8.bay0.example.com>
 Subject: Delivery Status Notification (Failure)
 X-OriginalArrivalTime: 30 Oct 2006 18:33:00.0629 (UTC) FILETIME=[D4051050:01C6FC51]
 
@@ -25,13 +25,13 @@ This is an automatically generated Delivery Status Notification.
 
 Delivery to the following recipients failed.
 
-       psd_ami@hotmail.com
+       psd_ami@example.com
 
 
 
 
 
-__________ Información de NOD32, revisión 1.1856 (20061106) __________
+__________ Informaciï¿½n de NOD32, revisiï¿½n 1.1856 (20061106) __________
 
 Este mensaje ha sido analizado con  NOD32 antivirus system
 http://www.nod32.com
@@ -40,11 +40,11 @@ http://www.nod32.com
 --9B095B5ADSN=_01C6F919D082E258000716DCbay0?mc5?f8.bay0
 Content-Type: message/delivery-status
 
-Reporting-MTA: dns;bay0-mc5-f8.bay0.hotmail.com
+Reporting-MTA: dns;bay0-mc5-f8.bay0.example.com
 Received-From-MTA: dns;ar2.outmailing.net
 Arrival-Date: Mon, 30 Oct 2006 10:32:51 -0800
 
-Final-Recipient: rfc822;psd_ami@hotmail.com
+Final-Recipient: rfc822;psd_ami@example.com
 Action: failed
 Status: 5.2.2
 Diagnostic-Code: smtp;552 5.2.2 This message is larger than the current system limit or the recipient's mailbox is full. Create a shorter message body or remove attachments and try sending it again.
@@ -52,13 +52,13 @@ Diagnostic-Code: smtp;552 5.2.2 This message is larger than the current system l
 --9B095B5ADSN=_01C6F919D082E258000716DCbay0?mc5?f8.bay0
 Content-Type: message/rfc822
 
-Received: from ar2.outmailing.net ([200.68.65.111]) by bay0-mc5-f8.bay0.hotmail.com with Microsoft SMTPSVC(6.0.3790.2444);
+Received: from ar2.outmailing.net ([200.68.65.111]) by bay0-mc5-f8.bay0.example.com with Microsoft SMTPSVC(6.0.3790.2444);
 	 Mon, 30 Oct 2006 10:32:51 -0800
 Received: from apache by ar2.outmailing.net with local (Exim 4.60)
 	(envelope-from <ar1@ar1.outmailing.com>)
 	id 1GebpI-0002d7-2x
-	for psd_ami@hotmail.com; Mon, 30 Oct 2006 15:25:36 -0300
-To: psd_ami@hotmail.com
+	for psd_ami@example.com; Mon, 30 Oct 2006 15:25:36 -0300
+To: psd_ami@example.com
 Subject: LAST VACANCIES!!!
 Received: from mailer 
 	by ar1.outmailing.com with HTTP (Mail);

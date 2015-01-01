@@ -18,7 +18,7 @@ Subject: failure notice
 (postino9.prima.com.ar)
 Su mensaje no pudo ser entregado - Sua mensagem nao pode ser enviada - Your message could not be delivered.
 
-<somat@ciudad.com.ar>:
+<somat@example.com>:
 Sorry, no mailbox here by that name. (#5.1.1)
 
 --- Mensaje original adjunto.
@@ -33,8 +33,8 @@ Received: from unknown (HELO ar2.outmailing.net) (200.68.65.111)
 Received: from apache by ar2.outmailing.net with local (Exim 4.60)
 	(envelope-from <ar1@ar1.outmailing.com>)
 	id 1Gec0w-0003Qy-39
-	for somat@ciudad.com.ar; Mon, 30 Oct 2006 15:37:38 -0300
-To: somat@ciudad.com.ar
+	for somat@example.com; Mon, 30 Oct 2006 15:37:38 -0300
+To: somat@example.com
 Subject: LAST VACANCIES!!!
 Received: from mailer 
 	by ar1.outmailing.com with HTTP (Mail);

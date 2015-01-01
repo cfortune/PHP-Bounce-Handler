@@ -59,9 +59,9 @@ delete your own text from the attached returned message.
 
                    The mail system
 
-<leopold_skryd@mail.ru>: host mxs.mail.ru[194.67.23.20] said: 550 Access from
+<leopold_skryd@example.com>: host mxs.example.com[194.67.23.20] said: 550 Access from
     ip address 87.237.123.24 blocked. Visit
-    http://win.mail.ru/cgi-bin/support_bl?ip=87.237.123.24 (in reply to RCPT TO
+    http://win.example.com/cgi-bin/support_bl?ip=87.237.123.24 (in reply to RCPT TO
     command)
 
 --91F2C2C03486B.1182975052/web1.mysnip.de
@@ -74,12 +74,12 @@ X-Postfix-Queue-ID: 91F2C2C03486B
 X-Postfix-Sender: rfc822; wwwmail@mysnip.de
 Arrival-Date: Wed, 27 Jun 2007 22:10:49 +0200 (CEST)
 
-Final-Recipient: rfc822; leopold_skryd@mail.ru
+Final-Recipient: rfc822; leopold_skryd@example.com
 Action: failed
 Status: 5.0.0
-Remote-MTA: dns; mxs.mail.ru
+Remote-MTA: dns; mxs.example.com
 Diagnostic-Code: smtp; 550 Access from ip address 87.237.123.24 blocked. Visit
-    http://win.mail.ru/cgi-bin/support_bl?ip=87.237.123.24
+    http://win.example.com/cgi-bin/support_bl?ip=87.237.123.24
 
 --91F2C2C03486B.1182975052/web1.mysnip.de
 Content-Description: Undelivered Message
@@ -87,7 +87,7 @@ Content-Type: message/rfc822
 
 Received: by web1.mysnip.de (Postfix, from userid 1000)
 	id 91F2C2C03486B; Wed, 27 Jun 2007 22:10:49 +0200 (CEST)
-To: rusculture <leopold_skryd@mail.ru>
+To: rusculture <leopold_skryd@example.com>
 Subject: Registration Confirmation
 From: webmaster@myphorum.de
 Message-Id: <20070627201049.91F2C2C03486B@web1.mysnip.de>
