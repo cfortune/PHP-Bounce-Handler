@@ -1,0 +1,62 @@
+From MAILER-DAEMON@example.com Thu Jan  1 17:19:04 2015
+Received: from localhost (localhost)
+	by example.com (8.14.4/8.14.4) id t01HJ48p012774;
+	Thu, 1 Jan 2015 17:19:04 GMT
+Date: Thu, 1 Jan 2015 17:19:04 GMT
+From: Mail Delivery Subsystem <MAILER-DAEMON@example.com>
+Message-Id: <201501011719.t01HJ48p012774@example.com>
+To: <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="t01HJ48p012774.1420132744/example.com"
+Subject: Return receipt
+Auto-Submitted: auto-generated (return-receipt)
+
+This is a MIME-encapsulated message
+
+--t01HJ48p012774.1420132744/example.com
+
+The original message was received at Thu, 1 Jan 2015 17:18:55 GMT
+from example.com [127.0.0.1]
+
+   ----- The following addresses had successful delivery notifications -----
+<externaluser@example.net>  (relayed to non-DSN-aware mailer)
+
+   ----- Transcript of session follows -----
+<externaluser@example.net>... relayed; expect no further notifications
+
+--t01HJ48p012774.1420132744/example.com
+Content-Type: message/delivery-status
+
+Original-Envelope-Id: MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6
+Reporting-MTA: dns; example.com
+Received-From-MTA: DNS; example.com
+Arrival-Date: Thu, 1 Jan 2015 17:18:55 GMT
+
+Final-Recipient: RFC822; externaluser@example.net
+Action: relayed (to non-DSN-aware mailer)
+Status: 2.1.5
+Remote-MTA: DNS; aspmx.l.google.com
+Diagnostic-Code: SMTP; 250 2.1.5 OK un10si29151402wjc.103 - gsmtp
+Last-Attempt-Date: Thu, 1 Jan 2015 17:19:04 GMT
+
+--t01HJ48p012774.1420132744/example.com
+Content-Type: text/rfc822-headers
+
+Return-Path: <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com>
+Received: from example.com (example.com [127.0.0.1])
+	by example.com (8.14.4/8.14.4) with ESMTP id t01HIt8p012772
+	for <externaluser@example.net>; Thu, 1 Jan 2015 17:18:55 GMT
+Received: (from user@localhost)
+	by example.com (8.14.4/8.14.4/Submit) id t01HIsAS012771;
+	Thu, 1 Jan 2015 17:18:54 GMT
+Date: Thu, 1 Jan 2015 17:18:54 GMT
+Message-Id: <201501011718.t01HIsAS012771@example.com>
+X-Authentication-Warning: example.com: user set sender to bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com using -f
+To: externaluser@example.net
+Subject: test subject
+X-PHP-Originating-Script: 1004:r.php
+From: system Notifications <notify@example.com>
+
+--t01HJ48p012774.1420132744/example.com--
+

@@ -1,0 +1,66 @@
+From MAILER-DAEMON@example.com Thu Jan  1 17:39:39 2015
+Received: from localhost (localhost)
+	by example.com (8.14.4/8.14.4) id t01HdPBk016316;
+	Thu, 1 Jan 2015 17:39:39 GMT
+Date: Thu, 1 Jan 2015 17:39:39 GMT
+From: Mail Delivery Subsystem <MAILER-DAEMON@example.com>
+Message-Id: <201501011739.t01HdPBk016316@example.com>
+To: <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="t01HdPBk016316.1420133979/example.com"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--t01HdPBk016316.1420133979/example.com
+
+The original message was received at Thu, 1 Jan 2015 17:34:52 GMT
+from example.com [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<test@allaboutspam.com>
+    (reason: 552-Thanks for using ALLABOUTSPAM.COM Email server test. Your test results are)
+
+   ----- Transcript of session follows -----
+... while talking to mx.allaboutspam.com.:
+>>> DATA
+<<< 552-Thanks for using ALLABOUTSPAM.COM Email server test. Your test results are
+<<< 552 available at http://www.allaboutspam.com/email-server-test-report/?key=xxxxxxxx
+554 5.0.0 Service unavailable
+
+--t01HdPBk016316.1420133979/example.com
+Content-Type: message/delivery-status
+
+Original-Envelope-Id: MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6
+Reporting-MTA: dns; example.com
+Arrival-Date: Thu, 1 Jan 2015 17:34:52 GMT
+
+Final-Recipient: RFC822; test@allaboutspam.com
+Action: failed
+Status: 5.2.2
+Remote-MTA: DNS; mx.allaboutspam.com
+Diagnostic-Code: SMTP; 552-Thanks for using ALLABOUTSPAM.COM Email server test. Your test results are
+Last-Attempt-Date: Thu, 1 Jan 2015 17:39:39 GMT
+
+--t01HdPBk016316.1420133979/example.com
+Content-Type: text/rfc822-headers
+
+Return-Path: <bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com>
+Received: from example.com (example.com [127.0.0.1])
+	by example.com (8.14.4/8.14.4) with ESMTP id t01HYpsQ016289
+	for <test@allaboutspam.com>; Thu, 1 Jan 2015 17:34:52 GMT
+Received: (from exampleuser@localhost)
+	by example.com (8.14.4/8.14.4/Submit) id t01HYngQ016288;
+	Thu, 1 Jan 2015 17:34:49 GMT
+Date: Thu, 1 Jan 2015 17:34:49 GMT
+Message-Id: <201501011734.t01HYngQ016288@example.com>
+X-Authentication-Warning: example.com: exampleuser set sender to bouncebacks+MjAxNTAxMDEwMDAwMDAwMDQ39a66e5b6@example.com using -f
+To: test@allaboutspam.com
+Subject: test subject
+X-PHP-Originating-Script: 1004:r.php
+From: Example Notifications <example@example.com>
+
+--t01HdPBk016316.1420133979/example.com--
+

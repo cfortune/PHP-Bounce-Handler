@@ -175,6 +175,8 @@ class BounceHandler
     public $web_beacon_2 = "";
 
     /**
+     * FBL feedback type if any.
+     *
      * @var string
      */
     public $feedback_type = "";
@@ -194,26 +196,41 @@ class BounceHandler
     public $x_header_beacon_2 = "";
 
     /**
+     * An accessor for $this->_bouncehandler->get_the_facts()[0]['action']
+     *
+     * Recommendation action for the email.
+     *
+     * Only useful for FBL's or if the output array only has one index
+     *
      * @var string
      */
     public $action = "";
 
     /**
+     * An accessor for $this->_bouncehandler->get_the_facts()[0]['status'].
+     *
+     * Status of the email.
+     * Only useful for FBL's or if the output array only has one index.
+     *
      * @var string
      */
     public $status = "";
 
     /**
+     *  An accessor for $this->_bouncehandler->get_the_facts()[0]['subect'].
+     *
      * Subject of the email.
+     * Only useful for FBL's or if the output array only has one index.
      *
      * @var string
      */
     public $subject = "";
 
-    // these accessors are useful only for FBL's
-    // or if the output array has only one index
     /**
+     * An accessor for $this->_bouncehandler->get_the_facts()[0]['recipient'].
+     *
      * Recipient of the original email.
+     * Only useful for FBL's or if the output array only has one index.
      *
      * @var string
      */
@@ -224,17 +241,21 @@ class BounceHandler
     public $output = array();
 
     /**
+     * Our cached list of bounce strings to look out for.
+     *
      * @var array
      */
     private $_bouncelist = array();
 
     /**
+     * Cached list of auto-respond subjects to look out for.
+     *
      * @var array
      */
     private $_autorespondlist = array();
 
     /**
-     * The raw data set, a multiArray
+     * Cached list of bounce subjects to look out for.
      *
      * @var array
      */
@@ -246,6 +267,8 @@ class BounceHandler
     private $_first_body_hash = array();
 
     /**
+     * If this is an auto-response, how did we detect it?
+     *
      * @var string
      */
     private $_autoresponse = '';
@@ -476,9 +499,10 @@ class BounceHandler
                     $mycode = @$this->format_status_code(
                         $rpt_hash['per_recipient'][$i]['Status']
                     );
-                    $this->output[$i]['status'] = @$mycode['code'];
+                    $this->output[$i]['status'] = $mycode['code'];
+
                     $this->output[$i]['action']
-                        = @$rpt_hash['per_recipient'][$i]['Action'];
+                        = $this->get_action_from_status_code($mycode['code']);
                 }
             } else {
                 $arrFailed = $this->find_email_addresses(
@@ -1036,7 +1060,9 @@ class BounceHandler
     }
 
     /**
-     * @param string $str
+     * Parse delivery service notification sections.
+     *
+     * @param string $str Email
      *
      * @return array
      */
