@@ -511,7 +511,7 @@ class BounceHandler{
         }
         // special formatting
         $hash['Received']= @explode('|', $hash['Received']);
-        $hash['Subject'] = isset($hash['Subject']) ? : '';
+        $hash['Subject'] = isset($hash['Subject']) ? $hash['Subject'] : '';
         return $hash;
     }
 
