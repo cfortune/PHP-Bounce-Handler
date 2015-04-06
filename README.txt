@@ -3,13 +3,19 @@ PHP Bounce Handler
 INSTALL
 -------
 Upload to a website, and open testdriver1.php in a web browser
-for normal operation only
- bounce_driver_class.php and bounce_statuscodes.php are required
+for normal operation only bounce_driver_class.php and bounce_statuscodes.php are required
 
 
 
 RELEASE HISTORY
 ---------------
+v7.5 VP  April 6, 2015
+
+- now it's stable
+- fixed tons of errors - warnings, notices etc...
+- some code optimizations
+- get_the_facts() result now looks slightly like bouncehammer's one
+
 v7.4 SB  June 19, 2014
 
 - make auto-responder identification table driven

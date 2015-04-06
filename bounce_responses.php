@@ -264,6 +264,7 @@ $bouncesubj = array(
     'undeliverable',
     'undelivered mail',
     'warning: message',
+    'Ваше сообщение не доставлено'
 );
 
 #
@@ -276,4 +277,3 @@ $bouncesubj = array(
 #    }
 #  }
 #}
-?>
