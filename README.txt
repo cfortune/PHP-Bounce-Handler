@@ -9,6 +9,9 @@ for normal operation only bounce_driver_class.php and bounce_statuscodes.php are
 
 RELEASE HISTORY
 ---------------
+v7.6 VP  April 9, 2015
+- added discovery of original letters from weird FBLs
+
 v7.5 VP  April 6, 2015
 
 - now it's stable

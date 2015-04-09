@@ -139,6 +139,22 @@ class BounceHandler {
             $this->output[0]['action'] = 'failed';
             $this->output[0]['deliverystatus'] = "5.7.1";
             $this->subject = trim(str_ireplace("Fw:", "", $this->head_hash['Subject']));
+
+            // Sometimes one mail server uses senderscore.net for fbl
+            // So original message may be hidden in attachment
+            if (!empty($this->original_letter) && !empty($this->original_letter_header)) {
+                $ol_boundary = isset($this->original_letter_header['Content-type']['boundary']) ? $this->original_letter_header['Content-type']['boundary'] : '';
+                if (!empty($ol_boundary)) {
+                    $ol_mime_sections = $this->parse_body_into_mime_sections($this->original_letter_body, $ol_boundary);
+                    $ol_mpbp = isset($ol_mime_sections['machine_parsable_body_part']) ? $this->parse_head($ol_mime_sections['machine_parsable_body_part']) : [];
+                    if (!empty($ol_mpbp['Content-type']['type']) && $ol_mpbp['Content-type']['type'] == 'message/feedback-report' && !empty($ol_mime_sections['returned_message_body_part'])) {
+                        list($ct, $this->original_letter) = $this->splitHeadAndBody($ol_mime_sections['returned_message_body_part']);
+                        list($original_head, $this->original_letter_body) = $this->splitHeadAndBody($this->original_letter);
+                        $this->original_letter_header = $this->parse_head($original_head);
+                    }
+                }
+            }
+
             if ($this->is_hotmail_fbl === true) {
                 // fill in the fbl_hash with sensible values
                 $this->fbl_hash['Source-ip'] = '';
