@@ -113,6 +113,8 @@ class BounceHandler {
         // recover the original letter
         if (!empty($mime_sections['returned_message_body_part'])) {
             list($ct, $this->original_letter) = $this->splitHeadAndBody($mime_sections['returned_message_body_part']);
+        } elseif (strpos($body, '------ This is a copy of your message, including all the headers. ------') !== false) {
+            list($_, $this->original_letter) = preg_split("/\r\n\r\n------ This is a copy of your message, including all the headers. ------\r\n\r\n/", $body, 2);
         } else {
             $letters = preg_split("/\nReturn-path:[^\n]*\n/i", $bounce, -1, PREG_SPLIT_NO_EMPTY);
             if (!empty($letters[2])) {
