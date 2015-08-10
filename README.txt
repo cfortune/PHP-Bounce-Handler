@@ -2,7 +2,7 @@ PHP Bounce Handler
 
 INSTALL
 -------
-Download php.bouncehandler.v7.7.zip
+Download php.bouncehandler.vX.Y.zip (where X.Y match latest version)
 Upload to a website, and open testdriver1.php in a web browser
 for normal operation only bounce_driver_class.php and bounce_statuscodes.php are required
 
@@ -10,6 +10,9 @@ for normal operation only bounce_driver_class.php and bounce_statuscodes.php are
 
 RELEASE HISTORY
 ---------------
+v7.8 VP  August 10, 2015
+- minor fixes to eliminate notices
+
 v7.7 VP  April 10, 2015
 - fixed incorrect original letter discovery in some cases
 

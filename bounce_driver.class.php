@@ -276,8 +276,8 @@ class BounceHandler {
 
         // fill additional and dependant fields
         $this->output[0]['reason'] = $this->get_reason_by_statuscode($this->output[0]['deliverystatus']);
-        $this->output[0]['messageid'] = empty($this->original_letter_header) ? '' : $this->original_letter_header['Message-id'];
-        $this->output[0]['subject'] = empty($this->original_letter_header) ? '' : $this->original_letter_header['Subject'];
+        $this->output[0]['messageid'] = empty($this->original_letter_header['Message-id']) ? '' : $this->original_letter_header['Message-id'];
+        $this->output[0]['subject'] = empty($this->original_letter_header['Subject']) ? '' : $this->original_letter_header['Subject'];
 
         // remove empty array indices
         $tmp = array();
