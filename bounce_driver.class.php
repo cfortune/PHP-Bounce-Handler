@@ -109,14 +109,15 @@ class BounceHandler {
         // parse the email into data structures
         $boundary = isset($this->head_hash['Content-type']['boundary']) ? $this->head_hash['Content-type']['boundary'] : '';
         $mime_sections = $this->parse_body_into_mime_sections($body, $boundary);
-
         // recover the original letter
         if (!empty($mime_sections['returned_message_body_part'])) {
             list($ct, $this->original_letter) = $this->splitHeadAndBody($mime_sections['returned_message_body_part']);
         } elseif (strpos($body, '------ This is a copy of your message, including all the headers. ------') !== false) {
             list($_, $this->original_letter) = preg_split("/\r\n\r\n------ This is a copy of your message, including all the headers. ------\r\n\r\n/", $body, 2);
+        } elseif (strpos($body, '------ This is a copy of the message, including all the headers. ------') !== false) {
+            list($_, $this->original_letter) = preg_split("/\r\n\r\n------ This is a copy of the message, including all the headers. ------\r\n\r\n/", $body, 2);
         } else {
-            $letters = preg_split("/\nReturn-path:[^\n]*\n/i", $bounce, -1, PREG_SPLIT_NO_EMPTY);
+            $letters = preg_split("/\nReturn-path:[^\n]*\n/i", $bounce, 3, PREG_SPLIT_NO_EMPTY);
             if (!empty($letters[2])) {
                 $this->original_letter = $letters[2];
             }
