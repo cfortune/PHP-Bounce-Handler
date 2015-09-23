@@ -84,7 +84,7 @@ You can configure custom regular expressions to find any web beacons you may hav
 </P>
 <P>
 If the bounce is not well formed, it tries to extract some useful information anyway.  Currently Postfix and Exim are supported, partially.  You can edit the function <code>get_the_facts()</code> if you want to add a parser for your own busted MTA.  Please forward any useful & reuseable code to the keeper of this class.  <a href="http://cfortune.kics.bc.ca/">Chris Fortune</a></P>
-<?
+<?php
 
 // a perl regular expression to find a web beacon in the email body
 $bouncehandler->web_beacon_preg_1 = "/u=([0-9a-fA-F]{32})/";
