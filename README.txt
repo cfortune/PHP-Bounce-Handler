@@ -8,6 +8,10 @@ Upload to a website, and open testdriver1.php in a web browser
 
 RELEASE HISTORY
 ---------------
+v7.5.0 WP  May 18, 2019
+ - Switch to curl from fopen.
+ - Add -k (keep flag) for optionally keeping the original csv files.
+
 v7.4.3 SB  Dec 2014
  - add a softlink for rfc1893.error.codes.php -> bounce_statuscodes.php
  - fix a fatal error with format_status_code returning the wrong datatype
