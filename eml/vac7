@@ -1,0 +1,25 @@
+Return-Path: <>
+Delivered-To: support@example.com
+Received: (qmail 31309 invoked from network); 16 Sep 2014 21:04:44 -0000
+Received: from unknown (HELO mx.example.com) (10.1.111.4)
+  by inboundmx01.lau.local with SMTP; 16 Sep 2014 21:04:44 -0000
+Received: from mail.user.ca ([137.21.136.1])
+  by mx.example.com with ESMTP; 16 Sep 2014 21:04:44 +0000
+Received: by mail.user.ca (Postfix, from userid 1047)
+	id 550C8B982810; Tue, 16 Sep 2014 14:04:43 -0700 (PDT)
+Message-ID: <dovecot-1410901483-308635-0@user.phs.ca>
+Date: Tue, 16 Sep 2014 14:04:43 -0700
+X-Sieve: CMU Sieve 2.3
+From: tanya@user.ca
+To: <support@example.com>
+Subject: I'm away from my mail
+In-Reply-To: <ARF-WEBe1bcc20d446047a5910b4de7bc3ffe75@ARF-WEB>
+Auto-Submitted: auto-replied (vacation)
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+I am currently on vacation.
+
+Thank you and enjoy the rest of the Summer.

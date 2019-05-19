@@ -1,0 +1,50 @@
+Return-Path: <carol@user.com>
+Delivered-To: support@example.com
+Received: (qmail 27211 invoked from network); 16 Sep 2014 20:03:11 -0000
+Received: from unknown (HELO mx.example.com) (10.1.111.3)
+  by inboundmx.local with SMTP; 16 Sep 2014 20:03:11 -0000
+Received: from mail-lb0-f169.google.com ([209.85.217.169])
+  by mx.example.com with ESMTP/TLS/RC4-SHA; 16 Sep 2014 20:03:09 +0000
+Received: by mail-lb0-f169.google.com with SMTP id p9so517399lbv.14
+        for <support@example.com>; Tue, 16 Sep 2014 13:03:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=thesoundresearch.com; s=google;
+        h=to:from:date:message-id:subject:mime-version:precedence
+         :auto-submitted:content-type:content-transfer-encoding
+         :content-disposition;
+        bh=uTsfxq0kCxhrNoyj95FRcTfCIq0ZYYk7yyba2BrpzPk=;
+        b=eFYvQFIETJPBrMl+B0BE21sguiicBN6VPQcz3SbcnWnyg55BN9tVmQc/7dZaBx1uc0
+         HwgW6fXfJjf2o2NQL1o3/LadkslhI4biCHWTeyygOoCrSqKJt4M7i6webucMMypB/5y0
+         Mf051Etq3uT1tLl+Q80DSjWEPMFdZKpFGalt0=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:to:from:date:message-id:subject:mime-version
+         :precedence:auto-submitted:content-type:content-transfer-encoding
+         :content-disposition;
+        bh=uTsfxq0kCxhrNoyj95FRcTfCIq0ZYYk7yyba2BrpzPk=;
+        b=RCf/yY+JMAna8w13Zjl7hto1XMH8lOwQBw01i+cxBOvzvUNLnd0x/Ip0YVCUswp3jO
+         RrBkNC1/ejtDfnDA2pgTOLA8xHkhHCTuGWo6kz6NGRUAqoeTivJjTl6rlLNPia632ZXB
+         L2q2OOIXSU5pXSitAkBcQEvg41EBIRsNdFL/XpTaZvuWgxdx/DzgIdm11KEwwxzg58Hj
+         Z50vUH8F7/OyUL23nG9NnbvhiXwfxBv2ZVLJ3aW2am2mwPu6N0V4C+anJF+RCREuWHGj
+         7OYacjO+ePaTecUf/XGM7Zh5H4Dl+rT1Pj1xiNjPdYwOFYX/5UM56E7uxcJwQKwDcHzt
+         CF/Q==
+X-Received: by 10.112.72.10 with SMTP id z10mr13321654lbu.87.1410897788000;
+        Tue, 16 Sep 2014 13:03:08 -0700 (PDT)
+To: support@example.com
+From: "Carol" <carol@user.com>
+Date: Tue, 16 Sep 2014 13:03:07 -0700
+Message-ID: <CAMgm2=zTtXmhZZAMfShQy7crJE4Qep+i9oMWOOF0DAA+nFYjGA@mail.gmail.com>
+Subject: Vacation Alert! Re: Update your profile
+MIME-Version: 1.0
+Precedence: bulk
+X-Autoreply: yes
+Auto-Submitted: auto-replied
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<div dir=3D"ltr">Hello!<div><br></div><div>Thanks for your message. I will =
+be on vacation from Friday September 5th until Sunday, September 21st, back=
+ in the office on Monday, September 22nd. During this time I will have very=
+ limited access to email and voicemail. Please do not hesitate to reach out=
+ to </div>
